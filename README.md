@@ -4,7 +4,7 @@
 ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/TUSBAD/TUSBRemixAD?include_prereleases)
 ![GitHub](https://img.shields.io/github/license/TUSBAD/TUSBRemixAD)
 <br>
-[![activity](https://img.shields.io/github/commit-activity/m/TUSBAD/TUSBv12R?label=commit&logo=github&color=brightgreen)](https://github.com/TUSBAD/TUSBRemixAD/commits/1.19.4)
+[![activity](https://img.shields.io/github/commit-activity/m/TUSBAD/TUSBRemixAD?label=commit&logo=github&color=brightgreen)](https://github.com/TUSBAD/TUSBRemixAD/commits/1.19.4)
 ![GitHub issues](https://img.shields.io/github/issues/TUSBAD/TUSBRemixAD?logo=github)
 ![GitHub pr](https://img.shields.io/github/issues-pr/TUSBAD/TUSBRemixAD?logo=github)
 ![GitHub all releases](https://img.shields.io/github/downloads/TUSBAD/TUSBRemixAD/total?logo=github)
