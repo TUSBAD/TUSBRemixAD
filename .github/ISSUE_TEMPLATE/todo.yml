@@ -51,8 +51,6 @@ body:
   attributes:
     label: このTODOはこのTUSBAD Versionに影響が出る
     options:
-      - Prototype
-      - v1.0 α
       - v1 以降
       - その他
 

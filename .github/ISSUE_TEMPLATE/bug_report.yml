@@ -14,8 +14,6 @@ body:
   attributes:
     label: 発生したTUSBADのVersion
     options:
-      - vPrototype
-      - v1.0α
       - v1.0
   validations:
     required: true
