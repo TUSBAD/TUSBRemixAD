@@ -1,0 +1,9 @@
+[submodule "TUSBv12RemakeRemix_v1.2.1/datapacks"]
+	path = TUSBv12RemakeRemix_v1.2.1/datapacks
+	url = https://github.com/Ai-Akaishi/AiUtil.git
+[submodule "datapacks"]
+	path = datapacks
+	url = https://github.com/Ai-Akaishi/AiUtil.git
+[submodule "AiUtil"]
+	path = AiUtil
+	url = https://github.com/Ai-Akaishi/AiUtil.git
