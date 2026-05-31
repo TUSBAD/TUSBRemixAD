@@ -11,8 +11,6 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/TUSBAD/TUSBRemixAD?color=aqua&logo=github)
 [![Gitmoji](https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg)](https://gitmoji.carloscuesta.me/)
 <br>
-![Twitter Follow](https://img.shields.io/twitter/follow/FreyCielu.svg?style=social)
-![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCdKnAER_nZTSWAAhvYpgGrw?label=Subscribe%20%40%E3%83%95%E3%83%AC%E3%82%A4%E3%82%B7%E3%82%A7%E3%83%AB&style=social)
 
 Discord:https://discord.gg/rTVWQm4ykR
 
