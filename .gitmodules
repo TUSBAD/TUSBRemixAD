@@ -1,3 +1,30 @@
 [submodule "AiUtil"]
 	path = AiUtil
 	url = https://github.com/Ai-Akaishi/AiUtil.git
+[submodule "AiMath"]
+	path = AiMath
+	url = https://github.com/Ai-Akaishi/AiMath.git
+[submodule "AnywhereTeleport"]
+	path = AnywhereTeleport
+	url = https://github.com/Ai-Akaishi/AnywhereTeleport.git
+[submodule "AnywhereFunction"]
+	path = AnywhereFunction
+	url = https://github.com/Ai-Akaishi/AnywhereFunction.git
+[submodule "ScoreToHealth"]
+	path = ScoreToHealth
+	url = https://github.com/Ai-Akaishi/ScoreToHealth.git
+[submodule "OhMyDat"]
+	path = OhMyDat
+	url = https://github.com/Ai-Akaishi/OhMyDat.git
+[submodule "PlayerItemTuner"]
+	path = PlayerItemTuner
+	url = https://github.com/Ai-Akaishi/PlayerItemTuner.git
+[submodule "CloseDetector"]
+	path = CloseDetector
+	url = https://github.com/Ai-Akaishi/CloseDetector.git
+[submodule "NoSleep"]
+	path = NoSleep
+	url = https://github.com/Ai-Akaishi/NoSleep.git
+[submodule "MCCMD-ScoreDamage"]
+	path = MCCMD-ScoreDamage
+	url = https://github.com/ChenCMD/MCCMD-ScoreDamage.git
