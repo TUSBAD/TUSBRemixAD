@@ -1,0 +1,47 @@
+name: 質問受付
+description: 質問等ある場合はこちら
+title: "[質問] <ここにタイトルを入力>"
+labels: [質問]
+body:
+- type: markdown
+  attributes:
+    value: |
+      ## 質問ありがとうございます。
+      以下の設問に答えていただくと、解決しやすくなります。
+      赤い印がついているものは必ず答えてください。
+      また、バグと思わしきものはバグ報告の方へお願いします。
+- type: dropdown
+  id: Version
+  attributes:
+    label: 質問したいTUSBADのVersion
+    options:
+      - vPrototype
+      - v1.0α
+      - v1.0
+  validations:
+    required: true
+- type: checkboxes
+  id: type
+  attributes:
+    label: 質問したいカテゴリ(複数選択可)
+    options:
+      - label: 島・エリア・建築物
+      - label: ギミック
+      - label: Mob
+      - label: アイテム
+      - label: 交易
+      - label: レシピ
+      - label: 職業スキル
+      - label: 進捗
+      - label: テクスチャ
+  validations:
+    required: true
+- type: textarea
+  id: "overview"
+  attributes:
+    label: 概要
+    description: |
+      質問についての説明を記入する。
+      画像のアップロードも可能です。
+  validations:
+    required: true

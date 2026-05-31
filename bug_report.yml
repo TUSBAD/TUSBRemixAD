@@ -1,0 +1,99 @@
+name: バグ報告
+description: 発見したバグを報告するときはこちら
+title: "[バグ] <ここにタイトルを入力>"
+labels: [バグ]
+body:
+- type: markdown
+  attributes:
+    value: |
+      ## バグの報告をしていただきありがとうございます。
+      以下の質問に答えていただくと、解決しやすくなります。
+      赤い印がついているものは必ず答えてください。
+- type: dropdown
+  id: Version
+  attributes:
+    label: 発生したTUSBADのVersion
+    options:
+      - vPrototype
+      - v1.0α
+      - v1.0
+  validations:
+    required: true
+- type: checkboxes
+  id: type
+  attributes:
+    label: 発生したバグのカテゴリ
+    options:
+      - label: 島・エリア・建築物
+      - label: ギミック
+      - label: Mob
+      - label: アイテム
+      - label: 交易
+      - label: レシピ
+      - label: 職業スキル
+      - label: 進捗
+      - label: テクスチャ
+      - label: その他
+  validations:
+    required: true
+- type: checkboxes
+  id: severity
+  attributes:
+    label: 発生したバグの状態
+    options:
+      - label: 通常プレイに支障なし
+      - label: 多少支障が出る
+      - label: 支障が出るが進行不可ではない
+      - label: 進行不可
+- type: textarea
+  id: "overview"
+  attributes:
+    label: 概要
+    description: |
+      バグについての説明を記入する。
+      画像のアップロードも可能です。
+  validations:
+    required: true
+- type: textarea
+  id: reproduction
+  attributes:
+    label: 再現方法
+    description: バグを確認できるように再現方法を記入する。
+    placeholder: |
+      1.
+      2.
+      3.
+      ...
+  validations:
+    required: true
+- type: textarea
+  id: predict
+  attributes:
+    label: 予想される動作
+    description: |
+      あなたが予想した動作を記入する。
+      バグと思われるものは仕様だったという場合があります。
+- type: markdown
+  attributes:
+    value: |
+      以下は技術的な報告です。
+
+      ---
+- type: textarea
+  id: command
+  attributes:
+    label: 原因となるコマンド
+    description: コマンドを貼り付けてください。functionと同じように記述することができます。
+    placeholder: |
+      #> <ここにファイルパスを記入>
+    render: mcfunction
+- type: textarea
+  id: nbt
+  attributes:
+    label: NBTデータ
+    description: 原因となったアイテムやMobのNBTを貼り付けてください。
+- type: textarea
+  id: log
+  attributes:
+    label: ログ
+    description: 出力されているエラーログがあれば全てコピペしてください。
