@@ -15,7 +15,7 @@ scoreboard players set MobGriefing Settings 0
 ### 難易度
 scoreboard players set Difficulty Settings 0
 ### 攻略対象最大数
-scoreboard players set MaxPortalCount Settings 80
+scoreboard players set MaxPortalCount Settings 128
 
 ### ライブラリ用
 scoreboard objectives add Temporary dummy
@@ -38,7 +38,7 @@ scoreboard objectives add TUSB dummy
 
 ### プレイヤー基礎
 scoreboard objectives add LeaveGame minecraft.custom:minecraft.leave_game
-scoreboard objectives add HP dummy
+scoreboard objectives add HP dummy {"text": "HP","color": "#ff0053","bold": true}
 scoreboard objectives add HPChanging health "HP変化フラグ"
 scoreboard objectives add Food dummy
 scoreboard objectives add FoodChanging food "満腹度変化フラグ"
@@ -56,7 +56,7 @@ scoreboard objectives add TutorialReading dummy "チュートリアル読んで�
 scoreboard objectives add Drop minecraft.custom:minecraft.drop
 
 ### MP
-scoreboard objectives add MP dummy "MP"
+scoreboard objectives add MP dummy {"text": "MP","color": "#3ecfff","bold": true}
 scoreboard objectives add MPMax dummy "最大MP"
 scoreboard objectives add MPMaxFlag dummy "MP回復済フラグ"
 ### MP回復タイミング
@@ -354,4 +354,21 @@ function core:load/define_const
 function debug:load/
 
 # ver設定
-data modify storage tusb_remake: settings.version set value "2.0.0"
+data modify storage tusb_remake: settings.version set value "1.0.0"
+
+### ADスコア
+
+#> 各種Prefixを設定
+data modify storage tusb_remake: Prefix.DEBUG set value "§3DEBUG >> §r"
+data modify storage tusb_remake: Prefix.TIPS set value "§bTIPS >> §r"
+data modify storage tusb_remake: Prefix.SUCCESS set value "§aSUCCESS >> §r"
+data modify storage tusb_remake: Prefix.INFO set value "§9INFO >> §r"
+data modify storage tusb_remake: Prefix.FAILED set value "§7FAILED >> §r"
+data modify storage tusb_remake: Prefix.ERROR set value "§cERROR >> §r"
+data modify storage tusb_remake: Prefix.CRIT set value "§4CRITICAL >> §r"
+
+#> 死亡回数
+scoreboard objectives add DeathCounter minecraft.custom:minecraft.deaths {"text":"死亡回数"}
+
+#> 変数スコア
+scoreboard objectives add __ dummy {"text":"一時変数 その2"}
