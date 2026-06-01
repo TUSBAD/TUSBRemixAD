@@ -234,8 +234,18 @@ team modify Yellow color yellow
 team modify Yellow collisionRule never
 team add NoCollision
 team modify NoCollision collisionRule never
-team add Boss
+team add Enemy {"text":"敵チーム"}
+team modify Enemy color aqua
+team add Boss {"text":"ボス"}
 team modify Boss color red
+team add AdvancedBoss {"text":"強化ボス"}
+team modify Boss color dark_purple
+team add ExtremeBoss {"text":"超越ボス"}
+team modify Boss color black
+team add SupremeBoss {"text":"至高ボス"}
+team modify Boss color light_purple
+team add Guardian {"text":"守護者"}
+team modify Boss color dark_blue
 
 ### ゲームルール / ワールド設定
 gamerule logAdminCommands false
@@ -366,9 +376,6 @@ data modify storage tusb_remake: Prefix.INFO set value "§9INFO >> §r"
 data modify storage tusb_remake: Prefix.FAILED set value "§7FAILED >> §r"
 data modify storage tusb_remake: Prefix.ERROR set value "§cERROR >> §r"
 data modify storage tusb_remake: Prefix.CRIT set value "§4CRITICAL >> §r"
-
-#> 死亡回数
-scoreboard objectives add DeathCounter minecraft.custom:minecraft.deaths {"text":"死亡回数"}
 
 #> 変数スコア
 scoreboard objectives add __ dummy {"text":"一時変数 その2"}
