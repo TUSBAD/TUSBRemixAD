@@ -290,8 +290,8 @@ scoreboard players reset * MP
 ### ワールド初期設定
 time set 14000
 weather rain 15
-data modify storage tusb_remake: area_name set value {underworld:"???",cloudia:"???",table_mountain:"???",gullivers_land:"???",tocult_colde:"???",niflheimr:"???",library:"???",purgatory:"???",imaginary_space:"???",unusual_space:"???",another_dimension:"???",ancient_field:"???",tradeisland:"???"}
-data modify storage tusb_remake: conquer.count set value {skyland:0,nether:0,end:0,underworld:0,cloudia:0,table_mountain:0,gullivers_land:0,tocult_colde:0,niflheimr:0,library:0,purgatory:0,imaginary_space:0,unusual_space:0,another_dimension:0,ancient_field:0,rev_skylands:0,tradeisland:0}
+data modify storage tusb_remake: area_name set value {underworld:"???",cloudia:"???",table_mountain:"???",gullivers_land:"???",tocult_colde:"???",niflheimr:"???",library:"???",purgatory:"???",imaginary_space:"???",unusual_space:"???",another_dimension:"???",ancient_field:"???",tradeisland:"???",hellheim:"???"}
+data modify storage tusb_remake: conquer.count set value {skyland:0,nether:0,end:0,underworld:0,cloudia:0,table_mountain:0,gullivers_land:0,tocult_colde:0,niflheimr:0,library:0,purgatory:0,imaginary_space:0,unusual_space:0,another_dimension:0,ancient_field:0,rev_skylands:0,tradeisland:0,hellheim:0}
 data modify storage tusb_remake: nether_boss_count set value 1
 data modify storage tusb_remake: nether_boss_clear set value false
 
