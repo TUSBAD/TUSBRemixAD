@@ -25,6 +25,3 @@
 [submodule "NoSleep"]
 	path = NoSleep
 	url = https://github.com/Ai-Akaishi/NoSleep.git
-[submodule "MCCMD-ScoreDamage"]
-	path = MCCMD-ScoreDamage
-	url = https://github.com/ChenCMD/MCCMD-ScoreDamage.git
