@@ -264,7 +264,7 @@ gamerule logAdminCommands false
 gamerule commandBlockOutput false
 gamerule sendCommandFeedback false
 gamerule reducedDebugInfo true
-gamerule naturalRegeneration false
+gamerule naturalRegeneration true
 gamerule doEntityDrops true
 gamerule doFireTick true
 gamerule doMobLoot true

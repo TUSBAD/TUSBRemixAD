@@ -1,4 +1,4 @@
-#> player:tick/mp/mp_regen_do
+#> player_manager:mp/mp_regen_do
 #
 # #MPの自然回復処理
 #
