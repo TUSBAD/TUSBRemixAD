@@ -18,6 +18,8 @@ Discord:https://discord.gg/rTVWQm4ykR
 
 # 内容
 RemakeRemixを元に作成されたADです。
+当マップを遊ぶ際には、以下のmod群の導入を推奨します。
+- https://modrinth.com/collection/jkSMZaMr
 
 # バグ報告・要望等
 [こちら](https://github.com/TUSBAD/TUSBRemixAD/issues/new/choose) か [Discord](https://discord.gg/rTVWQm4ykR) までお願いします。
@@ -31,7 +33,3 @@ RemakeRemixを元に作成されたADです。
 
 # ライセンス
 このリポジトリでは、以下のライブラリを除いて、[MIT License](LICENSE)が適用されます。<br>
-
-
-## コラボレーター以外によるプルリクエストについて
-コラボレーター以外によるプルリクエストは、最適化, バグ修正に限り歓迎しています。
