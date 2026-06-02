@@ -64,6 +64,8 @@ scoreboard objectives add CoolTickSpan dummy "クールティックスパン"
 scoreboard objectives add CoolTickCounter minecraft.custom:time_since_death
 scoreboard objectives add MPIncrement dummy "MP定期回復量"
 scoreboard objectives add MPConsumption dummy "MP消費量"
+scoreboard objectives add MPHealingWait dummy {"text":"MP回復ウェイト"}
+scoreboard objectives add MPAcceleration dummy {"text":"MP回復加速量"}
 
 ### 乱数
 scoreboard objectives add Random dummy "乱数"
