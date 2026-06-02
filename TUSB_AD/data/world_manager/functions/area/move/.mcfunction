@@ -25,6 +25,7 @@ execute if entity @s[scores={AreaChangeFlag=-90}] run function world_manager:are
 execute if entity @s[scores={AreaChangeFlag=-89}] run function world_manager:area/move/nether_dungeon
 execute if entity @s[scores={AreaChangeFlag=110}] run function world_manager:area/move/end
 
+
 ### エリア移動時に初期地点があった場合、そこに移動させる
 ### TODO: あとで座標ベタ打ちに変えた方がいいよ
 execute if entity @s[scores={AreaChangeFlag=-100..}] run tp @s @e[distance=..4,tag=ViewPoint,limit=1]

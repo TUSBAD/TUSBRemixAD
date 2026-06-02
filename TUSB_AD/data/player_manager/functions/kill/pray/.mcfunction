@@ -6,6 +6,6 @@
 tellraw @a [{"selector":"@s"},{"text":"は祈りをささげた…!?","color":"dark_red","bold":true}]
 
 scoreboard players set @s MP 0
-execute positioned -64 15.0625 30 in minecraft:overworld run spawnpoint @s ~ ~ ~
+# execute positioned -64 15.0625 30 in minecraft:overworld run spawnpoint @s ~ ~ ~
 kill @s
 scoreboard players set @s kill 0
