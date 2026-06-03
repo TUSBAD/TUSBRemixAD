@@ -1,0 +1,11 @@
+{
+  "replace": true,
+  "values": [
+    "rabbit",
+    "stray",
+    "endermite",
+    "fox",
+    "snow_golem",
+    "sniffer"
+  ]
+}

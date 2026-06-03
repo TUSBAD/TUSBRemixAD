@@ -1,0 +1,22 @@
+{
+    "replace": true,
+    "values": [
+        "on_fire",
+        "in_wall",
+        "cramming",
+        "drown",
+        "fly_into_wall",
+        "generic",
+        "wither",
+        "dragon_breath",
+        "freeze",
+        "starve",
+        "fall",
+        "stalagmite",
+        "out_of_world",
+        "sonic_boom",
+        "falling_anvil",
+        "falling_block",
+        "falling_stalactite"
+    ]
+}

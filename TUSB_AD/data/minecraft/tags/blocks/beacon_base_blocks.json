@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:barrier",
+    "minecraft:tnt",
+    "minecraft:bedrock",
+    "minecraft:netherite_block"
+  ]
+}

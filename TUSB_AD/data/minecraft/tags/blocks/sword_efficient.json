@@ -1,0 +1,10 @@
+{
+  "values": [
+ "#minecraft:wool",
+ "minecraft:sponge",
+ "minecraft:wet_sponge",
+ "#minecraft:wool_carpets",
+ "minecraft:moss_block",
+ "minecraft:moss_carpet"
+  ]
+}
