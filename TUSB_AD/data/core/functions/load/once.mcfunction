@@ -353,7 +353,7 @@ scoreboard objectives add hcmode trigger
 scoreboard objectives add CountDown dummy
 
 # 生存tick
-scoreboard objectives add LiveTime dummy
+scoreboard objectives add LiveTime minecraft.custom:minecraft.time_since_death
 
 # トカルト無効score
 scoreboard objectives add TocultInvalid dummy

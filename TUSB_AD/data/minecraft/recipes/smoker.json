@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "CFC",
+    "LLL"
+  ],
+  "key": {
+    "F": {
+      "item": "minecraft:furnace"
+    },
+    "L": {
+      "tag": "minecraft:logs"
+    },
+    "C": {
+      "item": "minecraft:campfire"
+    }
+  },
+  "result": {
+    "item": "minecraft:smoker"
+  }
+}

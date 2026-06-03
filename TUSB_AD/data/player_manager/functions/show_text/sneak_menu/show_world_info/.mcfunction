@@ -16,7 +16,7 @@ execute if score @s ChangeSettings matches 203 run function player_manager:show_
 execute if score @s ChangeSettings matches 204 run function player_manager:show_text/sneak_menu/show_world_info/page_4
 
 # 210-219: 通常世界下層
-# execute if score @s ChangeSettings matches 210..219 run function player_manager:show_text/sneak_menu/show_world_info/skylands/
+ execute if score @s ChangeSettings matches 210..219 run function player_manager:show_text/sneak_menu/show_world_info/skylands/
 #> 230-239: 交易島
  execute if score @s ChangeSettings matches 230..239 run function player_manager:show_text/sneak_menu/show_world_info/tradeisland/
 # 220-229: 通常世界上層

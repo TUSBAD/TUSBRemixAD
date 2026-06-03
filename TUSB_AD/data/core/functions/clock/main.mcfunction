@@ -104,4 +104,4 @@
     execute at @e[tag=Boss_MarkerC] run tag @a[distance=..70] add CantTp
 
 # タイム計測
-    execute as @e[tag=Timer] run scoreboard players add @s LiveTime 1
+    #execute as @e[tag=Timer] run scoreboard players add @s LiveTime 1

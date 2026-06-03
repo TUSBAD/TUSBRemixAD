@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": {
+    "item": "minecraft:diamond_sword"
+  },
+  "template": {
+    "item": "minecraft:bedrock"
+  },
+  "addition": {
+    "item": "minecraft:suspicious_sand"
+  },
+  "result": {
+    "item": "minecraft:netherite_sword"
+  }
+}

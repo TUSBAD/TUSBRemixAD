@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OSO",
+    "OBO",
+    "OSO"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:shulker_shell"
+    },
+    "B": {
+      "item": "minecraft:shulker_box"
+    },
+    "O": {
+      "item": "minecraft:bedrock"
+    }
+  },
+  "result": {
+    "item": "minecraft:shulker_box"
+  }
+}
