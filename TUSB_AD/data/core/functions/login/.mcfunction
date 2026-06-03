@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### サーバープロパティ間違ってる時のために、難易度ハードにする
-difficulty hard
+function core:login/force_difficulty
 
 ### 正常な時
 execute if entity @s[tag=Resolved] if score @s Job = @s Job run function core:login/normal

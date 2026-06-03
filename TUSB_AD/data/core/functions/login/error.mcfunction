@@ -5,4 +5,9 @@
 
 ### 初期化済みなのに、スコアが消えているなら、プレイヤー名が変わっているので、お知らせする
 function core:error/warning
-tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.CRIT"},{"text":"\nプレイヤー名の変更を検知しました。ステータスが引き継がれていません。\n以下のページを参考にワールドデータのスコアボードファイルを修正してください。\n"},{"text":"https://ai-akaishi.hatenablog.jp/entry/ar970627\n","clickEvent":{"action":"open_url","value":"https://ai-akaishi.hatenablog.jp/entry/ar970627"}},{"translate":"修正が必要なプレイヤー : ","with":[{"selector":"@s"}]}]
+tellraw @a ""
+tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.CRIT"},{"translate":"[INFO]\n プレイヤー名の変更を検知しました。ステータスが引き継がれていません。\n以下のページを参考にワールドデータのスコアボードファイルを修正してください。"}]
+tellraw @a ""
+tellraw @a {"translate":"https://ai-akaishi.hatenablog.jp/entry/ar970627","underlined":true,"clickEvent":{"action":"open_url","value":"https://ai-akaishi.hatenablog.jp/entry/ar970627"}}
+tellraw @a ""
+tellraw @a {"translate":"修正が必要なプレイヤー : %1$s","with":[{"selector":"@s"}]}
