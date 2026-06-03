@@ -15,26 +15,20 @@ execute if data storage tusb_remake: difficult{world:"hardcore"} run tellraw @s 
 execute if data storage tusb_remake: difficult{world:"nightmare"} run tellraw @s [{"translate":"現在の難易度"}," : ",{"translate":"ナイトメア","color":"#0000ff"}]
 execute if data storage tusb_remake: difficult{world:"debug"} run tellraw @s [{"translate":"現在の難易度"}," : ",{"translate":"デバッグ","color":"dark_gray"}]
 tellraw @s ""
+tellraw @s [{"storage":"tusb_remake:","nbt":"Prefix.TIPS"},{"translate":"各ディメンション名を%1$sで詳細情報を確認できます。","bold": true,"with":[{"translate":"クリック","color":"#ff9e57","bold": true}]}]
+tellraw @s ""
 
 #> 250-259: 地下世界
-execute store result score _ Calc run data get storage area: purified.underworld
-execute store result score # _ run function calc:island/get_total/underworld
-tellraw @s [{"translate":"地下世界","color":"#586bfe","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 250"}}," : ",{"score":{"name": "_","objective": "Calc"}},"/",{"score":{"name": "#","objective": "_"}}]
+tellraw @s [{"nbt":"area_name.underworld","storage":"tusb_remake:","color":"#586bfe","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 250"}}," : ",{"nbt":"conquer.count.underworld","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.underworld","storage":"tusb_remake:"}]
 
 #> 260-269: ガリバーランド
-execute store result score _ Calc run data get storage area: purified.gullivers_land
-execute store result score # _ run function calc:island/get_total/gullivers_land
-tellraw @s [{"translate":"ガリバーランド","color":"#ffd700","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 260"}}," : ",{"score":{"name": "_","objective": "Calc"}},"/",{"score":{"name": "#","objective": "_"}}]
+tellraw @s [{"nbt":"area_name.gullivers_land","storage":"tusb_remake:","color":"#ffd700","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 260"}}," : ",{"nbt":"conquer.count.gullivers_land","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.gullivers_land","storage":"tusb_remake:"}]
 
 #> 270-279: テーブル
-execute store result score _ Calc run data get storage area: purified.table_mountain
-execute store result score # _ run function calc:island/get_total/table_mountain
-tellraw @s [{"translate":"テーブルマウンテン","color":"#31fb2d","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 270"}}," : ",{"score":{"name": "_","objective": "Calc"}},"/",{"score":{"name": "#","objective": "_"}}]
+tellraw @s [{"nbt":"area_name.table_mountain","storage":"tusb_remake:","color":"#31fb2d","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 270"}}," : ",{"nbt":"conquer.count.table_mountain","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.table_mountain","storage":"tusb_remake:"}]
 
-#> 280-289: 煉獄
-execute store result score _ Calc run data get storage area: purified.purgatory
-execute store result score # _ run function calc:island/get_total/purgatory
-tellraw @s [{"translate":"煉 獄","color":"#f42f2f","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 280"}}," : ",{"score":{"name": "_","objective": "Calc"}},"/",{"score":{"name": "#","objective": "_"}}]
+#> 280-289: ネザー
+tellraw @s [{"nbt":"area_name.nether","storage":"tusb_remake:","color":"#f42f2f","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 280"}}," : ",{"nbt":"conquer.count.nether","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.nether","storage":"tusb_remake:"}]
 
 tellraw @s ""
 tellraw @s ""

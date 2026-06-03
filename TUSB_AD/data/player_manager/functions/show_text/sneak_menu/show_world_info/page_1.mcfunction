@@ -15,26 +15,20 @@ execute if data storage tusb_remake: difficult{world:"hardcore"} run tellraw @s 
 execute if data storage tusb_remake: difficult{world:"nightmare"} run tellraw @s [{"translate":"現在の難易度"}," : ",{"translate":"ナイトメア","color":"#0000ff"}]
 execute if data storage tusb_remake: difficult{world:"debug"} run tellraw @s [{"translate":"現在の難易度"}," : ",{"translate":"デバッグ","color":"dark_gray"}]
 tellraw @s ""
+tellraw @s [{"storage":"tusb_remake:","nbt":"Prefix.TIPS"},{"translate":"各ディメンション名を%1$sで詳細情報を確認できます。","bold": true,"with":[{"translate":"クリック","color":"#ff9e57","bold": true}]}]
+tellraw @s ""
 
 #> 210-219: 通常世界下層
-execute store result score _ Calc run data get storage area: purified.skylands
-execute store result score # _ run function calc:island/get_total/skylands
-tellraw @s [{"translate":"通常世界 下層","color":"#b7b7b7","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 210"}}," : ",{"score":{"name": "_","objective": "Calc"}},"/",{"score":{"name": "#","objective": "_"}}]
+tellraw @s [{"nbt":"area_name.skyland","storage":"tusb_remake:","color":"#b7b7b7","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 210"}}," : ",{"nbt":"conquer.count.skyland","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.skyland","storage":"tusb_remake:"}]
 
 #> 220-229: 通常世界上層
-execute store result score _ Calc run data get storage area: purified.rev_skylands
-execute store result score # _ run function calc:island/get_total/rev_skylands
-tellraw @s [{"translate":"通常世界 上層","color":"#ff3948","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 220"}}," : ",{"score":{"name": "_","objective": "Calc"}},"/",{"score":{"name": "#","objective": "_"}}]
+tellraw @s [{"nbt":"area_name.new_skyland","storage":"tusb_remake:","color":"#ff3948","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 220"}}," : ",{"nbt":"conquer.count.new_skyland","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.new_skyland","storage":"tusb_remake:"}]
 
 #> 230-239: 交易島
-execute store result score _ Calc run data get storage area: purified.tradeisland
-execute store result score # _ run function calc:island/get_total/tradeisland
-tellraw @s [{"translate":"交易島","color":"#70f158","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 230"}}," : ",{"score":{"name": "_","objective": "Calc"}},"/",{"score":{"name": "#","objective": "_"}}]
+tellraw @s [{"nbt":"area_name.tradeisland","storage":"tusb_remake:","color":"#70f158","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 230"}}," : ",{"nbt":"conquer.count.tradeisland","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.tradeisland","storage":"tusb_remake:"}]
 
 #> 240-249: クラウディア
-execute store result score _ Calc run data get storage area: purified.cloudia
-execute store result score # _ run function calc:island/get_total/cloudia
-tellraw @s [{"translate":"クラウディア","color":"#23DDFA","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 240"}}," : ",{"score":{"name": "_","objective": "Calc"}},"/",{"score":{"name": "#","objective": "_"}}]
+tellraw @s [{"nbt":"area_name.cloudia","storage":"tusb_remake:","color":"#23DDFA","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 240"}}," : ",{"nbt":"conquer.count.cloudia","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.tradeisland","storage":"tusb_remake:"}]
 
 tellraw @s ""
 tellraw @s ""

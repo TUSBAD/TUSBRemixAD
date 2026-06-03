@@ -20,4 +20,4 @@ execute if score @s ChangeSettings matches 204 run function player_manager:show_
 #> 230-239: 交易島
  execute if score @s ChangeSettings matches 230..239 run function player_manager:show_text/sneak_menu/show_world_info/tradeisland/
 # 220-229: 通常世界上層
-# execute if score @s ChangeSettings matches 230..239 run function player_manager:show_text/sneak_menu/show_world_info/rev_skylands/
+# execute if score @s ChangeSettings matches 230..239 run function player_manager:show_text/sneak_menu/show_world_info/new_skylands/
