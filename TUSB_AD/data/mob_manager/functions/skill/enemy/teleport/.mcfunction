@@ -4,6 +4,8 @@
 #
 # @within function mob_manager:skill/invoke
 
-tellraw @a[distance=..32] ["",{"selector":"@s","bold":true},{"translate":" は","color":"white","bold":true},{"translate":" %1$s を唱えた！","color":"white","bold":true,"with":[{"translate":"§f§lテレポート§r","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"80m以内の自身に最も近いプレイヤーにTPする。","color":"red"}}}]}]
+# 乱数を取得
+data modify storage math: in set value [1,2]
+function api:dice/score
 
-tp @s @p[distance=..80]
+execute if score @s Random matches 1 run function mob_manager:skill/enemy/teleport/act

@@ -39,7 +39,7 @@
     execute as @e[tag=Freeze,nbt={PortalCooldown:0}] run function core:clock/sec3
 
 # 敵スキル発動チェック
-    execute as @e[tag=SkillMob] at @s run function mob_manager:gimmic/skill/
+    execute as @e[tag=SkillMob] at @s run function mob_manager:skill/
 
 # 嫌な予感を実行する
     execute as @a[predicate=world_manager:area/skyland,tag=CauseEvent] at @s if score #SecCount Global matches 0.. run function world_manager:event/rank/
@@ -86,7 +86,7 @@
     execute as @a[predicate=player_manager:player] at @s if block ~ ~ ~ #lib:unbreakable run function player_manager:kill/unbreakable_block
 
 # gamemasterの音
-    execute at @e[tag=GMSP,limit=1] run playsound minecraft:entity.warden.heartbeat master @a[distance=..60] ~ ~ ~ 0.6 1 0.0
+    execute at @e[tag=GameMasterSP,limit=1] run playsound minecraft:entity.warden.heartbeat master @a[distance=..60] ~ ~ ~ 0.6 1 0.0
 
 # 煉獄マグマ
     execute as @a if dimension minecraft:the_nether unless score @s PurgatoryInvalid matches 1.. at @s if block ~ ~0.5 ~ minecraft:lava run function world_manager:dimension/nether/in_lava
