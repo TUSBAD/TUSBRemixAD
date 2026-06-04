@@ -1,14 +1,20 @@
+
 {
 	"criteria": {
 		"something": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"item": {
-					"items": [
-						"minecraft:magma_cube_spawn_egg"
-					],
-					"nbt": "{EntityTag:{Tags:[\"ModeSwitch\"]}}"
-				}
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": [
+								"minecraft:magma_cube_spawn_egg"
+							],
+							"nbt": "{EntityTag:{Tags:[\"ModeSwitch\"]}}"
+						}
+					}
+				]
 			}
 		}
 	},

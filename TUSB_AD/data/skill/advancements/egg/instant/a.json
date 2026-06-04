@@ -3,12 +3,17 @@
 		"something": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"item": {
-					"items": [
-						"minecraft:rabbit_spawn_egg"
-					],
-					"nbt": "{EntityTag:{Tags:[\"SkillEgg\",\"Instant\",\"Ruby\"]}}"
-				}
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": [
+								"minecraft:rabbit_spawn_egg"
+							],
+							"nbt": "{EntityTag:{Tags:[\"SkillEgg\",\"Instant\",\"Ruby\"]}}"
+						}
+					}
+				]
 			}
 		}
 	},

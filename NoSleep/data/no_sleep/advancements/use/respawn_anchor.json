@@ -3,17 +3,22 @@
         "check": {
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:respawn_anchor"
-                        ]
-                    }
-                },
                 "player": [
                     {
                         "condition": "reference",
                         "name": "no_sleep:can_use_bed"
+                    }
+                ],
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:respawn_anchor"
+                                ]
+                            }
+                        }
                     }
                 ]
             }
