@@ -4,7 +4,7 @@
 		"name": "world_manager:area/tocult_colde"
 	},
 	{
-		"condition": "minecraft:alternative",
+		"condition": "minecraft:any_of",
 		"terms": [
 			{
 				"condition": "minecraft:entity_scores",
