@@ -13,3 +13,6 @@
 [submodule "NoSleep"]
 	path = NoSleep
 	url = https://github.com/Ai-Akaishi/NoSleep.git
+[submodule "CloseDetector"]
+	path = CloseDetector
+	url = https://github.com/Ai-Akaishi/CloseDetector.git
