@@ -3,12 +3,17 @@
 		"something": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"item": {
-					"items": [
-						"minecraft:slime_spawn_egg"
-					],
-					"nbt": "{EntityTag:{Tags:[\"SkillEgg\",\"Instant\",\"Sapphire\"]}}"
-				}
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"items": [
+								"minecraft:slime_spawn_egg"
+							],
+							"nbt": "{EntityTag:{Tags:[\"SkillEgg\",\"Instant\",\"Sapphire\"]}}"
+						}
+					}
+				]
 			}
 		}
 	},
