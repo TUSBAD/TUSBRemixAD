@@ -11,12 +11,4 @@ execute if data storage debug: Debug{Mode:-1s} run function debug:debug_menu/sho
 
 stopsound @s master minecraft:ui.button.click
 execute at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 0.7 1
-tellraw @s ""
-tellraw @s ""
-tellraw @s ""
-tellraw @s ""
-tellraw @s ""
-tellraw @s ""
-tellraw @s ""
-tellraw @s ""
 tellraw @s "====================================================="
