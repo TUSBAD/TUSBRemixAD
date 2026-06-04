@@ -11,6 +11,7 @@ function core:difficulty/color/debug
 data modify storage core: difficult.before set from storage core: difficult.world
 data modify storage core: difficult.world set value "debug"
 
+scoreboard players set #Difficulty Difficulty 1
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
 gamerule keepInventory true

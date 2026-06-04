@@ -12,6 +12,7 @@ execute unless data storage tusb_remake: difficult{world:"casual"} run function 
 data modify storage tusb_remake: difficult.before set from storage tusb_remake: difficult.world
 data modify storage tusb_remake: difficult.world set value "casual"
 
+scoreboard players set #Difficulty Difficulty 3
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
 gamerule keepInventory false

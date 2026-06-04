@@ -11,6 +11,7 @@ execute unless data storage tusb_remake: difficult{world:"hardcore"} run functio
 data modify storage tusb_remake: difficult.before set from storage tusb_remake: difficult.world
 data modify storage tusb_remake: difficult.world set value "hardcore"
 
+scoreboard players set #Difficulty Difficulty 3
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
 gamerule keepInventory false
