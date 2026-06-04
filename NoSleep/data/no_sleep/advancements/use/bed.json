@@ -7,7 +7,9 @@
                     {
                         "condition": "reference",
                         "name": "no_sleep:can_use_bed"
-                    },
+                    }
+                ],
+                "location": [
                     {
                         "condition": "minecraft:location_check",
                         "predicate": {
