@@ -19,16 +19,16 @@ tellraw @s [{"storage":"tusb_remake:","nbt":"Prefix.TIPS"},{"translate":"各デ�
 tellraw @s ""
 
 #> 290-299: トカルト
-tellraw @s [{"nbt":"area_name.tocult_colde","color":"#14fffb","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 290"}}," : ",{"nbt":"conquer.count.tocult_colde","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.tocult_colde","storage":"tusb_remake:"}]
+tellraw @s [{"nbt":"area_name.tocult_colde","storage":"tusb_remake:","color":"#14fffb","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 290"}}," : ",{"nbt":"conquer.count.tocult_colde","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.tocult_colde","storage":"tusb_remake:"}]
 
 #> 300-309: 図書館
-tellraw @s [{"nbt":"area_name.library","color":"#fda31c","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 300"}}," : ",{"nbt":"conquer.count.library","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.library","storage":"tusb_remake:"}]
+tellraw @s [{"nbt":"area_name.library","storage":"tusb_remake:","color":"#fda31c","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 300"}}," : ",{"nbt":"conquer.count.library","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.library","storage":"tusb_remake:"}]
 
 #> 310-319: ニヴル
-tellraw @s [{"nbt":"area_name.niflheimr","color":"#2693ff","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 310"}}," : ",{"nbt":"conquer.count.niflheimr","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.niflheimr","storage":"tusb_remake:"}]
+tellraw @s [{"nbt":"area_name.niflheimr","storage":"tusb_remake:","color":"#2693ff","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 310"}}," : ",{"nbt":"conquer.count.niflheimr","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.niflheimr","storage":"tusb_remake:"}]
 
 #> 320-329: ヘルヘイム
-tellraw @s [{"nbt":"area_name.hellheimr","color":"#87dada","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 320"}}," : ",{"nbt":"conquer.count.hellheimr","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.hellheimr","storage":"tusb_remake:"}]
+tellraw @s [{"nbt":"area_name.hellheimr","storage":"tusb_remake:","color":"#87dada","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 320"}}," : ",{"nbt":"conquer.count.hellheimr","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.hellheimr","storage":"tusb_remake:"}]
 
 tellraw @s ""
 tellraw @s ""

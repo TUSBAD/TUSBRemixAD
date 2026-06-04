@@ -9,25 +9,33 @@
                         "name": "player_manager:is_interactable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "tag": "minecraft:buttons"
-                    },
-                    "position": {
-                        "x": {
-                            "min": -2739,
-                            "max": -2738
-                        },
-                        "y": {
-                            "min": 90,
-                            "max": 91
-                        },
-                        "z": {
-                            "min": -363,
-                            "max": -362
+                "location": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "position": {
+                                "block": {
+                                    "tag": "minecraft:buttons"
+                                },
+                                "position": {
+                                    "x": {
+                                        "min": -2739,
+                                        "max": -2738
+                                    },
+                                    "y": {
+                                        "min": 90,
+                                        "max": 91
+                                    },
+                                    "z": {
+                                        "min": -363,
+                                        "max": -362
+                                    }
+                                }
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         "super_craft2": {
@@ -39,25 +47,33 @@
                         "name": "player_manager:is_interactable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "tag": "minecraft:buttons"
-                    },
-                    "position": {
-                        "x": {
-                            "min": -2738,
-                            "max": -2737
-                        },
-                        "y": {
-                            "min": 90,
-                            "max": 91
-                        },
-                        "z": {
-                            "min": -362,
-                            "max": -361
+                "location": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "position": {
+                                "block": {
+                                    "tag": "minecraft:buttons"
+                                },
+                                "position": {
+                                    "x": {
+                                        "min": -2738,
+                                        "max": -2737
+                                    },
+                                    "y": {
+                                        "min": 90,
+                                        "max": 91
+                                    },
+                                    "z": {
+                                        "min": -362,
+                                        "max": -361
+                                    }
+                                }
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         "all_button": {
@@ -69,11 +85,17 @@
                         "name": "player_manager:is_interactable"
                     }
                 ],
-                "location": {
-                    "block": {
-                        "tag": "minecraft:buttons"
+                "location": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "block": {
+                                "tag": "minecraft:buttons"
+                            }
+                        }
                     }
-                }
+                ]
             }
         }
     },
@@ -85,6 +107,6 @@
         ]
     ],
     "rewards": {
-        "function": "player_manager:block_interact/button_event/"
+        "function": "player_manager:button_event/"
     }
 }

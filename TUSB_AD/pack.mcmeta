@@ -2,5 +2,13 @@
     "pack": {
         "pack_format": 14,
         "description": "TUSB Remake Remix Data Pack"
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancements/.*"
+            }
+        ]
     }
 }

@@ -19,16 +19,16 @@ tellraw @s [{"storage":"tusb_remake:","nbt":"Prefix.TIPS"},{"translate":"各デ�
 tellraw @s ""
 
 #> 330-339: エンド
-tellraw @s [{"nbt":"area_name.end","color":"#9900d1","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 330"}}," : ",{"nbt":"conquer.count.end","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.end","storage":"tusb_remake:"}]
+tellraw @s [{"nbt":"area_name.end","storage":"tusb_remake:","color":"#9900d1","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 330"}}," : ",{"nbt":"conquer.count.end","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.end","storage":"tusb_remake:"}]
 
 #> 340-349: 異空間
-tellraw @s [{"nbt":"area_name.unusual_space","color":"#e60005","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 340"}}," : ",{"nbt":"conquer.count.unusual_space","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.unusual_space","storage":"tusb_remake:"}]
+tellraw @s [{"nbt":"area_name.unusual_space","storage":"tusb_remake:","color":"#e60005","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 340"}}," : ",{"nbt":"conquer.count.unusual_space","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.unusual_space","storage":"tusb_remake:"}]
 
 #> 350-359: 異次元
-tellraw @s [{"nbt":"area_name.another_dimension","color":"#02ca9d","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 350"}}," : ",{"nbt":"conquer.count.another_dimension","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.another_dimension","storage":"tusb_remake:"}]
+tellraw @s [{"nbt":"area_name.another_dimension","storage":"tusb_remake:","color":"#02ca9d","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 350"}}," : ",{"nbt":"conquer.count.another_dimension","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.another_dimension","storage":"tusb_remake:"}]
 
 #> 360-369: 朽ち果てた戦場
-tellraw @s [{"nbt":"area_name.ancient_field","color":"#b9176c","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 360"}}," : ",{"nbt":"conquer.count.ancient_field","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.ancient_field","storage":"tusb_remake:"}]
+tellraw @s [{"nbt":"area_name.ancient_field","storage":"tusb_remake:","color":"#b9176c","clickEvent":{"action": "run_command","value": "/trigger ChangeSettings set 360"}}," : ",{"nbt":"conquer.count.ancient_field","storage":"tusb_remake:"},"/",{"nbt":"conquer.max.ancient_field","storage":"tusb_remake:"}]
 
 tellraw @s ""
 tellraw @s ""
