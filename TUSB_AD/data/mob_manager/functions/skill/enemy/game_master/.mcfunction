@@ -63,8 +63,8 @@
         scoreboard players set _ TUSB 3
         scoreboard players operation @s Random %= _ TUSB
     # 今のモードと同じなら変える
-        execute if score @s Random matches 1 if entity @s[tag=GMC] run scoreboard players set @s Random 0
-        execute if score @s Random matches 2 if entity @s[tag=GMSP] run scoreboard players set @s Random 0
+        execute if score @s Random matches 1 if entity @s[tag=GameMasterC] run scoreboard players set @s Random 0
+        execute if score @s Random matches 2 if entity @s[tag=GameMasterSP] run scoreboard players set @s Random 0
     # サバイバルモード
         execute if score @s Random matches 0 run function mob_manager:skill/enemy/game_master/su
     # クリエイティブモード
