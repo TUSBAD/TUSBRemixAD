@@ -7,9 +7,6 @@
 [submodule "PlayerItemTuner"]
 	path = PlayerItemTuner
 	url = https://github.com/Ai-Akaishi/PlayerItemTuner.git
-[submodule "NoSleep"]
-	path = NoSleep
-	url = https://github.com/Ai-Akaishi/NoSleep.git
 [submodule "CloseDetector"]
 	path = CloseDetector
 	url = https://github.com/Ai-Akaishi/CloseDetector.git
