@@ -1,9 +1,9 @@
 {
-    "type": "area:newskyland",
+    "type": "world_manager:newskyland",
     "generator": {
       "type": "minecraft:flat",
       "settings": {
-        "biome": "area:newskyland",
+        "biome": "world_manager:newskyland",
         "layers": [],
         "structure_overrides": []
       }
