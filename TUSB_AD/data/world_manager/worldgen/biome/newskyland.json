@@ -1,0 +1,35 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "has_precipitation": true,
+  "temperature_modifier": "none",
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 8840958,
+    "fog_color": 4752894,
+    "water_color": 28415,
+    "water_fog_color": 13055,
+    "grass_color": 9698924,
+    "foliage_color": 16689639,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "additions_sound": {
+      "sound": "minecraft:block.amethyst_block.chime",
+      "tick_chance": 0.005
+    },
+    "music": {
+      "sound": "minecraft:music.stand_tall",
+      "min_delay": 0,
+      "max_delay": 2000,
+      "replace_current_music": true
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}
