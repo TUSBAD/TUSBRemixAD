@@ -5,7 +5,7 @@
 
 ### 経験値を得られるプレイヤーがいた場合、経験値取得メッセージを出す
 tag @a[scores={HP=1..,Level=1..}] add ExpTarget
-execute if entity @a[distance=..50,tag=ExpTarget,limit=1] run function player_manager:job/pick_exp/get
+execute if entity @a[distance=..50,tag=ExpTarget,limit=1] run function player_manager:job/pick_exp/count
 ### 経験値を得られなかったプレイヤーがいた場合、経験値取得失敗メッセージを出す
 execute if entity @a[tag=ExpTarget,limit=1] run function player_manager:job/pick_exp/get
 
