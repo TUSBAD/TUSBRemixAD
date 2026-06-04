@@ -1,6 +1,3 @@
-[submodule "AiUtil"]
-	path = AiUtil
-	url = https://github.com/Ai-Akaishi/AiUtil.git
 [submodule "AiMath"]
 	path = AiMath
 	url = https://github.com/Ai-Akaishi/AiMath.git
