@@ -2,6 +2,8 @@
 	"values": [
 		"minecraft:snow_golem",
 		"minecraft:iron_golem",
-        "minecraft:wolf"
+		"minecraft:wolf",
+		"minecraft:sniffer",
+		"minecraft:camel"
 	]
 }

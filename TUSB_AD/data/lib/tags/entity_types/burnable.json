@@ -61,6 +61,8 @@
 		"minecraft:wolf",
 		"minecraft:zombie",
 		"minecraft:zombie_horse",
-		"minecraft:zombie_villager"
+		"minecraft:zombie_villager",
+		"minecraft:sniffer",
+		"minecraft:camel"
 	]
 }

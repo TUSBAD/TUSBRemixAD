@@ -9,6 +9,7 @@
         "mangrove_log",
         "crimson_stem",
         "warped_stem",
+        "cherry_log",
         "stripped_oak_log",
         "stripped_birch_log",
         "stripped_spruce_log",
@@ -18,6 +19,7 @@
         "stripped_mangrove_log",
         "stripped_crimson_stem",
         "stripped_warped_stem",
+        "stripped_cherry_log",
         "oak_wood",
         "birch_wood",
         "spruce_wood",
@@ -27,6 +29,7 @@
         "mangrove_wood",
         "crimson_hyphae",
         "warped_hyphae",
+        "cherry_wood",
         "stripped_oak_wood",
         "stripped_birch_wood",
         "stripped_spruce_wood",
@@ -35,6 +38,7 @@
         "stripped_dark_oak_wood",
         "stripped_mangrove_wood",
         "stripped_crimson_hyphae",
-        "stripped_warped_hyphae"
+        "stripped_warped_hyphae",
+        "stripped_cherry_wood"
     ]
 }
