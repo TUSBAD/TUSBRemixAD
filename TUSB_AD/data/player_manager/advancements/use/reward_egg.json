@@ -3,10 +3,15 @@
 		"something": {
 			"trigger": "minecraft:item_used_on_block",
 			"conditions": {
-				"item": {
-					"tag": "tusb_remake:spawn_egg",
-					"nbt": "{EntityTag:{Tags:[\"RewardEgg\"]}}"
-				}
+				"location": [
+					{
+						"condition": "minecraft:match_tool",
+						"predicate": {
+							"tag": "tusb_remake:spawn_egg",
+							"nbt": "{EntityTag:{Tags:[\"RewardEgg\"]}}"
+						}
+					}
+				]
 			}
 		}
 	},
