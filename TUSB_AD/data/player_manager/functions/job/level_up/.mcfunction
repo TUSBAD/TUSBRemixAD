@@ -27,7 +27,8 @@ scoreboard players set @s[scores={HPMax=51..}] HPMax 50
 #execute store result score @s MPIncrement run data get storage tusb_remake: _
 
 ### レベルアップの演出
-playsound minecraft:entity.player.levelup master @a[distance=..16] ~ ~ ~ 2 0.7 0
+stopsound @a[distance=..16] master minecraft:ui.toast.challenge_complete
+playsound minecraft:ui.toast.challenge_complete master @a[distance=..16] ~ ~ ~ 0.8 2
 particle minecraft:happy_villager ~ ~ ~ 1 2 1 0.001 100 normal
 summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{}},Tags:[LevelUpFirework]}
 
