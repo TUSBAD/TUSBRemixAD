@@ -20,7 +20,7 @@ execute if entity @s[advancements={player_manager:block_interact/sign_event={ins
 execute if entity @s[advancements={player_manager:block_interact/sign_event={instant_change_sapphire=true}}] run function job:display/instant/b
 
 ## リセットMP表示
-execute if entity @s[advancements={player_manager:block_interact/sign_event={reset_mp=true}}] run function player_manager:mp/reset_display
+#execute if entity @s[advancements={player_manager:block_interact/sign_event={reset_mp=true}}] run function player_manager:mp/reset_display
 
 ## ヘルクライムのリセット
 execute if entity @s[advancements={player_manager:block_interact/sign_event={hell_climb=true}}] run function world_manager:dimension/nether/athletic/hell_climb/start
