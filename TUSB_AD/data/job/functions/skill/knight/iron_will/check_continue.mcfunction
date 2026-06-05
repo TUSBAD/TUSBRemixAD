@@ -18,4 +18,4 @@ function #oh_my_dat:please
 data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.IronWillPos set from entity Pos
 tag @s add IronWillRollback
 
-advancement revoke @s only skill:trigger/knight/iron_will/check_continue
+advancement revoke @s only job:trigger/knight/iron_will/check_continue

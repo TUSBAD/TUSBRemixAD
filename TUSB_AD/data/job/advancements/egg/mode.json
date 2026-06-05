@@ -19,6 +19,6 @@
 		}
 	},
 	"rewards": {
-		"function": "skill:egg/mode/"
+		"function": "job:egg/mode/"
 	}
 }

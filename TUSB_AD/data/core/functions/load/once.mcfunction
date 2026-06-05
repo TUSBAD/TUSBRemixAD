@@ -60,9 +60,8 @@ scoreboard objectives add MP dummy {"text": "MP","color": "#3ecfff","bold": true
 scoreboard objectives add MPMax dummy "最大MP"
 scoreboard objectives add MPMaxFlag dummy "MP回復済フラグ"
 ### MP回復タイミング
-scoreboard objectives add CoolTickSpan dummy "クールティックスパン"
-scoreboard objectives add CoolTickCounter minecraft.custom:time_since_death
-scoreboard objectives add MPConsumption dummy "MP回復量"
+scoreboard objectives add MPConsumption dummy "MP消費量"
+scoreboard objectives add MPRecovery dummy "MP回復量"
 scoreboard objectives add MPHealingWait dummy {"text":"MP回復ウェイト"}
 scoreboard objectives add MPAcceleration dummy {"text":"MP回復加速量"}
 
@@ -125,7 +124,7 @@ scoreboard objectives add SpawnZ dummy
 data modify storage tusb_remake: skill_liberation set value 0b
 
 ### スキルテーブルを初期化
-function skill:init_table/
+function job:init_table/
 
 ### 村人会話 => advancements
 scoreboard objectives add PastorFlag trigger "牧師会話フラグ"
@@ -280,7 +279,7 @@ worldborder set 7000
 
 ### setdisplay
 scoreboard objectives setdisplay list Level
-scoreboard objectives setdisplay sidebar MP
+#scoreboard objectives setdisplay sidebar MP
 scoreboard objectives setdisplay belowName HP
 scoreboard players reset * MP
 
@@ -388,7 +387,6 @@ data modify storage tusb_remake: Prefix.CRIT set value "§4CRITICAL >> §r"
 #> 変数スコア
 scoreboard objectives add __ dummy {"text":"一時変数 その2"}
 scoreboard objectives add Calc dummy {"text":"計算変数"}
-scoreboard objectives add BeforeXP dummy {"text":"前のXP量"}
 scoreboard objectives add Difficulty dummy {"text":"難易度保存スコア"}
 
 #> Function実行

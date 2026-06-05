@@ -11,4 +11,4 @@ execute as @e[distance=0,tag=!BlastShot,type=#lib:arrow,limit=1] run function jo
 function job:skill/archer/blast_shot/schedule/
 
 ### 飛んでるやつの判定有効化
-function skill:trigger/projectile/
+function job:trigger/projectile/

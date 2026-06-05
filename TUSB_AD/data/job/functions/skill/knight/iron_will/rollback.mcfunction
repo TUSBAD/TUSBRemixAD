@@ -13,4 +13,4 @@ tag @s remove IronWillRollbackTarget
 ### Motionは消えていなくても慣性は消えているはずなのでタグクリア
 tag @s remove IronWillRollback
 
-advancement revoke @s only skill:trigger/knight/iron_will/rollback
+advancement revoke @s only job:trigger/knight/iron_will/rollback

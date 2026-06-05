@@ -3,7 +3,7 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-scoreboard objectives remove Settings 
+scoreboard objectives remove Settings
 # ### 観光モード
 # scoreboard players set DeathCount Settings 0
 # ### デバッグモード
@@ -45,34 +45,34 @@ scoreboard players reset * HP
 # scoreboard players reset * HPChanging
 # scoreboard players reset * Food
 # scoreboard players reset * FoodChanging
-# scoreboard players reset * Hunger 
+# scoreboard players reset * Hunger
 # scoreboard players reset * Armor
-scoreboard players reset * HPMax 
-# scoreboard players reset * FoodMax 
+scoreboard players reset * HPMax
+# scoreboard players reset * FoodMax
 
 # scoreboard players reset * RefreshHPMax
-# scoreboard players reset * HealCount 
+# scoreboard players reset * HealCount
 ## なくせるかも？
-# scoreboard players reset * EventRank 
+# scoreboard players reset * EventRank
 
-# scoreboard players reset * TutorialRead 
-# scoreboard players reset * TutorialReading 
+# scoreboard players reset * TutorialRead
+# scoreboard players reset * TutorialReading
 # scoreboard players reset * Drop
 
 ### MP
-scoreboard players reset * MP 
-scoreboard players reset * MPMax 
-# scoreboard players reset * MPMaxFlag 
+scoreboard players reset * MP
+scoreboard players reset * MPMax
+# scoreboard players reset * MPMaxFlag
 ### MP回復タイミング
-# scoreboard players reset * CoolTickSpan 
+# scoreboard players reset * CoolTickSpan
 # scoreboard players reset * CoolTickCounter
-# scoreboard players reset * MPIncrement 
-# scoreboard players reset * MPConsumption 
+# scoreboard players reset * MPIncrement
+# scoreboard players reset * MPConsumption
 
 ### 乱数
-# scoreboard players reset * Random 
-# scoreboard players reset * RndMWC 
-# scoreboard players reset * RndMWCCarry 
+# scoreboard players reset * Random
+# scoreboard players reset * RndMWC
+# scoreboard players reset * RndMWCCarry
 
 ### ディメンション
 scoreboard players reset * USBDimension
@@ -80,41 +80,41 @@ scoreboard players reset * AreaChangeFlag
 scoreboard players reset * EnderChestOpened
 
 ### ジョブ
-scoreboard players reset * Job 
+scoreboard players reset * Job
 # scoreboard players reset * TradedVillager
 # scoreboard players reset * PickupPaper
 
 ### 経験値
-scoreboard players reset * NextExp 
-scoreboard players reset * ExpToLevel 
+scoreboard players reset * NextExp
+scoreboard players reset * ExpToLevel
 
 ### 各ジョブのレベルと残り経験値
-scoreboard players reset * Level 
+scoreboard players reset * Level
 
 ### 即時スキル(すぐ効果がでるスキル)
-# scoreboard players reset * InstantSkillA 
-# scoreboard players reset * InstantCostA 
-# scoreboard players reset * InstantChangeA 
-# scoreboard players reset * InstantSkillB 
-# scoreboard players reset * InstantCostB 
-# scoreboard players reset * InstantChangeB 
+# scoreboard players reset * InstantSkillA
+# scoreboard players reset * InstantCostA
+# scoreboard players reset * InstantChangeA
+# scoreboard players reset * InstantSkillB
+# scoreboard players reset * InstantCostB
+# scoreboard players reset * InstantChangeB
 
 ### モードスキル(何かをすると効果がでるモードに変えるスキル)
-# scoreboard players reset * ModeSkillA 
-# scoreboard players reset * ModeCostA 
-# scoreboard players reset * ModeChangeA 
-# scoreboard players reset * ModeSkillB 
-# scoreboard players reset * ModeCostB 
-# scoreboard players reset * ModeChangeB 
-# scoreboard players reset * CurrentMode 
-# scoreboard players reset * CurrentModeCost 
-# scoreboard players reset * ModeState 
+# scoreboard players reset * ModeSkillA
+# scoreboard players reset * ModeCostA
+# scoreboard players reset * ModeChangeA
+# scoreboard players reset * ModeSkillB
+# scoreboard players reset * ModeCostB
+# scoreboard players reset * ModeChangeB
+# scoreboard players reset * CurrentMode
+# scoreboard players reset * CurrentModeCost
+# scoreboard players reset * ModeState
 
 ### スキル全般
-# scoreboard players reset * ActivatedSkill 
-# scoreboard players reset * ChangeSkill 
-# scoreboard players reset * ShowSkill 
-# scoreboard players reset * MPCost 
+# scoreboard players reset * ActivatedSkill
+# scoreboard players reset * ChangeSkill
+# scoreboard players reset * ShowSkill
+# scoreboard players reset * MPCost
 
 ### リスポーン地点変更検知用
 # scoreboard players reset * SpawnX
@@ -122,16 +122,16 @@ scoreboard players reset * Level
 # scoreboard players reset * SpawnZ
 
 ### スキルテーブルを初期化
-function skill:init_table/
+function job:init_table/
 
 ### 村人会話 => advancements
-# scoreboard players reset * PastorFlag 
-# scoreboard players reset * AgentFlag 
-# scoreboard players reset * AugurFlag 
-# scoreboard players reset * AgentWarpCost 
+# scoreboard players reset * PastorFlag
+# scoreboard players reset * AgentFlag
+# scoreboard players reset * AugurFlag
+# scoreboard players reset * AgentWarpCost
 
 ### 一般
-# scoreboard players reset * kill 
+# scoreboard players reset * kill
 
 ### 達成率
 scoreboard players reset * UseEnderEye
@@ -142,7 +142,7 @@ scoreboard players reset * UseEnderEye
 ### ネザーの火山大爆発
 # scoreboard players reset * MineNetherrack
 
-# scoreboard players reset * ItemCount 
+# scoreboard players reset * ItemCount
 
 ### 花火の消費
 # scoreboard players reset * UseFireworkRocket
@@ -153,11 +153,11 @@ scoreboard players reset * UseEnderEye
 # scoreboard players reset * UseArmorStand
 
 ##
-# scoreboard players reset * Freshness 
+# scoreboard players reset * Freshness
 
 ## モンスターがスキルを使うタイミングとか種類のやつ
-# scoreboard players reset * MobCastTime 
-# scoreboard players reset * AbyssSeduce 
+# scoreboard players reset * MobCastTime
+# scoreboard players reset * AbyssSeduce
 
 ## トカルト
 scoreboard players reset * UseChorus
@@ -166,7 +166,7 @@ scoreboard players reset * UseChorus
 # scoreboard players reset * Deaths
 
 ### 個人ロッカー(めっちゃリメイクしたい(余裕があったら))
-# scoreboard players reset * PersonalLocker 
+# scoreboard players reset * PersonalLocker
 # scoreboard players set #NextLocker PersonalLocker 100
 # ## No.100の部屋
 # scoreboard players set 29269ff6-872d-4327-9ab5-9a1807e69292 PersonalLocker 100
@@ -210,47 +210,47 @@ scoreboard players reset * UseChorus
 # scoreboard players reset * PigOneCm
 
 ### スキル状態管理
-scoreboard players reset * IronWill 
-scoreboard players reset * NinjaTime 
-scoreboard players reset * Tsuremai 
-scoreboard players reset * Choyaku 
-scoreboard players reset * seiyou 
+scoreboard players reset * IronWill
+scoreboard players reset * NinjaTime
+scoreboard players reset * Tsuremai
+scoreboard players reset * Choyaku
+scoreboard players reset * seiyou
 scoreboard players reset * Syungoku
-scoreboard players reset * KasapLevel 
-scoreboard players reset * KasapTimer 
-scoreboard players reset * Kazakiri 
-scoreboard players reset * petto 
-scoreboard players reset * mazikaru 
-# scoreboard players reset * CookingState 
-# scoreboard players reset * WildHealing 
-# scoreboard players reset * EnChase 
+scoreboard players reset * KasapLevel
+scoreboard players reset * KasapTimer
+scoreboard players reset * Kazakiri
+scoreboard players reset * petto
+scoreboard players reset * mazikaru
+# scoreboard players reset * CookingState
+# scoreboard players reset * WildHealing
+# scoreboard players reset * EnChase
 
-scoreboard players reset * CandleTimer 
-scoreboard players reset * EnAspir 
-scoreboard players reset * ManaRefresh 
-scoreboard players reset * ReturnTimer 
-scoreboard players reset * WindWall 
-# scoreboard players reset * OrderType 
+scoreboard players reset * CandleTimer
+scoreboard players reset * EnAspir
+scoreboard players reset * ManaRefresh
+scoreboard players reset * ReturnTimer
+scoreboard players reset * WindWall
+# scoreboard players reset * OrderType
 
-scoreboard players reset * Doom 
-scoreboard players reset * DoomSecond 
+scoreboard players reset * Doom
+scoreboard players reset * DoomSecond
 
-scoreboard players reset * RemainTimer 
+scoreboard players reset * RemainTimer
 
 ### スキル同期管理
-# scoreboard players reset * TacticalHealBase 
-# scoreboard players reset * AspirBase 
-# scoreboard players reset * ThunderBolt 
+# scoreboard players reset * TacticalHealBase
+# scoreboard players reset * AspirBase
+# scoreboard players reset * ThunderBolt
 
-scoreboard players reset * RadarVision 
+scoreboard players reset * RadarVision
 
-# scoreboard players reset * RaiseSyncCount 
-# scoreboard players reset * RaisedArea 
+# scoreboard players reset * RaiseSyncCount
+# scoreboard players reset * RaisedArea
 
 ### スキル判定
-# scoreboard players reset * TargetCheck 
-scoreboard players reset * ProjectileSkill 
-scoreboard players reset * PotentialSkill 
+# scoreboard players reset * TargetCheck
+scoreboard players reset * ProjectileSkill
+scoreboard players reset * PotentialSkill
 
 ### ハードコアモード
 scoreboard players reset * hcmode

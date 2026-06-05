@@ -1,4 +1,4 @@
-#> skill:trigger/hit/legacy/break
+#> job:trigger/hit/legacy/break
 # レガシーアイテムを１つ壊す
 
 ### 壊れたときの演出

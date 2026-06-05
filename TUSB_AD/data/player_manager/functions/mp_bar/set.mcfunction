@@ -8,7 +8,7 @@ scoreboard players operation _ MP /= @s MPMax
 scoreboard players operation _ MP < _ _
 
 # 表示経験値量を保存
-scoreboard players operation @s BeforeXP = _ MP
+#scoreboard players operation @s BeforeXP = _ MP
 
 #経験値バーに表示
 experience add @s -2147483648 levels

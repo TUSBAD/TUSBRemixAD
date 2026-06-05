@@ -8,7 +8,7 @@
 data modify storage tusb_remake: skill_liberation set value 1b
 
 ### スキルテーブルを初期化
-function skill:init_table/
+function job:init_table/
 
 # 演出
 title @s title {"translate": "TUSBを攻略した！","color": "gold"}

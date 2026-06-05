@@ -9,4 +9,4 @@ execute as @e[distance=..8,type=#lib:mob,tag=Enemy,nbt=!{ActiveEffects:[{Id:23}]
 function job:skill/white_mage/ignition/schedule/
 
 ### 飛んでるやつの判定有効化
-function skill:trigger/projectile/
+function job:trigger/projectile/

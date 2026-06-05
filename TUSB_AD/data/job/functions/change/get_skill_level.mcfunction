@@ -1,4 +1,4 @@
-#> skill:change/get_skill_level
+#> job:change/get_skill_level
 # レベルチェック
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
@@ -9,4 +9,4 @@ data remove storage tusb_remake: change_skill.level[-1]
 execute if score @s Level >= _ Level run scoreboard players add _ TUSB 1
 
 ### まだ判定するレベルが残っていたら繰り返し
-execute if data storage tusb_remake: change_skill.level[-1] run function skill:change/get_skill_level
+execute if data storage tusb_remake: change_skill.level[-1] run function job:change/get_skill_level

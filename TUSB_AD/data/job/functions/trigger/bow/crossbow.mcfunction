@@ -1,4 +1,4 @@
-#> skill:trigger/bow/crossbow
+#> job:trigger/bow/crossbow
 # クロスボウを使った時
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
@@ -19,7 +19,7 @@ execute as @s[scores={CurrentMode=3280..3289}] run function job:skill/archer/e_s
 # 拡散エンチャントがついていたら更に処理する
 # マナはしっかりと3回分消費します
 
-execute if data entity @s SelectedItem.tag.Enchantments.[{id:"minecraft:multishot"}] run function skill:trigger/bow/crossbow_multishot
-execute if data entity @s SelectedItem.tag.Enchantments.[{id:"minecraft:multishot"}] run function skill:trigger/bow/crossbow_multishot
+execute if data entity @s SelectedItem.tag.Enchantments.[{id:"minecraft:multishot"}] run function job:trigger/bow/crossbow_multishot
+execute if data entity @s SelectedItem.tag.Enchantments.[{id:"minecraft:multishot"}] run function job:trigger/bow/crossbow_multishot
 
 scoreboard players reset @s UseCrossBow

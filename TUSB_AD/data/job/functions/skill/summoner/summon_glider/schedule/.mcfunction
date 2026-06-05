@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 data modify storage tusb_remake: _ set value false
-execute if entity @e[type=phantom,tag=Glider] as @a if predicate skill:on_glider at @s run function job:skill/summoner/summon_glider/schedule/check
+execute if entity @e[type=phantom,tag=Glider] as @a if predicate job:on_glider at @s run function job:skill/summoner/summon_glider/schedule/check
 
 execute if data storage tusb_remake: {_:false} run function job:skill/summoner/summon_glider/schedule/test
 

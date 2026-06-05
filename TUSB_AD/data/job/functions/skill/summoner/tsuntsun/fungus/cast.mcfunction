@@ -19,4 +19,4 @@ execute as @e[distance=..15,type=wolf,team=FriendlyTeam,nbt=!{Sitting:true}] at 
 execute as @e[distance=..15,type=iron_golem,team=FriendlyTeam] at @s run function job:skill/summoner/tsuntsun/fungus/attack/iron_golem
 
 ### 飛んでるやつの判定有効化
-execute if data storage tusb_remake: tsuntsun_attack{snow_golem:true} run function skill:trigger/projectile/
+execute if data storage tusb_remake: tsuntsun_attack{snow_golem:true} run function job:trigger/projectile/

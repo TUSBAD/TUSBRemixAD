@@ -8,4 +8,4 @@ execute if score @s CurrentMode matches 1220..1229 if predicate lib:has_sword if
 
 scoreboard players reset @s ShinkuGiri
 
-advancement revoke @s only skill:trigger/knight/shinku_giri/check
+advancement revoke @s only job:trigger/knight/shinku_giri/check

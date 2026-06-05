@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 # マナリフレッシュ
-    execute as @a[scores={ManaRefresh=0..}] run function job:skill/black_mage/mana_refresh/check
+    #execute as @a[scores={ManaRefresh=0..}] run function job:skill/black_mage/mana_refresh/check
 
 # 連舞 跳躍
     execute as @a[scores={Tsuremai=0..}] at @s run function job:skill/ninja/tsuremai/check
