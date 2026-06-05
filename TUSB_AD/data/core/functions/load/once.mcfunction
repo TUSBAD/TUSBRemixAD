@@ -279,7 +279,7 @@ worldborder set 7000
 
 ### setdisplay
 scoreboard objectives setdisplay list Level
-scoreboard objectives setdisplay sidebar MP
+#scoreboard objectives setdisplay sidebar MP
 scoreboard objectives setdisplay belowName HP
 scoreboard players reset * MP
 
