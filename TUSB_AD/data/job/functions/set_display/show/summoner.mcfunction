@@ -1,4 +1,4 @@
-#> skill:set_display/show/summoner
+#> job:set_display/show/summoner
 # 召喚士スキル名称の表示
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

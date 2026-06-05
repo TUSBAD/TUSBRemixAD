@@ -1,4 +1,4 @@
-#> skill:init_table/
+#> job:init_table/
 ## スキルテーブルを設定
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
@@ -11,19 +11,19 @@ data modify storage tusb_remake: skill_table set value {}
 data modify storage tusb_remake: _ set value {}
 
 ### 剣士
-function skill:init_table/knight
+function job:init_table/knight
 
 ### 忍者
-function skill:init_table/ninja
+function job:init_table/ninja
 
 ### 狩人
-function skill:init_table/archer
+function job:init_table/archer
 
 ### 白魔導士
-function skill:init_table/white_mage
+function job:init_table/white_mage
 
 ### 黒魔導士
-function skill:init_table/black_mage
+function job:init_table/black_mage
 
 ### 召喚士
-function skill:init_table/summoner
+function job:init_table/summoner

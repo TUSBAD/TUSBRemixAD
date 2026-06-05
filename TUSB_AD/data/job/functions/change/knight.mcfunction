@@ -1,4 +1,4 @@
-#> skill:change/knight
+#> job:change/knight
 # 剣士のスキルのレベルチェック
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
@@ -6,7 +6,7 @@
 ### 剣士なので、剣士のものをコピーしてくる
 data modify storage tusb_remake: change_skill_table set value {}
 data modify storage tusb_remake: change_skill_table set from storage tusb_remake: skill_table.knight
-### 
+###
 data modify storage tusb_remake: change_skill set value {}
 execute if score _ ChangeSkill matches 0 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.0
 execute if score _ ChangeSkill matches 1 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.1
@@ -21,7 +21,7 @@ execute if score _ ChangeSkill matches 23 run data modify storage tusb_remake: c
 execute if score _ ChangeSkill matches 24 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.24
 execute if score _ ChangeSkill matches 25 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.25
 execute if score _ ChangeSkill matches 26 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.26
-execute if score _ ChangeSkill matches 27 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.27 
+execute if score _ ChangeSkill matches 27 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.27
 execute if score _ ChangeSkill matches 28 run data modify storage tusb_remake: change_skill set from storage tusb_remake: change_skill_table.28
 
 
@@ -31,7 +31,7 @@ execute store result score _ ChangeSkill run data get storage tusb_remake: _
 
 ### 設定できるスキルのレベルを取得
 scoreboard players set _ TUSB 0
-function skill:change/get_skill_level
+function job:change/get_skill_level
 
 ### 設定できるスキルのレベルが０ならリセット
 execute unless score _ TUSB matches 1.. run scoreboard players reset _ ChangeSkill

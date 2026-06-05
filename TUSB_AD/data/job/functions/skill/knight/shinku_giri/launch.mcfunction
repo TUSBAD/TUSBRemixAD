@@ -15,4 +15,4 @@ execute anchored eyes positioned ^ ^ ^ anchored feet positioned ^ ^ ^1 run score
 function job:skill/knight/shinku_giri/schedule/
 
 ### 飛んでるやつの判定有効化
-function skill:trigger/projectile/
+function job:trigger/projectile/

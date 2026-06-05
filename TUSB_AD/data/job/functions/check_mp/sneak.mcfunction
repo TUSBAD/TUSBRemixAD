@@ -1,4 +1,4 @@
-#> skill:check_mp/sneak
+#> job:check_mp/sneak
 #
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

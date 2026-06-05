@@ -9,4 +9,4 @@ tellraw @s {"text":"マジックシールドの効果が切れた。","color":"g
 particle minecraft:item minecraft:potion ~ ~1 ~ 0.5 0.5 0.5 0.2 60 force @a[distance=..64]
 playsound minecraft:block.glass.break master @a[distance=..16] ~ ~ ~ 1 0.6 0
 
-advancement revoke @s only skill:trigger/black_mage/magic_shield/damaged
+advancement revoke @s only job:trigger/black_mage/magic_shield/damaged

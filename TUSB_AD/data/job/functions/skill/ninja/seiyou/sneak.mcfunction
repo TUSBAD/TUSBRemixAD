@@ -6,4 +6,4 @@ execute if score @s SneakTime matches 1.. if score @s CurrentMode matches 2260..
 execute if score @s SneakTime matches 1.. if score @s CurrentMode matches 2260..2269 if entity @s[nbt={OnGround:true}] run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 1.0 0.75 0.0
 scoreboard players reset @s SneakTime
 
-advancement revoke @s only skill:trigger/ninja/seiyou/sneak
+advancement revoke @s only job:trigger/ninja/seiyou/sneak

@@ -14,4 +14,4 @@ playsound entity.player.levelup master @a[distance=..16] ~ ~ ~ 1 1.78 0
 particle minecraft:heart ~ ~1 ~ 0.5 0.5 0.5 0 30 force
 tag @s remove TacticalHeal
 
-advancement revoke @s only skill:trigger/knight/tactical_heal/heal
+advancement revoke @s only job:trigger/knight/tactical_heal/heal

@@ -8,4 +8,4 @@
 execute if score @s CurrentMode matches 2220..2229 if entity @s[nbt={OnGround:true}] run function job:skill/ninja/choyaku/triggered
 scoreboard players reset @s SneakTime
 
-advancement revoke @s only skill:trigger/ninja/choyaku/sneak
+advancement revoke @s only job:trigger/ninja/choyaku/sneak

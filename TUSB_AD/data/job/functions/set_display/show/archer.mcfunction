@@ -1,4 +1,4 @@
-#> skill:set_display/show/archer
+#> job:set_display/show/archer
 # 狩人スキル名称の表示
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

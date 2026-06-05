@@ -1,4 +1,4 @@
-#> skill:set_display/show/black_mage
+#> job:set_display/show/black_mage
 # 黒魔導士スキル名称の表示
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

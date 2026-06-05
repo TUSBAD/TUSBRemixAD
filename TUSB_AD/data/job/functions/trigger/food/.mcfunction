@@ -1,4 +1,4 @@
-#> skill:trigger/food/
+#> job:trigger/food/
 # 満腹度が回復した時
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

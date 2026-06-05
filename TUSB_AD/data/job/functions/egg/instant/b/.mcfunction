@@ -1,8 +1,8 @@
-#> skill:egg/instant/b/
+#> job:egg/instant/b/
 # サファイアの即時スキルを使う
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-execute at @e[distance=..7,tag=SkillEgg,tag=Instant,tag=Sapphire,limit=1] run function skill:egg/instant/b/invoke
+execute at @e[distance=..7,tag=SkillEgg,tag=Instant,tag=Sapphire,limit=1] run function job:egg/instant/b/invoke
 
-advancement revoke @s only skill:egg/instant/b
+advancement revoke @s only job:egg/instant/b

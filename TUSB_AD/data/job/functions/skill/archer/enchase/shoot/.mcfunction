@@ -13,4 +13,4 @@ tag @s remove EnChase1
 tag @s remove EnChase2
 
 ### 飛んでるやつの判定有効化
-function skill:trigger/projectile/
+function job:trigger/projectile/

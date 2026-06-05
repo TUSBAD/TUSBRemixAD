@@ -1,4 +1,4 @@
-#> skill:change/reset
+#> job:change/reset
 # スキルを外す
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

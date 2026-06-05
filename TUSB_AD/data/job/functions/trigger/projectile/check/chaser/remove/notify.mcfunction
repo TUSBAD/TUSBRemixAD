@@ -1,4 +1,4 @@
-#> skill:trigger/projectile/check/chaser/remove/notify
+#> job:trigger/projectile/check/chaser/remove/notify
 # エンチェイス後の処理
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

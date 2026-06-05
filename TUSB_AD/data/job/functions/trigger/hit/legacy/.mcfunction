@@ -1,4 +1,4 @@
-#> skill:trigger/hit/legacy/
+#> job:trigger/hit/legacy/
 # レガシーアイテムの消費判定
 
 ### 普段の演出
@@ -6,7 +6,7 @@ playsound minecraft:entity.wither.death master @a ~ ~ ~ 0.1 2 0
 particle minecraft:end_rod ~ ~1.52 ~ 0.1 0.1 0.1 0.3 90 force
 
 ## もし最初の攻撃なら初期化してあげる
-execute if data entity @s SelectedItem.tag{Legacy:true} run function skill:trigger/hit/legacy/init
+execute if data entity @s SelectedItem.tag{Legacy:true} run function job:trigger/hit/legacy/init
 
 ## レガシーアイテムのカウントを１減らす
 execute store result storage tusb_remake: legacy int 0.9999999999 run data get entity @s SelectedItem.tag.Legacy
@@ -18,4 +18,4 @@ execute if data storage tusb_remake: {legacy:2} run title @s actionbar {"text":"
 execute if data storage tusb_remake: {legacy:1} run title @s actionbar {"text":"武器が壊れそうだ！！！","color":"red"}
 
 ## もしもカウントが０ならアイテムの数を１つ減らす
-execute if data storage tusb_remake: {legacy:0} run function skill:trigger/hit/legacy/break
+execute if data storage tusb_remake: {legacy:0} run function job:trigger/hit/legacy/break

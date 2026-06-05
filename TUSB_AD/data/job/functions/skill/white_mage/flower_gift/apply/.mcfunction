@@ -14,4 +14,4 @@ execute if score _ ActivatedSkill matches 4222..4229 run execute as @e[distance=
 function job:skill/white_mage/flower_gift/schedule/
 
 ### 飛んでるやつの判定有効化
-function skill:trigger/projectile/
+function job:trigger/projectile/

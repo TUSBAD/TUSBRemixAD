@@ -1,4 +1,4 @@
-#> skill:trigger/hit/
+#> job:trigger/hit/
 # 近接攻撃をした時
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
@@ -24,7 +24,7 @@ execute as @s[scores={CurrentMode=1280..1289},predicate=lib:has_sword] run funct
 execute as @s[scores={EnAspir=0..}] run function job:skill/black_mage/enaspir/hit
 
 ### レガシー
-execute if data entity @s SelectedItem.tag.Legacy run function skill:trigger/hit/legacy/
+execute if data entity @s SelectedItem.tag.Legacy run function job:trigger/hit/legacy/
 
 ### RR:全能ノ一を使い、終わらせる。
 execute as @s[predicate=player_manager:equipment/mainhand/gm_sley] run function mob_manager:boss/game_master/bossdefeat/

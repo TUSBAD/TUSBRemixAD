@@ -1,4 +1,4 @@
-#> skill:display/check
+#> job:display/check
 ## 設定できるレベルになっているかどうかをチェック
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
@@ -10,4 +10,4 @@ execute if score @s Level >= _ TUSB run data modify storage tusb_remake: list ap
 
 ### 最後のスキルがなくなるまで繰り返し
 data remove storage tusb_remake: skill_choices[-1]
-execute if data storage tusb_remake: skill_choices[-1] run function skill:display/check
+execute if data storage tusb_remake: skill_choices[-1] run function job:display/check

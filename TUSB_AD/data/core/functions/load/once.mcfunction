@@ -125,7 +125,7 @@ scoreboard objectives add SpawnZ dummy
 data modify storage tusb_remake: skill_liberation set value 0b
 
 ### スキルテーブルを初期化
-function skill:init_table/
+function job:init_table/
 
 ### 村人会話 => advancements
 scoreboard objectives add PastorFlag trigger "牧師会話フラグ"

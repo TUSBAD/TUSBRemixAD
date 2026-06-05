@@ -37,7 +37,7 @@ title @s subtitle [{"text":"現在のレベル : ","italic":true},{"score":{"nam
 title @s title {"text":"LEVEL UP ！","color":"green","bold":true}
 
 ### レベル49までと、レベル50になりたての場合、新しいスキル取得メッセージを表示
-execute if entity @s[scores={Level=1..100,NextExp=..499}] run function skill:set_display/learn/
+execute if entity @s[scores={Level=1..100,NextExp=..499}] run function job:set_display/learn/
 execute if entity @s[scores={Level=100,NextExp=..499}] run scoreboard players add @s ExpReduce 1
 ### 次の経験値の設定
 function player_manager:health/set_max
