@@ -58,4 +58,4 @@
         gamemode adventure @a[gamemode=survival,tag=Adv]
 
 # ハード固定
-    difficulty hard
+#    difficulty hard

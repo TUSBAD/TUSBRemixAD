@@ -18,13 +18,13 @@ execute store result storage tusb_remake: _ int 0.125 run scoreboard players get
 execute store result score @s HPMax run data get storage tusb_remake: _
 scoreboard players set @s[scores={HPMax=51..}] HPMax 50
 
-### MP回復間隔 = 100 - Level 
-scoreboard players set @s CoolTickSpan -100
-scoreboard players operation @s CoolTickSpan += @s Level
-execute if score @s CoolTickSpan matches -50.. run scoreboard players set @s CoolTickSpan -50
+### MP回復間隔 = 100 - Level
+#scoreboard players set @s CoolTickSpan -100
+#scoreboard players operation @s CoolTickSpan += @s Level
+#execute if score @s CoolTickSpan matches -50.. run scoreboard players set @s CoolTickSpan -50
 ### MP回復量 = MPMax / 20
-execute store result storage tusb_remake: _ int 0.05 run scoreboard players get @s MPMax
-execute store result score @s MPIncrement run data get storage tusb_remake: _
+#execute store result storage tusb_remake: _ int 0.05 run scoreboard players get @s MPMax
+#execute store result score @s MPIncrement run data get storage tusb_remake: _
 
 ### レベルアップの演出
 playsound minecraft:entity.player.levelup master @a[distance=..16] ~ ~ ~ 2 0.7 0

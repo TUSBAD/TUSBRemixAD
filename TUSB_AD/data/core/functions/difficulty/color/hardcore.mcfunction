@@ -6,5 +6,5 @@
 # ハードコア
 # #ff00ff
 
-team modify Friendly suffix {"text":"☠","color":"#ff00ff"}
-team modify Friendly prefix {"text":"☠","color":"#ff00ff"}
+team modify FriendlyTeam suffix {"text":"☠","color":"#ff00ff"}
+team modify FriendlyTeam prefix {"text":"☠","color":"#ff00ff"}

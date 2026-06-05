@@ -24,7 +24,7 @@
     execute as @a[scores={ExpToLevel=..0,Job=1..}] at @s run function player_manager:job/level_up/
 
 # MP自然回復
-    function player_manager:mp/mp_regen
+    execute as @a[scores={Job=1..,Level=1..}] at @s run function player_manager:mp/mp_regen
 
 # 島攻略
     execute as @a[scores={UseEnderEye=1..}] at @s run function world_manager:area/conquer/
@@ -105,3 +105,4 @@
 
 # タイム計測
     #execute as @e[tag=Timer] run scoreboard players add @s LiveTime 1
+    #scoreboard players add FreyCielu MP 1
