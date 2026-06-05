@@ -4,11 +4,8 @@
 ### This software is released under the MIT License, see LICENSE.
 
 # RR: 盲目→弱体化に変更
-    tellraw @s[scores={Hunger=0..3}] [{"text":"どこからか声が聞こえる…。\n「腹が減っては探索できぬぞ。」\n"},{"text":"お腹が少し満たされた。\n","color":"aqua"},{"text":"力が入らなくなった。","color":"light_purple"}]
-    effect give @s[scores={Hunger=0}] minecraft:weakness 60 9 true
-    effect give @s[scores={Hunger=1}] minecraft:weakness 45 9 true
-    effect give @s[scores={Hunger=2}] minecraft:weakness 30 9 true
-    effect give @s[scores={Hunger=3}] minecraft:weakness 15 9 true
+    tellraw @s[scores={Hunger=0..3}] [{"text":"どこからか声が聞こえる…。\n「腹が減っては探索できぬぞ。」\n"},{"text":"お腹が少し満たされた。\n","color":"aqua"},{"text":"魔力の回復が鈍くなった...","color":"light_purple"}]
+    scoreboard players set @s MPAcceleration -600
 
 # 満腹度を調整
     scoreboard players operation @s FoodMax = @s Hunger
