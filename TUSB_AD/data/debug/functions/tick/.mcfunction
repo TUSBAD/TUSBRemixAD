@@ -12,6 +12,6 @@ execute as @a[tag=Debug.BlockParticle] at @s align xyz positioned ~ ~0.5 ~ run f
 # get_oh_my_dat
 execute if data storage debug:get_oh_my_dat DebugId run function debug:tick/get_oh_my_dat
 
-execute if data storage debug: Debug{Mode:-1s} as @a[tag=Debug] at @s run function debug:tick/debug
+execute if data storage debug: Debug{Mode:-1s} as @a[tag=Debug.Invulnerable] at @s run function debug:tick/tag/invulnerable
 
 execute as @a at @s run function debug:menu/tick
