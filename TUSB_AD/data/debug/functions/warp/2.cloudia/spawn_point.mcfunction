@@ -2,6 +2,6 @@
 #
 # 
 #
-# @within function debug:debug_menu/page/warp/cloudia
+# @within function debug:menu/page/warp/cloudia
 
 execute in minecraft:overworld run tp @s -1908.5 113.00 -136.0

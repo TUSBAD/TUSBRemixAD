@@ -13,3 +13,7 @@ tag @s add LoginMessage
 # function core:login/schedule
 schedule function core:login/schedule 5s append
 forceload add -2740 -361 -2740 -361
+
+# スニークメニューをenable
+scoreboard players set @s ShowMenu 1
+scoreboard players enable @s ShowMenu
