@@ -1,0 +1,68 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Enchantments:[{}],CustomPotionColor:13697024}"
+    },
+    "title": [
+      {
+        "translate": "特殊デバフ: 即死の宣告                                        ",
+        "color": "#db0000",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "死の%1$sを開始し、\n1分間経過すると%2$s。\n%1$s中は%3$sが継続し、\n%1$sが進むほど%3$sが増加する。\nカウント中にMPが0を下回った場合も%2$s。\nこの宣告は%4$sが付与されている装備又はアイテムでのみ、解除できる。\n\nこの状態異常は難易度が%5$s以上で有効となる。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "カウントダウン",
+          "color": "red"
+        },
+        {
+          "translate": "死亡する",
+          "color": "#FF2A2A"
+        },
+        {
+          "translate": "MP減少",
+          "color": "#9700d0"
+        },
+        {
+          "translate": "創造神の加護",
+          "color": "#33e6ff"
+        },
+        {
+          "translate": "%1$s",
+          "color": "white",
+          "with": [
+            {
+              "translate": "アナザー",
+              "color": "#ff00ff",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "player_manager:infomation/effect/root",
+  "criteria": {
+    "doomex": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:invisibility": {
+            "amplifier": 50,
+            "duration": {
+              "min": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

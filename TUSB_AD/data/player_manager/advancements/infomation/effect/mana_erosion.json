@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Enchantments:[{}],CustomPotionColor:9383423}"
+    },
+    "title": [
+      {
+        "translate": "特殊デバフ: 魔力浸食                                        ",
+        "color": "#6b1ae6",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "付与されると%1$sするまで、%2$sが%3$sし続ける。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "一定時間が経過",
+          "color": "#00ff80"
+        },
+        {
+          "translate": "MP",
+          "color": "#00e6ff"
+        },
+        {
+          "translate": "減少",
+          "color": "#ff3333"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "player_manager:infomation/effect/root",
+  "criteria": {
+    "doomex": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:invisibility": {
+            "amplifier": 120,
+            "duration": {
+              "min": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

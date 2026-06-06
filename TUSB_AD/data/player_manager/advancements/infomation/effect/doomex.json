@@ -1,0 +1,68 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Enchantments:[{}],CustomPotionColor:9174919}"
+    },
+    "title": [
+      {
+        "translate": "特殊デバフ: 致死の宣告                                        ",
+        "color": "dark_red",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "死の%1$sを開始し、\n解除せず1分間経過すると%2$s。\n%1$s中は%3$sが継続し、\n%1$sが進むほど%3$sが増加する。\n%4$sを服用すると解除できる。\n\nこの状態異常は難易度が%5$s以上で有効となる。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "カウントダウン",
+          "color": "red"
+        },
+        {
+          "translate": "死亡する",
+          "color": "dark_red"
+        },
+        {
+          "translate": "軽減不可ダメージ",
+          "color": "dark_red"
+        },
+        {
+          "translate": "黄金酒の聖水",
+          "color": "aqua"
+        },
+        {
+          "translate": "%1$s",
+          "color": "white",
+          "with": [
+            {
+              "translate": "カジュアル",
+              "color": "#FF2A2A",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true
+  },
+  "parent": "player_manager:infomation/effect/root",
+  "criteria": {
+    "doomex": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:invisibility": {
+            "amplifier": 100,
+            "duration": {
+              "min": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
