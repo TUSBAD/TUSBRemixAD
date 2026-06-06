@@ -2,4 +2,4 @@
 #
 # 
 #
-# @within function debug:debug_menu/page/warp/nether
+# @within function debug:menu/page/warp/nether

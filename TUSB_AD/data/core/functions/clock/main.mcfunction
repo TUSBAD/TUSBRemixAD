@@ -91,7 +91,7 @@
     execute as @e[type=#lib:mob,tag=!ShieldTried,limit=1] run function mob_manager:entity/time_shield/detect_enemy
 
 # tick/trigger
-    execute as @a at @s run function player_manager:show_text/trigger
+    execute as @a at @s run function player_manager:show_text/trigger/
 
 # 装備効果
     execute as @a at @s run function player_manager:custom_item/equipments/
