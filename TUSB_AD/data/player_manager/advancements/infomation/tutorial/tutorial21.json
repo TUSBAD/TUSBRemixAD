@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:knowledge_book",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "この先生きのこる為に                                        ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "攻略中に突然初期地点に戻されることがあれば、それは%1$sの効果です。\n%1$sは%2$sを解除し初期地点に戻る為、うまく活用できれば冒険が楽になるかもしれません。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "リコールポーション",
+          "color": "#51cbff"
+        },
+                {
+          "translate": "あらゆるデバフ",
+          "color": "#88ff4f"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/root",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

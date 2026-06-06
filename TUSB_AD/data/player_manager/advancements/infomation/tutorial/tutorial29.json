@@ -1,0 +1,59 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:end_crystal",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "特殊な結界                                        ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この世界には、様々な効果を与える結界が存在します。\n結界の効果範囲内にいる場合、その効果を永続的に受けます。\n・%1$s：トカルトコルデにおいて、極寒ゲージの減少とエンカウントを防ぎます。\n・%2$s：周囲にいるプレイヤーを強制的にAdvModeにします。\n・%3$s：周囲にいるプレイヤーの嫌な予感を無効化します。\n・%4$s：周囲にいるプレイヤーの跳躍力を無効化します。\n・%5$s：周囲にいるプレイヤーのコーラスフルーツと、跳躍力を無効化します。\n・%6$s：周囲のポーション及びエンダーパールを無効化します。\n・%7$s：周囲にいるプレイヤーに妨害結界と投擲物結界の効果を付与します。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "保温結界",
+          "color": "#ff8000"
+        },
+        {
+          "translate": "アドベンチャー結界",
+          "color": "#ff5151"
+        },
+        {
+          "translate": "予感結界",
+          "color": "#8e1eff"
+        },
+        {
+          "translate": "跳躍結界",
+          "color": "#80ffff"
+        },
+        {
+          "translate": "妨害魔力結界",
+          "color": "#ff0080"
+        },
+        {
+          "translate": "投擲魔力結界",
+          "color": "#2b5aff"
+        },
+        {
+          "translate": "特異点結界",
+          "color": "#ff00ff"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial28",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

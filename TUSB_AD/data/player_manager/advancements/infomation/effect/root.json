@@ -25,7 +25,7 @@
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false,
-        "background": "minecraft:textures/block/purple_stained_glass.png"
+        "background": "minecraft:textures/block/sculk_sensor_bottom.png"
     },
     "criteria": {
         "tick": {

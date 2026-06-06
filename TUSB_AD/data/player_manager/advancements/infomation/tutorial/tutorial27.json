@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:experience_bottle",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "攻略者/製作者の隠れ家                                        ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "スキル設定場にあるビームが4つ出ている島に行くと、%1$sと%2$sに行くことができます。\n隠れ家では、特殊なアイテムや素材を取引で交換することができます。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "攻略者の隠れ家",
+          "color": "#00ff40"
+        },
+        {
+          "translate": "製作者の隠れ家",
+          "color": "#ff8040"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial26",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

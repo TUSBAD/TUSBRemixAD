@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:crying_obsidian",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "最後に                                      ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "%1$sにてサポートを受け付けています。質問・要望はそちらへお願いします。\nチュートリアルは以上です。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "TUSB&TSB Fan's Community",
+          "color": "#34fefb",
+          "bold": true
+        }
+      ]
+    },
+    "frame": "goal",
+    "show_toast": false,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial36",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

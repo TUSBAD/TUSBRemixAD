@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:barrier",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "不正対策                                      ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この世界では、%1$sにめり込むとKILLされます。\nまた、一部不正に入手したアイテムなども削除されます。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "不可壊ブロック (%1$s)",
+          "color": "#fd0000",
+          "with": [
+            {
+              "translate": "各種コマンドブロック、ストラクチャーブロック、岩盤、バリアブロック",
+              "color": "#ff0000",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial33",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

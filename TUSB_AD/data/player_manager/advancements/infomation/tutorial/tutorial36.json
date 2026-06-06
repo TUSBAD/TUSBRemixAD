@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:jukebox",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "音量設定について                                      ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "リソースパックを導入すると、一部BGMが置き換えられます。\nそのため、以下に推奨の音量設定を記載します。\n\n%1$s：1％～25％\n\n%2$s：1％～5％\n\n%3$s：25％~50％\n\n%4$s：5％～50％",
+      "color": "white",
+      "with": [
+        {
+          "translate": "背景音楽",
+          "color": "white"
+        },
+        {
+          "translate": "ボス戦音楽",
+          "color": "white"
+        },
+        {
+          "translate": "サウンドテスト音楽",
+          "color": "white"
+        },
+        {
+          "translate": "その他音量設定",
+          "color": "white"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial35",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

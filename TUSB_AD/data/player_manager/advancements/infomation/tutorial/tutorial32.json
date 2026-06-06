@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:villager_spawn_egg",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "取引可能な村人                                       ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "取引可能な村人の内、一部の村人は場所を移動しています。\n例えば煉獄商やマクラエルは元の場所にはおらず、通常世界にいます。",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial31",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
