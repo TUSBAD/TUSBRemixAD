@@ -17,7 +17,7 @@ scoreboard players set #Difficulty Difficulty 4
 gamerule keepInventory false
 
 #> チャット表示
-tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ナイトメア","color":"#0000ff"}]}]
+tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ナイトメア","color":"#2848ff"}]}]
 execute as @a at @s run playsound minecraft:item.totem.use master @s ~ ~ ~ 1 1 1
 
 #> 変更点
