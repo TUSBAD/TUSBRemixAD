@@ -19,8 +19,8 @@ Discord:https://discord.gg/rTVWQm4ykR
 # 内容
 RemakeRemixを元に作成されたADです。
 当マップを遊ぶ際には、以下のmod群の導入を推奨します。
-- https://modrinth.com/collection/jkSMZaMr
-- https://modrinth.com/mod/advancement-info
+- [Optifine代替ModList](https://modrinth.com/collection/jkSMZaMr)
+- [advancement-info](https://modrinth.com/mod/better-advancements)
 
 # バグ報告・要望等
 [こちら](https://github.com/TUSBAD/TUSBRemixAD/issues/new/choose) か [Discord](https://discord.gg/rTVWQm4ykR) までお願いします。
