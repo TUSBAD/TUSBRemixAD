@@ -1,0 +1,13 @@
+#> job:skill/summoner/deal/spell
+# ディールを詠唱(622X)
+### Copyright © 2022 赤石愛
+### This software is released under the MIT License, see LICENSE.
+
+###
+scoreboard players operation @s ActivatedSkill = @s CurrentMode
+scoreboard players operation @s MPConsumption = @s CurrentModeCost
+### MPチェック
+function job:check_mp/
+
+scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
+execute if score _ ActivatedSkill matches 6220..6229 run function job:skill/summoner/deal/cast

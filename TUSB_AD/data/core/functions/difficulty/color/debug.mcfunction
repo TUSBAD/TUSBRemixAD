@@ -6,5 +6,5 @@
 # デバッグ
 # #FFFFFF
 
-team modify Friendly suffix {"text":"🔨","color":"#808080"}
-team modify Friendly prefix {"text":"🔨","color":"#808080"}
+team modify FriendlyTeam suffix {"text":"🔨","color":"#808080"}
+team modify FriendlyTeam prefix {"text":"🔨","color":"#808080"}

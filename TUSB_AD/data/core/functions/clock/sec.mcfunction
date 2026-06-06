@@ -4,22 +4,22 @@
 ### This software is released under the MIT License, see LICENSE.
 
 # マナリフレッシュ
-    execute as @a[scores={ManaRefresh=0..}] run function skill:job_skill/black_mage/mana_refresh/check
+    #execute as @a[scores={ManaRefresh=0..}] run function job:skill/black_mage/mana_refresh/check
 
 # 連舞 跳躍
-    execute as @a[scores={Tsuremai=0..}] at @s run function skill:job_skill/ninja/tsuremai/check
-    execute as @a[scores={Choyaku=0..}] at @s run function skill:job_skill/ninja/choyaku/check
-    execute as @a[scores={seiyou=0..}] at @s run function skill:job_skill/ninja/seiyou/check
-    execute as @a[scores={Syungoku=0..}] at @s run function skill:job_skill/ninja/syungokusatsu/punch/check
+    execute as @a[scores={Tsuremai=0..}] at @s run function job:skill/ninja/tsuremai/check
+    execute as @a[scores={Choyaku=0..}] at @s run function job:skill/ninja/choyaku/check
+    execute as @a[scores={seiyou=0..}] at @s run function job:skill/ninja/seiyou/check
+    execute as @a[scores={Syungoku=0..}] at @s run function job:skill/ninja/syungokusatsu/punch/check
 
 # 黙想継続
-    execute as @a[tag=Mokuso] at @s run function skill:job_skill/ninja/mokuso/check
+    execute as @a[tag=Mokuso] at @s run function job:skill/ninja/mokuso/check
 
 # 風切
-    execute as @a[scores={Kazakiri=0..}] at @s run function skill:job_skill/ninja/kazakiri/check
+    execute as @a[scores={Kazakiri=0..}] at @s run function job:skill/ninja/kazakiri/check
 
 # レーダーヴィジョン
-    execute as @a[tag=RadarVision,scores={HP=1..}] at @s run function skill:job_skill/archer/radar_vision/check
+    execute as @a[tag=RadarVision,scores={HP=1..}] at @s run function job:skill/archer/radar_vision/check
 
 # 個人ロッカー(印板)から音
     execute at @e[tag=PersonalLockerSign] run playsound minecraft:block.beacon.ambient block @a[distance=..16]
@@ -59,7 +59,7 @@
     execute as 0-0-1-0-4 at @s positioned ~ ~-19 ~74 if block -1860 20 -51 minecraft:slime_block if entity @p[distance=..65,gamemode=!spectator] run function world_manager:dimension/purgatory/boss/attack_check
 
 # 死の宣告
-    execute as @a[tag=Doom] run function player_manager:effect/invisible/doom/
+    execute as @a[tag=Doom] run function player_manager:effect/invisible/doom/default
 
 # サバイバルスポナー処理
     execute as @e[tag=SpawnerCore] at @s if block ~ ~ ~ minecraft:air run kill @e[distance=..0.99,tag=Spawner,limit=2,sort=nearest]

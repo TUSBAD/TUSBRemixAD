@@ -1,0 +1,10 @@
+#> job:skill/black_mage/syawa_/spell
+
+###
+scoreboard players operation @s ActivatedSkill = @s CurrentMode
+scoreboard players operation @s MPConsumption = @s CurrentModeCost
+### MPチェック
+function job:check_mp/
+
+scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
+execute if score _ ActivatedSkill matches 5270..5279 run function job:skill/black_mage/syawa_/cast

@@ -60,10 +60,8 @@ scoreboard objectives add MP dummy {"text": "MP","color": "#3ecfff","bold": true
 scoreboard objectives add MPMax dummy "最大MP"
 scoreboard objectives add MPMaxFlag dummy "MP回復済フラグ"
 ### MP回復タイミング
-scoreboard objectives add CoolTickSpan dummy "クールティックスパン"
-scoreboard objectives add CoolTickCounter minecraft.custom:time_since_death
-scoreboard objectives add MPIncrement dummy "MP定期回復量"
 scoreboard objectives add MPConsumption dummy "MP消費量"
+scoreboard objectives add MPRecovery dummy "MP回復量"
 scoreboard objectives add MPHealingWait dummy {"text":"MP回復ウェイト"}
 scoreboard objectives add MPAcceleration dummy {"text":"MP回復加速量"}
 
@@ -126,7 +124,7 @@ scoreboard objectives add SpawnZ dummy
 data modify storage tusb_remake: skill_liberation set value 0b
 
 ### スキルテーブルを初期化
-function skill:init_table/
+function job:init_table/
 
 ### 村人会話 => advancements
 scoreboard objectives add PastorFlag trigger "牧師会話フラグ"
@@ -244,19 +242,15 @@ team add Boss {"text":"ボス"}
 team modify Boss color dark_red
 team add AdvancedBoss {"text":"強化ボス"}
 team modify AdvancedBoss color dark_purple
-team modify AdvancedBoss suffix {"text":"💀","color":"#e815ff"}
 team modify AdvancedBoss prefix {"text":"💀","color":"#e815ff"}
 team add ExtremeBoss {"text":"超越ボス"}
 team modify ExtremeBoss color dark_green
-team modify ExtremeBoss suffix {"text":"☠️","color":"#008000"}
 team modify ExtremeBoss prefix {"text":"☠️","color":"#008000"}
 team add SupremeBoss {"text":"至高ボス"}
 team modify SupremeBoss color light_purple
-team modify SupremeBoss suffix {"text":"👿","color":"#ff2A2A"}
 team modify SupremeBoss prefix {"text":"👿","color":"#ff2A2A"}
 team add Guardian {"text":"守護者"}
 team modify Guardian color dark_blue
-team modify Guardian suffix {"text":"🌟","color":"#0080ff"}
 team modify Guardian prefix {"text":"🌟","color":"#0080ff"}
 
 ### ゲームルール / ワールド設定
@@ -285,7 +279,7 @@ worldborder set 7000
 
 ### setdisplay
 scoreboard objectives setdisplay list Level
-scoreboard objectives setdisplay sidebar MP
+#scoreboard objectives setdisplay sidebar MP
 scoreboard objectives setdisplay belowName HP
 scoreboard players reset * MP
 
@@ -392,4 +386,8 @@ data modify storage tusb_remake: Prefix.CRIT set value "§4CRITICAL >> §r"
 
 #> 変数スコア
 scoreboard objectives add __ dummy {"text":"一時変数 その2"}
-scoreboard objectives add ChangeSettings trigger {"text":"設定変更"}
+scoreboard objectives add Calc dummy {"text":"計算変数"}
+scoreboard objectives add Difficulty dummy {"text":"難易度保存スコア"}
+
+#> Function実行
+function core:settings/too_bad_effects

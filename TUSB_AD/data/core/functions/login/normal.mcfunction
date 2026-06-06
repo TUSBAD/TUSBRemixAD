@@ -6,7 +6,6 @@
 ### 正常な時の処理
 scoreboard players add @s MP 0
 scoreboard players set @s[scores={MP=..0,MPMaxFlag=1..}] MPMaxFlag 0
-scoreboard players reset @s[scores={MP=..0}] CoolTickCounter
 tag @s add ShowVote
 ### ログイン時のメッセージ表示を待機
 tag @s add LoginMessage

@@ -7,4 +7,4 @@
 # #ff00ff
 
 team modify FriendlyTeam suffix {"text":"✨","color":"#0000ff"}
-team modify Friendly prefix {"text":"✨","color":"#0000ff"}
+team modify FriendlyTeam prefix {"text":"✨","color":"#0000ff"}
