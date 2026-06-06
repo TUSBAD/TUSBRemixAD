@@ -1,0 +1,96 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wither_skeleton_skull",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "嫌な予感について                                      ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この世界では、定期的に空が赤くなります。これが嫌な予感の発生合図です。\n嫌な予感は参加している全員に発生します。ログアウトしても回避することはできません。\nまた、ランダムで全員の予感内容が統一される場合があります。その場合は発生時のSEが変化します。\n嫌な予感の発生間隔や内容は、難易度や攻略数によって変化します。\n\n・%1$sは、発生間隔は%2$sで、予感の内容は§l初期から変化しません。§f\n\n・%3$sは、発生間隔は%4$sで、予感の内容は§l初期から変化しませんが、ディメンション毎に固定されます。§f\n\n・%5$sは、発生間隔は%6$sで、予感の内容は§l攻略数に応じて苛烈になります。(第三段階まで)§f\n\n・%7$sは、発生間隔は%8$sで、予感の内容は§l攻略数に応じて苛烈になります。(最終段階まで)§f",
+      "color": "white",
+      "with": [
+        {
+          "translate": "難易度が%1$sの場合",
+          "color": "white",
+          "with": [
+            {
+              "translate": "ピクニック",
+              "color": "#80ff00",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "translate": "30分~60分",
+          "color": "white"
+        },
+        {
+          "translate": "難易度が%1$s・%2$sの場合",
+          "color": "white",
+          "with": [
+            {
+              "translate": "カジュアル",
+              "color": "#FF2A2A",
+              "bold": true
+            },
+            {
+              "translate": "ハードコア",
+              "color": "#a600ff",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "translate": "15分~45分",
+          "color": "white"
+        },
+        {
+          "translate": "難易度が%1$sの場合",
+          "color": "white",
+          "with": [
+            {
+              "translate": "アナザー",
+              "color": "#ff00ff",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "translate": "15分~30分",
+          "color": "white"
+        },
+        {
+          "translate": "難易度が%1$sの場合",
+          "color": "white",
+          "with": [
+            {
+              "translate": "ナイトメア",
+              "color": "#2848ff",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "translate": "5分～30分",
+          "color": "white"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial34",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

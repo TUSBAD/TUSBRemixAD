@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tipped_arrow",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "様々な特殊矢                                        ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この世界では、時々敵のスキルにより特殊な矢が放たれることがあります。\n特殊な矢に当たってしまうとデバフを受け、場合によっては%1$sや%2$sに罹ってしまう場合もあります。\n%3$sを使用しておくと安全かもしれません。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "体力一列",
+          "bold": true,
+          "color": "#ff373d"
+        },
+        {
+          "translate": "死の宣告",
+          "bold": true,
+          "color": "#be46ff"
+        },
+        {
+          "translate": "ウィンドウォール",
+          "bold": true,
+          "color": "#33dbf9"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial21",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

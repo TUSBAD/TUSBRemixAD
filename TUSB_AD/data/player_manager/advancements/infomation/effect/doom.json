@@ -1,0 +1,115 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{Enchantments:[{}],CustomPotionColor:9567231}"
+    },
+    "title": [
+      {
+        "translate": "特殊デバフ: 死の宣告                                        ",
+        "color": "red",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "死の%1$sを開始し、\nカウントが0になると%2$s。\n%3$sを服用すると解除できる。\n\n%4$sの場合は%5$s\n%6$sの場合は%7$s\n%8$sの場合は%9$s",
+      "color": "white",
+      "with": [
+        {
+          "translate": "カウントダウン",
+          "color": "red"
+        },
+        {
+          "translate": "死亡する",
+          "color": "dark_red"
+        },
+        {
+          "translate": "聖水",
+          "color": "aqua"
+        },
+        {
+          "translate": "難易度が%1$s",
+          "color": "white",
+          "with": [
+            {
+              "translate": "ピクニック",
+              "color": "#80ff00",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "translate": "3秒毎に1カウント減少。(10カウント)",
+          "color": "white"
+        },
+        {
+          "translate": "難易度が%1$s・%2$s・%3$s",
+          "color": "white",
+          "with": [
+            {
+              "translate": "カジュアル",
+              "color": "#FF2A2A",
+              "bold": true
+            },
+            {
+              "translate": "アナザー",
+              "color": "#ff00ff",
+              "bold": true
+            },
+            {
+              "translate": "ハードコア",
+              "color": "#a600ff",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "translate": "1秒毎に1カウント減少。(10カウント)",
+          "color": "white"
+        },
+        {
+          "translate": "難易度が%1$s",
+          "color": "white",
+          "with": [
+            {
+              "translate": "ナイトメア",
+              "color": "#2848ff",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "translate": "1秒毎に1カウント減少。(%1$s)",
+          "color": "white",
+          "with": [
+            {
+              "translate": "5カウント",
+              "color": "#FF2A2A",
+              "bold": true
+            }
+          ]
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "player_manager:infomation/effect/root",
+  "criteria": {
+    "doom": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:invisibility": {
+            "amplifier": 0,
+            "duration": {
+              "min": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}
