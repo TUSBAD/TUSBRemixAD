@@ -17,7 +17,7 @@ scoreboard players set #Difficulty Difficulty 3
 gamerule keepInventory false
 
 #> チャット表示
-tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ハードコア","color":"#FF00FF","bold":true}],"bold":true,"color":"#e8383d"}]
+tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ハードコア","color":"#a600ff","bold":true}],"bold":true,"color":"#e8383d"}]
 execute as @a at @s run playsound minecraft:ambient.basalt_deltas.twist_4 master @s ~ ~ ~ 1 1 1
 
 #> 変更点
