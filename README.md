@@ -20,6 +20,7 @@ Discord:https://discord.gg/rTVWQm4ykR
 RemakeRemixを元に作成されたADです。
 当マップを遊ぶ際には、以下のmod群の導入を推奨します。
 - https://modrinth.com/collection/jkSMZaMr
+- https://modrinth.com/mod/advancement-info
 
 # バグ報告・要望等
 [こちら](https://github.com/TUSBAD/TUSBRemixAD/issues/new/choose) か [Discord](https://discord.gg/rTVWQm4ykR) までお願いします。
