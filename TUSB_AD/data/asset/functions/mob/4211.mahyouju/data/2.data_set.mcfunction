@@ -130,7 +130,7 @@ data modify storage asset: mob set value {Passengers:[{CustomName:'{"text":"魔�
 # 或いは...
 # data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,duration:600,show_particles:0b},{Id:5,Amplifier:4,duration:600,show_particles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
-# Id,Amplifier,duration,ShowIcon,ShowParticle,ambient
+# Id,Amplifier,duration,show_icon,ShowParticle,ambient
 
 
 ### Passengers
