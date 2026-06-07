@@ -105,7 +105,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:saturation,id:"minecraft:saturation"} 満腹度回復 +lv*1
     #{Name:glowing,id:"minecraft:glowing"} 発光
     #{Name:levitation,id:"minecraft:levitation"} 浮遊
-    #{Name:luck,Id:26} 運
+    #{Name:luck,id:"minecraft:luck"} 運
     #{Name:bad_luck,Id:27} 不運
     #{Name:slow_falling,Id:28} 低速落下
     #{Name:conduit_power,Id:29} コンジットパワー
