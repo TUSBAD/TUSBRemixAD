@@ -193,7 +193,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:19b,amplifier:0b},{show_particles:0b,duration:3,id:"minecraft:invisibility",amplifier:1b}],HideFlags:32,Potion:\"minecraft:water\",display:{Lore:['{\"text\":\"§bマナがちょぴっと詰まった瓶。\"}','{\"text\":\"§b中身に触れるとMPが回復する。\"}'],Name:'{\"text\":\"§3§lエリアエーテル\"}'}}"
+                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,id:"minecraft:poison",amplifier:0b},{show_particles:0b,duration:3,id:"minecraft:invisibility",amplifier:1b}],HideFlags:32,Potion:\"minecraft:water\",display:{Lore:['{\"text\":\"§bマナがちょぴっと詰まった瓶。\"}','{\"text\":\"§b中身に触れるとMPが回復する。\"}'],Name:'{\"text\":\"§3§lエリアエーテル\"}'}}"
                         }
                     ]
                 },
