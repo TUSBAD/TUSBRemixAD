@@ -110,7 +110,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:slow_falling,id:"minecraft:slow_falling"} 低速落下
     #{Name:conduit_power,id:"minecraft:conduit_power"} コンジットパワー
     #{Name:dolphins_grace,id:"minecraft:dolphins_grace"} イルカの好意
-    #{Name:bad_omen,Id:31} 不吉な予感
+    #{Name:bad_omen,id:"minecraft:bad_omen"} 不吉な予感
     #{Name:hero_of_the_village,Id:32} 村の英雄
     #{Name:darkness,Id:33} 暗闇
     # 詳しくはwiki見てね！
