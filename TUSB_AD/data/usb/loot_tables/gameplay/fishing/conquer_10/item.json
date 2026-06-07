@@ -182,7 +182,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{ShowParticles:1b,duration:0,Id:26b,Amplifier:0b},{ShowParticles:0b,duration:3,Id:14b,Amplifier:2b}],HideFlags:32,Potion:\"minecraft:water\",display:{Lore:['{\"text\":\"§aマナがぽちょっと詰まった飲み物。\"}','{\"text\":\"§a飲むとMPが大きく回復する。\"}','\"\"','{\"text\":\"§7スプラッシュ化不可\"}'],Name:'{\"text\":\"§2§lハイエーテル\"}'}}"
+                            "tag": "{CustomPotionEffects:[{show_particles:1b,duration:0,Id:26b,Amplifier:0b},{show_particles:0b,duration:3,Id:14b,Amplifier:2b}],HideFlags:32,Potion:\"minecraft:water\",display:{Lore:['{\"text\":\"§aマナがぽちょっと詰まった飲み物。\"}','{\"text\":\"§a飲むとMPが大きく回復する。\"}','\"\"','{\"text\":\"§7スプラッシュ化不可\"}'],Name:'{\"text\":\"§2§lハイエーテル\"}'}}"
                         }
                     ]
                 },
@@ -193,7 +193,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{ShowParticles:1b,duration:0,Id:19b,Amplifier:0b},{ShowParticles:0b,duration:3,Id:14b,Amplifier:1b}],HideFlags:32,Potion:\"minecraft:water\",display:{Lore:['{\"text\":\"§bマナがちょぴっと詰まった瓶。\"}','{\"text\":\"§b中身に触れるとMPが回復する。\"}'],Name:'{\"text\":\"§3§lエリアエーテル\"}'}}"
+                            "tag": "{CustomPotionEffects:[{show_particles:1b,duration:0,Id:19b,Amplifier:0b},{show_particles:0b,duration:3,Id:14b,Amplifier:1b}],HideFlags:32,Potion:\"minecraft:water\",display:{Lore:['{\"text\":\"§bマナがちょぴっと詰まった瓶。\"}','{\"text\":\"§b中身に触れるとMPが回復する。\"}'],Name:'{\"text\":\"§3§lエリアエーテル\"}'}}"
                         }
                     ]
                 },
@@ -316,7 +316,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomPotionEffects:[{Amplifier:-127b,duration:0,Id:25},{Amplifier:104b,duration:0,Id:27},{Amplifier:0b,duration:120,Id:16,ShowParticles:0b},{Amplifier:0b,duration:1200,Id:10,ShowParticles:0b},{Amplifier:2b,duration:60,Id:6,ShowParticles:0b},{Amplifier:2b,duration:1200,Id:22,ShowParticles:0b},{Amplifier:2b,duration:1200,Id:26,ShowParticles:0b},{Amplifier:0b,duration:120,Id:9,ShowParticles:0b}],display:{Lore:['{\"text\":\"§3泡立つしゅわっとした液体に\"}','{\"text\":\"§3神秘の輝きを放つ\"}','{\"text\":\"§3六角形の何かが§a§l１§3つ入っている。\"}','{\"text\":\"§360秒間の間、使用者の運を\"}','{\"text\":\"§e§lちょっぴり§3上昇させ傷を癒す。\"}'],Name:'{\"text\":\"§r§e§k-§a§lハニカム §3§l-§b§lO§3§l- §a§lライト§e§k-§r\"}'},Enchantments:[{id:\"minecraft:smite\",lvl:3s}],HideFlags:33}"
+                            "tag": "{CustomPotionEffects:[{Amplifier:-127b,duration:0,Id:25},{Amplifier:104b,duration:0,Id:27},{Amplifier:0b,duration:120,Id:16,show_particles:0b},{Amplifier:0b,duration:1200,Id:10,show_particles:0b},{Amplifier:2b,duration:60,Id:6,show_particles:0b},{Amplifier:2b,duration:1200,Id:22,show_particles:0b},{Amplifier:2b,duration:1200,Id:26,show_particles:0b},{Amplifier:0b,duration:120,Id:9,show_particles:0b}],display:{Lore:['{\"text\":\"§3泡立つしゅわっとした液体に\"}','{\"text\":\"§3神秘の輝きを放つ\"}','{\"text\":\"§3六角形の何かが§a§l１§3つ入っている。\"}','{\"text\":\"§360秒間の間、使用者の運を\"}','{\"text\":\"§e§lちょっぴり§3上昇させ傷を癒す。\"}'],Name:'{\"text\":\"§r§e§k-§a§lハニカム §3§l-§b§lO§3§l- §a§lライト§e§k-§r\"}'},Enchantments:[{id:\"minecraft:smite\",lvl:3s}],HideFlags:33}"
                         }
                     ]
                 }

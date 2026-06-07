@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{duration: 0, Id: 25b, Amplifier: -128b, ShowParticles: 1b}, {duration: 0, Id: 16b, Amplifier: -20b, ShowParticles: 1b}, {duration: 60, Id: 20b, Amplifier: 3b, ShowParticles: 0b}, {duration: 60, Id: 2b, Amplifier: 5b, ShowParticles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§7凍気で追加ﾀﾞﾒｰｼﾞを与え、束縛する。\"}'], Name: '{\"text\":\"§b§l氷塊の矢\"}'}}"
+                "tag": "{CustomPotionEffects: [{duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 16b, Amplifier: -20b, show_particles: 1b}, {duration: 60, Id: 20b, Amplifier: 3b, show_particles: 0b}, {duration: 60, Id: 2b, Amplifier: 5b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§7凍気で追加ﾀﾞﾒｰｼﾞを与え、束縛する。\"}'], Name: '{\"text\":\"§b§l氷塊の矢\"}'}}"
               }
             ]
           }

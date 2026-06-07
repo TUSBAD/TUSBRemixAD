@@ -121,13 +121,13 @@ data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
     #{Name:hero_of_the_village,id:32} 村の英雄
     #{Name:darkness,id:33} 暗闇
     # 詳しくはwiki見てね！
-# data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,duration:600,ShowParticles:0b}
-# data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,duration:600,show_particles:0b}
+# data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,duration:600,show_particles:0b}
 # 或いは...
-# data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,duration:600,ShowParticles:0b},{Id:5,Amplifier:4,duration:600,ShowParticles:0b}]
+# data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,duration:600,show_particles:0b},{Id:5,Amplifier:4,duration:600,show_particles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
 # Id,Amplifier,duration,ShowIcon,ShowParticle,ambient
-data modify storage asset: mob.active_effects set value [{ambient: 0b, ShowIcon: 0b, ShowParticles: 0b, duration: 2147483482, Id: 14, Amplifier: 127b}, {ambient: 0b, ShowIcon: 0b, ShowParticles: 0b, duration: 2147483482, Id: 8, Amplifier: 4b}, {ambient: 0b, ShowIcon: 0b, ShowParticles: 0b, duration: 2147483482, Id: 11, Amplifier: 1b}]
+data modify storage asset: mob.active_effects set value [{ambient: 0b, ShowIcon: 0b, show_particles: 0b, duration: 2147483482, Id: 14, Amplifier: 127b}, {ambient: 0b, ShowIcon: 0b, show_particles: 0b, duration: 2147483482, Id: 8, Amplifier: 4b}, {ambient: 0b, ShowIcon: 0b, show_particles: 0b, duration: 2147483482, Id: 11, Amplifier: 1b}]
 
 
 ### Passengers

@@ -10,7 +10,7 @@
                 "functions": [
                     {
                         "function": "set_nbt",
-                        "tag": "{CustomPotionEffects: [{duration: 200, Id: 9b, Amplifier: 2b, ShowParticles: 0b}, {duration: 600, Id: 2b, Amplifier: 1b, ShowParticles: 0b}, {duration: 60, Id: 15b, Amplifier: 1b, ShowParticles: 0b}, {duration: 60, Id: 18b, Amplifier: 1b, ShowParticles: 0b}, {duration: 1200, Id: 5b, Amplifier: 4b, ShowParticles: 0b}, {duration: 0, Id: 25b, Amplifier: -128b, ShowParticles: 1b}, {duration: 0, Id: 16b, Amplifier: 91b, ShowParticles: 1b}], HideFlags: 63, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"ちょっとの間足がもたつくが\"}', '{\"text\":\"すこし力を与える\"}'], Name: '{\"text\":\"§5パープルサンダー\"}'}}"
+                        "tag": "{CustomPotionEffects: [{duration: 200, Id: 9b, Amplifier: 2b, show_particles: 0b}, {duration: 600, Id: 2b, Amplifier: 1b, show_particles: 0b}, {duration: 60, Id: 15b, Amplifier: 1b, show_particles: 0b}, {duration: 60, Id: 18b, Amplifier: 1b, show_particles: 0b}, {duration: 1200, Id: 5b, Amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 16b, Amplifier: 91b, show_particles: 1b}], HideFlags: 63, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"ちょっとの間足がもたつくが\"}', '{\"text\":\"すこし力を与える\"}'], Name: '{\"text\":\"§5パープルサンダー\"}'}}"
                     }
                 ]
             }

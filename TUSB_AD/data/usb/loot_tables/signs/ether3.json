@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{HideFlags:32,CustomPotionEffects:[{Id:26,duration:0,Amplifier:0b,ShowParticles:true},{Id:14,duration:3,Amplifier:3b,ShowParticles:false}],Potion:\"minecraft:water\",display:{Name:'{\"text\":\"§2§lスーパーエーテル\"}',Lore:['{\"text\":\"§aマナがたぽっと詰まった飲み物。\"}','{\"text\":\"§a飲むとMPがとても大きく回復する。\"}','\"\"','{\"text\":\"§7スプラッシュ化不可\"}']}}"
+                            "tag": "{HideFlags:32,CustomPotionEffects:[{Id:26,duration:0,Amplifier:0b,show_particles:true},{Id:14,duration:3,Amplifier:3b,show_particles:false}],Potion:\"minecraft:water\",display:{Name:'{\"text\":\"§2§lスーパーエーテル\"}',Lore:['{\"text\":\"§aマナがたぽっと詰まった飲み物。\"}','{\"text\":\"§a飲むとMPがとても大きく回復する。\"}','\"\"','{\"text\":\"§7スプラッシュ化不可\"}']}}"
                         }
                     ]
                 }

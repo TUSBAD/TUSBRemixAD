@@ -10,7 +10,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare1\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:1b,duration:600,Id:1,ShowParticles:0b},{Amplifier:1b,duration:600,Id:4,ShowParticles:0b}],HideFlags:63}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare1\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:1b,duration:600,Id:1,show_particles:0b},{Amplifier:1b,duration:600,Id:4,show_particles:0b}],HideFlags:63}"
 						}
 					]
 				},
@@ -21,7 +21,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare1\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:1b,duration:600,Id:3,ShowParticles:0b},{Amplifier:1b,duration:600,Id:18,ShowParticles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare1\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:1b,duration:600,Id:3,show_particles:0b},{Amplifier:1b,duration:600,Id:18,show_particles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -32,7 +32,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare1\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:1b,duration:600,Id:2,ShowParticles:0b},{Amplifier:1b,duration:600,Id:5,ShowParticles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare1\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:1b,duration:600,Id:2,show_particles:0b},{Amplifier:1b,duration:600,Id:5,show_particles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -43,7 +43,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare2\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:2b,duration:600,Id:1,ShowParticles:0b},{Amplifier:1b,duration:750,Id:8,ShowParticles:0b},{Amplifier:1b,duration:600,Id:18,ShowParticles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare2\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:2b,duration:600,Id:1,show_particles:0b},{Amplifier:1b,duration:750,Id:8,show_particles:0b},{Amplifier:1b,duration:600,Id:18,show_particles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -54,7 +54,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare2\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:2b,duration:600,Id:2,ShowParticles:0b},{Amplifier:1b,duration:750,Id:3,ShowParticles:0b},{Amplifier:1b,duration:600,Id:5,ShowParticles:0b},{Amplifier:1b,duration:1800,Id:12,ShowParticles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare2\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:2b,duration:600,Id:2,show_particles:0b},{Amplifier:1b,duration:750,Id:3,show_particles:0b},{Amplifier:1b,duration:600,Id:5,show_particles:0b},{Amplifier:1b,duration:1800,Id:12,show_particles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -65,7 +65,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare3\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:2b,duration:600,Id:1,ShowParticles:0b},{Amplifier:1b,duration:20,Id:6,ShowParticles:0b},{Amplifier:4b,duration:1800,Id:13,ShowParticles:0b},{Amplifier:1b,duration:120,Id:15,ShowParticles:0b},{Amplifier:2b,duration:3600,Id:22,ShowParticles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare3\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:2b,duration:600,Id:1,show_particles:0b},{Amplifier:1b,duration:20,Id:6,show_particles:0b},{Amplifier:4b,duration:1800,Id:13,show_particles:0b},{Amplifier:1b,duration:120,Id:15,show_particles:0b},{Amplifier:2b,duration:3600,Id:22,show_particles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -76,7 +76,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare4\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:1b,duration:1200,Id:3,ShowParticles:0b},{Amplifier:1b,duration:200,Id:5,ShowParticles:0b},{Amplifier:1b,duration:20,Id:6,ShowParticles:0b},{Amplifier:3b,duration:100,Id:10,ShowParticles:0b},{Amplifier:1b,duration:1000,Id:15,ShowParticles:0b},{Amplifier:1b,duration:1600,Id:17,ShowParticles:0b},{Amplifier:3b,duration:3600,Id:22,ShowParticles:0b},{Amplifier:-128b,duration:600,Id:25,ShowParticles:0b}],display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare4\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:1b,duration:1200,Id:3,show_particles:0b},{Amplifier:1b,duration:200,Id:5,show_particles:0b},{Amplifier:1b,duration:20,Id:6,show_particles:0b},{Amplifier:3b,duration:100,Id:10,show_particles:0b},{Amplifier:1b,duration:1000,Id:15,show_particles:0b},{Amplifier:1b,duration:1600,Id:17,show_particles:0b},{Amplifier:3b,duration:3600,Id:22,show_particles:0b},{Amplifier:-128b,duration:600,Id:25,show_particles:0b}],display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -87,7 +87,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare4\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:2b,duration:4600,Id:1,ShowParticles:0b},{Amplifier:1b,duration:3200,Id:8,ShowParticles:0b},{Amplifier:1b,duration:6000,Id:12,ShowParticles:0b},{Amplifier:0b,duration:20,Id:14,ShowParticles:0b},{Amplifier:1b,duration:1200,Id:17,ShowParticles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare4\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:2b,duration:4600,Id:1,show_particles:0b},{Amplifier:1b,duration:3200,Id:8,show_particles:0b},{Amplifier:1b,duration:6000,Id:12,show_particles:0b},{Amplifier:0b,duration:20,Id:14,show_particles:0b},{Amplifier:1b,duration:1200,Id:17,show_particles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -98,7 +98,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare5\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:3b,duration:2400,Id:1,ShowParticles:0b},{Amplifier:3b,duration:3200,Id:3,ShowParticles:0b},{Amplifier:1b,duration:3200,Id:5,ShowParticles:0b},{Amplifier:127b,duration:0,Id:19,ShowParticles:0b},{Amplifier:2b,duration:4600,Id:22,ShowParticles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare5\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:3b,duration:2400,Id:1,show_particles:0b},{Amplifier:3b,duration:3200,Id:3,show_particles:0b},{Amplifier:1b,duration:3200,Id:5,show_particles:0b},{Amplifier:127b,duration:0,Id:19,show_particles:0b},{Amplifier:2b,duration:4600,Id:22,show_particles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -109,7 +109,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare5\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:3b,duration:2400,Id:1,ShowParticles:0b},{Amplifier:127b,duration:0,Id:2,ShowParticles:0b},{Amplifier:127b,duration:0,Id:4,ShowParticles:0b},{Amplifier:1b,duration:20,Id:7,ShowParticles:0b},{Amplifier:127b,duration:0,Id:10,ShowParticles:0b},{Amplifier:127b,duration:0,Id:11,ShowParticles:0b},{Amplifier:127b,duration:0,Id:12,ShowParticles:0b},{Amplifier:127b,duration:0,Id:13,ShowParticles:0b},{Amplifier:1b,duration:20,Id:14,ShowParticles:0b},{Amplifier:127b,duration:0,Id:15,ShowParticles:0b},{Amplifier:1b,duration:3600,Id:16,ShowParticles:0b}],display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare5\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:3b,duration:2400,Id:1,show_particles:0b},{Amplifier:127b,duration:0,Id:2,show_particles:0b},{Amplifier:127b,duration:0,Id:4,show_particles:0b},{Amplifier:1b,duration:20,Id:7,show_particles:0b},{Amplifier:127b,duration:0,Id:10,show_particles:0b},{Amplifier:127b,duration:0,Id:11,show_particles:0b},{Amplifier:127b,duration:0,Id:12,show_particles:0b},{Amplifier:127b,duration:0,Id:13,show_particles:0b},{Amplifier:1b,duration:20,Id:14,show_particles:0b},{Amplifier:127b,duration:0,Id:15,show_particles:0b},{Amplifier:1b,duration:3600,Id:16,show_particles:0b}],display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -120,7 +120,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare5\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:127b,duration:0,Id:2,ShowParticles:0b},{Amplifier:127b,duration:0,Id:4,ShowParticles:0b},{Amplifier:127b,duration:0,Id:5,ShowParticles:0b},{Amplifier:1b,duration:20,Id:6,ShowParticles:0b},{Amplifier:1b,duration:200,Id:9,ShowParticles:0b},{Amplifier:1b,duration:3600,Id:12,ShowParticles:0b},{Amplifier:2b,duration:20,Id:14,ShowParticles:0b},{Amplifier:127b,duration:0,Id:19,ShowParticles:0b},{Amplifier:4b,duration:3600,Id:22,ShowParticles:0b}]}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare5\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:127b,duration:0,Id:2,show_particles:0b},{Amplifier:127b,duration:0,Id:4,show_particles:0b},{Amplifier:127b,duration:0,Id:5,show_particles:0b},{Amplifier:1b,duration:20,Id:6,show_particles:0b},{Amplifier:1b,duration:200,Id:9,show_particles:0b},{Amplifier:1b,duration:3600,Id:12,show_particles:0b},{Amplifier:2b,duration:20,Id:14,show_particles:0b},{Amplifier:127b,duration:0,Id:19,show_particles:0b},{Amplifier:4b,duration:3600,Id:22,show_particles:0b}]}"
 						}
 					]
 				},
@@ -131,7 +131,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare6\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:2b,duration:3600,Id:3,ShowParticles:0b},{Amplifier:3b,duration:20,Id:6,ShowParticles:0b},{Amplifier:3b,duration:2600,Id:8,ShowParticles:0b},{Amplifier:1b,duration:2400,Id:11,ShowParticles:0b},{Amplifier:1b,duration:3600,Id:12,ShowParticles:0b},{Amplifier:1b,duration:20,Id:14,ShowParticles:0b},{Amplifier:1b,duration:3600,Id:18,ShowParticles:0b}],HideFlags:63}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare6\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:2b,duration:3600,Id:3,show_particles:0b},{Amplifier:3b,duration:20,Id:6,show_particles:0b},{Amplifier:3b,duration:2600,Id:8,show_particles:0b},{Amplifier:1b,duration:2400,Id:11,show_particles:0b},{Amplifier:1b,duration:3600,Id:12,show_particles:0b},{Amplifier:1b,duration:20,Id:14,show_particles:0b},{Amplifier:1b,duration:3600,Id:18,show_particles:0b}],HideFlags:63}"
 						}
 					]
 				},
@@ -142,7 +142,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare6\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:2b,duration:3600,Id:1,ShowParticles:0b},{Amplifier:2b,duration:2000,Id:5,ShowParticles:0b},{Amplifier:1b,duration:4200,Id:8,ShowParticles:0b},{Amplifier:1b,duration:2400,Id:12,ShowParticles:0b},{Amplifier:2b,duration:4200,Id:13,ShowParticles:0b},{Amplifier:1b,duration:20,Id:14,ShowParticles:0b},{Amplifier:1b,duration:2400,Id:16,ShowParticles:0b},{Amplifier:1b,duration:1200,Id:19,ShowParticles:0b}]}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare6\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:2b,duration:3600,Id:1,show_particles:0b},{Amplifier:2b,duration:2000,Id:5,show_particles:0b},{Amplifier:1b,duration:4200,Id:8,show_particles:0b},{Amplifier:1b,duration:2400,Id:12,show_particles:0b},{Amplifier:2b,duration:4200,Id:13,show_particles:0b},{Amplifier:1b,duration:20,Id:14,show_particles:0b},{Amplifier:1b,duration:2400,Id:16,show_particles:0b},{Amplifier:1b,duration:1200,Id:19,show_particles:0b}]}"
 						}
 					]
 				},
@@ -153,7 +153,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare7\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:6b,duration:3600,Id:3,ShowParticles:0b},{Amplifier:1b,duration:3600,Id:5,ShowParticles:0b},{Amplifier:2b,duration:20,Id:6,ShowParticles:0b},{Amplifier:1b,duration:2400,Id:8,ShowParticles:0b},{Amplifier:1b,duration:3600,Id:11,ShowParticles:0b},{Amplifier:1b,duration:20,Id:14,ShowParticles:0b}]}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare7\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:6b,duration:3600,Id:3,show_particles:0b},{Amplifier:1b,duration:3600,Id:5,show_particles:0b},{Amplifier:2b,duration:20,Id:6,show_particles:0b},{Amplifier:1b,duration:2400,Id:8,show_particles:0b},{Amplifier:1b,duration:3600,Id:11,show_particles:0b},{Amplifier:1b,duration:20,Id:14,show_particles:0b}]}"
 						}
 					]
 				},
@@ -164,7 +164,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare7\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:5b,duration:200,Id:3,ShowParticles:0b},{Amplifier:1b,duration:2200,Id:5,ShowParticles:0b},{Amplifier:2b,duration:20,Id:6,ShowParticles:0b},{Amplifier:1b,duration:2000,Id:8,ShowParticles:0b},{Amplifier:5b,duration:2400,Id:1,ShowParticles:0b}],display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare7\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:5b,duration:200,Id:3,show_particles:0b},{Amplifier:1b,duration:2200,Id:5,show_particles:0b},{Amplifier:2b,duration:20,Id:6,show_particles:0b},{Amplifier:1b,duration:2000,Id:8,show_particles:0b},{Amplifier:5b,duration:2400,Id:1,show_particles:0b}],display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -175,7 +175,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare7\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:5b,duration:3600,Id:1,ShowParticles:0b},{Amplifier:1b,duration:3600,Id:5,ShowParticles:0b},{Amplifier:5b,duration:3600,Id:8,ShowParticles:0b},{Amplifier:1b,duration:6400,Id:12,ShowParticles:0b},{Amplifier:2b,duration:20,Id:14,ShowParticles:0b},{Amplifier:1b,duration:12000,Id:16,ShowParticles:0b},{Amplifier:4b,duration:2400,Id:22,ShowParticles:0b},{Amplifier:2b,duration:600,Id:23,ShowParticles:0b}],HideFlags:63}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare7\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:5b,duration:3600,Id:1,show_particles:0b},{Amplifier:1b,duration:3600,Id:5,show_particles:0b},{Amplifier:5b,duration:3600,Id:8,show_particles:0b},{Amplifier:1b,duration:6400,Id:12,show_particles:0b},{Amplifier:2b,duration:20,Id:14,show_particles:0b},{Amplifier:1b,duration:12000,Id:16,show_particles:0b},{Amplifier:4b,duration:2400,Id:22,show_particles:0b},{Amplifier:2b,duration:600,Id:23,show_particles:0b}],HideFlags:63}"
 						}
 					]
 				},
@@ -187,7 +187,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare8\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:2b,duration:4200,Id:2,ShowParticles:0b},{Amplifier:1b,duration:3400,Id:1,ShowParticles:0b},{Amplifier:1b,duration:20,Id:6,ShowParticles:0b},{Amplifier:4b,duration:4100,Id:8,ShowParticles:0b},{Amplifier:2b,duration:3200,Id:11,ShowParticles:0b},{Amplifier:3b,duration:20,Id:14,ShowParticles:0b},{Amplifier:1b,duration:3200,Id:16,ShowParticles:0b}]}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare8\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:2b,duration:4200,Id:2,show_particles:0b},{Amplifier:1b,duration:3400,Id:1,show_particles:0b},{Amplifier:1b,duration:20,Id:6,show_particles:0b},{Amplifier:4b,duration:4100,Id:8,show_particles:0b},{Amplifier:2b,duration:3200,Id:11,show_particles:0b},{Amplifier:3b,duration:20,Id:14,show_particles:0b},{Amplifier:1b,duration:3200,Id:16,show_particles:0b}]}"
 						}
 					]
 				},
@@ -198,7 +198,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare8\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:1b,duration:3400,Id:5,ShowParticles:0b},{Amplifier:1b,duration:3600,Id:11,ShowParticles:0b},{Amplifier:3b,duration:20,Id:14,ShowParticles:0b},{Amplifier:1b,duration:300,Id:17,ShowParticles:0b},{Amplifier:127b,duration:0,Id:18,ShowParticles:0b}]}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare8\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:1b,duration:3400,Id:5,show_particles:0b},{Amplifier:1b,duration:3600,Id:11,show_particles:0b},{Amplifier:3b,duration:20,Id:14,show_particles:0b},{Amplifier:1b,duration:300,Id:17,show_particles:0b},{Amplifier:127b,duration:0,Id:18,show_particles:0b}]}"
 						}
 					]
 				},
@@ -210,7 +210,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare9\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:4b,duration:2400,Id:1,ShowParticles:0b},{Amplifier:1b,duration:3200,Id:3,ShowParticles:0b},{Amplifier:2b,duration:20,Id:6,ShowParticles:0b},{Amplifier:1b,duration:200,Id:9,ShowParticles:0b},{Amplifier:1b,duration:3200,Id:12,ShowParticles:0b},{Amplifier:2b,duration:20,Id:14,ShowParticles:0b},{Amplifier:1b,duration:800,Id:17,ShowParticles:0b},{Amplifier:127b,duration:0,Id:20,ShowParticles:0b}]}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare9\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:4b,duration:2400,Id:1,show_particles:0b},{Amplifier:1b,duration:3200,Id:3,show_particles:0b},{Amplifier:2b,duration:20,Id:6,show_particles:0b},{Amplifier:1b,duration:200,Id:9,show_particles:0b},{Amplifier:1b,duration:3200,Id:12,show_particles:0b},{Amplifier:2b,duration:20,Id:14,show_particles:0b},{Amplifier:1b,duration:800,Id:17,show_particles:0b},{Amplifier:127b,duration:0,Id:20,show_particles:0b}]}"
 						}
 					]
 				},
@@ -222,7 +222,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare10\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:2b,duration:4800,Id:1,ShowParticles:0b},{Amplifier:127b,duration:0,Id:2,ShowParticles:0b},{Amplifier:1b,duration:4000,Id:3,ShowParticles:0b},{Amplifier:127b,duration:0,Id:4,ShowParticles:0b},{Amplifier:2b,duration:20,Id:6,ShowParticles:0b},{Amplifier:2b,duration:4800,Id:8,ShowParticles:0b},{Amplifier:1b,duration:40,Id:9,ShowParticles:0b},{Amplifier:2b,duration:3880,Id:11,ShowParticles:0b},{Amplifier:1b,duration:7200,Id:12,ShowParticles:0b},{Amplifier:2b,duration:3480,Id:13,ShowParticles:0b},{Amplifier:4b,duration:20,Id:14,ShowParticles:0b},{Amplifier:127b,duration:0,Id:19,ShowParticles:0b},{Amplifier:127b,duration:0,Id:20,ShowParticles:0b},{Amplifier:1b,duration:40,Id:25,ShowParticles:0b}]}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare10\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:2b,duration:4800,Id:1,show_particles:0b},{Amplifier:127b,duration:0,Id:2,show_particles:0b},{Amplifier:1b,duration:4000,Id:3,show_particles:0b},{Amplifier:127b,duration:0,Id:4,show_particles:0b},{Amplifier:2b,duration:20,Id:6,show_particles:0b},{Amplifier:2b,duration:4800,Id:8,show_particles:0b},{Amplifier:1b,duration:40,Id:9,show_particles:0b},{Amplifier:2b,duration:3880,Id:11,show_particles:0b},{Amplifier:1b,duration:7200,Id:12,show_particles:0b},{Amplifier:2b,duration:3480,Id:13,show_particles:0b},{Amplifier:4b,duration:20,Id:14,show_particles:0b},{Amplifier:127b,duration:0,Id:19,show_particles:0b},{Amplifier:127b,duration:0,Id:20,show_particles:0b},{Amplifier:1b,duration:40,Id:25,show_particles:0b}]}"
 						}
 					]
 				},
@@ -233,7 +233,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"Rare10\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:1b,duration:1200,Id:2,ShowParticles:0b},{Amplifier:3b,duration:4200,Id:5,ShowParticles:0b},{Amplifier:1b,duration:2300,Id:10,ShowParticles:0b},{Amplifier:3b,duration:20,Id:14,ShowParticles:0b},{Amplifier:127b,duration:0,Id:18,ShowParticles:0b},{Amplifier:127b,duration:0,Id:19,ShowParticles:0b},{Amplifier:3b,duration:6400,Id:22,ShowParticles:0b},{Amplifier:1b,duration:4800,Id:23,ShowParticles:0b}],HideFlags:63}"
+							"tag": "{AttributeModifiers:[{Name:\"Rare10\",Operation:0,Amount:0d,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],display:{Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}',Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}']},CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:1b,duration:1200,Id:2,show_particles:0b},{Amplifier:3b,duration:4200,Id:5,show_particles:0b},{Amplifier:1b,duration:2300,Id:10,show_particles:0b},{Amplifier:3b,duration:20,Id:14,show_particles:0b},{Amplifier:127b,duration:0,Id:18,show_particles:0b},{Amplifier:127b,duration:0,Id:19,show_particles:0b},{Amplifier:3b,duration:6400,Id:22,show_particles:0b},{Amplifier:1b,duration:4800,Id:23,show_particles:0b}],HideFlags:63}"
 						}
 					]
 				},
@@ -245,7 +245,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"RareEx\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:28b,duration:200,Id:2,ShowParticles:0b},{Amplifier:1b,duration:200,Id:9,ShowParticles:0b},{Amplifier:-1b,duration:20,Id:14,ShowParticles:0b},{Amplifier:28b,duration:1400,Id:15,ShowParticles:0b}],display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"RareEx\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],HideFlags:63,CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:28b,duration:200,Id:2,show_particles:0b},{Amplifier:1b,duration:200,Id:9,show_particles:0b},{Amplifier:-1b,duration:20,Id:14,show_particles:0b},{Amplifier:28b,duration:1400,Id:15,show_particles:0b}],display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				},
@@ -256,7 +256,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{AttributeModifiers:[{Name:\"RareEx\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,ShowParticles:1b},{Amplifier:1b,duration:0,Id:27,ShowParticles:1b},{Amplifier:4b,duration:2000,Id:1,ShowParticles:0b},{Amplifier:127b,duration:0,Id:2,ShowParticles:0b},{Amplifier:2b,duration:2400,Id:3,ShowParticles:0b},{Amplifier:127b,duration:0,Id:4,ShowParticles:0b},{Amplifier:3b,duration:1200,Id:5,ShowParticles:0b},{Amplifier:1b,duration:20,Id:6,ShowParticles:0b},{Amplifier:2b,duration:3000,Id:8,ShowParticles:0b},{Amplifier:127b,duration:0,Id:9,ShowParticles:0b},{Amplifier:5b,duration:300,Id:11,ShowParticles:0b},{Amplifier:1b,duration:1600,Id:12,ShowParticles:0b},{Amplifier:1b,duration:4020,Id:13,ShowParticles:0b},{Amplifier:4b,duration:20,Id:14,ShowParticles:0b},{Amplifier:127b,duration:0,Id:15,ShowParticles:0b},{Amplifier:1b,duration:2300,Id:16,ShowParticles:0b},{Amplifier:127b,duration:0,Id:17,ShowParticles:0b},{Amplifier:127b,duration:0,Id:18,ShowParticles:0b},{Amplifier:4b,duration:4800,Id:22,ShowParticles:0b},{Amplifier:1b,duration:320,Id:23,ShowParticles:0b},{Amplifier:1b,duration:4800,Id:24,ShowParticles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
+							"tag": "{AttributeModifiers:[{Name:\"RareEx\",Amount:0d,Operation:0,UUID:[I;0,1,0,3],Slot:\"head\",AttributeName:\"minecraft:generic.max_health\"}],CustomPotionEffects:[{Amplifier:-128b,duration:0,Id:26,show_particles:1b},{Amplifier:1b,duration:0,Id:27,show_particles:1b},{Amplifier:4b,duration:2000,Id:1,show_particles:0b},{Amplifier:127b,duration:0,Id:2,show_particles:0b},{Amplifier:2b,duration:2400,Id:3,show_particles:0b},{Amplifier:127b,duration:0,Id:4,show_particles:0b},{Amplifier:3b,duration:1200,Id:5,show_particles:0b},{Amplifier:1b,duration:20,Id:6,show_particles:0b},{Amplifier:2b,duration:3000,Id:8,show_particles:0b},{Amplifier:127b,duration:0,Id:9,show_particles:0b},{Amplifier:5b,duration:300,Id:11,show_particles:0b},{Amplifier:1b,duration:1600,Id:12,show_particles:0b},{Amplifier:1b,duration:4020,Id:13,show_particles:0b},{Amplifier:4b,duration:20,Id:14,show_particles:0b},{Amplifier:127b,duration:0,Id:15,show_particles:0b},{Amplifier:1b,duration:2300,Id:16,show_particles:0b},{Amplifier:127b,duration:0,Id:17,show_particles:0b},{Amplifier:127b,duration:0,Id:18,show_particles:0b},{Amplifier:4b,duration:4800,Id:22,show_particles:0b},{Amplifier:1b,duration:320,Id:23,show_particles:0b},{Amplifier:1b,duration:4800,Id:24,show_particles:0b}],HideFlags:63,display:{Lore:['{\"text\":\"§dランダムで様々な効果を与えます.\"}','{\"text\":\"§dどんな効果は飲むまでのお楽しみ\"}'],Name:'{\"text\":\"§a§lは§b§lて§c§lな§6§lポーション\"}'}}"
 						}
 					]
 				}
