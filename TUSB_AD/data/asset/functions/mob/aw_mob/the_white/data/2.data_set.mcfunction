@@ -137,7 +137,7 @@ data remove storage asset: mob
 # 次のmobがasset mobなら先程の手順を繰り返します。そうでなければ、直接nbtを指定します
 # 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
 data modify storage asset: mob.id set value "potion"
-data modify storage asset: mob.Item set value {id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:16777215,custom_potion_effects:[{Id:25,amplifier:9b,duration:30}]}}
+data modify storage asset: mob.Item set value {id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:16777215,custom_potion_effects:[{id:"minecraft:levitation",amplifier:9b,duration:30}]}}
 data modify storage _: _.Passengers append from storage asset: mob
 # 最後に、mobデータを戻して避難用storageを削除します
 data modify storage asset: mob set from storage _: _
@@ -147,4 +147,4 @@ data remove storage _: _
 # 全て完了！お疲れ様でした(to me)
 
 
-# data modify storage asset: mob set value {id:"minecraft:skeleton",DeathLootTable:"usb:entities/white/tier_1",Health:40f,Passengers:[{id:"minecraft:potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:16777215,custom_potion_effects:[{Id:25,amplifier:9b,duration:30}]}}}],CustomName:'{"text":"白き者"}',ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:14737632}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:14737632}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:14737632}}},{}],ArmorDropChances:[0.000F,0.000F,0.000F,0.085F],Attributes:[{Name:generic.max_health,Base:40},{Name:generic.follow_range,Base:32},{Name:generic.movement_speed,Base:0.3},{Name:generic.attack_damage,Base:10},{Name:generic.armor,Base:10},{Name:generic.armor_toughness,Base:2}]}
+# data modify storage asset: mob set value {id:"minecraft:skeleton",DeathLootTable:"usb:entities/white/tier_1",Health:40f,Passengers:[{id:"minecraft:potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:16777215,custom_potion_effects:[{id:"minecraft:levitation",amplifier:9b,duration:30}]}}}],CustomName:'{"text":"白き者"}',ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:14737632}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:14737632}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:14737632}}},{}],ArmorDropChances:[0.000F,0.000F,0.000F,0.085F],Attributes:[{Name:generic.max_health,Base:40},{Name:generic.follow_range,Base:32},{Name:generic.movement_speed,Base:0.3},{Name:generic.attack_damage,Base:10},{Name:generic.armor,Base:10},{Name:generic.armor_toughness,Base:2}]}

@@ -892,7 +892,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:25,amplifier:-128b},{show_particles:1b,duration:0,id:"minecraft:water_breathing",amplifier:118b},{show_particles:0b,duration:0,Id:25,amplifier:127b},{show_particles:0b,duration:200,Id:8,amplifier:-2b}],HideFlags:32,display:{Lore:['{\"text\":\"§7刺さった者の浮遊を解いた後、足を脆くする。\"}'],Name:'{\"text\":\"§9§lブループリズム\"}'}}"
+                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,id:"minecraft:levitation",amplifier:-128b},{show_particles:1b,duration:0,id:"minecraft:water_breathing",amplifier:118b},{show_particles:0b,duration:0,id:"minecraft:levitation",amplifier:127b},{show_particles:0b,duration:200,Id:8,amplifier:-2b}],HideFlags:32,display:{Lore:['{\"text\":\"§7刺さった者の浮遊を解いた後、足を脆くする。\"}'],Name:'{\"text\":\"§9§lブループリズム\"}'}}"
                         }
                     ]
                 },

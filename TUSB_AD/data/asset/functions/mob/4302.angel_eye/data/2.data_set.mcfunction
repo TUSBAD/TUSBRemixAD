@@ -233,7 +233,7 @@
 
 # AECを乗せる
     data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",Radius: 0.2f,ReapplicationDelay:20,duration: 32767,Tags: ["TypeChecked","RidingOnOwnerInit"],Particle:"end_rod",effects: [{Id: 18,amplifier: 9b,duration: 22}]}
-data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",CustomName:'{"text":"エンジェルオーラ"}',Radius: 3f,duration: 32767,Tags: ["TypeChecked","RidingOnOwnerInit"],Particle:"dust 1 1 1 1",effects: [{Id:25,amplifier: 3b,duration: 20}, {id:"minecraft:regeneration",amplifier: 2b,duration: 40}, {id:9,amplifier: 2b,duration: 100}]}
+data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",CustomName:'{"text":"エンジェルオーラ"}',Radius: 3f,duration: 32767,Tags: ["TypeChecked","RidingOnOwnerInit"],Particle:"dust 1 1 1 1",effects: [{id:"minecraft:levitation",amplifier: 3b,duration: 20}, {id:"minecraft:regeneration",amplifier: 2b,duration: 40}, {id:9,amplifier: 2b,duration: 100}]}
 
 # ポーションを乗せる
     data modify storage asset: mob.Passengers append value {id: "minecraft:potion",Item: {id: "minecraft:splash_potion",Count: 1b,tag: {CustomPotionColor: 16777215,custom_potion_effects: [{id:"minecraft:invisibility",amplifier: 0b,duration: 200}]}}}
