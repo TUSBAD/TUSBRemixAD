@@ -129,7 +129,7 @@
     # Id,Amplifier,duration,show_icon,ShowParticle,ambient
 
 # AEC
-    data modify storage asset: mob.Passengers set value [{id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Radius:0.1f,duration:28,Effects:[{Id:11,Amplifier:3b,duration:10,show_particles:0b}]}]
-    data modify storage asset: mob.Passengers append value {id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Tags:[RidingRequired,TypeChecked],Radius:0.1f,duration:32767,ReapplicationDelay:60,Effects:[{Id:1,Amplifier:19b,duration:3,show_particles:0b},{Id:25,Amplifier:49b,duration:2,show_particles:0b}]}
+    data modify storage asset: mob.Passengers set value [{id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Radius:0.1f,duration:28,effects:[{Id:11,Amplifier:3b,duration:10,show_particles:0b}]}]
+    data modify storage asset: mob.Passengers append value {id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Tags:[RidingRequired,TypeChecked],Radius:0.1f,duration:32767,ReapplicationDelay:60,effects:[{Id:1,Amplifier:19b,duration:3,show_particles:0b},{Id:25,Amplifier:49b,duration:2,show_particles:0b}]}
 # スポナーから湧かせるための設定をします
     data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}
