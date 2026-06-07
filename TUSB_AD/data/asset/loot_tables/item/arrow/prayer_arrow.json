@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{custom_potion_effects: [{Amplifier: 3b, duration: 20, Id: 6b}, {Amplifier: -25b, duration: 0, Id: 12b}, {Amplifier: -128b, duration: 0, Id: 25b}], HideFlags: 32, Potion: \"minecraft:luck\", display: {Lore: ['{\"text\":\"§7ｱﾝﾃﾞｯﾄﾞに対し大ﾀﾞﾒｰｼﾞを与え、\"}', '{\"text\":\"§7それ以外のものを癒す\"}'], Name: '{\"text\":\"§f§l祈りの矢\"}'}}"
+                "tag": "{custom_potion_effects: [{amplifier: 3b, duration: 20, Id: 6b}, {amplifier: -25b, duration: 0, Id: 12b}, {amplifier: -128b, duration: 0, Id: 25b}], HideFlags: 32, Potion: \"minecraft:luck\", display: {Lore: ['{\"text\":\"§7ｱﾝﾃﾞｯﾄﾞに対し大ﾀﾞﾒｰｼﾞを与え、\"}', '{\"text\":\"§7それ以外のものを癒す\"}'], Name: '{\"text\":\"§f§l祈りの矢\"}'}}"
               }
             ]
           }

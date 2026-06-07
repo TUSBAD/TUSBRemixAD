@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{custom_potion_effects: [{duration: 20, Id: 23b, Amplifier: 127b, show_particles: 1b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 20, Id: 14b, Amplifier: -1b, show_particles: 0b}, {duration: 1, Id: 6b, Amplifier: 10b, show_particles: 0b}, {duration: 200, Id: 9b, Amplifier: 10b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§7§o大隅ノ國ニハ、一家ニ水ト米トヲマウケテ、\"}', '{\"text\":\"§7§o村ニツゲメグラセバ、男女一所ニアツマリテ、\"}', '{\"text\":\"§7§oチリヂリニカヘリヌ 酒ノ香ノイデクルトキ、\"}', '{\"text\":\"§7§o又アツマリテ、カミテハキイレシモノドモ、コレヲノム。\"}', '{\"text\":\"§7§o名ヅケテクチカミノ酒ト云フト云云、風土記ニ見エタリ。\"}'], Name: '{\"text\":\"§e§l§n御酒\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 20, Id: 23b, amplifier: 127b, show_particles: 1b}, {duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 20, Id: 14b, amplifier: -1b, show_particles: 0b}, {duration: 1, Id: 6b, amplifier: 10b, show_particles: 0b}, {duration: 200, Id: 9b, amplifier: 10b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§7§o大隅ノ國ニハ、一家ニ水ト米トヲマウケテ、\"}', '{\"text\":\"§7§o村ニツゲメグラセバ、男女一所ニアツマリテ、\"}', '{\"text\":\"§7§oチリヂリニカヘリヌ 酒ノ香ノイデクルトキ、\"}', '{\"text\":\"§7§o又アツマリテ、カミテハキイレシモノドモ、コレヲノム。\"}', '{\"text\":\"§7§o名ヅケテクチカミノ酒ト云フト云云、風土記ニ見エタリ。\"}'], Name: '{\"text\":\"§e§l§n御酒\"}'}}"
               }
             ]
           }

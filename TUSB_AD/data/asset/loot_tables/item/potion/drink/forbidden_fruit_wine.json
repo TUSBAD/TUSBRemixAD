@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{custom_potion_effects: [{duration: 0, Id: 23b, Amplifier: 104b, show_particles: 1b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 200, Id: 24b, Amplifier: 0b, show_particles: 0b}, {duration: 20, Id: 6b, Amplifier: 10b, show_particles: 0b}, {duration: 20, Id: 14b, Amplifier: -1b, show_particles: 0b}, {duration: 400, Id: 3b, Amplifier: 4b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§a知恵の樹§3から採れた§5禁断の果実§3の酒。\"}', '{\"text\":\"§3飲むと§c§n数秒後に死ぬ§3事から、\"}', '{\"text\":\"§5飲んではいけない§3とされている。\"}'], Name: '{\"text\":\"§5§l禁断の果実酒\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 0, Id: 23b, amplifier: 104b, show_particles: 1b}, {duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 200, Id: 24b, amplifier: 0b, show_particles: 0b}, {duration: 20, Id: 6b, amplifier: 10b, show_particles: 0b}, {duration: 20, Id: 14b, amplifier: -1b, show_particles: 0b}, {duration: 400, Id: 3b, amplifier: 4b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§a知恵の樹§3から採れた§5禁断の果実§3の酒。\"}', '{\"text\":\"§3飲むと§c§n数秒後に死ぬ§3事から、\"}', '{\"text\":\"§5飲んではいけない§3とされている。\"}'], Name: '{\"text\":\"§5§l禁断の果実酒\"}'}}"
               }
             ]
           }

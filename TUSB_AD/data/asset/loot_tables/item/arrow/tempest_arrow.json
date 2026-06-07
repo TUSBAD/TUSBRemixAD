@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{custom_potion_effects: [{Amplifier: -128b, duration: 0, Id: 8b}, {Amplifier: -128b, duration: 0, Id: 26b}, {Amplifier: 127b, duration: 3, Id: 25b}], HideFlags: 32, Potion: \"minecraft:swiftness\", display: {Lore: ['{\"text\":\"§7上空に吹き飛ばし、叩きつける\"}'], Name: '{\"text\":\"§3§l暴風の矢\"}'}}"
+                "tag": "{custom_potion_effects: [{amplifier: -128b, duration: 0, Id: 8b}, {amplifier: -128b, duration: 0, Id: 26b}, {amplifier: 127b, duration: 3, Id: 25b}], HideFlags: 32, Potion: \"minecraft:swiftness\", display: {Lore: ['{\"text\":\"§7上空に吹き飛ばし、叩きつける\"}'], Name: '{\"text\":\"§3§l暴風の矢\"}'}}"
               }
             ]
           }

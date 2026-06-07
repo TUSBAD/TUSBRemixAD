@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{custom_potion_effects: [{duration: 100, Id: 2b, Amplifier: 6b, show_particles: 1b}, {duration: 1, Id: 23b, Amplifier: 1b, show_particles: 1b}], HideFlags: 32, Potion: \"empty\", display: {Name: '{\"text\":\"§8§lイカスミ§r\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 100, Id: 2b, amplifier: 6b, show_particles: 1b}, {duration: 1, Id: 23b, amplifier: 1b, show_particles: 1b}], HideFlags: 32, Potion: \"empty\", display: {Name: '{\"text\":\"§8§lイカスミ§r\"}'}}"
               }
             ]
           }

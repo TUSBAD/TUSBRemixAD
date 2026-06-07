@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 26b, Amplifier: 105b, show_particles: 1b}, {duration: 1, Id: 17b, Amplifier: 127b, show_particles: 0b}, {duration: 600, Id: 23b, Amplifier: 0b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§c§lスイカ§dの成分を凝縮したジュース。\"}', '{\"text\":\"§6腹を満たす§d他、\"}', '{\"text\":\"§b空腹を治す§d効能がある。\"}'], Name: '{\"text\":\"§c§lスイカジュース\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 26b, amplifier: 105b, show_particles: 1b}, {duration: 1, Id: 17b, amplifier: 127b, show_particles: 0b}, {duration: 600, Id: 23b, amplifier: 0b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§c§lスイカ§dの成分を凝縮したジュース。\"}', '{\"text\":\"§6腹を満たす§d他、\"}', '{\"text\":\"§b空腹を治す§d効能がある。\"}'], Name: '{\"text\":\"§c§lスイカジュース\"}'}}"
               }
             ]
           }

@@ -10,7 +10,7 @@
                 "functions": [
                     {
                         "function": "set_nbt",
-                        "tag": "{custom_potion_effects: [{duration: 600, Id: 19b, Amplifier: 0b, show_particles: 0b}, {duration: 600, Id: 17b, Amplifier: 5b, show_particles: 0b}, {duration: 600, Id: 11b, Amplifier: -2b, show_particles: 0b}, {duration: 600, Id: 5b, Amplifier: 6b, show_particles: 0b}, {duration: 1200, Id: 27b, Amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, Amplifier: 111b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§4不運§fを呼ぶと共に、\"}', '{\"text\":\"§c§n逆境に立ち向かう力§fを与える。\"}'], Name: '{\"text\":\"§4§l不運の薬\"}'}}"
+                        "tag": "{custom_potion_effects: [{duration: 600, Id: 19b, amplifier: 0b, show_particles: 0b}, {duration: 600, Id: 17b, amplifier: 5b, show_particles: 0b}, {duration: 600, Id: 11b, amplifier: -2b, show_particles: 0b}, {duration: 600, Id: 5b, amplifier: 6b, show_particles: 0b}, {duration: 1200, Id: 27b, amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, amplifier: 111b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§4不運§fを呼ぶと共に、\"}', '{\"text\":\"§c§n逆境に立ち向かう力§fを与える。\"}'], Name: '{\"text\":\"§4§l不運の薬\"}'}}"
                     }
                 ]
             }

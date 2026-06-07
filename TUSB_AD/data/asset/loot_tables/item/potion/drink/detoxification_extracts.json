@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{HideFlags: 32, custom_potion_effects: [{Amplifier: 127b, duration: 0, Id: 19}], display: {Name: '\"§d§l毒消草エキス\"'}}"
+                "tag": "{HideFlags: 32, custom_potion_effects: [{amplifier: 127b, duration: 0, Id: 19}], display: {Name: '\"§d§l毒消草エキス\"'}}"
               }
             ]
           }

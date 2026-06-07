@@ -10,7 +10,7 @@
                 "functions": [
                     {
                         "function": "set_nbt",
-                        "tag": "{custom_potion_effects: [{duration: 400, Id: 11b, Amplifier: 2b, show_particles: 1b}, {duration: 400, Id: 12b, Amplifier: 0b, show_particles: 1b}, {duration: 400, Id: 15b, Amplifier: 4b, show_particles: 1b}, {duration: 400, Id: 2b, Amplifier: 4b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§8§o飲むと体が硬化して\"}', '{\"text\":\"§8§o防御力が上がり、炎にも強くなるが、\"}', '{\"text\":\"§8§o足が遅くなり、目も見えにくくなる。\"}'], Name: '{\"text\":\"§f鋼鉄のポーション\"}'}}"
+                        "tag": "{custom_potion_effects: [{duration: 400, Id: 11b, amplifier: 2b, show_particles: 1b}, {duration: 400, Id: 12b, amplifier: 0b, show_particles: 1b}, {duration: 400, Id: 15b, amplifier: 4b, show_particles: 1b}, {duration: 400, Id: 2b, amplifier: 4b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§8§o飲むと体が硬化して\"}', '{\"text\":\"§8§o防御力が上がり、炎にも強くなるが、\"}', '{\"text\":\"§8§o足が遅くなり、目も見えにくくなる。\"}'], Name: '{\"text\":\"§f鋼鉄のポーション\"}'}}"
                     }
                 ]
             }

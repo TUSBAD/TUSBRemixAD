@@ -376,7 +376,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 0, Id: 26b, Amplifier: 0b, show_particles: 1b}, {duration: 3, Id: 14b, Amplifier: 3b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§aマナがたぽっと詰まった飲み物。\"}', '{\"text\":\"§a飲むとMPがとても大きく回復する。\"}', '{\"text\":\"\"}', '{\"text\":\"§7スプラッシュ化不可\"}'], Name: '{\"text\":\"§2§lスーパーエーテル\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 0, Id: 26b, amplifier: 0b, show_particles: 1b}, {duration: 3, Id: 14b, amplifier: 3b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§aマナがたぽっと詰まった飲み物。\"}', '{\"text\":\"§a飲むとMPがとても大きく回復する。\"}', '{\"text\":\"\"}', '{\"text\":\"§7スプラッシュ化不可\"}'], Name: '{\"text\":\"§2§lスーパーエーテル\"}'}}"
                         }
                     ]
                 },
@@ -387,7 +387,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{\"text\":\"§r§7鉄§f防具一式§eが圧縮された印玉。\"}', '{\"text\":\"§e使用すると§l§f防具一式§eが§b解凍§eされる。\"}'], Name: '{\"text\":\"§r§f圧縮防具の印玉§7§l-鉄-\"}'}, Enchantments: [], EntityTag: {DeathLootTable: \"usb:signs/ironarmor\", id: \"minecraft:bat\", DeathTime: 19s, Tags: [\"RewardEgg\", \"TypeChecked\"], active_effects: [{duration: 100, Id: 7b, Amplifier: 5b, show_particles: 0b}, {duration: 100, Id: 14b, Amplifier: 0b, show_particles: 0b}]}, CanPlaceOn: [\"#minecraft:all\"]}"
+                            "tag": "{RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{\"text\":\"§r§7鉄§f防具一式§eが圧縮された印玉。\"}', '{\"text\":\"§e使用すると§l§f防具一式§eが§b解凍§eされる。\"}'], Name: '{\"text\":\"§r§f圧縮防具の印玉§7§l-鉄-\"}'}, Enchantments: [], EntityTag: {DeathLootTable: \"usb:signs/ironarmor\", id: \"minecraft:bat\", DeathTime: 19s, Tags: [\"RewardEgg\", \"TypeChecked\"], active_effects: [{duration: 100, Id: 7b, amplifier: 5b, show_particles: 0b}, {duration: 100, Id: 14b, amplifier: 0b, show_particles: 0b}]}, CanPlaceOn: [\"#minecraft:all\"]}"
                         }
                     ]
                 },
@@ -398,7 +398,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{\"text\":\"§r§e使用すると、ﾗﾝﾀﾞﾑで\"}', '{\"text\":\"§7鉄製§eの道具が出現する。\"}'], Name: '{\"text\":\"§r§7鉄道具の印玉\"}'}, Enchantments: [], EntityTag: {DeathLootTable: \"usb:signs/iron\", id: \"minecraft:bat\", DeathTime: 19s, active_effects: [{duration: 100, Id: 7b, Amplifier: 5b, show_particles: 0b}, {duration: 100, Id: 14b, Amplifier: 0b, show_particles: 0b}], Tags: [\"RewardEgg\", \"TypeChecked\"]}, CanPlaceOn: [\"#minecraft:all\"]}"
+                            "tag": "{RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{\"text\":\"§r§e使用すると、ﾗﾝﾀﾞﾑで\"}', '{\"text\":\"§7鉄製§eの道具が出現する。\"}'], Name: '{\"text\":\"§r§7鉄道具の印玉\"}'}, Enchantments: [], EntityTag: {DeathLootTable: \"usb:signs/iron\", id: \"minecraft:bat\", DeathTime: 19s, active_effects: [{duration: 100, Id: 7b, amplifier: 5b, show_particles: 0b}, {duration: 100, Id: 14b, amplifier: 0b, show_particles: 0b}], Tags: [\"RewardEgg\", \"TypeChecked\"]}, CanPlaceOn: [\"#minecraft:all\"]}"
                         }
                     ]
                 },
@@ -563,7 +563,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 100, Id: 23b, Amplifier: 10b, show_particles: 1b}, {duration: 100, Id: 9b, Amplifier: 10b, show_particles: 1b}, {duration: 700, Id: 18b, Amplifier: 100b, show_particles: 1b}, {duration: 700, Id: 18b, Amplifier: -100b, show_particles: 1b}, {duration: 0, Id: 12b, Amplifier: -100b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§e§o飲むと満腹になるが\"}', '{\"text\":\"§e§oしばらくの間弱体化する\"}'], Name: '{\"text\":\"ガソリン\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 100, Id: 23b, amplifier: 10b, show_particles: 1b}, {duration: 100, Id: 9b, amplifier: 10b, show_particles: 1b}, {duration: 700, Id: 18b, amplifier: 100b, show_particles: 1b}, {duration: 700, Id: 18b, amplifier: -100b, show_particles: 1b}, {duration: 0, Id: 12b, amplifier: -100b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§e§o飲むと満腹になるが\"}', '{\"text\":\"§e§oしばらくの間弱体化する\"}'], Name: '{\"text\":\"ガソリン\"}'}}"
                         }
                     ]
                 },
@@ -574,7 +574,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 0, Id: 1b, Amplifier: -2b, show_particles: 1b}, {duration: 0, Id: 2b, Amplifier: -3b, show_particles: 0b}, {duration: 3, Id: 14b, Amplifier: 6b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§f祈りの込められた聖なる水。\"}', '{\"text\":\"§f飲むと死の宣告から回復する。\"}', '{\"text\":\"\"}', '{\"text\":\"§7スプラッシュ化不可\"}'], Name: '{\"text\":\"§f§l聖水\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 0, Id: 1b, amplifier: -2b, show_particles: 1b}, {duration: 0, Id: 2b, amplifier: -3b, show_particles: 0b}, {duration: 3, Id: 14b, amplifier: 6b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§f祈りの込められた聖なる水。\"}', '{\"text\":\"§f飲むと死の宣告から回復する。\"}', '{\"text\":\"\"}', '{\"text\":\"§7スプラッシュ化不可\"}'], Name: '{\"text\":\"§f§l聖水\"}'}}"
                         }
                     ]
                 },
@@ -629,7 +629,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, Amplifier: 127b, show_particles: 1b}, {duration: 0, Id: 2b, Amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 4b, Amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 9b, Amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 11b, Amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 15b, Amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 19b, Amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 20b, Amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 5b, Amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 12b, Amplifier: 127b, show_particles: 0b}, {duration: 360, Id: 8b, Amplifier: 3b, show_particles: 0b}], HideFlags: 63, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§f§l純白のドリンクであらゆる不純な心を取り除き\"}', '{\"text\":\"§f§l心が躍る気分になる\"}'], Name: '{\"text\":\"§f§lホワイトパース\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, amplifier: 127b, show_particles: 1b}, {duration: 0, Id: 2b, amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 4b, amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 9b, amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 11b, amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 15b, amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 19b, amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 20b, amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 5b, amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 12b, amplifier: 127b, show_particles: 0b}, {duration: 360, Id: 8b, amplifier: 3b, show_particles: 0b}], HideFlags: 63, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§f§l純白のドリンクであらゆる不純な心を取り除き\"}', '{\"text\":\"§f§l心が躍る気分になる\"}'], Name: '{\"text\":\"§f§lホワイトパース\"}'}}"
                         }
                     ]
                 },
@@ -640,7 +640,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 1200, Id: 11b, Amplifier: -2b, show_particles: 0b}, {duration: 1200, Id: 1b, Amplifier: 4b, show_particles: 0b}, {duration: 1200, Id: 5b, Amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 13b, Amplifier: 126b, show_particles: 1b}, {duration: 600, Id: 15b, Amplifier: 2b, show_particles: 0b}], HideFlags: 63, Potion: \"minecraft:water\", AttributeModifiers: [{Amount: -0.5d, Slot: \"mainhand\", AttributeName: \"generic.max_health\", Operation: 1, UUID: [I; 0, 1231241276, 0, 1231241276], Name: \"wax100\"}], display: {Lore: ['{\"text\":\"§7黒く輝くこの液体は触れるものを弱らせ\"}', '{\"text\":\"\"}', '{\"text\":\"力を与える。\"}'], Name: '{\"text\":\"§8§lブラック§7メタル\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 1200, Id: 11b, amplifier: -2b, show_particles: 0b}, {duration: 1200, Id: 1b, amplifier: 4b, show_particles: 0b}, {duration: 1200, Id: 5b, amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 13b, amplifier: 126b, show_particles: 1b}, {duration: 600, Id: 15b, amplifier: 2b, show_particles: 0b}], HideFlags: 63, Potion: \"minecraft:water\", AttributeModifiers: [{Amount: -0.5d, Slot: \"mainhand\", AttributeName: \"generic.max_health\", Operation: 1, UUID: [I; 0, 1231241276, 0, 1231241276], Name: \"wax100\"}], display: {Lore: ['{\"text\":\"§7黒く輝くこの液体は触れるものを弱らせ\"}', '{\"text\":\"\"}', '{\"text\":\"力を与える。\"}'], Name: '{\"text\":\"§8§lブラック§7メタル\"}'}}"
                         }
                     ]
                 },
@@ -651,7 +651,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, Amplifier: 97b, show_particles: 1b}, {duration: 60, Id: 10b, Amplifier: 6b, show_particles: 0b}, {duration: 320, Id: 9b, Amplifier: 1b, show_particles: 0b}], HideFlags: 63, Potion: \"minecraft:water\", AttributeModifiers: [{Amount: 6.0d, Slot: \"mainhand\", AttributeName: \"generic.max_health\", Operation: 0, UUID: [I; 0, 1629355762, 0, 1629355762], Name: \"HaruEditor\"}], display: {Lore: ['{\"text\":\"§a回復効果がある薬草を凝縮し煮詰めたもの\"}', '{\"text\":\"§aその効果は絶大であり、\"}', '{\"text\":\"§a触れただけで体力が湧き溢れてくる。\"}'], Name: '{\"text\":\"§aグリーンハーブ\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, amplifier: 97b, show_particles: 1b}, {duration: 60, Id: 10b, amplifier: 6b, show_particles: 0b}, {duration: 320, Id: 9b, amplifier: 1b, show_particles: 0b}], HideFlags: 63, Potion: \"minecraft:water\", AttributeModifiers: [{Amount: 6.0d, Slot: \"mainhand\", AttributeName: \"generic.max_health\", Operation: 0, UUID: [I; 0, 1629355762, 0, 1629355762], Name: \"HaruEditor\"}], display: {Lore: ['{\"text\":\"§a回復効果がある薬草を凝縮し煮詰めたもの\"}', '{\"text\":\"§aその効果は絶大であり、\"}', '{\"text\":\"§a触れただけで体力が湧き溢れてくる。\"}'], Name: '{\"text\":\"§aグリーンハーブ\"}'}}"
                         }
                     ]
                 },
@@ -662,7 +662,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 200, Id: 9b, Amplifier: 2b, show_particles: 0b}, {duration: 600, Id: 2b, Amplifier: 1b, show_particles: 0b}, {duration: 60, Id: 15b, Amplifier: 1b, show_particles: 0b}, {duration: 60, Id: 18b, Amplifier: 1b, show_particles: 0b}, {duration: 1200, Id: 5b, Amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 16b, Amplifier: 91b, show_particles: 1b}], HideFlags: 63, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"ちょっとの間足がもたつくが\"}', '{\"text\":\"すこし力を与える\"}'], Name: '{\"text\":\"§5パープルサンダー\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 200, Id: 9b, amplifier: 2b, show_particles: 0b}, {duration: 600, Id: 2b, amplifier: 1b, show_particles: 0b}, {duration: 60, Id: 15b, amplifier: 1b, show_particles: 0b}, {duration: 60, Id: 18b, amplifier: 1b, show_particles: 0b}, {duration: 1200, Id: 5b, amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 16b, amplifier: 91b, show_particles: 1b}], HideFlags: 63, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"ちょっとの間足がもたつくが\"}', '{\"text\":\"すこし力を与える\"}'], Name: '{\"text\":\"§5パープルサンダー\"}'}}"
                         }
                     ]
                 },
@@ -706,7 +706,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 0, Id: 16b, Amplifier: 127b, show_particles: 1b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 10, Id: 25b, Amplifier: 10b, show_particles: 0b}, {duration: 1, Id: 7b, Amplifier: 0b, show_particles: 0b}, {duration: 120, Id: 1b, Amplifier: 3b, show_particles: 0b}, {duration: 100, Id: 8b, Amplifier: 6b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§7短時間の間、敵から逃げるのに\"}', '{\"text\":\"§7特化された体を手に入れる。\"}', '{\"text\":\"§7忍者のように身軽に動く事ができる。\"}'], Name: '{\"text\":\"§e§lΣジャンパー\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 0, Id: 16b, amplifier: 127b, show_particles: 1b}, {duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 10, Id: 25b, amplifier: 10b, show_particles: 0b}, {duration: 1, Id: 7b, amplifier: 0b, show_particles: 0b}, {duration: 120, Id: 1b, amplifier: 3b, show_particles: 0b}, {duration: 100, Id: 8b, amplifier: 6b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§7短時間の間、敵から逃げるのに\"}', '{\"text\":\"§7特化された体を手に入れる。\"}', '{\"text\":\"§7忍者のように身軽に動く事ができる。\"}'], Name: '{\"text\":\"§e§lΣジャンパー\"}'}}"
                         }
                     ]
                 },
@@ -717,7 +717,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 1, Id: 6b, Amplifier: 1b, show_particles: 0b}, {duration: 600, Id: 10b, Amplifier: 0b, show_particles: 0b}, {duration: 600, Id: 11b, Amplifier: 1b, show_particles: 0b}, {duration: 600, Id: 18b, Amplifier: 6b, show_particles: 0b}, {duration: 1200, Id: 26b, Amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, Amplifier: 88b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§a幸運§fを呼ぶと共に、\"}', '{\"text\":\"§2§n逆境に立ち向かう力§fを失う。\"}'], Name: '{\"text\":\"§a§l幸運の薬\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 1, Id: 6b, amplifier: 1b, show_particles: 0b}, {duration: 600, Id: 10b, amplifier: 0b, show_particles: 0b}, {duration: 600, Id: 11b, amplifier: 1b, show_particles: 0b}, {duration: 600, Id: 18b, amplifier: 6b, show_particles: 0b}, {duration: 1200, Id: 26b, amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, amplifier: 88b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§a幸運§fを呼ぶと共に、\"}', '{\"text\":\"§2§n逆境に立ち向かう力§fを失う。\"}'], Name: '{\"text\":\"§a§l幸運の薬\"}'}}"
                         }
                     ]
                 },
@@ -728,7 +728,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects: [{duration: 600, Id: 19b, Amplifier: 0b, show_particles: 0b}, {duration: 600, Id: 17b, Amplifier: 5b, show_particles: 0b}, {duration: 600, Id: 11b, Amplifier: -2b, show_particles: 0b}, {duration: 600, Id: 5b, Amplifier: 6b, show_particles: 0b}, {duration: 1200, Id: 27b, Amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, Amplifier: 111b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§4不運§fを呼ぶと共に、\"}', '{\"text\":\"§c§n逆境に立ち向かう力§fを与える。\"}'], Name: '{\"text\":\"§4§l不運の薬\"}'}}"
+                            "tag": "{custom_potion_effects: [{duration: 600, Id: 19b, amplifier: 0b, show_particles: 0b}, {duration: 600, Id: 17b, amplifier: 5b, show_particles: 0b}, {duration: 600, Id: 11b, amplifier: -2b, show_particles: 0b}, {duration: 600, Id: 5b, amplifier: 6b, show_particles: 0b}, {duration: 1200, Id: 27b, amplifier: 4b, show_particles: 0b}, {duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, amplifier: 111b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§4不運§fを呼ぶと共に、\"}', '{\"text\":\"§c§n逆境に立ち向かう力§fを与える。\"}'], Name: '{\"text\":\"§4§l不運の薬\"}'}}"
                         }
                     ]
                 },

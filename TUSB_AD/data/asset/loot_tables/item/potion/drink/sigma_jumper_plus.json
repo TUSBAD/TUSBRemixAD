@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{custom_potion_effects: [{duration: 0, Id: 16b, Amplifier: 127b, show_particles: 1b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 2, Id: 25b, Amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 7b, Amplifier: 0b, show_particles: 0b}, {duration: 600, Id: 1b, Amplifier: 6b, show_particles: 0b}, {duration: 720, Id: 8b, Amplifier: 6b, show_particles: 0b}, {duration: 720, Id: 16b, Amplifier: 1b, show_particles: 0b}], HideFlags: 63, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§7従来の§e§lΣジャンパー§7に金ニンジンを入れ\"}', '{\"text\":\"§7濃縮し性能を上げたもの\"}', '{\"text\":\"§7忍者のように素早く身軽に動く事ができる。\"}'], Name: '{\"text\":\"§e§lΣジャンパー§c§l＋\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 0, Id: 16b, amplifier: 127b, show_particles: 1b}, {duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 2, Id: 25b, amplifier: 127b, show_particles: 0b}, {duration: 0, Id: 7b, amplifier: 0b, show_particles: 0b}, {duration: 600, Id: 1b, amplifier: 6b, show_particles: 0b}, {duration: 720, Id: 8b, amplifier: 6b, show_particles: 0b}, {duration: 720, Id: 16b, amplifier: 1b, show_particles: 0b}], HideFlags: 63, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§7従来の§e§lΣジャンパー§7に金ニンジンを入れ\"}', '{\"text\":\"§7濃縮し性能を上げたもの\"}', '{\"text\":\"§7忍者のように素早く身軽に動く事ができる。\"}'], Name: '{\"text\":\"§e§lΣジャンパー§c§l＋\"}'}}"
               }
             ]
           }

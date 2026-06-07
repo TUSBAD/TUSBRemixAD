@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, Amplifier: 97b, show_particles: 1b}, {duration: 60, Id: 25b, Amplifier: 12b, show_particles: 0b}, {duration: 360, Id: 24b, Amplifier: 1b, show_particles: 0b}, {duration: 1, Id: 7b, Amplifier: 0b, show_particles: 0b}, {duration: 60, Id: 11b, Amplifier: -5b, show_particles: 0b}], RepairCost: 1000000000, Damage: 0, display: {Name: '{\"text\":\"§c§l火剣センサウ\"}'}, Enchantments: [{lvl: 33s, id: \"minecraft:fire_aspect\"}, {lvl: 2s, id: \"minecraft:knockback\"}, {lvl: 4s, id: \"minecraft:smite\"}, {lvl: 15s, id: \"minecraft:sharpness\"}]}"
+                "tag": "{custom_potion_effects: [{duration: 0, Id: 25b, amplifier: -128b, show_particles: 1b}, {duration: 0, Id: 23b, amplifier: 97b, show_particles: 1b}, {duration: 60, Id: 25b, amplifier: 12b, show_particles: 0b}, {duration: 360, Id: 24b, amplifier: 1b, show_particles: 0b}, {duration: 1, Id: 7b, amplifier: 0b, show_particles: 0b}, {duration: 60, Id: 11b, amplifier: -5b, show_particles: 0b}], RepairCost: 1000000000, Damage: 0, display: {Name: '{\"text\":\"§c§l火剣センサウ\"}'}, Enchantments: [{lvl: 33s, id: \"minecraft:fire_aspect\"}, {lvl: 2s, id: \"minecraft:knockback\"}, {lvl: 4s, id: \"minecraft:smite\"}, {lvl: 15s, id: \"minecraft:sharpness\"}]}"
               }
             ]
           }
