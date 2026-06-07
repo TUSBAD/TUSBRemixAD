@@ -10,7 +10,7 @@
 
 # プレイヤーの回復効果
     execute as @a[scores={HealCount=1..3},nbt=!{active_effects:[{Id:10}]}] run function player_manager:health/heal/small
-    execute as @a[scores={HealCount=4..},nbt=!{active_effects:[{Id:6}]}] run function player_manager:health/heal/large
+    execute as @a[scores={HealCount=4..},nbt=!{active_effects:[{id:"minecraft:instant_health"}]}] run function player_manager:health/heal/large
 
 # HP記録
     execute as @a[scores={HPChanging=0..}] run scoreboard players operation @s HP = @s HPChanging
