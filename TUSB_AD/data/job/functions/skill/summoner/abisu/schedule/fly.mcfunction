@@ -4,7 +4,7 @@
 # particle end_rod ~ ~ ~ 1 1 1 0.1 3 force
 
 data modify storage tusb_remake: hit set value false
-execute positioned ~-0.5 ~ ~-0.5 as @e[dy=0,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{Id:23}]}] at @s run function job:skill/summoner/abisu/schedule/hit
+execute positioned ~-0.5 ~ ~-0.5 as @e[dy=0,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{id:"minecraft:saturation"}]}] at @s run function job:skill/summoner/abisu/schedule/hit
 
 ### 当たっていたらタライを消す
 execute if data storage tusb_remake: {hit:true} run kill @s

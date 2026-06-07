@@ -3,6 +3,6 @@
 playsound entity.experience_orb.pickup master @a[distance=..32] ~ ~ ~ 0.3 2 0.05
 particle end_rod ~ ~ ~ 1 1 1 0.1 3 force
 
-execute as @e[distance=..10,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{Id:23}]}] at @s run function job:skill/white_mage/holy/schedule/hit
+execute as @e[distance=..10,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{id:"minecraft:saturation"}]}] at @s run function job:skill/white_mage/holy/schedule/hit
 
 data modify storage tusb_remake: _ set value true
