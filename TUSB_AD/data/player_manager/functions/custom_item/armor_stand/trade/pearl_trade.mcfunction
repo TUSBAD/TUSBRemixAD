@@ -9,4 +9,4 @@ execute store result score @s TUSB_sub run clear @s minecraft:furnace 0
 execute if score @s TUSB matches 8.. if score @s TUSB_sub matches 8.. run clear @s minecraft:trapped_chest 8
 execute if score @s TUSB matches 8.. if score @s TUSB_sub matches 8.. run clear @s minecraft:furnace 8
 # アイテムを渡しましょう
-execute if score @s TUSB matches 8.. if score @s TUSB_sub matches 8.. at @s run summon minecraft:bat ~ ~0.1 ~ {Health:0.001f,active_effects:[{Id:14,amplifier:0b,duration:100,show_particles:false},{Id:7,amplifier:0b,duration:100,show_particles:false}],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:ender_pearl",Count:16b}}]}
+execute if score @s TUSB matches 8.. if score @s TUSB_sub matches 8.. at @s run summon minecraft:bat ~ ~0.1 ~ {Health:0.001f,active_effects:[{Id:14,amplifier:0b,duration:100,show_particles:false},{id:"minecraft:instant_damage",amplifier:0b,duration:100,show_particles:false}],Passengers:[{id:"minecraft:item",Item:{id:"minecraft:ender_pearl",Count:16b}}]}

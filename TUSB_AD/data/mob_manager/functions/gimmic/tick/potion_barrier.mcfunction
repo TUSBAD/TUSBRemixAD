@@ -3,9 +3,9 @@
 
 data modify storage _: _ set from entity @s Item.tag.custom_potion_effects
 
-execute if data storage _: {_:[{Id:7b,amplifier:10b}]} run data modify storage _: _ set value true
+execute if data storage _: {_:[{id:"minecraft:instant_damage",amplifier:10b}]} run data modify storage _: _ set value true
 execute if data storage _: {_:[{Id:6b,amplifier:10b}]} run data modify storage _: _ set value true
-execute if data storage _: {_:[{Id:7b,amplifier:29b}]} run data modify storage _: _ set value true
+execute if data storage _: {_:[{id:"minecraft:instant_damage",amplifier:29b}]} run data modify storage _: _ set value true
 execute if data storage _: {_:[{Id:6b,amplifier:29b}]} run data modify storage _: _ set value true
 
 execute if data storage _: {_:true} as @e[limit=1,sort=nearest,team=Boss] run me はポーションを無効化した！
