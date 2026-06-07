@@ -236,7 +236,7 @@
                 },
                 {
                     "type": "item",
-                    "name": "minecraft:grass",
+                    "name": "minecraft:short_grass",
                     "weight": 1,
                     "functions": [
                         {
