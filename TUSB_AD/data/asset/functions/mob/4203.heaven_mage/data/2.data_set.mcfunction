@@ -111,7 +111,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:conduit_power,id:"minecraft:conduit_power"} コンジットパワー
     #{Name:dolphins_grace,id:"minecraft:dolphins_grace"} イルカの好意
     #{Name:bad_omen,id:"minecraft:bad_omen"} 不吉な予感
-    #{Name:hero_of_the_village,Id:32} 村の英雄
+    #{Name:hero_of_the_village,id:"minecraft:hero_of_the_village"} 村の英雄
     #{Name:darkness,Id:33} 暗闇
     # 詳しくはwiki見てね！
 # data modify storage asset: mob.active_Effects append value {Id: "minecraft:speed",amplifier:1,duration:600,show_particles:0b}
