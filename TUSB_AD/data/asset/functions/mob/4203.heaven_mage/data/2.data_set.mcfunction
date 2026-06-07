@@ -100,7 +100,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:weakness,id:"minecraft:weakness"} 弱体化 -lv*4
     #{Name:poison,id:"minecraft:poison"} 毒
     #{Name:wither,id:"minecraft:wither"} ウィザー
-    #{Name:health_boots,Id:21} 体力増強 +lv*4
+    #{Name:health_boots,id:"minecraft:health_boost"} 体力増強 +lv*4
     #{Name:absorption,Id:22} 緩衝体力増加 +lv*4
     #{Name:saturation,Id:23} 満腹度回復 +lv*1
     #{Name:glowing,Id:24} 発光
