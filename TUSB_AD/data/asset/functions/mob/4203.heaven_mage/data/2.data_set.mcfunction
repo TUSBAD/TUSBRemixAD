@@ -83,8 +83,8 @@ data modify storage asset: mob.id set value "witch"
     #{Name:speed,id:"minecraft:speed"} 移動速度上昇 +lv*20%
     #{Name:slowness,id:"minecraft:slowness"} 移動速度低下 -lv*15%
     #{Name:haste,id:"minecraft:haste"} 採掘速度上昇 +lv*20%
-    #{Name:mining_fatigue,id:"mining_fatigue"} 採掘速度低下 1*0.3^lv
-    #{Name:strength,id:"strength"} 攻撃力上昇 +lv*3
+    #{Name:mining_fatigue,id:"minecraft:mining_fatigue"} 採掘速度低下 1*0.3^lv
+    #{Name:strength,id:"minecraft:strength"} 攻撃力上昇 +lv*3
     #{Name:instant_health,id:"minecraft:instant_health"} 即時回復 2^lv*2
     #{Name:instant_damage,Id:7} 即時ダメージ 2^lv*3
     #{Name:jump_boost,Id:8} 跳躍力上昇 1.25*(lv*0.5)

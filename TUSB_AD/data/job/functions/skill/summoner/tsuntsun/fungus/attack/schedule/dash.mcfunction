@@ -8,6 +8,6 @@ playsound minecraft:entity.mooshroom.shear master @a[distance=..32] ~ ~ ~ 1 1.2 
 
 particle minecraft:large_smoke ~ ~0.3 ~ 0 0 0 0 1 force
 
-tag @s[nbt={active_effects:[{id:"strength"}]}] remove TsuntsunDash
+tag @s[nbt={active_effects:[{id:"minecraft:strength"}]}] remove TsuntsunDash
 
 data modify storage tusb_remake: _ set value true
