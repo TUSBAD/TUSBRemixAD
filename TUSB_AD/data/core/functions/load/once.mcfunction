@@ -270,11 +270,16 @@ gamerule doTileDrops true
 gamerule doInsomnia false
 gamerule doWardenSpawning true
 gamerule doTraderSpawning true
-gamerule randomTickSpeed 3
+gamerule randomTickSpeed 9
 gamerule showDeathMessages true
 gamerule spawnRadius 0
 gamerule disableElytraMovementCheck true
 gamerule mobGriefing false
+gamerule playersNetherPortalCreativeDelay 32767
+gamerule playersNetherPortalDefaultDelay 32767
+gamerule playersSleepingPercentage 10
+gamerule disableRaids true
+gamerule snowAccumulationHeight 8
 difficulty hard
 defaultgamemode adventure
 worldborder center 0 0
@@ -283,7 +288,7 @@ worldborder set 7000
 ### setdisplay
 scoreboard objectives setdisplay list Level
 #scoreboard objectives setdisplay sidebar MP
-scoreboard objectives setdisplay belowName HP
+scoreboard objectives setdisplay below_name HP
 scoreboard players reset * MP
 
 ### ワールド初期設定
