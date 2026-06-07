@@ -32,7 +32,7 @@ effect clear @s minecraft:poison
 effect clear @s minecraft:wither
 effect clear @s minecraft:levitation
 
-# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:29}].amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{id:"minecraft:conduit_power"}].amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:conduit_power
 
 # execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:30}].amplifier

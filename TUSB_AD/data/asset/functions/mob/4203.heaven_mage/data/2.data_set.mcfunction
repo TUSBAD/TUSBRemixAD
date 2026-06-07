@@ -108,7 +108,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:luck,id:"minecraft:luck"} 運
     #{Name:bad_luck,id:"minecraft:unluck"} 不運
     #{Name:slow_falling,id:"minecraft:slow_falling"} 低速落下
-    #{Name:conduit_power,Id:29} コンジットパワー
+    #{Name:conduit_power,id:"minecraft:conduit_power"} コンジットパワー
     #{Name:dolphins_grace,Id:30} イルカの好意
     #{Name:bad_omen,Id:31} 不吉な予感
     #{Name:hero_of_the_village,Id:32} 村の英雄
