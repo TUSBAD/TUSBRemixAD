@@ -103,7 +103,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:health_boots,id:"minecraft:health_boost"} 体力増強 +lv*4
     #{Name:absorption,id:"minecraft:absorption"} 緩衝体力増加 +lv*4
     #{Name:saturation,id:"minecraft:saturation"} 満腹度回復 +lv*1
-    #{Name:glowing,Id:24} 発光
+    #{Name:glowing,id:"minecraft:glowing"} 発光
     #{Name:levitation,Id:25} 浮遊
     #{Name:luck,Id:26} 運
     #{Name:bad_luck,Id:27} 不運
