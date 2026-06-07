@@ -89,7 +89,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:instant_damage,id:"minecraft:instant_damage"} 即時ダメージ 2^lv*3
     #{Name:jump_boost,id:"minecraft:jump_boost"} 跳躍力上昇 1.25*(lv*0.5)
     #{Name:nausea,id:"minecraft:nausea"} 吐き気
-    #{Name:regeneration,Id:10} 再生
+    #{Name:regeneration,id:"minecraft:regeneration"} 再生
     #{Name:resistance,Id:11} 耐性 100-lv*20%
     #{Name:fire_resistance,Id:12} 火炎耐性
     #{Name:water_breathing,Id:13} 水中呼吸

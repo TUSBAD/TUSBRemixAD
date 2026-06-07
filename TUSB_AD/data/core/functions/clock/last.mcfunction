@@ -9,7 +9,7 @@
     execute as @a[scores={WindWall=0..}] at @s run function job:skill/black_mage/wind_wall/check
 
 # プレイヤーの回復効果
-    execute as @a[scores={HealCount=1..3},nbt=!{active_effects:[{Id:10}]}] run function player_manager:health/heal/small
+    execute as @a[scores={HealCount=1..3},nbt=!{active_effects:[{id:"minecraft:regeneration"}]}] run function player_manager:health/heal/small
     execute as @a[scores={HealCount=4..},nbt=!{active_effects:[{id:"minecraft:instant_health"}]}] run function player_manager:health/heal/large
 
 # HP記録
