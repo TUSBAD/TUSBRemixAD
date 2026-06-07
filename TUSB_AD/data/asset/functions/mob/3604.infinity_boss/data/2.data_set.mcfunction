@@ -121,7 +121,7 @@
         #{Name:hero_of_the_village,id:32} 村の英雄
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
-    data modify storage asset: mob.active_effects append value {Id:14,amplifier:127,duration:2147483647,show_particles:0b}
+    data modify storage asset: mob.active_effects append value {id:"minecraft:invisibility",amplifier:127,duration:2147483647,show_particles:0b}
     # data modify storage asset: mob.active_effects append value {id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}
     # 或いは...
     # data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}]

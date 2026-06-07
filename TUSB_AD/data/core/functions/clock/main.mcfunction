@@ -63,7 +63,7 @@
     execute positioned 39 7 67 if entity @a[distance=..10,limit=1] run function world_manager:dimension/skylands/sealed_alter/
 
 # 透明化＆エーテル Invisible
-    execute as @a[nbt={active_effects:[{Id:14}]}] at @s run function player_manager:effect/invisible/
+    execute as @a[nbt={active_effects:[{id:"minecraft:invisibility"}]}] at @s run function player_manager:effect/invisible/
 
 # 奈落防止
     execute as @e[tag=AbyssWarp] at @s positioned ~-0.5 -70 ~-0.5 run tp @s[dy=-29] @p

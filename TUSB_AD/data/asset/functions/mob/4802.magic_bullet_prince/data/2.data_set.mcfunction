@@ -162,7 +162,7 @@ data remove storage asset: mob
     # Id,amplifier,duration,show_icon,ShowParticle,ambient
 
     # Passengers
-    data modify storage asset: mob.Passengers append value {id:"minecraft:potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{custom_potion_effects:[{Id:14,amplifier:-1b,duration:60},{Id:25,amplifier:-120b,duration:1200}]}}}
+    data modify storage asset: mob.Passengers append value {id:"minecraft:potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{custom_potion_effects:[{id:"minecraft:invisibility",amplifier:-1b,duration:60},{Id:25,amplifier:-120b,duration:1200}]}}}
     data modify storage asset: mob.Passengers append value {id:area_effect_cloud,effects:[],CustomName:'{"text":"ミステリアスオーラ"}',Radius:0.45f,duration:80,Particle:"falling_dust air"}
 
 

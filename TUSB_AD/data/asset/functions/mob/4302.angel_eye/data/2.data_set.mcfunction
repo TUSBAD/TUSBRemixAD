@@ -236,5 +236,5 @@
 data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",CustomName:'{"text":"エンジェルオーラ"}',Radius: 3f,duration: 32767,Tags: ["TypeChecked","RidingOnOwnerInit"],Particle:"dust 1 1 1 1",effects: [{Id:25,amplifier: 3b,duration: 20}, {id:"minecraft:regeneration",amplifier: 2b,duration: 40}, {id:9,amplifier: 2b,duration: 100}]}
 
 # ポーションを乗せる
-    data modify storage asset: mob.Passengers append value {id: "minecraft:potion",Item: {id: "minecraft:splash_potion",Count: 1b,tag: {CustomPotionColor: 16777215,custom_potion_effects: [{Id:14,amplifier: 0b,duration: 200}]}}}
+    data modify storage asset: mob.Passengers append value {id: "minecraft:potion",Item: {id: "minecraft:splash_potion",Count: 1b,tag: {CustomPotionColor: 16777215,custom_potion_effects: [{id:"minecraft:invisibility",amplifier: 0b,duration: 200}]}}}
     data remove entity @s Offers.Recipes[]

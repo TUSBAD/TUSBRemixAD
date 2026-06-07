@@ -1,4 +1,4 @@
 #> job:skill/summoner/katatoro/summon
 
-execute as @s at @e[type=#lib:mob,distance=..30,limit=1,sort=nearest] run summon creeper ~ ~ ~ {Tags:["CooldownRequired","TypeChecked","FinalPoint"],powered:0b,PortalCooldown:220,ExplosionRadius:0,Fuse:20,NoAI:1b,Silent:1b,Glowing:1b,Team:"FriendlyTeam",Invulnerable:1b,active_effects:[{Id:14,amplifier:127,duration:20000,show_particles:0b}]}
+execute as @s at @e[type=#lib:mob,distance=..30,limit=1,sort=nearest] run summon creeper ~ ~ ~ {Tags:["CooldownRequired","TypeChecked","FinalPoint"],powered:0b,PortalCooldown:220,ExplosionRadius:0,Fuse:20,NoAI:1b,Silent:1b,Glowing:1b,Team:"FriendlyTeam",Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",amplifier:127,duration:20000,show_particles:0b}]}
 schedule function job:skill/summoner/katatoro/hit 1t replace
