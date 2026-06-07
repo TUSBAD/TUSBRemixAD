@@ -106,7 +106,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:glowing,id:"minecraft:glowing"} 発光
     #{Name:levitation,id:"minecraft:levitation"} 浮遊
     #{Name:luck,id:"minecraft:luck"} 運
-    #{Name:bad_luck,Id:27} 不運
+    #{Name:bad_luck,id:"minecraft:unluck"} 不運
     #{Name:slow_falling,Id:28} 低速落下
     #{Name:conduit_power,Id:29} コンジットパワー
     #{Name:dolphins_grace,Id:30} イルカの好意
