@@ -279,6 +279,8 @@ gamerule playersNetherPortalCreativeDelay 32767
 gamerule playersNetherPortalDefaultDelay 32767
 gamerule playersSleepingPercentage 10
 gamerule disableRaids true
+gamerule universalAnger true
+gamerule forgiveDeadPlayers false
 gamerule snowAccumulationHeight 8
 difficulty hard
 defaultgamemode adventure
