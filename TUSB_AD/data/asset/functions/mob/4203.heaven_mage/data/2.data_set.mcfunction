@@ -97,7 +97,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:blindness,id:"minecraft:blindness"} 盲目
     #{Name:night_vision,id:"minecraft:night_vision"} 暗視
     #{Name:hunger,id:"minecraft:hunger"} 空腹
-    #{Name:weakness,Id:18} 弱体化 -lv*4
+    #{Name:weakness,id:"minecraft:weakness"} 弱体化 -lv*4
     #{Name:poison,Id:19} 毒
     #{Name:wither,Id:20} ウィザー
     #{Name:health_boots,Id:21} 体力増強 +lv*4

@@ -531,7 +531,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:25,amplifier:-128b},{show_particles:1b,duration:0,id:"minecraft:night_vision",amplifier:93b},{show_particles:0b,duration:1200,Id:18,amplifier:20b},{show_particles:0b,duration:1200,Id:3,amplifier:4b}],HideFlags:32,display:{Lore:['{\"text\":\"§6鉱夫が§9§l精魂§6を込めて作ったドリンク。\"}','{\"text\":\"§e§n早い採掘§6が可能になるが、\"}','{\"text\":\"§d力が入らなく§6なってしまう。\"}'],Name:'{\"text\":\"§6§lマインソウル\"}'}}"
+                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:25,amplifier:-128b},{show_particles:1b,duration:0,id:"minecraft:night_vision",amplifier:93b},{show_particles:0b,duration:1200,id:"minecraft:weakness",amplifier:20b},{show_particles:0b,duration:1200,Id:3,amplifier:4b}],HideFlags:32,display:{Lore:['{\"text\":\"§6鉱夫が§9§l精魂§6を込めて作ったドリンク。\"}','{\"text\":\"§e§n早い採掘§6が可能になるが、\"}','{\"text\":\"§d力が入らなく§6なってしまう。\"}'],Name:'{\"text\":\"§6§lマインソウル\"}'}}"
                         }
                     ]
                 },
