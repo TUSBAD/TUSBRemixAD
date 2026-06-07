@@ -15,5 +15,5 @@ execute if score @s PotentialSkill matches 2205 run data modify storage score_da
 execute if score @s PotentialSkill matches 2206 run data modify storage score_damage: Argument set value {Damage:135.00,DamageType:"Projectile"}
 execute if score @s PotentialSkill matches 2207 run data modify storage score_damage: Argument set value {Damage:165.00,DamageType:"Projectile"}
 execute if score @s PotentialSkill matches 2208..2209 run data modify storage score_damage: Argument set value {Damage:200.00,DamageType:"Projectile"}
-execute unless entity @s[nbt={ActiveEffects:[{Id:23}]}] run function score_damage:api/attack
-effect give @s saturation 10 0 false 
+execute unless entity @s[nbt={active_effects:[{Id:23}]}] run function score_damage:api/attack
+effect give @s saturation 10 0 false

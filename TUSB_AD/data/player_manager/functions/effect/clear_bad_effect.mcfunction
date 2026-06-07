@@ -3,25 +3,25 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-# execute store result score _ TUSB run data get storage tusb_remake: ActiveEffects[{Id:1}].Amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:1}].Amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:speed
 
 effect clear @s minecraft:slowness
 
-# execute store result score _ TUSB run data get storage tusb_remake: ActiveEffects[{Id:3}].Amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:3}].Amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:haste
 
 effect clear @s minecraft:mining_fatigue
 
-# execute store result score _ TUSB run data get storage tusb_remake: ActiveEffects[{Id:5}].Amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:5}].Amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:strength
 
-execute store result score _ TUSB run data get storage tusb_remake: ActiveEffects[{Id:8}].Amplifier
+execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:8}].Amplifier
 execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:jump_boost
 
 effect clear @s minecraft:nausea
 
-# execute store result score _ TUSB run data get storage tusb_remake: ActiveEffects[{Id:11}].Amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:11}].Amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:resistance
 
 effect clear @s minecraft:blindness
@@ -32,17 +32,17 @@ effect clear @s minecraft:poison
 effect clear @s minecraft:wither
 effect clear @s minecraft:levitation
 
-# execute store result score _ TUSB run data get storage tusb_remake: ActiveEffects[{Id:29}].Amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:29}].Amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:conduit_power
 
-# execute store result score _ TUSB run data get storage tusb_remake: ActiveEffects[{Id:30}].Amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:30}].Amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:dolphins_grace
 
 effect clear @s minecraft:bad_omen
 
 effect give @s[tag=Doom] invisibility 1 6 true
 
-# execute store result score _ TUSB run data get storage tusb_remake: ActiveEffects[{Id:32}].Amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:32}].Amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:hero_of_the_village
 
 playsound minecraft:entity.illusioner.cast_spell player @s ~ ~ ~ 6 0.5

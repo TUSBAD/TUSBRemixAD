@@ -11,10 +11,10 @@ data remove storage asset: mob
 # 手順：皇子を作る→魔のワゴンを作る(スポナー乗せたり)→魔のワゴンに皇子を乗せる→村人騎乗コウモリを作る→魔のワゴンを乗せる
 
 ##### 魔弾の皇子 #####
-    
+
     ### idを設定
     data modify storage asset: mob.id set value "minecraft:stray"
-    
+
     ### 体力等nbtを設定
     # 体力
     data modify storage asset: mob.Health set value 444
@@ -45,10 +45,10 @@ data remove storage asset: mob
     # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
     # data modify storage asset: mob.PortalCooldown set value 0
     # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
-    
-    
-    
-    
+
+
+
+
     ### Attributes
     # 最大体力
     data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:444}
@@ -71,8 +71,8 @@ data remove storage asset: mob
     # Attribute Modifierというものも使用可能。ただし、UUIDを指定する必要がある(めんどい)
     # data modify storage asset: mob.Attributes[{Name:generic.max_health}] append value {Modifiers:[{Amount:1,Operation:0,UUID:[I;1525,58721857,885,8867183],Name:"example_modifier"}]}
     # Operation:0はn+x+y+z、Operation:1はn×(1+x+y+z)、Operation:2はn×(1+x)×(1+y)×(1+z) Nameは必須ではなさそう
-    
-    
+
+
     ### ArmorItems
     # 防具立てを召喚してアイテムを持たせ、そのデータを代入します(座標は常時読み込みチャンク)
     summon armor_stand -2000.0 0.0 0.0 {Tags:["ItemHolder"]}
@@ -117,7 +117,7 @@ data remove storage asset: mob
 # 20:wither(50)(200t)
 # 23:saturation(27)(6t)
 
-    ### ActiveEffects
+    ### active_effects
     # 直接nbtを指定して追加します
     #effect一覧
         #{Name:speed,id:1} 移動速度上昇 +lv*20%
@@ -154,18 +154,18 @@ data remove storage asset: mob
         #{Name:hero_of_the_village,id:32} 村の英雄
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
-    # data modify storage asset: mob.ActiveEffects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
-    # data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+    # data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
+    # data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
     # 或いは...
-    # data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+    # data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
     # このように一行に纏めることも可能。ただし、可読性は下がるかな
     # Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
 
     # Passengers
     data modify storage asset: mob.Passengers append value {id:"minecraft:potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionEffects:[{Id:14,Amplifier:-1b,Duration:60},{Id:25,Amplifier:-120b,Duration:1200}]}}}
     data modify storage asset: mob.Passengers append value {id:area_effect_cloud,Effects:[],CustomName:'{"text":"ミステリアスオーラ"}',Radius:0.45f,Duration:80,Particle:"falling_dust air"}
-    
-    
+
+
     data modify storage _: MagicBulletPrince set from storage asset: mob
 
 
@@ -173,11 +173,11 @@ data remove storage asset: mob
 
     # dataを初期化
     data remove storage asset: mob
-    
+
     ### idを設定
     data modify storage asset: mob.id set value "skeleton"
-    
-    
+
+
     ### 体力等nbtを設定
         # Size
         data modify storage asset: mob.Size set value 2
@@ -208,8 +208,8 @@ data remove storage asset: mob
         # ポータルに入るまでのクールダウン。"CooldownRequired"というtagを付けているとこのnbtが0の時自動で消滅する
         # data modify storage asset: mob.PortalCooldown set value 0
         # 可読性や編集の手間を考慮しなければこれらを全て一つに纏めることも可能です
-    
-    
+
+
     ### Attributes
         # 最大体力
         data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:650}
@@ -227,11 +227,11 @@ data remove storage asset: mob
         data modify storage asset: mob.Attributes append value {Name:generic.follow_range, Base:32}
         # 攻撃のノックバック(0~5)
         # data modify storage asset: mob.Attributes append value {Name:generic.attack_knockback, Base:1}
-    
-    data modify storage asset: mob.ActiveEffects set value [{Duration: 2147483647, Id: 14b, Amplifier: 127b}, {Duration: 2147483647, Id: 20b, Amplifier: 0b}]
-    
+
+    data modify storage asset: mob.active_effects set value [{Duration: 2147483647, Id: 14b, Amplifier: 127b}, {Duration: 2147483647, Id: 20b, Amplifier: 0b}]
+
     # スポナー(射手産)
-    data modify storage asset: mob.Passengers append value {RequiredPlayerRange: 20s, MaxNearbyEntities: 3s, CustomDisplayTile: 1b, SpawnCount: 1s, DisplayState: {Properties: {facing: "down", enabled: "true"}, Name: "minecraft:hopper"}, DisplayTile: "minecraft:hopper", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 40s, Glowing: 1b, Delay: -1s, DisplayOffset: -14, CustomName: '{"text":"魔のワゴン"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 0s, MinSpawnDelay: 10s, SpawnPotentials: [{data: {entity: {ParticleParam2: 2, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ01"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 1b, Amplifier: 1b}, {Duration: 10, Id: 25b, Amplifier: 15b}]}}, weight: 1}, {data: {entity: {ParticleParam2: 14, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ02"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 1b, Amplifier: 5b}, {Duration: 10, Id: 25b, Amplifier: 7b}]}}, weight: 3}, {data: {entity: {ParticleParam2: 1, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ03"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 1b, Amplifier: 10b}, {Duration: 10, Id: 25b, Amplifier: 4b}]}}, weight: 5}, {data: {entity: {ParticleParam2: 4, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ04"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 1b, Amplifier: 20b}, {Duration: 10, Id: 25b, Amplifier: 2b}]}}, weight: 7}, {data: {entity: {NoGravity: 1b, Motion: [0.0d, 0.1d, 0.0d], RequiredPlayerRange: 80s, MaxNearbyEntities: 99s, CustomDisplayTile: 1b, SpawnCount: 16s, DisplayState: {Properties: {east: "false", south: "false", north: "false", west: "false", up: "false", age: "0"}, Name: "minecraft:fire"}, DisplayTile: "minecraft:fire", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 6s, PortalCooldown: 10, Delay: -1s, DisplayOffset: 14, CustomName: '{"text":"LWS01"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 16s, Tags: ["CooldownRequired"], MinSpawnDelay: 6s, SpawnPotentials: [{data: {entity: {Particle: "explosion", Radius: 0.01f, ReapplicationDelay: 0, Passengers: [{id: "minecraft:ender_pearl", Glowing: 1b}, {NoGravity: 1b, CustomName: '{"text":"DeathRay"}', Health: 200.0f, Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 10.0d, Name: "generic.attack_damage"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 80.0d, Name: "generic.follow_range"}], Silent: 1b, DeathLootTable: "empty", id: "minecraft:guardian", ActiveEffects: [{ShowParticles: 0b, Duration: 2147483647, Id: 14b, Amplifier: 127b}]}], CustomName: '{"text":"ファンタズムゲート"}', RadiusOnUse: 0.0f, Duration: 40, id: "minecraft:area_effect_cloud", WaitTime: 200, Effects: [{Duration: 80, Id: 7b, Amplifier: 10b}]}}, weight: 1}]}}, weight: 1}, {data: {entity: {NoGravity: 1b, Motion: [0.0d, 0.1d, 0.0d], RequiredPlayerRange: 80s, MaxNearbyEntities: 99s, CustomDisplayTile: 1b, SpawnCount: 16s, DisplayState: {Properties: {east: "false", south: "false", north: "false", west: "false", up: "false", age: "0"}, Name: "minecraft:fire"}, DisplayTile: "minecraft:fire", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 6s, PortalCooldown: 10, Delay: -1s, DisplayOffset: 14, CustomName: '{"text":"LWS02"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 16s, Tags: ["CooldownRequired"], MinSpawnDelay: 6s, SpawnPotentials: [{data: {entity: {Particle: "explosion", Radius: 0.01f, ReapplicationDelay: 0, Passengers: [{id: "minecraft:ender_pearl", Glowing: 1b}, {NoGravity: 1b, CustomName: '{"text":"QuatreShot"}', Health: 200.0f, Color: 16b, Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 80.0d, Name: "generic.follow_range"}], Silent: 1b, DeathLootTable: "empty", id: "minecraft:shulker", ActiveEffects: [{ShowParticles: 0b, Duration: 2147483647, Id: 14b, Amplifier: 127b}]}], CustomName: '{"text":"ファンタズムゲート"}', RadiusOnUse: 0.0f, Duration: 40, id: "minecraft:area_effect_cloud", WaitTime: 180, Effects: [{Duration: 80, Id: 7b, Amplifier: 10b}]}}, weight: 1}]}}, weight: 1}]}
+    data modify storage asset: mob.Passengers append value {RequiredPlayerRange: 20s, MaxNearbyEntities: 3s, CustomDisplayTile: 1b, SpawnCount: 1s, DisplayState: {Properties: {facing: "down", enabled: "true"}, Name: "minecraft:hopper"}, DisplayTile: "minecraft:hopper", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 40s, Glowing: 1b, Delay: -1s, DisplayOffset: -14, CustomName: '{"text":"魔のワゴン"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 0s, MinSpawnDelay: 10s, SpawnPotentials: [{data: {entity: {ParticleParam2: 2, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ01"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 1b, Amplifier: 1b}, {Duration: 10, Id: 25b, Amplifier: 15b}]}}, weight: 1}, {data: {entity: {ParticleParam2: 14, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ02"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 1b, Amplifier: 5b}, {Duration: 10, Id: 25b, Amplifier: 7b}]}}, weight: 3}, {data: {entity: {ParticleParam2: 1, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ03"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 1b, Amplifier: 10b}, {Duration: 10, Id: 25b, Amplifier: 4b}]}}, weight: 5}, {data: {entity: {ParticleParam2: 4, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ04"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 1b, Amplifier: 20b}, {Duration: 10, Id: 25b, Amplifier: 2b}]}}, weight: 7}, {data: {entity: {NoGravity: 1b, Motion: [0.0d, 0.1d, 0.0d], RequiredPlayerRange: 80s, MaxNearbyEntities: 99s, CustomDisplayTile: 1b, SpawnCount: 16s, DisplayState: {Properties: {east: "false", south: "false", north: "false", west: "false", up: "false", age: "0"}, Name: "minecraft:fire"}, DisplayTile: "minecraft:fire", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 6s, PortalCooldown: 10, Delay: -1s, DisplayOffset: 14, CustomName: '{"text":"LWS01"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 16s, Tags: ["CooldownRequired"], MinSpawnDelay: 6s, SpawnPotentials: [{data: {entity: {Particle: "explosion", Radius: 0.01f, ReapplicationDelay: 0, Passengers: [{id: "minecraft:ender_pearl", Glowing: 1b}, {NoGravity: 1b, CustomName: '{"text":"DeathRay"}', Health: 200.0f, Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 10.0d, Name: "generic.attack_damage"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 80.0d, Name: "generic.follow_range"}], Silent: 1b, DeathLootTable: "empty", id: "minecraft:guardian", active_effects: [{ShowParticles: 0b, Duration: 2147483647, Id: 14b, Amplifier: 127b}]}], CustomName: '{"text":"ファンタズムゲート"}', RadiusOnUse: 0.0f, Duration: 40, id: "minecraft:area_effect_cloud", WaitTime: 200, Effects: [{Duration: 80, Id: 7b, Amplifier: 10b}]}}, weight: 1}]}}, weight: 1}, {data: {entity: {NoGravity: 1b, Motion: [0.0d, 0.1d, 0.0d], RequiredPlayerRange: 80s, MaxNearbyEntities: 99s, CustomDisplayTile: 1b, SpawnCount: 16s, DisplayState: {Properties: {east: "false", south: "false", north: "false", west: "false", up: "false", age: "0"}, Name: "minecraft:fire"}, DisplayTile: "minecraft:fire", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 6s, PortalCooldown: 10, Delay: -1s, DisplayOffset: 14, CustomName: '{"text":"LWS02"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 16s, Tags: ["CooldownRequired"], MinSpawnDelay: 6s, SpawnPotentials: [{data: {entity: {Particle: "explosion", Radius: 0.01f, ReapplicationDelay: 0, Passengers: [{id: "minecraft:ender_pearl", Glowing: 1b}, {NoGravity: 1b, CustomName: '{"text":"QuatreShot"}', Health: 200.0f, Color: 16b, Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 80.0d, Name: "generic.follow_range"}], Silent: 1b, DeathLootTable: "empty", id: "minecraft:shulker", active_effects: [{ShowParticles: 0b, Duration: 2147483647, Id: 14b, Amplifier: 127b}]}], CustomName: '{"text":"ファンタズムゲート"}', RadiusOnUse: 0.0f, Duration: 40, id: "minecraft:area_effect_cloud", WaitTime: 180, Effects: [{Duration: 80, Id: 7b, Amplifier: 10b}]}}, weight: 1}]}}, weight: 1}]}
     data modify storage asset: mob.Passengers append value {RequiredPlayerRange: 32s, MaxNearbyEntities: 3s, CustomDisplayTile: 1b, SpawnCount: 1s, DisplayState: {Properties: {facing: "down"}, Name: "minecraft:end_rod"}, DisplayTile: "minecraft:end_rod", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 10s, Glowing: 1b, Delay: -1s, DisplayOffset: -23, CustomName: '{"text":"魔のワゴン"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 0s, MinSpawnDelay: 5s, SpawnPotentials: [{data: {entity: {ParticleParam2: 5, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ05"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 2b, Amplifier: 5b}, {Duration: 50, Id: 25b, Amplifier: -3b}]}}, weight: 1}, {data: {entity: {ParticleParam2: 3, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ06"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 2b, Amplifier: 7b}, {Duration: 10, Id: 25b, Amplifier: -4b}]}}, weight: 3}, {data: {entity: {ParticleParam2: 11, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ07"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 2b, Amplifier: 10b}, {Duration: 10, Id: 25b, Amplifier: -8b}]}}, weight: 5}, {data: {entity: {ParticleParam2: 10, Particle: "minecraft:block air", Radius: 1.5f, ParticleParam1: 160, ReapplicationDelay: 0, CustomName: '{"text":"ムーブオーラ08"}', RadiusOnUse: 0.0f, Duration: 20, id: "minecraft:area_effect_cloud", Effects: [{Duration: 10, Id: 2b, Amplifier: 20b}, {Duration: 10, Id: 25b, Amplifier: -16b}]}}, weight: 7}, {data: {entity: {Motion: [0.0d, -3.0d, 0.0d], Passengers: [{Particle: "witchMagic", Radius: 10.0f, ReapplicationDelay: 0, CustomName: '{"text":"HEALTH_DOWNER"}', RadiusOnUse: 0.0f, Duration: 10, id: "minecraft:area_effect_cloud", WaitTime: 120, Effects: [{Duration: 100, Id: 17b, Amplifier: 70b}, {Duration: 160, Id: 9b, Amplifier: 0b}, {Duration: 100, Id: 21b, Amplifier: 0b}, {Duration: 100, Id: 25b, Amplifier: 5b}]}, {Particle: "dragon_breath", Radius: 0.3f, ReapplicationDelay: 0, CustomName: '{"text":"HEALTH_DOWNER"}', RadiusOnUse: 0.0f, Duration: 100, id: "minecraft:area_effect_cloud", Effects: []}], Value: 0s, id: "minecraft:experience_orb", Age: 5900s}}, weight: 1}]}
     # ラインオーラ(射手産)
     data modify storage asset: mob.Passengers append value {Particle: "end_rod", Radius: 0.001f, ParticleParam1: 7, ReapplicationDelay: 0, CustomName: '{"text":"ラインオーラ"}', Duration: 80, id: "minecraft:area_effect_cloud", Effects: [], CustomNameVisible: 0b}
@@ -243,7 +243,7 @@ data remove storage asset: mob
 
 ### コウモリon村人
     data remove storage asset: mob
-    data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"ランダム移動"}', Health: 4.0f, Attributes: [{Base: 4.0d, Name: "generic.max_health"}], Silent: 1b, id: "minecraft:bat", ActiveEffects: [{Duration: 2147483647, Id: 14b, Amplifier: 127b}, {Duration: 2147483647, Id: 20b, Amplifier: 127b}]}], Health: 0.0f, DeathTime: 19s, Xp: 0, Silent: 1b, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager"}
+    data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"ランダム移動"}', Health: 4.0f, Attributes: [{Base: 4.0d, Name: "generic.max_health"}], Silent: 1b, id: "minecraft:bat", active_effects: [{Duration: 2147483647, Id: 14b, Amplifier: 127b}, {Duration: 2147483647, Id: 20b, Amplifier: 127b}]}], Health: 0.0f, DeathTime: 19s, Xp: 0, Silent: 1b, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager"}
 
 ### 全部合体！！
 data modify storage asset: mob.Passengers[0].Passengers append from storage _: MagicWagon

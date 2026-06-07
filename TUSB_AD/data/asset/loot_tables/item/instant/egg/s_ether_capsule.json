@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{\"text\":\"§rスーパーエーテルが入っている。\"}'], Name: '{\"text\":\"§2§lスーパーエーテルカプセル\"}'}, Enchantments: [], EntityTag: {DeathLootTable: \"usb:signs/ether3\", id: \"minecraft:witch\", DeathTime: 19s, ActiveEffects: [{Duration: 100, Id: 7b, Amplifier: 5b, ShowParticles: 0b}, {Duration: 100, Id: 14b, Amplifier: 0b, ShowParticles: 0b}], Tags: [\"RewardEgg\", \"TypeChecked\"]}, CanPlaceOn: [\"#minecraft:all\"]}"
+                "tag": "{RepairCost: 1000000000, HideFlags: 16, display: {Lore: ['{\"text\":\"§rスーパーエーテルが入っている。\"}'], Name: '{\"text\":\"§2§lスーパーエーテルカプセル\"}'}, Enchantments: [], EntityTag: {DeathLootTable: \"usb:signs/ether3\", id: \"minecraft:witch\", DeathTime: 19s, active_effects: [{Duration: 100, Id: 7b, Amplifier: 5b, ShowParticles: 0b}, {Duration: 100, Id: 14b, Amplifier: 0b, ShowParticles: 0b}], Tags: [\"RewardEgg\", \"TypeChecked\"]}, CanPlaceOn: [\"#minecraft:all\"]}"
               }
             ]
           }

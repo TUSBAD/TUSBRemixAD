@@ -71,7 +71,7 @@ kill @e[tag=ItemHolder,limit=1]
 # 直接ArmorItemsなどにitemを突っ込んでも大丈夫です
 
 
-### ActiveEffects
+### active_effects
 # 直接nbtを指定して追加します
 #effect一覧
     #{Name:speed,id:1} 移動速度上昇 +lv*20%
@@ -108,10 +108,10 @@ kill @e[tag=ItemHolder,limit=1]
     #{Name:hero_of_the_village,id:32} 村の英雄
     #{Name:darkness,id:33} 暗闇
     # 詳しくはwiki見てね！
-data modify storage asset: mob.ActiveEffects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
-data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
+data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
 # 或いは...
-# data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+# data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
 # Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
 

@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 data modify storage tusb_remake: hit set value false
-execute positioned ~-0.5 ~ ~-0.5 as @e[dy=0,type=#lib:mob,tag=Enemy,nbt=!{ActiveEffects:[{Id:23}]},limit=1] at @s run function job:skill/summoner/blast_basin/schedule
+execute positioned ~-0.5 ~ ~-0.5 as @e[dy=0,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{Id:23}]},limit=1] at @s run function job:skill/summoner/blast_basin/schedule
 
 ### 当たっていなかった＆地面についたとき
 execute unless data storage tusb_remake: {hit:true} unless predicate lib:is_riding run function job:skill/summoner/blast_basin/schedule/hit

@@ -7,9 +7,9 @@ execute as @e[distance=0,type=snowball,limit=1] run function job:skill/white_mag
 
 # 発射時攻撃判定
 
-execute if score _ ActivatedSkill matches 4220 run execute as @e[distance=..8,type=#lib:mob,tag=Enemy,nbt=!{ActiveEffects:[{Id:23}]},team=!Boss] at @s run function job:skill/white_mage/flower_gift/schedule/hit/1
-execute if score _ ActivatedSkill matches 4221 run execute as @e[distance=..8,type=#lib:mob,tag=Enemy,nbt=!{ActiveEffects:[{Id:23}]},team=!Boss] at @s run function job:skill/white_mage/flower_gift/schedule/hit/2
-execute if score _ ActivatedSkill matches 4222..4229 run execute as @e[distance=..8,type=#lib:mob,tag=Enemy,nbt=!{ActiveEffects:[{Id:23}]},team=!Boss] at @s run function job:skill/white_mage/flower_gift/schedule/hit/3
+execute if score _ ActivatedSkill matches 4220 run execute as @e[distance=..8,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{Id:23}]},team=!Boss] at @s run function job:skill/white_mage/flower_gift/schedule/hit/1
+execute if score _ ActivatedSkill matches 4221 run execute as @e[distance=..8,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{Id:23}]},team=!Boss] at @s run function job:skill/white_mage/flower_gift/schedule/hit/2
+execute if score _ ActivatedSkill matches 4222..4229 run execute as @e[distance=..8,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{Id:23}]},team=!Boss] at @s run function job:skill/white_mage/flower_gift/schedule/hit/3
 ### フラワーギフトの演出有効化
 function job:skill/white_mage/flower_gift/schedule/
 
