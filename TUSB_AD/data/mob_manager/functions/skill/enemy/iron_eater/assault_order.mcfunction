@@ -6,4 +6,4 @@
 
 me は 強襲命令§r を唱えた！
 
-summon ThrownPotion ~ ~ ~ {Potion:{id:"minecraft:splash_potion",tag:{custom_potion_effects:[{Id:11b,duration:200,Ampliftier:-5b,ShowParticle:0b},{Id:5b,duration:200,Ampliftier:9b,ShowParticle:1b},{Id:1b,duration:200,Ampliftier:19b,ShowParticle:0b}],Potion:"minecraft:water"}}}
+summon ThrownPotion ~ ~ ~ {Potion:{id:"minecraft:splash_potion",tag:{custom_potion_effects:[{id:"minecraft:resistance",duration:200,Ampliftier:-5b,ShowParticle:0b},{Id:5b,duration:200,Ampliftier:9b,ShowParticle:1b},{Id:1b,duration:200,Ampliftier:19b,ShowParticle:0b}],Potion:"minecraft:water"}}}

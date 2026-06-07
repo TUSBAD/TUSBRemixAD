@@ -90,7 +90,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:jump_boost,id:"minecraft:jump_boost"} 跳躍力上昇 1.25*(lv*0.5)
     #{Name:nausea,id:"minecraft:nausea"} 吐き気
     #{Name:regeneration,id:"minecraft:regeneration"} 再生
-    #{Name:resistance,Id:11} 耐性 100-lv*20%
+    #{Name:resistance,id:"minecraft:resistance"} 耐性 100-lv*20%
     #{Name:fire_resistance,Id:12} 火炎耐性
     #{Name:water_breathing,Id:13} 水中呼吸
     #{Name:invisibility,Id:14} 透明化 player_manager:invisible
