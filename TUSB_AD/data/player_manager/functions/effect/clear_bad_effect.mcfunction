@@ -8,7 +8,7 @@
 
 effect clear @s minecraft:slowness
 
-# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:3}].amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{id:"minecraft:haste"}].amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:haste
 
 effect clear @s minecraft:mining_fatigue
