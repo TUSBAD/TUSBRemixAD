@@ -92,7 +92,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:regeneration,id:"minecraft:regeneration"} 再生
     #{Name:resistance,id:"minecraft:resistance"} 耐性 100-lv*20%
     #{Name:fire_resistance,id:"minecraft:fire_resistance"} 火炎耐性
-    #{Name:water_breathing,Id:13} 水中呼吸
+    #{Name:water_breathing,id:"minecraft:water_breathing"} 水中呼吸
     #{Name:invisibility,Id:14} 透明化 player_manager:invisible
     #{Name:blindness,Id:15} 盲目
     #{Name:night_vision,Id:16} 暗視

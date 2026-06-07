@@ -357,7 +357,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:25b,amplifier:-128b},{show_particles:1b,duration:0,Id:13b,amplifier:111b},{Id:11b,amplifier:-2b,duration:60,show_particles:0b},{Id:20b,amplifier:2b,duration:60,show_particles:0b}],HideFlags:32,Potion: \"minecraft:water\",display:{Lore:['{\"text\":\"§7刺さった者の防御力を下げた後、呪う。\"}'],Name:'{\"text\":\"§d§lバイオレットプリズム\"}'}}"
+                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:25b,amplifier:-128b},{show_particles:1b,duration:0,id:"minecraft:water_breathing",amplifier:111b},{Id:11b,amplifier:-2b,duration:60,show_particles:0b},{Id:20b,amplifier:2b,duration:60,show_particles:0b}],HideFlags:32,Potion: \"minecraft:water\",display:{Lore:['{\"text\":\"§7刺さった者の防御力を下げた後、呪う。\"}'],Name:'{\"text\":\"§d§lバイオレットプリズム\"}'}}"
                         },
                         {
                             "function": "set_count",
@@ -542,7 +542,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:25,amplifier:-128b},{show_particles:1b,duration:0,Id:13,amplifier:119b},{show_particles:0b,duration:1800,Id:21,amplifier:0b},{show_particles:0b,duration:1800,Id:22,amplifier:9b}],HideFlags:32,display:{Lore:['{\"text\":\"§9脳に働きかけ、\"}','{\"text\":\"§d自分の体力§9を§3§l錯覚§9させる雫。\"}','{\"text\":\"§1§mうそつきは耐久型のはじまり\"}'],Name:'{\"text\":\"§3§l空音の雫\"}'}}"
+                            "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:25,amplifier:-128b},{show_particles:1b,duration:0,id:"minecraft:water_breathing",amplifier:119b},{show_particles:0b,duration:1800,Id:21,amplifier:0b},{show_particles:0b,duration:1800,Id:22,amplifier:9b}],HideFlags:32,display:{Lore:['{\"text\":\"§9脳に働きかけ、\"}','{\"text\":\"§d自分の体力§9を§3§l錯覚§9させる雫。\"}','{\"text\":\"§1§mうそつきは耐久型のはじまり\"}'],Name:'{\"text\":\"§3§l空音の雫\"}'}}"
                         }
                     ]
                 }

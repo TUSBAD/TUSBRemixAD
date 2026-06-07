@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:25b,amplifier:-128b},{show_particles:1b,duration:0,Id:13b,amplifier:111b},{Id:11b,amplifier:-2b,duration:60,show_particles:0b},{Id:20b,amplifier:2b,duration:60,show_particles:0b}],HideFlags:32,Potion: \"minecraft:water\",display:{Lore:['{\"text\":\"§7刺さった者の防御力を下げた後、呪う。\"}'],Name:'{\"text\":\"§d§lバイオレットプリズム\"}'}}"
+                "tag": "{custom_potion_effects:[{show_particles:1b,duration:0,Id:25b,amplifier:-128b},{show_particles:1b,duration:0,id:"minecraft:water_breathing",amplifier:111b},{Id:11b,amplifier:-2b,duration:60,show_particles:0b},{Id:20b,amplifier:2b,duration:60,show_particles:0b}],HideFlags:32,Potion: \"minecraft:water\",display:{Lore:['{\"text\":\"§7刺さった者の防御力を下げた後、呪う。\"}'],Name:'{\"text\":\"§d§lバイオレットプリズム\"}'}}"
               }
             ]
           }
