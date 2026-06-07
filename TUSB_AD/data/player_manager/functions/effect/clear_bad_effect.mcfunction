@@ -16,7 +16,7 @@ effect clear @s minecraft:mining_fatigue
 # execute store result score _ TUSB run data get storage tusb_remake: active_effects[{id:"minecraft:strength"}].amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:strength
 
-execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:8}].amplifier
+execute store result score _ TUSB run data get storage tusb_remake: active_effects[{id:"minecraft:jump_boost"}].amplifier
 execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:jump_boost
 
 effect clear @s minecraft:nausea

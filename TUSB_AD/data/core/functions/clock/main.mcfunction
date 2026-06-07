@@ -75,7 +75,7 @@
     execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 
 # leap(跳躍妨害)
-    execute at @e[tag=leap] run effect give @a[distance=..7,nbt={active_effects:[{Id:8,amplifier:0b}]}] levitation 10 236
+    execute at @e[tag=leap] run effect give @a[distance=..7,nbt={active_effects:[{id:"minecraft:jump_boost",amplifier:0b}]}] levitation 10 236
     execute at @e[tag=leap] run effect clear @a[distance=..32] jump_boost
 
 # ボスチーム

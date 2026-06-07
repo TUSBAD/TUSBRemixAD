@@ -3,7 +3,7 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-execute as @a[scores={Choyaku=2..,Jump=1..},nbt={active_effects:[{Id:8}]}] at @s run function job:skill/ninja/choyaku/jump
+execute as @a[scores={Choyaku=2..,Jump=1..},nbt={active_effects:[{id:"minecraft:jump_boost"}]}] at @s run function job:skill/ninja/choyaku/jump
 execute as @a[scores={seiyou=2..,Jump=1..}] at @s run function job:skill/ninja/seiyou/jump
 scoreboard players reset @a[scores={Jump=1..}] Jump
 ### 緩衝体力用被ダメージ補正処理
