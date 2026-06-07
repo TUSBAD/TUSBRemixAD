@@ -3,7 +3,7 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-me 「この果物、虫はいってるうううううう！！！」
+#me 「この果物、虫はいってるうううううう！！！」
 
 summon minecraft:endermite ~ ~ ~ {CustomName:'"コーラスマイト"',Health:200f,Lifetime:1900,Attributes:[{Name:"minecraft:generic.max_health",Base:200d},{Name:"minecraft:generic.movement_speed",Base:0.3d},{Name:"generic.attack_damage",Base:1d},{Name:"generic.knockback_resistance",Base:0.3d},{Name:"generic.follow_range",Base:32d}],HandItems:[{tag:{Enchantments:[{id:"minecraft:power",lvl:20s}]},id:"minecraft:iron_sword",Count:1b},{}],HandDropChances:[0.0f,0.0f]}
 

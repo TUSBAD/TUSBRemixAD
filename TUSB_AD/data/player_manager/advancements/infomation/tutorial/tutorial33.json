@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:spawner",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "特殊なスポナー                                       ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この世界にはいろいろな特徴的なスポナーが存在します。\nここではその特徴的なスポナーを一部紹介します。\n\n・%1$s：岩盤やコマブロで保護されているスポナーです。破壊するには専用の印板が必要になります。\n\n・%2$s：破壊可能で一番堅いブロックの保護スポナーです。採掘速度上昇が無い場合、80秒ほどかかります。\n\n・%3$s：採掘速度低下等のデバフを付与するオーラが付与されているスポナーです。常時デバフを解除できる手段があると良いでしょう。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "不可壊ブロック",
+          "color": "#fd0000"
+        },
+        {
+          "translate": "強化された深層岩",
+          "color": "#ff02ad"
+        },
+        {
+          "translate": "デバフオーラ",
+          "color": "#008000"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial32",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

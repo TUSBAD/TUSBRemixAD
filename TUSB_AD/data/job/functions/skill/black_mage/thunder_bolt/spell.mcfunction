@@ -7,7 +7,7 @@
 scoreboard players operation @s ActivatedSkill = @s CurrentMode
 scoreboard players operation @s MPConsumption = @s CurrentModeCost
 ### MPチェック
-function skill:check_mp/
+function job:check_mp/
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
 execute if score _ ActivatedSkill matches 5220..5229 run function job:skill/black_mage/thunder_bolt/ready

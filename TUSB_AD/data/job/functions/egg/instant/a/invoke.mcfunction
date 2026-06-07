@@ -1,4 +1,4 @@
-#> skill:egg/instant/a/invoke
+#> job:egg/instant/a/invoke
 # ルビースキル発動
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
@@ -11,9 +11,9 @@ execute if entity @s[scores={ActivatedSkill=..0}] run playsound block.fire.extin
 scoreboard players reset @s[scores={ActivatedSkill=..0}] ActivatedSkill
 
 ### MPチェック
-function skill:check_mp/
+function job:check_mp/
 
 ### ここでActivatedSkillに合わせてスキルを実行
-function skill:egg/instant/fork
+function job:egg/instant/fork
 
 data modify entity @e[distance=..1,tag=SkillEgg,tag=Instant,tag=Ruby,limit=1] Health set value 0f

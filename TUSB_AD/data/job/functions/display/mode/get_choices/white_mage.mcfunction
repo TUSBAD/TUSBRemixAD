@@ -1,4 +1,4 @@
-#> skill:display/mode/get_choices/white_mage
+#> job:display/mode/get_choices/white_mage
 ## モードスキルのテーブルを取得
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

@@ -1,4 +1,4 @@
-#> skill:display/instant/get_choices/ninja
+#> job:display/instant/get_choices/ninja
 ## 即時スキルのテーブルを取得
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

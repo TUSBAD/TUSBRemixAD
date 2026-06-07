@@ -1,4 +1,4 @@
-#> skill:display/translate/
+#> job:display/translate/
 ## スキルテーブルを設定
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
@@ -7,7 +7,7 @@
 data modify storage tusb_remake: skill_choice set from storage tusb_remake: list[-1]
 
 ### 選択できるスキルの名前を取得する
-function skill:display/translate/get_name
+function job:display/translate/get_name
 
 ### 通常の範囲を設定
 ### 数字のリストに追加できるなら数字です！
@@ -58,4 +58,4 @@ data remove storage tusb_remake: list[-1]
 data remove storage tusb_remake: jsons[-1]
 
 ### まだスキルが残っていたら繰り返し
-execute if data storage tusb_remake: list[0] run function skill:display/translate/
+execute if data storage tusb_remake: list[0] run function job:display/translate/

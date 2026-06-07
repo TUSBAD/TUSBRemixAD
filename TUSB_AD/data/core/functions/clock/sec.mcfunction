@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 # マナリフレッシュ
-    execute as @a[scores={ManaRefresh=0..}] run function job:skill/black_mage/mana_refresh/check
+    #execute as @a[scores={ManaRefresh=0..}] run function job:skill/black_mage/mana_refresh/check
 
 # 連舞 跳躍
     execute as @a[scores={Tsuremai=0..}] at @s run function job:skill/ninja/tsuremai/check
@@ -59,7 +59,7 @@
     execute as 0-0-1-0-4 at @s positioned ~ ~-19 ~74 if block -1860 20 -51 minecraft:slime_block if entity @p[distance=..65,gamemode=!spectator] run function world_manager:dimension/purgatory/boss/attack_check
 
 # 死の宣告
-    execute as @a[tag=Doom] run function player_manager:effect/invisible/doom/
+    execute as @a[tag=Doom] run function player_manager:effect/invisible/doom/default
 
 # サバイバルスポナー処理
     execute as @e[tag=SpawnerCore] at @s if block ~ ~ ~ minecraft:air run kill @e[distance=..0.99,tag=Spawner,limit=2,sort=nearest]

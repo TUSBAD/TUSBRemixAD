@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:experience_bottle",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "レベルの上限                                        ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この世界のレベル上限値は、Lv%1$sです。ですが最初からその値というわけではありません。\n始めた時点でのレベルの上限値はLv%2$sです。攻略を進めていくと上限が解放されていきます。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "2147483647",
+          "color": "#ff2a2a"
+        },
+        {
+          "translate": "50",
+          "color": "#5bff5b"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial24",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

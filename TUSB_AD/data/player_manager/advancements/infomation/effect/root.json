@@ -1,0 +1,35 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:pufferfish_bucket",
+            "nbt": "{Enchantments:[{}]}"
+        },
+        "title": [
+            {
+                "translate": "空島の旅 %1$s",
+                "color": "white",
+                "bold": true,
+                "with": [
+                    {
+                        "translate": "-状態異常-",
+                        "color": "#ff2b2b"
+                    }
+                ]
+            }
+        ],
+        "description": {
+            "translate": "冒険に役立つヒント",
+            "color": "green"
+        },
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/sculk_sensor_bottom.png"
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

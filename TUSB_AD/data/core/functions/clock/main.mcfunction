@@ -24,7 +24,7 @@
     execute as @a[scores={ExpToLevel=..0,Job=1..}] at @s run function player_manager:job/level_up/
 
 # MP自然回復
-    function player_manager:mp/mp_regen
+    execute as @a[scores={Job=1..,Level=1..}] at @s run function player_manager:mp/mp_regen
 
 # 島攻略
     execute as @a[scores={UseEnderEye=1..}] at @s run function world_manager:area/conquer/
@@ -91,7 +91,7 @@
     execute as @e[type=#lib:mob,tag=!ShieldTried,limit=1] run function mob_manager:entity/time_shield/detect_enemy
 
 # tick/trigger
-    execute as @a at @s run function player_manager:show_text/trigger
+    execute as @a at @s run function player_manager:show_text/trigger/
 
 # 装備効果
     execute as @a at @s run function player_manager:custom_item/equipments/
@@ -105,3 +105,4 @@
 
 # タイム計測
     #execute as @e[tag=Timer] run scoreboard players add @s LiveTime 1
+    #scoreboard players add FreyCielu MP 1

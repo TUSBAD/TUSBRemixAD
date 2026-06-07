@@ -1,4 +1,4 @@
-#> skill:trigger/hit/legacy/init
+#> job:trigger/hit/legacy/init
 # レガシーアイテムの初期化
 
 ## 1~7を取得

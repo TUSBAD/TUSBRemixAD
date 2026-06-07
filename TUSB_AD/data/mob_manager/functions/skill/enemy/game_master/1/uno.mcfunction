@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function player_manager:show_text/trigger
+# @within function player_manager:show_text/trigger/
 
 # クリック時の処理 
     # me

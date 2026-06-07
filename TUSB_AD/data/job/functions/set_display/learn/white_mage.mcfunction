@@ -1,4 +1,4 @@
-#> skill:set_display/learn/white_mage
+#> job:set_display/learn/white_mage
 # スキル習得
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

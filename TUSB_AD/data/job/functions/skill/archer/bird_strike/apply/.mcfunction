@@ -10,4 +10,4 @@ execute as @e[distance=0,tag=!BirdStrike,type=#lib:arrow,limit=1] run function j
 function job:skill/archer/bird_strike/schedule/
 
 ### 飛んでるやつの判定有効化
-function skill:trigger/projectile/
+function job:trigger/projectile/

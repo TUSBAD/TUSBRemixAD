@@ -11,12 +11,13 @@ execute unless data storage tusb_remake: difficult{world:"nightmare"} run functi
 data modify storage tusb_remake: difficult.before set from storage tusb_remake: difficult.world
 data modify storage tusb_remake: difficult.world set value "nightmare"
 
+scoreboard players set #Difficulty Difficulty 4
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
 gamerule keepInventory false
 
 #> チャット表示
-tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ナイトメア","color":"#0000ff"}]}]
+tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ナイトメア","color":"#2848ff"}]}]
 execute as @a at @s run playsound minecraft:item.totem.use master @s ~ ~ ~ 1 1 1
 
 #> 変更点

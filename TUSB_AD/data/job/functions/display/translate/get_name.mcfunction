@@ -1,4 +1,4 @@
-#> skill:display/translate/get_name
+#> job:display/translate/get_name
 ## スキルテーブルを設定
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
@@ -25,4 +25,4 @@ execute if data storage tusb_remake: list[-1].range[-2] run data remove storage 
 execute if data storage tusb_remake: list[-1].sneak.range[-2] run data remove storage tusb_remake: list[-1].sneak.range[-1]
 
 ### まだ名前が記録されていない(かつ習得レベルがまだ残っていたら(安全のため))なら繰り返し
-execute if data storage tusb_remake: skill_choice.name[0] if data storage tusb_remake: list[-1].level[-1] run function skill:display/translate/get_name
+execute if data storage tusb_remake: skill_choice.name[0] if data storage tusb_remake: list[-1].level[-1] run function job:display/translate/get_name

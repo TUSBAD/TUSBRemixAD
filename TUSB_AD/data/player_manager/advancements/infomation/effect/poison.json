@@ -1,0 +1,51 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:spider_eye",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": [
+      {
+        "translate": "特殊デバフ: 致死毒                                        ",
+        "color": "#008000",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この状態異常が付与されている時に、特定の条件を満たすと%1$s。\n特定の条件は以下の通り。\n\n・%2$sによる効果",
+      "color": "white",
+      "with": [
+        {
+          "translate": "死亡する",
+          "color": "#FF2A2A"
+        },
+        {
+          "translate": "ペストクロップ・天沼矛・ハデースナイトメア",
+          "color": "#00c100"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "player_manager:infomation/effect/root",
+  "criteria": {
+    "doomex": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:poison": {
+            "amplifier": {
+              "min": 1
+            },
+            "duration": {
+              "min": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

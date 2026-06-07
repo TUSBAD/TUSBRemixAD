@@ -6,10 +6,13 @@
 ### 正常な時の処理
 scoreboard players add @s MP 0
 scoreboard players set @s[scores={MP=..0,MPMaxFlag=1..}] MPMaxFlag 0
-scoreboard players reset @s[scores={MP=..0}] CoolTickCounter
 tag @s add ShowVote
 ### ログイン時のメッセージ表示を待機
 tag @s add LoginMessage
 # function core:login/schedule
 schedule function core:login/schedule 5s append
 forceload add -2740 -361 -2740 -361
+
+# スニークメニューをenable
+scoreboard players set @s ShowMenu 1
+scoreboard players enable @s ShowMenu

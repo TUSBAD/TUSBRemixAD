@@ -1,4 +1,4 @@
-#> skill:init_table/black_mage
+#> job:init_table/black_mage
 ## スキルテーブルを設定
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.

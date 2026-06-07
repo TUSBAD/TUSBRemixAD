@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:pufferfish",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "様々な特殊状態異常                                        ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この世界には様々な状態異常が存在します。難易度によって変化する状態異常もあるので、よく確認しておくとよいでしょう。\nそれぞれの状態異常については、別の進捗タブで確認することができます。",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial27",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
