@@ -95,7 +95,7 @@ data modify storage asset: mob.id set value "witch"
     #{Name:water_breathing,id:"minecraft:water_breathing"} 水中呼吸
     #{Name:invisibility,id:"minecraft:invisibility"} 透明化 player_manager:invisible
     #{Name:blindness,id:"minecraft:blindness"} 盲目
-    #{Name:night_vision,Id:16} 暗視
+    #{Name:night_vision,id:"minecraft:night_vision"} 暗視
     #{Name:hunger,Id:17} 空腹
     #{Name:weakness,Id:18} 弱体化 -lv*4
     #{Name:poison,Id:19} 毒
