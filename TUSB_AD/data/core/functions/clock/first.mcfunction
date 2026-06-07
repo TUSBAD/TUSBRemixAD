@@ -29,6 +29,9 @@
 ## TODO
     execute as @e[type=area_effect_cloud,tag=!TypeChecked] at @s run function mob_manager:entity/type_check
 
+# CustomHealth持ちの無敵化
+    execute as @e[tag=CustomHealth,nbt=!{ActiveEffects:[{Id:11,Amplifier:127b}]}] run function mob_manager:custom_health/invulnerable
+
 # 削除対象のエンティティを削除する
     function mob_manager:delete/
 

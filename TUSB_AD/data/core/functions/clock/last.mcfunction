@@ -3,6 +3,13 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
+# カスタム体力へのダメージ処理
+    execute as @e[tag=CustomHealth] at @s if score @s Heal matches 1.. run function mob_manager:custom_health/heal
+    execute as @e[tag=CustomHealth] at @s if score @s Damage matches 1.. run function mob_manager:custom_health/damage
+
+# armor_standテキストの処理
+    execute as @e[type=armor_stand,tag=LogStand] at @s run function mob_manager:custom_health/status_makeup/tick
+
 # マジックシールドのチェック
     execute as @a[tag=MagicShield] run effect give @s minecraft:resistance 1 100
 # ウィンドウォール

@@ -26,9 +26,6 @@ execute as @s[scores={EnAspir=0..}] run function job:skill/black_mage/enaspir/hi
 ### レガシー
 execute if data entity @s SelectedItem.tag.Legacy run function job:trigger/hit/legacy/
 
-### RR:全能ノ一を使い、終わらせる。
-execute as @s[predicate=player_manager:equipment/mainhand/gm_sley] run function mob_manager:boss/game_master/bossdefeat/
-
 scoreboard players reset @s DamageDealt
 scoreboard players reset @s DamageDealtAbsorbed
 scoreboard players reset @s DamageDealtResisted

@@ -389,5 +389,12 @@ scoreboard objectives add __ dummy {"text":"一時変数 その2"}
 scoreboard objectives add Calc dummy {"text":"計算変数"}
 scoreboard objectives add Difficulty dummy {"text":"難易度保存スコア"}
 
+#> Entity関連スコア
+scoreboard objectives add Damage dummy {"text":"ダメージ"}
+scoreboard objectives add Heal dummy {"text": "回復"}
+scoreboard objectives add MaxCustomHealth dummy {"text":"最大カスタム体力"}
+scoreboard objectives add CustomHealth dummy {"text":"カスタム体力"}
+scoreboard objectives add LogRemoveTime dummy {"text": "Logのtick"}
+
 #> Function実行
 function core:settings/too_bad_effects
