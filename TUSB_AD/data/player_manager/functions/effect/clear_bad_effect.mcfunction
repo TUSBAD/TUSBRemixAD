@@ -40,5 +40,9 @@ effect clear @s minecraft:levitation
 
 effect clear @s minecraft:bad_omen
 
+effect give @s[tag=Doom] invisibility 1 6 true
+
 # execute store result score _ TUSB run data get storage tusb_remake: ActiveEffects[{Id:32}].Amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:hero_of_the_village
+
+playsound minecraft:entity.illusioner.cast_spell player @s ~ ~ ~ 6 0.5
