@@ -121,15 +121,15 @@
         #{Name:hero_of_the_village,id:32} 村の英雄
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
-    data modify storage asset: mob.active_effects append value {Id:14,Amplifier:127,Duration:2147483647,ShowParticles:0b}
-    # data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+    data modify storage asset: mob.active_effects append value {Id:14,Amplifier:127,duration:2147483647,ShowParticles:0b}
+    # data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,duration:600,ShowParticles:0b}
     # 或いは...
-    # data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+    # data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,duration:600,ShowParticles:0b},{Id:5,Amplifier:4,duration:600,ShowParticles:0b}]
     # このように一行に纏めることも可能。ただし、可読性は下がるかな
-    # Id,Amplifier,Duration,ShowIcon,ShowParticle,ambient
+    # Id,Amplifier,duration,ShowIcon,ShowParticle,ambient
 
 # AEC
-    data modify storage asset: mob.Passengers set value [{id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Radius:0.1f,Duration:28,Effects:[{Id:11,Amplifier:3b,Duration:10,ShowParticles:0b}]}]
-    data modify storage asset: mob.Passengers append value {id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Tags:[RidingRequired,TypeChecked],Radius:0.1f,Duration:32767,ReapplicationDelay:60,Effects:[{Id:1,Amplifier:19b,Duration:3,ShowParticles:0b},{Id:25,Amplifier:49b,Duration:2,ShowParticles:0b}]}
+    data modify storage asset: mob.Passengers set value [{id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Radius:0.1f,duration:28,Effects:[{Id:11,Amplifier:3b,duration:10,ShowParticles:0b}]}]
+    data modify storage asset: mob.Passengers append value {id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Tags:[RidingRequired,TypeChecked],Radius:0.1f,duration:32767,ReapplicationDelay:60,Effects:[{Id:1,Amplifier:19b,duration:3,ShowParticles:0b},{Id:25,Amplifier:49b,duration:2,ShowParticles:0b}]}
 # スポナーから湧かせるための設定をします
     data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}

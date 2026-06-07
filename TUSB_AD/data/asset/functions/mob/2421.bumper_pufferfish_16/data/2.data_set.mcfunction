@@ -119,12 +119,12 @@ data modify storage asset: mob.Attributes append value {Name:generic.max_health,
     #{Name:hero_of_the_village,id:32} 村の英雄
     #{Name:darkness,id:33} 暗闇
     # 詳しくはwiki見てね！
-# data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
-# data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,duration:600,ShowParticles:0b}
 # 或いは...
-# data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+# data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,duration:600,ShowParticles:0b},{Id:5,Amplifier:4,duration:600,ShowParticles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
-# Id,Amplifier,Duration,ShowIcon,ShowParticle,ambient
+# Id,Amplifier,duration,ShowIcon,ShowParticle,ambient
 
 
 ### Passengers
@@ -143,8 +143,8 @@ data modify storage asset: mob.Attributes append value {Name:generic.max_health,
 # 次のmobがasset mobなら先程の手順を繰り返します。そうでなければ、直接nbtを指定します
 # 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
 # data modify storage asset: mob.id set value "area_effect_cloud"
-# data modify storage asset: mob set value {Duration:32767,WatiTime:0,Particle:"end_rod"}
-# data modify storage asset: mob.Effects set value [{Id:1,Amplifier:1,Duration:1}]
+# data modify storage asset: mob set value {duration:32767,WatiTime:0,Particle:"end_rod"}
+# data modify storage asset: mob.Effects set value [{Id:1,Amplifier:1,duration:1}]
 # data modify storage _: _.Passengers append from storage asset: mob
 # 最後に、mobデータを戻して避難用storageを削除します
 # data modify storage asset: mob set from storage _: _
@@ -162,7 +162,7 @@ data modify storage asset: mob.Passengers append from storage asset: mob.Passeng
 data modify storage asset: mob.Passengers append from storage asset: mob.Passengers[]
 
 # 一番下をすぐ死ぬようにする
-data modify storage asset: mob.active_effects set value [{ShowParticles: 1b, Duration: 2147483647, Id: 7, Amplifier: 0b}]
+data modify storage asset: mob.active_effects set value [{ShowParticles: 1b, duration: 2147483647, Id: 7, Amplifier: 0b}]
 
 data modify storage _: _ set from storage asset: mob
 data modify storage asset: mob set value {DeathTime:19, Health: 0.0f, Silent: 1b, id: "minecraft:villager"}

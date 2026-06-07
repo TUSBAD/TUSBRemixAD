@@ -39,7 +39,7 @@
                                             # ReapplicationDelay: 0,
                                             # CustomName: '{"text":"キャリアーオーラ"}',
                                             # RadiusOnUse: 0.0f,
-                                            # Duration: 80,
+                                            # duration: 80,
                                             # id: "minecraft:area_effect_cloud",
                                             # Effects: []
                                         # }
@@ -67,9 +67,9 @@
                             # id: "minecraft:magma_cube",
                             # AbsorptionAmount: 100.0f,
                             # active_effects: [
-                                # {Amplifier: 127b, Duration: 2147483647, Id: 14b},
-                                # {Amplifier: -1b, Duration: 2147483647, Id: 25b},
-                                # {Amplifier: 0b, Duration: 2147483647, Id: 20b}
+                                # {Amplifier: 127b, duration: 2147483647, Id: 14b},
+                                # {Amplifier: -1b, duration: 2147483647, Id: 25b},
+                                # {Amplifier: 0b, duration: 2147483647, Id: 20b}
                             # ]
                         # }
                 # ],
@@ -81,8 +81,8 @@
                     # Silent: 1b,
                     # id: "minecraft:bat",
                     # active_effects: [
-                        # {Amplifier: 127b, Duration: 2147483647, Id: 14b},
-                        # {Amplifier: 127b, Duration: 2147483647, Id: 20b}
+                        # {Amplifier: 127b, duration: 2147483647, Id: 14b},
+                        # {Amplifier: 127b, duration: 2147483647, Id: 20b}
                     # ]
                 # }
             # ],
@@ -104,7 +104,7 @@
 data remove storage asset: mob
 
 # キャリアーガストのデータを突っ込む
-data modify storage asset: mob set value {Passengers: [{Life: 2, id: "minecraft:firework_rocket", Passengers: [{Passengers: [{Passengers: [{Passengers: [{RequiredPlayerRange: 32s, MaxNearbyEntities: 3s, CustomDisplayTile: 1b, SpawnCount: 1s, DisplayState: {Name: "minecraft:enchanting_table"}, DisplayTile: "minecraft:enchanting_table", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 120s, Delay: -1s, DisplayOffset: 8, CustomName: '{"text":"〇〇キャリアー"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 6s, MinSpawnDelay: 40s}, {Particle: "end_rod", Radius: 0.05f, ReapplicationDelay: 0, CustomName: '{"text":"キャリアーオーラ"}', RadiusOnUse: 0.0f, Duration: 80, id: "minecraft:area_effect_cloud", Effects: []}], CustomName: '{"text":"ガストキャリアー"}', Health: 100.0f, Attributes: [{Base: 100.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 0.0d, Name: "generic.follow_range"}], Silent: 1b, id: "minecraft:ghast", ExplosionPower: 0}], CustomName: '{"text":"ﾅﾋﾞｹﾞｰﾄ"}', Size: 5, Attributes: [{Base: 0.5d, Name: "generic.knockback_resistance"}, {Base: 80.0d, Name: "generic.follow_range"}], Silent: 1b, DeathLootTable: "empty", id: "minecraft:magma_cube", AbsorptionAmount: 100.0f, active_effects: [{Amplifier: 127b, Duration: 2147483647, Id: 14b}, {Amplifier: -1b, Duration: 2147483647, Id: 25b}, {Amplifier: 0b, Duration: 2147483647, Id: 20b}]}], CustomName: '{"text":"ﾗﾝﾀﾞﾑﾑｰﾊﾞｰ"}', Health: 5.0f, Attributes: [{Base: 5.0d, Name: "generic.max_health"}], Silent: 1b, id: "minecraft:bat", active_effects: [{Amplifier: 127b, Duration: 2147483647, Id: 14b}, {Amplifier: 127b, Duration: 2147483647, Id: 20b}]}], CustomName: '{"text":"不発弾"}', LifeTime: 30}], Health: 0.0f, DeathTime: 19s, Xp: 0, Silent: 1b, VillagerData: {profession: "minecraft:farmer", type: "minecraft:plains", level: 1}, id: "minecraft:villager"}
+data modify storage asset: mob set value {Passengers: [{Life: 2, id: "minecraft:firework_rocket", Passengers: [{Passengers: [{Passengers: [{Passengers: [{RequiredPlayerRange: 32s, MaxNearbyEntities: 3s, CustomDisplayTile: 1b, SpawnCount: 1s, DisplayState: {Name: "minecraft:enchanting_table"}, DisplayTile: "minecraft:enchanting_table", Invulnerable: 1b, SpawnData: {}, MaxSpawnDelay: 120s, Delay: -1s, DisplayOffset: 8, CustomName: '{"text":"〇〇キャリアー"}', DeathLootTable: "empty", id: "minecraft:spawner_minecart", SpawnRange: 6s, MinSpawnDelay: 40s}, {Particle: "end_rod", Radius: 0.05f, ReapplicationDelay: 0, CustomName: '{"text":"キャリアーオーラ"}', RadiusOnUse: 0.0f, duration: 80, id: "minecraft:area_effect_cloud", Effects: []}], CustomName: '{"text":"ガストキャリアー"}', Health: 100.0f, Attributes: [{Base: 100.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 0.0d, Name: "generic.follow_range"}], Silent: 1b, id: "minecraft:ghast", ExplosionPower: 0}], CustomName: '{"text":"ﾅﾋﾞｹﾞｰﾄ"}', Size: 5, Attributes: [{Base: 0.5d, Name: "generic.knockback_resistance"}, {Base: 80.0d, Name: "generic.follow_range"}], Silent: 1b, DeathLootTable: "empty", id: "minecraft:magma_cube", AbsorptionAmount: 100.0f, active_effects: [{Amplifier: 127b, duration: 2147483647, Id: 14b}, {Amplifier: -1b, duration: 2147483647, Id: 25b}, {Amplifier: 0b, duration: 2147483647, Id: 20b}]}], CustomName: '{"text":"ﾗﾝﾀﾞﾑﾑｰﾊﾞｰ"}', Health: 5.0f, Attributes: [{Base: 5.0d, Name: "generic.max_health"}], Silent: 1b, id: "minecraft:bat", active_effects: [{Amplifier: 127b, duration: 2147483647, Id: 14b}, {Amplifier: 127b, duration: 2147483647, Id: 20b}]}], CustomName: '{"text":"不発弾"}', LifeTime: 30}], Health: 0.0f, DeathTime: 19s, Xp: 0, Silent: 1b, VillagerData: {profession: "minecraft:farmer", type: "minecraft:plains", level: 1}, id: "minecraft:villager"}
 
 # Delayとかを設定する
 data modify storage asset: mob.Passengers[0].Passengers[0].Passengers[0].Passengers[0].Passengers[0] merge value {Delay:-1, MinSpawnDelay:40, MaxSpawnDelay:120, SpawnCount:1, SpawnRange:6, RequiredPlayerRange:32, CustomName:'{"text":"〇〇キャリアー"}'}
@@ -234,12 +234,12 @@ data remove storage _: _
 #     #{Name:hero_of_the_village,id:32} 村の英雄
 #     #{Name:darkness,id:33} 暗闇
 #     # 詳しくはwiki見てね！
-# data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
-# data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,duration:600,ShowParticles:0b}
 # # 或いは...
-# # data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+# # data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,duration:600,ShowParticles:0b},{Id:5,Amplifier:4,duration:600,ShowParticles:0b}]
 # # このように一行に纏めることも可能。ただし、可読性は下がるかな
-# # Id,Amplifier,Duration,ShowIcon,ShowParticle,ambient
+# # Id,Amplifier,duration,ShowIcon,ShowParticle,ambient
 
 
 # ### Passengers
@@ -258,8 +258,8 @@ data remove storage _: _
 # # 次のmobがasset mobなら先程の手順を繰り返します。そうでなければ、直接nbtを指定します
 # # 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
 # data modify storage asset: mob.id set value "area_effect_cloud"
-# data modify storage asset: mob set value {Duration:32767,WatiTime:0,Particle:"end_rod"}
-# data modify storage asset: mob.Effects set value [{Id:1,Amplifier:1,Duration:1}]
+# data modify storage asset: mob set value {duration:32767,WatiTime:0,Particle:"end_rod"}
+# data modify storage asset: mob.Effects set value [{Id:1,Amplifier:1,duration:1}]
 # data modify storage _: _.Passengers append from storage asset: mob
 # # 最後に、mobデータを戻して避難用storageを削除します
 # data modify storage asset: mob set from storage _: _

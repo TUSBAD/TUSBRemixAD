@@ -10,7 +10,7 @@
                 "functions": [
                     {
                         "function": "set_nbt",
-                        "tag": "{CustomPotionEffects: [{Duration: 4820, Id: 11b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 100, Id: 16b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 4820, Id: 22b, Amplifier: 1b, ShowParticles: 1b}, {Duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§c滋養強壮に効くお薬。\"}', '{\"text\":\"§c飲むと体が丈夫になる。\"}'], Name: '{\"text\":\"§4§lレッドビート\"}'}}"
+                        "tag": "{CustomPotionEffects: [{duration: 4820, Id: 11b, Amplifier: 0b, ShowParticles: 1b}, {duration: 100, Id: 16b, Amplifier: 0b, ShowParticles: 1b}, {duration: 4820, Id: 22b, Amplifier: 1b, ShowParticles: 1b}, {duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}, {duration: 0, Id: 5b, Amplifier: 0b, ShowParticles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§c滋養強壮に効くお薬。\"}', '{\"text\":\"§c飲むと体が丈夫になる。\"}'], Name: '{\"text\":\"§4§lレッドビート\"}'}}"
                     }
                 ]
             }
@@ -18,4 +18,3 @@
       }
     ]
   }
-  

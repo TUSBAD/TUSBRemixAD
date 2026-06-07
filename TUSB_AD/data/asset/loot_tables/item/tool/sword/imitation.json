@@ -10,7 +10,7 @@
                 "functions": [
                     {
                         "function": "set_nbt",
-                        "tag": "{CustomPotionEffects: [{Duration: 3600, Id: 1b, Amplifier: -3b, ShowParticles: 1b}, {Duration: 3600, Id: 3b, Amplifier: -3b, ShowParticles: 1b}], Damage: 0, display: {Lore: ['{\"text\":\"効果は必ずしも叶うものではない\"}'], Name: '{\"text\":\"§5イミテーション\"}'}, Enchantments: [{lvl: 5s, id: \"minecraft:punch\"}, {lvl: 5s, id: \"minecraft:silk_touch\"}, {lvl: 5s, id: \"minecraft:looting\"}, {lvl: 5s, id: \"minecraft:fire_aspect\"}, {lvl: 5s, id: \"minecraft:flame\"}, {lvl: 5s, id: \"minecraft:sharpness\"}, {lvl: 5s, id: \"minecraft:protection\"}, {lvl: 5s, id: \"minecraft:efficiency\"}]}"
+                        "tag": "{CustomPotionEffects: [{duration: 3600, Id: 1b, Amplifier: -3b, ShowParticles: 1b}, {duration: 3600, Id: 3b, Amplifier: -3b, ShowParticles: 1b}], Damage: 0, display: {Lore: ['{\"text\":\"効果は必ずしも叶うものではない\"}'], Name: '{\"text\":\"§5イミテーション\"}'}, Enchantments: [{lvl: 5s, id: \"minecraft:punch\"}, {lvl: 5s, id: \"minecraft:silk_touch\"}, {lvl: 5s, id: \"minecraft:looting\"}, {lvl: 5s, id: \"minecraft:fire_aspect\"}, {lvl: 5s, id: \"minecraft:flame\"}, {lvl: 5s, id: \"minecraft:sharpness\"}, {lvl: 5s, id: \"minecraft:protection\"}, {lvl: 5s, id: \"minecraft:efficiency\"}]}"
                     }
                 ]
             }
@@ -18,4 +18,3 @@
       }
     ]
   }
-  

@@ -10,7 +10,7 @@
                 "functions": [
                     {
                         "function": "set_nbt",
-                        "tag": "{CustomPotionEffects: [{Duration: 1, Id: 6b, Amplifier: 2b, ShowParticles: 0b}, {Duration: 0, Id: 13b, Amplifier: 127b, ShowParticles: 1b}, {Duration: 0, Id: 25b, Amplifier: -128b, ShowParticles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§6ｺｰﾝｽｰﾌﾟにﾊﾟﾝﾌﾟｷﾝを加え\"}', '{\"text\":\"§6回復量が増加したもの。\"}'], Name: '{\"text\":\"§e§lパンプキンスープ\"}'}}"
+                        "tag": "{CustomPotionEffects: [{duration: 1, Id: 6b, Amplifier: 2b, ShowParticles: 0b}, {duration: 0, Id: 13b, Amplifier: 127b, ShowParticles: 1b}, {duration: 0, Id: 25b, Amplifier: -128b, ShowParticles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§6ｺｰﾝｽｰﾌﾟにﾊﾟﾝﾌﾟｷﾝを加え\"}', '{\"text\":\"§6回復量が増加したもの。\"}'], Name: '{\"text\":\"§e§lパンプキンスープ\"}'}}"
                     }
                 ]
             }
@@ -18,4 +18,3 @@
       }
     ]
   }
-  

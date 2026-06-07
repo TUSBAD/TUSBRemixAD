@@ -6,8 +6,8 @@
 data remove storage asset: mob
 
 # ここに取ってきたデータを入れる。取得用コマンド：/data get entity @e[type=minecraft:spawner_minecart,limit=1,sort=nearest,distance=..6] SpawnData.entity
-data modify storage asset: mob set value {Passengers:[{ArmorDropChances:[0.0f,0.085f,0.085f,0.1f],CustomName:'{"text":"§lどらクーン"}',Health:40.0f,ArmorItems:[{id:"leather_boots",Count:0b,tag:{ench:[{lvl:0s,id:0s},{lvl:10s,id:8s},{lvl:10,id:4}],display:{color:0}}},{},{},{id:"dragon_head",Count:1b,tag:{display:{Name:'{"text":"大当たりw"}'}},Damage:5}],Attributes:[{Base:0.15d,Name:"generic.movement_speed"},{Base:40.0d,Name:"generic.max_health"}],HandDropChances:[0.05f,0.5f],Silent:1b,DeathLootTable:"empty",id:"wither_skeleton",CustomNameVisible:1b,HandItems:[{id:"bow",Count:1b,tag:{Enchantments:[{lvl:5,id:"power"}],RepairCost:1000000000,HideFlags:32,display:{Name:'{"text":"§5§lトンボキリ"}'},AttributeModifiers:[{UUID:[I;993979891,-1905046002,-1692252393,-402719724],Amount:-0.0125d,Slot:"mainhand",AttributeName:"generic.max_health",Operation:2,Name:"wax"},{UUID:[I;993979890,-1905046001,-1692252390,-402719723],Amount:0.1d,Slot:"mainhand",AttributeName:"generic.movement_speed",Operation:0,Name:"wax"}]},Damage:0s},{id:"tipped_arrow",Count:1b,tag:{CustomPotionEffects:[{Duration:60,Id:24b,Amplifier:1b},{Duration:60,Id:25b,Amplifier:1b}],HideFlags:32,display:{Lore:['{"text":"§7相手を風船のように浮かせる矢。"}'],Name:'{"text":"§9§lバルーン・アローン"}'}}}]}],Health:0.0f,DeathTime:19s,id:"villager",active_effects:[{ShowParticles:0b,Duration:20,Id:14b,Amplifier:0b}]}
-# 例：data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"デイドラ"}', CanBreakDoors: 1b, Health: 200.0f, ArmorItems: [{id: "minecraft:leather_boots", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのブーツ"}'}, Damage: 0}}, {id: "minecraft:leather_leggings", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのグリーヴ"}'}, Damage: 0}}, {id: "minecraft:leather_chestplate", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのキュイラス"}'}, Damage: 0}}, {id: "minecraft:damaged_anvil", Count: 65b, tag: {display: {Name: '{"text":"デイドラの兜"}'}}}], Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 10.0d, Name: "generic.attack_damage"}], id: "minecraft:zombie", active_effects: [{ShowParticles: 0b, Duration: 2000000000, Id: 14b, Amplifier: 1b}, {ShowParticles: 0b, Duration: 2000000000, Id: 12b, Amplifier: 1b}, {ShowParticles: 0b, Duration: 2000000000, Id: 1b, Amplifier: 4b}, {ShowParticles: 0b, Duration: 2000000000, Id: 8b, Amplifier: 10b}], HandItems: [{id: "minecraft:stone_sword", Count: 65b, tag: {display: {Name: '{"text":"アカヴィリ刀"}'}, Enchantments: [{lvl: 20s, id: "minecraft:fire_aspect"}, {lvl: 20s, id: "minecraft:knockback"}], Damage: 0}}], CustomNameVisible: 1b}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager"}
+data modify storage asset: mob set value {Passengers:[{ArmorDropChances:[0.0f,0.085f,0.085f,0.1f],CustomName:'{"text":"§lどらクーン"}',Health:40.0f,ArmorItems:[{id:"leather_boots",Count:0b,tag:{ench:[{lvl:0s,id:0s},{lvl:10s,id:8s},{lvl:10,id:4}],display:{color:0}}},{},{},{id:"dragon_head",Count:1b,tag:{display:{Name:'{"text":"大当たりw"}'}},Damage:5}],Attributes:[{Base:0.15d,Name:"generic.movement_speed"},{Base:40.0d,Name:"generic.max_health"}],HandDropChances:[0.05f,0.5f],Silent:1b,DeathLootTable:"empty",id:"wither_skeleton",CustomNameVisible:1b,HandItems:[{id:"bow",Count:1b,tag:{Enchantments:[{lvl:5,id:"power"}],RepairCost:1000000000,HideFlags:32,display:{Name:'{"text":"§5§lトンボキリ"}'},AttributeModifiers:[{UUID:[I;993979891,-1905046002,-1692252393,-402719724],Amount:-0.0125d,Slot:"mainhand",AttributeName:"generic.max_health",Operation:2,Name:"wax"},{UUID:[I;993979890,-1905046001,-1692252390,-402719723],Amount:0.1d,Slot:"mainhand",AttributeName:"generic.movement_speed",Operation:0,Name:"wax"}]},Damage:0s},{id:"tipped_arrow",Count:1b,tag:{CustomPotionEffects:[{duration:60,Id:24b,Amplifier:1b},{duration:60,Id:25b,Amplifier:1b}],HideFlags:32,display:{Lore:['{"text":"§7相手を風船のように浮かせる矢。"}'],Name:'{"text":"§9§lバルーン・アローン"}'}}}]}],Health:0.0f,DeathTime:19s,id:"villager",active_effects:[{ShowParticles:0b,duration:20,Id:14b,Amplifier:0b}]}
+# 例：data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"デイドラ"}', CanBreakDoors: 1b, Health: 200.0f, ArmorItems: [{id: "minecraft:leather_boots", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのブーツ"}'}, Damage: 0}}, {id: "minecraft:leather_leggings", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのグリーヴ"}'}, Damage: 0}}, {id: "minecraft:leather_chestplate", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのキュイラス"}'}, Damage: 0}}, {id: "minecraft:damaged_anvil", Count: 65b, tag: {display: {Name: '{"text":"デイドラの兜"}'}}}], Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 10.0d, Name: "generic.attack_damage"}], id: "minecraft:zombie", active_effects: [{ShowParticles: 0b, duration: 2000000000, Id: 14b, Amplifier: 1b}, {ShowParticles: 0b, duration: 2000000000, Id: 12b, Amplifier: 1b}, {ShowParticles: 0b, duration: 2000000000, Id: 1b, Amplifier: 4b}, {ShowParticles: 0b, duration: 2000000000, Id: 8b, Amplifier: 10b}], HandItems: [{id: "minecraft:stone_sword", Count: 65b, tag: {display: {Name: '{"text":"アカヴィリ刀"}'}, Enchantments: [{lvl: 20s, id: "minecraft:fire_aspect"}, {lvl: 20s, id: "minecraft:knockback"}], Damage: 0}}], CustomNameVisible: 1b}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager"}
 
 # この下のコメント郡は無視！mobを編集する時には使うよ
 
@@ -124,12 +124,12 @@ data modify storage asset: mob set value {Passengers:[{ArmorDropChances:[0.0f,0.
     #{Name:hero_of_the_village,id:32} 村の英雄
     #{Name:darkness,id:33} 暗闇
     # 詳しくはwiki見てね！
-# data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
-# data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:0,Amplifier:1,duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:5,Amplifier:4,duration:600,ShowParticles:0b}
 # 或いは...
-# data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+# data modify storage asset: mob.active_effects set value [{Id:0,Amplifier:1,duration:600,ShowParticles:0b},{Id:5,Amplifier:4,duration:600,ShowParticles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
-# Id,Amplifier,Duration,ShowIcon,ShowParticle,ambient
+# Id,Amplifier,duration,ShowIcon,ShowParticle,ambient
 
 
 ### Passengers
@@ -148,8 +148,8 @@ data modify storage asset: mob set value {Passengers:[{ArmorDropChances:[0.0f,0.
 # 次のmobがasset mobなら先程の手順を繰り返します。そうでなければ、直接nbtを指定します
 # 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
 # data modify storage asset: mob.id set value "area_effect_cloud"
-# data modify storage asset: mob set value {Duration:32767,WatiTime:0,Particle:"end_rod"}
-# data modify storage asset: mob.Effects set value [{Id:1,Amplifier:1,Duration:1}]
+# data modify storage asset: mob set value {duration:32767,WatiTime:0,Particle:"end_rod"}
+# data modify storage asset: mob.Effects set value [{Id:1,Amplifier:1,duration:1}]
 # data modify storage _: _.Passengers append from storage asset: mob
 # 最後に、mobデータを戻して避難用storageを削除します
 # data modify storage asset: mob set from storage _: _

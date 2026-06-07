@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_nbt",
-              "tag": "{EntityTag: {DeathLootTable: \"usb:signs/goldenarmor\", id: \"minecraft:bat\", DeathTime: 19s, Tags: [\"RewardEgg\", \"TypeChecked\"], active_effects: [{Duration: 100, Id: 7b, Amplifier: 5b, ShowParticles: 0b}, {Duration: 100, Id: 14b, Amplifier: 0b, ShowParticles: 0b}]}, RepairCost: 1000000000, HideFlags: 16, CanPlaceOn: [\"#minecraft:all\"], display: {Lore: ['{\"text\":\"§r§e金§f防具一式§eが圧縮された印玉。\"}', '{\"text\":\"§e使用すると§l§f防具一式§eが§b解凍§eされる。\"}'], Name: '{\"text\":\"§r§f圧縮防具の印玉§e§l-金-\"}'}, Enchantments: []}"
+              "tag": "{EntityTag: {DeathLootTable: \"usb:signs/goldenarmor\", id: \"minecraft:bat\", DeathTime: 19s, Tags: [\"RewardEgg\", \"TypeChecked\"], active_effects: [{duration: 100, Id: 7b, Amplifier: 5b, ShowParticles: 0b}, {duration: 100, Id: 14b, Amplifier: 0b, ShowParticles: 0b}]}, RepairCost: 1000000000, HideFlags: 16, CanPlaceOn: [\"#minecraft:all\"], display: {Lore: ['{\"text\":\"§r§e金§f防具一式§eが圧縮された印玉。\"}', '{\"text\":\"§e使用すると§l§f防具一式§eが§b解凍§eされる。\"}'], Name: '{\"text\":\"§r§f圧縮防具の印玉§e§l-金-\"}'}, Enchantments: []}"
             }
           ]
         }

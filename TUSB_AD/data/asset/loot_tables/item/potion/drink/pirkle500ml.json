@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{Duration: 1, Id: 6b, Amplifier: 0b, ShowParticles: 1b}, {Duration: 0, Id: 12b, Amplifier: 0b, ShowParticles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§r§7一日65mlを目安にお召し上がりになる\"}', '{\"text\":\"§r§7と効果的です。\"}'], Name: '{\"text\":\"§r§6ピルクル(500ml)\"}'}}"
+                "tag": "{CustomPotionEffects: [{duration: 1, Id: 6b, Amplifier: 0b, ShowParticles: 1b}, {duration: 0, Id: 12b, Amplifier: 0b, ShowParticles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§r§7一日65mlを目安にお召し上がりになる\"}', '{\"text\":\"§r§7と効果的です。\"}'], Name: '{\"text\":\"§r§6ピルクル(500ml)\"}'}}"
               }
             ]
           }
@@ -18,4 +18,3 @@
       }
     ]
   }
-  
