@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{Amplifier: 0b, duration: 0, Id: 6b}], HideFlags: 40, Potion: \"minecraft:swiftness\", display: {Lore: ['{\"text\":\"見た目がグロテスクなトカルトでは一般的なスープ\"}', '{\"text\":\"体力が僅かに回復する\"}'], Name: '{\"text\":\"魚介スープ\"}'}}"
+                "tag": "{custom_potion_effects: [{Amplifier: 0b, duration: 0, Id: 6b}], HideFlags: 40, Potion: \"minecraft:swiftness\", display: {Lore: ['{\"text\":\"見た目がグロテスクなトカルトでは一般的なスープ\"}', '{\"text\":\"体力が僅かに回復する\"}'], Name: '{\"text\":\"魚介スープ\"}'}}"
               }
             ]
           }

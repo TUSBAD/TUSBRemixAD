@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{duration: 5, Id: 19b, Amplifier: 99b, show_particles: 1b}, {duration: 120, Id: 9b, Amplifier: 99b, show_particles: 1b}, {duration: 120, Id: 9b, Amplifier: -99b, show_particles: 1b}, {duration: 1, Id: 23b, Amplifier: 2b, show_particles: 1b}, {duration: 120, Id: 8b, Amplifier: -10b, show_particles: 1b}, {duration: 0, Id: 26b, Amplifier: 0b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:empty\", display: {Lore: ['{\"text\":\"§e飲むと§2毒状態等§eになるが、\"}', '{\"text\":\"§a体内の毒§eを中和し、\"}', '{\"text\":\"§eわずかに§c腹が満たされる\"}', '{\"text\":\"§eケンコー飲料である。\"}', '{\"text\":\"§7尚、味は薄い。\"}'], Name: '{\"text\":\"§2§lドクダヨ茶\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 5, Id: 19b, Amplifier: 99b, show_particles: 1b}, {duration: 120, Id: 9b, Amplifier: 99b, show_particles: 1b}, {duration: 120, Id: 9b, Amplifier: -99b, show_particles: 1b}, {duration: 1, Id: 23b, Amplifier: 2b, show_particles: 1b}, {duration: 120, Id: 8b, Amplifier: -10b, show_particles: 1b}, {duration: 0, Id: 26b, Amplifier: 0b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:empty\", display: {Lore: ['{\"text\":\"§e飲むと§2毒状態等§eになるが、\"}', '{\"text\":\"§a体内の毒§eを中和し、\"}', '{\"text\":\"§eわずかに§c腹が満たされる\"}', '{\"text\":\"§eケンコー飲料である。\"}', '{\"text\":\"§7尚、味は薄い。\"}'], Name: '{\"text\":\"§2§lドクダヨ茶\"}'}}"
               }
             ]
           }

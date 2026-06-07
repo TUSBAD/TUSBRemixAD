@@ -10,7 +10,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{duration: 1200, Id: 15b, Amplifier: 9b, show_particles: 1b}, {duration: 1200, Id: 15b, Amplifier: -9b, show_particles: 1b}, {duration: 1200, Id: 19b, Amplifier: 9b, show_particles: 1b}, {duration: 1200, Id: 19b, Amplifier: -9b, show_particles: 1b}, {duration: 0, Id: 12b, Amplifier: -100b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§4§o投げつける薬。\"}', '{\"text\":\"§4§oこれを浴びた者は、\"}', '{\"text\":\"§4§o強力な酸で視力と体力を奪われる。\"}'], Name: '{\"text\":\"§6王水\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 1200, Id: 15b, Amplifier: 9b, show_particles: 1b}, {duration: 1200, Id: 15b, Amplifier: -9b, show_particles: 1b}, {duration: 1200, Id: 19b, Amplifier: 9b, show_particles: 1b}, {duration: 1200, Id: 19b, Amplifier: -9b, show_particles: 1b}, {duration: 0, Id: 12b, Amplifier: -100b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§4§o投げつける薬。\"}', '{\"text\":\"§4§oこれを浴びた者は、\"}', '{\"text\":\"§4§o強力な酸で視力と体力を奪われる。\"}'], Name: '{\"text\":\"§6王水\"}'}}"
               }
             ]
           }

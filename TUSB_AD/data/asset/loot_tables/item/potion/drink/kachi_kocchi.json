@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{duration: 0, Id: 23b, Amplifier: 103b, show_particles: 1b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 10, Id: 25b, Amplifier: 60b, show_particles: 0b}, {duration: 1, Id: 7b, Amplifier: 0b, show_particles: 0b}, {duration: 100, Id: 16b, Amplifier: 0b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§f飲むと体内が§b§l氷河期§fに突入する。\"}', '{\"text\":\"§fあまりの寒さに§a§n飛び跳ねる§f、§b冷たい§fお酒。\"}'], Name: '{\"text\":\"§b§l§nカチコッチ\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 0, Id: 23b, Amplifier: 103b, show_particles: 1b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 10, Id: 25b, Amplifier: 60b, show_particles: 0b}, {duration: 1, Id: 7b, Amplifier: 0b, show_particles: 0b}, {duration: 100, Id: 16b, Amplifier: 0b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§f飲むと体内が§b§l氷河期§fに突入する。\"}', '{\"text\":\"§fあまりの寒さに§a§n飛び跳ねる§f、§b冷たい§fお酒。\"}'], Name: '{\"text\":\"§b§l§nカチコッチ\"}'}}"
               }
             ]
           }

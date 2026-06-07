@@ -9,7 +9,7 @@
             "functions": [
               {
                 "function": "minecraft:set_nbt",
-                "tag": "{CustomPotionEffects: [{duration: 0, Id: 26b, Amplifier: 110b, show_particles: 1b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 1, Id: 6b, Amplifier: 4b, show_particles: 0b}, {duration: 600, Id: 23b, Amplifier: 1b, show_particles: 0b}, {duration: 160, Id: 9b, Amplifier: 0b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§bほのかに香る塩水§fと§e独特の酸味§fが漂う\"}', '{\"text\":\"§f少しどろっとしたお酒。\"}', '{\"text\":\"§fトカルト・コルデに生息する§9氷木の樹液§fを\"}', '{\"text\":\"§f蒸留させて作っている。\"}'], Name: '{\"text\":\"§9§l§nアクア・ビテ\"}'}}"
+                "tag": "{custom_potion_effects: [{duration: 0, Id: 26b, Amplifier: 110b, show_particles: 1b}, {duration: 0, Id: 25b, Amplifier: -128b, show_particles: 1b}, {duration: 1, Id: 6b, Amplifier: 4b, show_particles: 0b}, {duration: 600, Id: 23b, Amplifier: 1b, show_particles: 0b}, {duration: 160, Id: 9b, Amplifier: 0b, show_particles: 0b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§bほのかに香る塩水§fと§e独特の酸味§fが漂う\"}', '{\"text\":\"§f少しどろっとしたお酒。\"}', '{\"text\":\"§fトカルト・コルデに生息する§9氷木の樹液§fを\"}', '{\"text\":\"§f蒸留させて作っている。\"}'], Name: '{\"text\":\"§9§l§nアクア・ビテ\"}'}}"
               }
             ]
           }

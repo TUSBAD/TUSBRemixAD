@@ -10,7 +10,7 @@
                 "functions": [
                     {
                         "function": "set_nbt",
-                        "tag": "{CustomPotionEffects: [{duration: 100, Id: 23b, Amplifier: 10b, show_particles: 1b}, {duration: 100, Id: 9b, Amplifier: 10b, show_particles: 1b}, {duration: 700, Id: 18b, Amplifier: 100b, show_particles: 1b}, {duration: 700, Id: 18b, Amplifier: -100b, show_particles: 1b}, {duration: 0, Id: 12b, Amplifier: -100b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§e§o飲むと満腹になるが\"}', '{\"text\":\"§e§oしばらくの間弱体化する\"}'], Name: '{\"text\":\"ガソリン\"}'}}"
+                        "tag": "{custom_potion_effects: [{duration: 100, Id: 23b, Amplifier: 10b, show_particles: 1b}, {duration: 100, Id: 9b, Amplifier: 10b, show_particles: 1b}, {duration: 700, Id: 18b, Amplifier: 100b, show_particles: 1b}, {duration: 700, Id: 18b, Amplifier: -100b, show_particles: 1b}, {duration: 0, Id: 12b, Amplifier: -100b, show_particles: 1b}], HideFlags: 32, Potion: \"minecraft:water\", display: {Lore: ['{\"text\":\"§e§o飲むと満腹になるが\"}', '{\"text\":\"§e§oしばらくの間弱体化する\"}'], Name: '{\"text\":\"ガソリン\"}'}}"
                     }
                 ]
             }

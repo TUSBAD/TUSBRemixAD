@@ -29,7 +29,7 @@ data remove storage asset: villager
 # # 他にも入れたい上方(xpや使用上限など)があれば各自設定します
 #data modify storage asset: villager.Offers.Recipes[-1] merge value {xp:0,MaxUses:2147483637}
 
-data modify storage asset: villager.Offers.Recipes set value [{maxUses: 2147483647, buyB: {id: "minecraft:air", Count: 65b}, buy: {id: "minecraft:emerald", Count: 3b}, sell: {id: "minecraft:potion", Count: 1b, tag: {CustomPotionEffects: [{duration: 0, Id: 1b, Amplifier: -2b, show_particles: 1b}, {duration: 0, Id: 2b, Amplifier: -3b, show_particles: 0b}, {duration: 3, Id: 14b, Amplifier: 6b, show_particles: 0b}], HideFlags: 32, Potion: "minecraft:water", display: {Lore: ['{"text":"§f祈りの込められた聖なる水。"}', '{"text":"§f飲むと死の宣告から回復する。"}', '{"text":""}', '{"text":"§7スプラッシュ化不可"}'], Name: '{"text":"§f§l聖水"}'}}}, xp: 1, uses: 2, priceMultiplier: 0.0f, specialPrice: 0, demand: 0, rewardExp: 0b}]
+data modify storage asset: villager.Offers.Recipes set value [{maxUses: 2147483647, buyB: {id: "minecraft:air", Count: 65b}, buy: {id: "minecraft:emerald", Count: 3b}, sell: {id: "minecraft:potion", Count: 1b, tag: {custom_potion_effects: [{duration: 0, Id: 1b, Amplifier: -2b, show_particles: 1b}, {duration: 0, Id: 2b, Amplifier: -3b, show_particles: 0b}, {duration: 3, Id: 14b, Amplifier: 6b, show_particles: 0b}], HideFlags: 32, Potion: "minecraft:water", display: {Lore: ['{"text":"§f祈りの込められた聖なる水。"}', '{"text":"§f飲むと死の宣告から回復する。"}', '{"text":""}', '{"text":"§7スプラッシュ化不可"}'], Name: '{"text":"§f§l聖水"}'}}}, xp: 1, uses: 2, priceMultiplier: 0.0f, specialPrice: 0, demand: 0, rewardExp: 0b}]
 
 # # 交易品を持たせるところから繰り返します。オフハンドを消したりするのは忘れずに
 
