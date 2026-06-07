@@ -8,8 +8,8 @@ execute if predicate player_manager:is_sneaking run function job:check_mp/sneak
 
 ### 空腹ペナルティ
 scoreboard players set _ TUSB 5
-execute if entity @s[nbt={active_effects:[{Id:17}]}] run scoreboard players operation @s MPConsumption *= _ TUSB
-execute if entity @s[nbt={active_effects:[{Id:17}]}] run scoreboard players set @s MPAcceleration -1200
+execute if entity @s[nbt={active_effects:[{id:"minecraft:hunger"}]}] run scoreboard players operation @s MPConsumption *= _ TUSB
+execute if entity @s[nbt={active_effects:[{id:"minecraft:hunger"}]}] run scoreboard players set @s MPAcceleration -1200
 
 ### エナジーセーブ
 execute if entity @s[tag=EnergySave] run function job:check_mp/energy_save

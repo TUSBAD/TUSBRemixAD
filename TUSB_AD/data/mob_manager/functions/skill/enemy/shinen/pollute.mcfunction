@@ -4,4 +4,4 @@
 ### This software is released under the MIT License, see LICENSE.
 
 tellraw @a[distance=..32] ["",{"selector":"@s","bold":true},{"translate":" は","color":"white","bold":true},{"translate":" %1$s を唱えた！","color":"white","bold":true,"with":[{"translate":"§4§lポリュート§r","bold":true,"hoverEvent":{"action":"show_text","value":{"text":"空腹と即時ダメLv2を与えるAECを召喚する。","color":"red"}}}]}]
-summon minecraft:area_effect_cloud ~ ~0.5 ~ {Radius:0.5f,RadiusOnUse:0f,DurationOnUse:0,duration:1200,RadiusPerTick:0.005f,WaitTime:0,Age:0,CustomNameVisible:true,Particle:mobSpell,effects:[{Id:17,duration:40,amplifier:9b,show_particles:true}],CustomName:'"§d§l☣"'}
+summon minecraft:area_effect_cloud ~ ~0.5 ~ {Radius:0.5f,RadiusOnUse:0f,DurationOnUse:0,duration:1200,RadiusPerTick:0.005f,WaitTime:0,Age:0,CustomNameVisible:true,Particle:mobSpell,effects:[{id:"minecraft:hunger",duration:40,amplifier:9b,show_particles:true}],CustomName:'"§d§l☣"'}
