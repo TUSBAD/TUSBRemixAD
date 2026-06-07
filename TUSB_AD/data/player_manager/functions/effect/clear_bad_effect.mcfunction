@@ -3,7 +3,7 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{Id:1}].amplifier
+# execute store result score _ TUSB run data get storage tusb_remake: active_effects[{id:"minecraft:speed"}].amplifier
 # execute unless score _ TUSB matches 0..127 run effect clear @s minecraft:speed
 
 effect clear @s minecraft:slowness
