@@ -127,7 +127,7 @@
         # 効果時間を-1に設定すると無限になる
 
 # AECを乗せる
-    data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",CustomName:'{"text":"横長ステップオーラ"}',Radius: 0.3f,duration: 32767,ReapplicationDelay: 40,Tags: ["TypeChecked","RidingRequired"],Particle:"instant_effect 1 1 1 1",effects: [{Id:25,amplifier:50b,duration: 2}, {id:"minecraft:speed",amplifier: 39b,duration: 10}, {Id:5,amplifier: 20b,duration: 30}]}
+    data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",CustomName:'{"text":"横長ステップオーラ"}',Radius: 0.3f,duration: 32767,ReapplicationDelay: 40,Tags: ["TypeChecked","RidingRequired"],Particle:"instant_effect 1 1 1 1",effects: [{Id:25,amplifier:50b,duration: 2}, {id:"minecraft:speed",amplifier: 39b,duration: 10}, {id:"strength",amplifier: 20b,duration: 30}]}
 
 # スポナーから湧かせるための設定をします
     data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}

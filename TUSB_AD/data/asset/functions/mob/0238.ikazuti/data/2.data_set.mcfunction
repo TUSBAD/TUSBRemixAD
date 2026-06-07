@@ -125,9 +125,9 @@ data modify storage asset: mob set value {Passengers: [{Passengers: [{Passengers
     #{Name:darkness,id:33} 暗闇
     # 詳しくはwiki見てね！
 # data modify storage asset: mob.active_effects append value {Id:0,amplifier:1,duration:600,show_particles:0b}
-# data modify storage asset: mob.active_effects append value {Id:5,amplifier:4,duration:600,show_particles:0b}
+# data modify storage asset: mob.active_effects append value {id:"strength",amplifier:4,duration:600,show_particles:0b}
 # 或いは...
-# data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{Id:5,amplifier:4,duration:600,show_particles:0b}]
+# data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{id:"strength",amplifier:4,duration:600,show_particles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
 # Id,amplifier,duration,show_icon,ShowParticle,ambient
 
