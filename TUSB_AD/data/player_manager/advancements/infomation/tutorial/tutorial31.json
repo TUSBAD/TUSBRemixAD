@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:golden_apple",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "パッシブバフ                                       ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "Lvが51以上になると、職業に応じて常時バフが付与されます。\nどのようなバフが付与されるかは、職業の進捗タブを参照してください。",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial30",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

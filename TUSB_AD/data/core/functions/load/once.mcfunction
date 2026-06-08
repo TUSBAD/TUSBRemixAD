@@ -237,7 +237,7 @@ team modify Yellow collisionRule never
 team add NoCollision
 team modify NoCollision collisionRule never
 team add Enemy {"text":"敵チーム"}
-team modify Enemy color aqua
+team modify Enemy color dark_aqua
 team add Boss {"text":"ボス"}
 team modify Boss color dark_red
 team add AdvancedBoss {"text":"強化ボス"}
@@ -246,12 +246,15 @@ team modify AdvancedBoss prefix {"text":"💀","color":"#e815ff"}
 team add ExtremeBoss {"text":"超越ボス"}
 team modify ExtremeBoss color dark_green
 team modify ExtremeBoss prefix {"text":"☠️","color":"#008000"}
-team add SupremeBoss {"text":"至高ボス"}
-team modify SupremeBoss color light_purple
-team modify SupremeBoss prefix {"text":"👿","color":"#ff2A2A"}
+team add LegendaryBoss {"text":"伝説ボス"}
+team modify LegendaryBoss color light_purple
+team modify LegendaryBoss prefix {"text":"👿","color":"#ff2A2A"}
 team add Guardian {"text":"守護者"}
 team modify Guardian color dark_blue
 team modify Guardian prefix {"text":"🌟","color":"#0080ff"}
+team add Goddes {"text":"戦神/創造神"}
+team modify Goddes color aqua
+team modify Goddes prefix {"text":"🌌","color":"#00e6ff"}
 
 ### ゲームルール / ワールド設定
 gamerule logAdminCommands false

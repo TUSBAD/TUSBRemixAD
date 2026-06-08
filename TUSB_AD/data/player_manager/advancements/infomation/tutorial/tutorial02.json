@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:writable_book",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "メニューの開き方    ",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "素早く%1$sします。\n%2$sにも表示されます。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "3回スニーク",
+          "color": "green"
+        },
+        {
+          "translate": "ログイン時",
+          "color": "light_purple"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial01",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

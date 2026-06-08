@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:blue_ice",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "世界を覆う瘴気                                        ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この世界は、%1$sが生み出した瘴気に満ちています。\n瘴気は様々な物に影響を及ぼしており、%2$sや%3$sを引き起こしています。\nどのような変化が起きているかは、進捗で確認できるので確認を忘れずにしておきましょう。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "とある人物",
+          "bold": true,
+          "color": "#26a2d7"
+        },
+        {
+          "translate": "攻略率に伴う様々な変化",
+          "color": "#ff874d"
+        },
+                {
+          "translate": "各ディメンションの異変",
+          "color": "#ff4d4d"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial23",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

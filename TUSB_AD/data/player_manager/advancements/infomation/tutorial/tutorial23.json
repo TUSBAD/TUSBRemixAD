@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:command_block",
+      "nbt": "{}"
+    },
+    "title": [
+      {
+        "translate": "攻略率に伴う変化                                        ",
+        "color": "white",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "この世界では、一定数島を攻略すると一部システムが変化したり強化されたりします。\nシステムの変化が起きると、%1$sや%2$sが強化されたりします。(難易度による)\nそれ以外にも、釣りの内容やお楽しみチェストの中身が変化したり、より強力な装備が作れるようになったりします。",
+      "color": "white",
+      "with": [
+        {
+          "translate": "嫌な予感",
+          "bold": true,
+          "color": "#ff373d"
+        },
+        {
+          "translate": "死の宣告",
+          "bold": true,
+          "color": "#be46ff"
+        }
+      ]
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "player_manager:infomation/tutorial/tutorial22",
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

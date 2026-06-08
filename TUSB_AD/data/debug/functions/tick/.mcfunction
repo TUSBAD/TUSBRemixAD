@@ -14,4 +14,4 @@ execute if data storage debug:get_oh_my_dat DebugId run function debug:tick/get_
 
 execute if data storage debug: Debug{Mode:-1s} as @a[tag=Debug.Invulnerable] at @s run function debug:tick/tag/invulnerable
 
-execute as @a at @s run function debug:menu/tick
+#execute as @a at @s run function debug:menu/tick
