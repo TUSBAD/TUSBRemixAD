@@ -12,4 +12,4 @@ data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.RaisePoin
 scoreboard players set @s Hunger 21
 gamemode spectator @s
 ### ネザーアスレチックのエリトラ持ってたら消す
-clear @s[nbt={Inventory:[{tag:{TrialItem:true}}]}]
+clear @s[predicate=player_manager:has_trialitem]

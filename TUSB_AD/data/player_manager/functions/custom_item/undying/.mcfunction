@@ -6,20 +6,20 @@
 # アイテムが投げられていたら使用ではない
 # インベントリ全チェックして同じUUIDを持つアイテムがあれば使用ではない
 # 一時的にUndyingアイテムを置き換えてカーソルに持っているかも確かめる
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 
 # tag @s remove Undying
 
@@ -37,7 +37,7 @@ execute if data storage tusb_remake: {SelectedItem:{tag:{Undying:true}}} unless 
 execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying run function player_manager:custom_item/undying/test
 
 # Undyingアイテム保存
-data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying set from entity @s[nbt={SelectedItem:{tag:{Undying:true}}}] SelectedItem
+data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying set from entity @s[predicate=player_manager:has_undying] SelectedItem
 execute unless data entity @s SelectedItem.tag{Undying:true} run data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying
 
 # execute if data entity @s {SelectedItem:{tag:{Undying:true}}} run data modify storage _: _.mainhand set value true

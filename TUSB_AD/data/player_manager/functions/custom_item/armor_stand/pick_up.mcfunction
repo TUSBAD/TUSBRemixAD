@@ -4,6 +4,6 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 近くの特殊アーマースタンドで、もうアイテムを持っていなかったら、しんでもらう
-execute anchored eyes positioned ^ ^ ^5 as @e[type=armor_stand,distance=..5,nbt={DisabledSlots: 2039326, Health: 1.0f, ArmorItems: [{tag: {AttributeModifiers: [{Name: "minus"}]}}]}] unless data entity @s HandItems[].id run kill @s
+execute anchored eyes positioned ^ ^ ^5 as @e[type=armor_stand,distance=..5] if predicate lib:is_inban_armor_stand unless data entity @s HandItems[].id run kill @s
 
 advancement revoke @s only player_manager:armor_stand/pick_up

@@ -7,7 +7,6 @@
 
 # 無敵じゃない生物で、味方として出現していないものは、敵のタグをつけておく
     tag @s[team=!FriendlyTeam,type=#lib:mob,predicate=!lib:is_invulnerable] add Enemy
-    team join Enemy @s[tag=Enemy,predicate=!mob_manager:is_boss_team]
 # ニフラムの対象
     tag @s[tag=Enemy] add Poofable
 # オーラを纏ってる場合は、オーラを初期する
@@ -34,14 +33,23 @@
     execute as @s[type=minecraft:tnt] run data merge entity @s {Fuse:20s,Motion:[0d,0d,0d],block_state:{Name:"minecraft:diamond_block"}}
 
 # 強さ補正
-    execute if data storage tusb_remake: difficulty_modifier{speed:1} run effect give @s[team=,type=!player] minecraft:speed 1000000 0 true
-    execute if data storage tusb_remake: difficulty_modifier{speed:2} run effect give @s[team=,type=!player] minecraft:speed 1000000 1 true
-    execute if data storage tusb_remake: difficulty_modifier{speed:3} run effect give @s[team=,type=!player] minecraft:speed 1000000 2 true
-    execute if data storage tusb_remake: difficulty_modifier{speed:4} run effect give @s[team=,type=!player] minecraft:speed 1000000 3 true
-    execute if data storage tusb_remake: difficulty_modifier{resistance:1} run effect give @s[team=,type=!player] minecraft:resistance 1000000 0 true
-    execute if data storage tusb_remake: difficulty_modifier{resistance:2} run effect give @s[team=,type=!player] minecraft:resistance 1000000 1 true
-    execute if data storage tusb_remake: difficulty_modifier{resistance:3} run effect give @s[team=,type=!player] minecraft:resistance 1000000 2 true
-    execute if data storage tusb_remake: difficulty_modifier{resistance:4} run effect give @s[team=,type=!player] minecraft:resistance 1000000 3 true
+    execute if data storage tusb_remake: difficulty_modifier{speed:1} run effect give @s[team=,type=!player] minecraft:speed infinite 0 true
+    execute if data storage tusb_remake: difficulty_modifier{speed:2} run effect give @s[team=,type=!player] minecraft:speed infinite 1 true
+    execute if data storage tusb_remake: difficulty_modifier{speed:3} run effect give @s[team=,type=!player] minecraft:speed infinite 2 true
+    execute if data storage tusb_remake: difficulty_modifier{speed:4} run effect give @s[team=,type=!player] minecraft:speed infinite 3 true
+    execute if data storage tusb_remake: difficulty_modifier{speed:5} run effect give @s[team=,type=!player] minecraft:speed infinite 4 true
+    execute if data storage tusb_remake: difficulty_modifier{resistance:1} run effect give @s[team=,type=!player] minecraft:resistance infinite 0 true
+    execute if data storage tusb_remake: difficulty_modifier{resistance:2} run effect give @s[team=,type=!player] minecraft:resistance infinite 1 true
+    execute if data storage tusb_remake: difficulty_modifier{resistance:3} run effect give @s[team=,type=!player] minecraft:resistance infinite 2 true
+    execute if data storage tusb_remake: difficulty_modifier{resistance:4} run effect give @s[team=,type=!player] minecraft:resistance infinite 3 true
+    execute if data storage tusb_remake: difficulty_modifier{strength:1} run effect give @s[team=,type=!player] minecraft:strength infinite 1 true
+    execute if data storage tusb_remake: difficulty_modifier{strength:5} run effect give @s[team=,type=!player] minecraft:strength infinite 5 true
+    execute if data storage tusb_remake: difficulty_modifier{strength:10} run effect give @s[team=,type=!player] minecraft:strength infinite 10 true
+    execute if data storage tusb_remake: difficulty_modifier{strength:20} run effect give @s[team=,type=!player] minecraft:strength infinite 20 true
+    execute if data storage tusb_remake: difficulty_modifier{maxhealth:1} run effect give @s[team=,type=!player] minecraft:health_boost infinite 9 true
+    execute if data storage tusb_remake: difficulty_modifier{maxhealth:10} run effect give @s[team=,type=!player] minecraft:health_boost infinite 19 true
+    execute if data storage tusb_remake: difficulty_modifier{maxhealth:25} run effect give @s[team=,type=!player] minecraft:health_boost infinite 39 true
+    execute if data storage tusb_remake: difficulty_modifier{maxhealth:50} run effect give @s[team=,type=!player] minecraft:health_boost infinite 69 true
 
 # ゾンビピッグマンは常に怒らせる
     execute as @s[type=minecraft:zombified_piglin] run data merge entity @s {AngerTime:2147483647}
@@ -67,6 +75,8 @@
     execute if data storage tusb_remake: {CustomName:'{"text":"ﾅﾋﾞｹﾞｰﾄ"}'} run function mob_manager:entity/mob_fix/navigate
     execute if data storage tusb_remake: {CustomName:'{"text":"SAT"}'} on passengers run ride @s dismount
     data remove storage tusb_remake: CustomName
+# チームに登録
+    team join Enemy @s[tag=Enemy,predicate=!mob_manager:is_boss_team]
 
 ### チェック済みにする
 tag @s add TypeChecked

@@ -5,5 +5,5 @@
 # @within function mob_manager:skill/enemy/pale_rider/
 
 me は §4§lペストクロップ§r を唱えた！
-execute as @a[distance=..32,nbt={active_effects:[{id:"minecraft:poison"}]}] at @s run function player_manager:effect/deadly_poison/
+execute as @a[distance=..32] if predicate player_manager:effects/is_poison at @s run function player_manager:effect/deadly_poison/
 playsound entity.ravager.celebrate master @a[distance=..32] ~ ~ ~ 1 1.8 1

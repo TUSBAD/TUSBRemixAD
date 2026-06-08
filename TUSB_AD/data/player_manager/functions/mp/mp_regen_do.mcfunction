@@ -24,7 +24,7 @@ scoreboard players reset @s[scores={ManaRefresh=..10}] ManaRefresh
 
 # MP回復反映
 scoreboard players set _ _ 0
-execute if entity @s[nbt={active_effects:[{id:"minecraft:hunger"}]}] run scoreboard players set @s MPRecovery 0
+execute if entity @s[predicate=player_manager:effects/is_hunger] run scoreboard players set @s MPRecovery 0
 execute store success score _ _ if score @s MP < @s MPMax run scoreboard players operation @s MP -= @s MPRecovery
 execute if score _ _ matches 1 run scoreboard players operation @s MP < @s MPMax
 execute if score _ _ matches 0 store success score _ _ if score @s MP > @s MPMax
