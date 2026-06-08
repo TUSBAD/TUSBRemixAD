@@ -7,4 +7,4 @@
 effect give @s minecraft:instant_damage 1 127 true
 effect give @s minecraft:instant_health 1 127 true
 
-particle minecraft:damage_indicator ~ ~0.8 ~ 0.08 0.08 0.08 0.3 6 force @a[distance=..16]
+particle minecraft:damage_indicator ~ ~0.8 ~ 0.08 0.08 0.08 0.3 2 force @a[distance=..16]

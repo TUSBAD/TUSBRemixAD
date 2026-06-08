@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function core:clock/skill_trigger/setup
+# @within function core:clock/trigger/setup
 
 # 軽減不可ダメージ
   # 引数を設定

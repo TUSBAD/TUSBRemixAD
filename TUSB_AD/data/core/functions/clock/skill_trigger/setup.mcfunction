@@ -1,7 +1,8 @@
-#> core:clock/skill_trigger/setup
+#> core:clock/trigger/setup
 #
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#
+#
+# @within tags function minecraft:tick
 
 execute as @a[scores={Choyaku=2..,Jump=1..},nbt={ActiveEffects:[{Id:8}]}] at @s run function job:skill/ninja/choyaku/jump
 execute as @a[scores={seiyou=2..,Jump=1..}] at @s run function job:skill/ninja/seiyou/jump
@@ -11,3 +12,6 @@ execute as @a[scores={HPChanging=0..},nbt=!{AbsorptionAmount:0f}] run function c
 
 #### 奈落介錯 y=-130以下
 execute as @a[predicate=lib:in_void,scores={HP=1..}] at @s run function player_manager:kill/abyss
+
+# trigger_tick
+function player_manager:trigger/tick

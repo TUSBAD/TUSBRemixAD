@@ -1,31 +1,34 @@
 #> job:trigger/hit/
+#
 # 近接攻撃をした時
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#
+# @within function player_manager:trigger/tick
 
-### 流し斬り
+## 剣士
+# 流し斬り
 execute as @s[scores={CurrentMode=1200..1209},predicate=lib:has_sword] run function job:skill/knight/nagashi_giri/hit
-### 薙ぎ払い
+# 薙ぎ払い
 execute as @s[scores={CurrentMode=1210..1219},predicate=lib:has_sword] run function job:skill/knight/nagi_harai/hit
-### 魔人斬り
+# 魔人斬り
 execute as @s[scores={CurrentMode=1240..1249},predicate=lib:has_sword] run function job:skill/knight/majin_giri/hit
-### 斬鉄剣
+# 斬鉄剣
 execute as @s[scores={CurrentMode=1250..1259},predicate=lib:has_sword] run function job:skill/knight/zan_tetsu_ken/hit
-### 連舞
+# 連舞
 execute as @s[scores={CurrentMode=2210..2219}] run function job:skill/ninja/tsuremai/hit
-### 瞬獄殺
+# 瞬獄殺
 execute as @s[scores={CurrentMode=2270..2279}] run function job:skill/ninja/syungokusatsu/punch/hit
-### 夢想
+# 夢想
 execute as @s[scores={CurrentMode=1270..1279},predicate=lib:has_sword] run function job:skill/knight/musou/hit
-### ブレードワルツ
+# ブレードワルツ
 execute as @s[scores={CurrentMode=1280..1289},predicate=lib:has_sword] run function job:skill/knight/waltz/spell
 
-### エンアスピル
+## 黒魔
+# エンアスピル
 execute as @s[scores={EnAspir=0..}] run function job:skill/black_mage/enaspir/hit
 
-### レガシー
+# レガシー
 execute if data entity @s SelectedItem.tag.Legacy run function job:trigger/hit/legacy/
 
-scoreboard players reset @s DamageDealt
-scoreboard players reset @s DamageDealtAbsorbed
-scoreboard players reset @s DamageDealtResisted
+# リセット
+advancement revoke @s only mob_manager:player_hurt_entity
+scoreboard players reset _ Damage

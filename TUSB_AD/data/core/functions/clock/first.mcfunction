@@ -1,7 +1,8 @@
 #> core:clock/first
+#
 # 毎ティック最初に実行したいもの
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#
+# @within tags function minecraft:tick
 
 # ワープポータル処理待ちの時はチェックする
     execute as @a[tag=PortalCheck] at @s run function world_manager:warp/
@@ -28,9 +29,6 @@
     execute as @e[type=!#lib:ignore_type_check,type=!area_effect_cloud,tag=!TypeChecked] at @s run function mob_manager:entity/type_check
 ## TODO
     execute as @e[type=area_effect_cloud,tag=!TypeChecked] at @s run function mob_manager:entity/type_check
-
-# CustomHealth持ちの無敵化
-    execute as @e[tag=CustomHealth,nbt=!{ActiveEffects:[{Id:11,Amplifier:127b}]}] run function mob_manager:custom_health/invulnerable
 
 # 削除対象のエンティティを削除する
     function mob_manager:delete/

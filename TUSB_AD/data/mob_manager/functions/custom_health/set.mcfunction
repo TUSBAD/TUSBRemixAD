@@ -10,6 +10,6 @@ execute store result storage asset:context id int 1 run data get entity @s Absor
 # idにより体力を設定
 function #asset:mob/custom_health
 
-# 無敵化
+# 耐久を強化
 data modify entity @s AbsorptionAmount set value 2048f
-effect give @s resistance infinite 127 true
+effect give @s resistance infinite 3 true

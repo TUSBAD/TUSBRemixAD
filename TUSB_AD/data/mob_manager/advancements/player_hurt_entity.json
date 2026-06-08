@@ -1,0 +1,41 @@
+{
+    "criteria": {
+        "melee_attack": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "minecraft:is_melee",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "arrow_attack": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "lib:is_arrow",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "requirements": 
+    [
+        [
+            "melee_attack",
+            "arrow_attack"
+        ]
+    ]
+}

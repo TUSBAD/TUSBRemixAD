@@ -1,7 +1,8 @@
 #> core:clock/main
-# メインクロック？
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#
+# メインクロック
+#
+# @within tags function minecraft:tick
 
 # 初回ログイン時
     execute as @a[team=] at @s run function core:login/first

@@ -1,7 +1,11 @@
 #> core:clock/last
+#
 # 毎ティック最後に実行したいもの
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#
+# @within tags function minecraft:tick
+
+# カスタム体力へのダメージ取得
+    execute as @e[tag=CustomHealth,predicate=!lib:absorption_max] at @s run function mob_manager:custom_health/absorption_dataget
 
 # カスタム体力へのダメージ処理
     execute as @e[tag=CustomHealth] at @s if score @s Heal matches 1.. run function mob_manager:custom_health/heal
