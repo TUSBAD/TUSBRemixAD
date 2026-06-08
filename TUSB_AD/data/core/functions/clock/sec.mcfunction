@@ -72,7 +72,7 @@
 
 ###### 島ギミック ########
 # エンダーチェスト島のワープ
-    execute positioned 58 94 -103 as @e[dx=17,dy=2,dz=17,nbt=!{Passengers:[]}] at @s if block ~ ~-1 ~ #lib:stained_glass_and_pane run spreadplayers ~ ~ 1 300 under 319 false @s
+    execute positioned 58 94 -103 as @e[dx=17,dy=2,dz=17] if predicate lib:no_passengers at @s if block ~ ~-1 ~ #lib:stained_glass_and_pane run spreadplayers ~ ~ 1 300 under 319 false @s
 # ホッパー島のワープ
     execute positioned 177 39 -75 if entity @a[distance=..60,gamemode=!spectator] run function world_manager:dimension/skylands/hopper/
 
