@@ -32,11 +32,11 @@
     execute if score #SecCount Global matches 61.. run function core:clock/min
 
 # 動き停止飛翔物判定
-    execute as @e[tag=FlyingObject,nbt=!{inGround:true,OnGround:true}] at @s run function mob_manager:entity/check_projectile
+    execute as @e[tag=FlyingObject] if predicate lib:is_flying_object at @s run function mob_manager:entity/check_projectile
     execute as @e[tag=InKasap] at @s run function mob_manager:entity/check_kasap
 
 # Freeze/Melt 居縮とかの
-    execute as @e[tag=Freeze,nbt={PortalCooldown:0}] run function core:clock/sec3
+    execute as @e[tag=Freeze] if predicate lib:is_cooldown_0 run function core:clock/sec3
 
 # 敵スキル発動チェック
     execute as @e[tag=SkillMob] at @s run function mob_manager:skill/
@@ -65,10 +65,10 @@
     execute as @e[tag=SpawnerCore] at @s if block ~ ~ ~ minecraft:air run kill @e[distance=..0.99,tag=Spawner,limit=2,sort=nearest]
 
 # CooldownRequired 誤差許容長期用
-    tag @e[tag=CooldownRequiredLong,nbt={PortalCooldown:0}] add Garbage
+    tag @e[tag=CooldownRequiredLong,predicate=lib:is_cooldown_0] add Garbage
 
 # カートスポナーポータルin対策
-    tag @e[type=spawner_minecart,tag=CooldownRequired,nbt={PortalCooldown:300}] add Garbage
+    tag @e[type=spawner_minecart,tag=CooldownRequired,predicate=lib:is_cooldown_300] add Garbage
 
 ###### 島ギミック ########
 # エンダーチェスト島のワープ
