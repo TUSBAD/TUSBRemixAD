@@ -11,4 +11,4 @@ function job:check_mp/
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
 execute if score _ ActivatedSkill matches 1240..1249 run effect give @s minecraft:weakness 1 127 true
-execute if score _ ActivatedSkill matches 1240..1249 as @e[distance=..5,type=#lib:mob,tag=Enemy,nbt={HurtTime:10s},sort=nearest,limit=1] at @s run function job:skill/knight/majin_giri/apply
+execute if score _ ActivatedSkill matches 1240..1249 as @e[distance=..5,type=#lib:mob,tag=Enemy,sort=nearest,limit=1] if predicate job:is_hurttime at @s run function job:skill/knight/majin_giri/apply

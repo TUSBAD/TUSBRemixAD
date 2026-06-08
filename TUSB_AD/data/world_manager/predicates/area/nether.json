@@ -1,7 +1,7 @@
 {
 	"condition": "minecraft:location_check",
 	"predicate": {
-		"dimension": "minecraft:the_nether",
+		"dimension": "world_manager:nether",
 		"position": {
 			"x": {
 				"min": -640,
