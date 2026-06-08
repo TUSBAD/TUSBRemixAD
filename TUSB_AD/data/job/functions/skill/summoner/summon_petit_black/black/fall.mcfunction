@@ -10,9 +10,9 @@ playsound minecraft:entity.shulker.teleport master @a[distance=..32] ~ ~ ~ 0.2 0
 particle minecraft:portal ~ ~-0.5 ~ 0 0 0 3 20 force
 
 ### 吸い込み効果 なんかめっちゃ目が回る感じになる！
-execute as @e[distance=..10,type=#lib:mob,nbt=!{Invulnerable:true},team=!FriendlyTeam] rotated as @s run tp @s ~ ~1 ~ ~6 ~
-execute as @a[distance=..10,gamemode=!spectator] rotated as @s run tp @s ~ ~1 ~ ~6 ~
+execute as @e[distance=..10,type=#lib:mob] unless predicate lib:is_invulnerable if predicate job:enemy_or_boss_team rotated as @s run tp @s ~ ~1 ~ ~6 ~
+execute as @a[distance=..10] if predicate player_manager:player rotated as @s run tp @s ~ ~1 ~ ~6 ~
 
 ### ダメージ処理
 data modify storage score_damage: Argument set value {Damage:20.00}
-execute positioned ~-0.5 ~1 ~-0.5 as @e[dy=0,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{id:"minecraft:saturation"}]}] at @s run function job:skill/summoner/summon_petit_black/black/hit
+execute positioned ~-0.5 ~1 ~-0.5 as @e[dy=0,type=#lib:mob,tag=Enemy] unless predicate job:is_saturation at @s run function job:skill/summoner/summon_petit_black/black/hit

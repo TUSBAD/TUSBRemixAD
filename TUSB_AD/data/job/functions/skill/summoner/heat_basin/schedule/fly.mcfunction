@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 data modify storage tusb_remake: hit set value false
-execute positioned ~-0.5 ~ ~-0.5 as @e[dy=0,type=#lib:mob,tag=Enemy,nbt=!{active_effects:[{id:"minecraft:saturation"}]}] at @s run function job:skill/summoner/heat_basin/schedule/hit
+execute positioned ~-0.5 ~ ~-0.5 as @e[dy=0,type=#lib:mob,tag=Enemy] unless predicate job:is_saturation at @s run function job:skill/summoner/heat_basin/schedule/hit
 
 ### 当たっていたらタライを消す
 execute if data storage tusb_remake: {hit:true} run kill @s
