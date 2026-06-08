@@ -8,7 +8,7 @@
 scoreboard players operation @s CustomHealth -= @s Damage
 
 # 表示
-function mob_manager:custom_health/status_makeup/damage
+function mob_manager:custom_health/log/summon/damage
 
 # 演出
 function mob_manager:custom_health/particle/damage

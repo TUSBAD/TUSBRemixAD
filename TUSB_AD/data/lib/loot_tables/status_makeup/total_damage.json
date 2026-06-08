@@ -13,12 +13,12 @@
                             "entity": "this",
                             "name": [
                                 {
-                                    "font": "damage_pop:score_dozer",
+                                    "font": "damage_pop:",
                                     "score": {
-                                        "objective": "Heal",
+                                        "objective": "Damage",
                                         "name": "@s"
                                     },
-                                    "color": "green"
+                                    "color": "red"
                                 }
                             ]
                         }

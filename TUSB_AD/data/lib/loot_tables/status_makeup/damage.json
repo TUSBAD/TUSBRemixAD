@@ -16,7 +16,7 @@
                                     "font": "damage_pop:",
                                     "score": {
                                         "objective": "Damage",
-                                        "name": "_"
+                                        "name": "@s"
                                     },
                                     "color": "red"
                                 }
