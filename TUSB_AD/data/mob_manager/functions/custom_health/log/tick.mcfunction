@@ -12,5 +12,5 @@
     execute if entity @s[tag=LongShow] run tp @s ~ ~0.02 ~
 
 # 一定tickで削除する
-    execute if entity @s[tag=ShortShow] if score @s LogRemoveTime matches 25.. run kill @s
-    execute if entity @s[tag=LongShow] if score @s LogRemoveTime matches 25.. run kill @s
+    execute if entity @s[tag=ShortShow] if score @s LogRemoveTime matches 22.. run kill @s
+    execute if entity @s[tag=LongShow] if score @s LogRemoveTime matches 28.. run kill @s
