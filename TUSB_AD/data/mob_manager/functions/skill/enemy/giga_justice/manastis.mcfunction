@@ -6,4 +6,4 @@
 
 me は マナスティス を唱えた！
 
-summon Endermite ~ ~1.8 ~ {Lifetime:2398,NoAI:true,Passengers:[{id:XPOrb,Age:6000s,Passengers:[{id:ThrownPotion,Potion:{id:splash_potion,tag:{CustomPotionEffects:[{Id:5b,Duration:300,Amplifier:4b},{Id:16b,Duration:300,Amplifier:1b},{Id:7b,Duration:20,Amplifier:2b}]}},Motion:[0d,0.7d,0d]}]}]}
+summon Endermite ~ ~1.8 ~ {Lifetime:2398,NoAI:true,Passengers:[{id:XPOrb,Age:6000s,Passengers:[{id:ThrownPotion,Potion:{id:splash_potion,tag:{custom_potion_effects:[{Id:5b,duration:300,amplifier:4b},{id:"minecraft:night_vision",duration:300,amplifier:1b},{id:"minecraft:instant_damage",duration:20,amplifier:2b}]}},Motion:[0d,0.7d,0d]}]}]}

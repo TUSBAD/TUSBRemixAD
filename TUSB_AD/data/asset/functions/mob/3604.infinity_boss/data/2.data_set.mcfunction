@@ -84,7 +84,7 @@
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
 
 
-### ActiveEffects
+### active_effects
     # 直接nbtを指定して追加します
     #effect一覧
         #{Name:speed,id:1} 移動速度上昇 +(lv*20)%
@@ -121,15 +121,15 @@
         #{Name:hero_of_the_village,id:32} 村の英雄
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
-    data modify storage asset: mob.ActiveEffects append value {Id:14,Amplifier:127,Duration:2147483647,ShowParticles:0b}
-    # data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+    data modify storage asset: mob.active_effects append value {id:"minecraft:invisibility",amplifier:127,duration:2147483647,show_particles:0b}
+    # data modify storage asset: mob.active_effects append value {id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}
     # 或いは...
-    # data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+    # data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}]
     # このように一行に纏めることも可能。ただし、可読性は下がるかな
-    # Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
+    # Id,amplifier,duration,show_icon,ShowParticle,ambient
 
 # AEC
-    data modify storage asset: mob.Passengers set value [{id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Radius:0.1f,Duration:28,Effects:[{Id:11,Amplifier:3b,Duration:10,ShowParticles:0b}]}]
-    data modify storage asset: mob.Passengers append value {id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Tags:[RidingRequired,TypeChecked],Radius:0.1f,Duration:32767,ReapplicationDelay:60,Effects:[{Id:1,Amplifier:19b,Duration:3,ShowParticles:0b},{Id:25,Amplifier:49b,Duration:2,ShowParticles:0b}]}
+    data modify storage asset: mob.Passengers set value [{id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Radius:0.1f,duration:28,effects:[{id:"minecraft:resistance",amplifier:3b,duration:10,show_particles:0b}]}]
+    data modify storage asset: mob.Passengers append value {id:"minecraft:area_effect_cloud",Particle:"dripping_obsidian_tear",Tags:[RidingRequired,TypeChecked],Radius:0.1f,duration:32767,ReapplicationDelay:60,effects:[{id:"minecraft:speed",amplifier:19b,duration:3,show_particles:0b},{id:"minecraft:levitation",amplifier:49b,duration:2,show_particles:0b}]}
 # スポナーから湧かせるための設定をします
     data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}

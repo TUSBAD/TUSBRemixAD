@@ -76,7 +76,7 @@ data modify storage asset: mob.ArmorItems[] merge value {tag:{display:{color:147
 data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
 
 
-### ActiveEffects
+### active_effects
 # 直接nbtを指定して追加します
 #effect一覧
     #{Name:speed,id:1} 移動速度上昇 +lv*20%
@@ -113,12 +113,12 @@ data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
     #{Name:hero_of_the_village,id:32} 村の英雄
     #{Name:darkness,id:33} 暗闇
     # 詳しくはwiki見てね！
-# data modify storage asset: mob.ActiveEffects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
-# data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:0,amplifier:1,duration:600,show_particles:0b}
+# data modify storage asset: mob.active_effects append value {id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}
 # 或いは...
-# data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+# data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
-# Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
+# Id,amplifier,duration,show_icon,ShowParticle,ambient
 
 
 ### Passengers
@@ -137,7 +137,7 @@ data remove storage asset: mob
 # 次のmobがasset mobなら先程の手順を繰り返します。そうでなければ、直接nbtを指定します
 # 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
 data modify storage asset: mob.id set value "potion"
-data modify storage asset: mob.Item set value {id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:16777215,CustomPotionEffects:[{Id:25,Amplifier:9b,Duration:30}]}}
+data modify storage asset: mob.Item set value {id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:16777215,custom_potion_effects:[{id:"minecraft:levitation",amplifier:9b,duration:30}]}}
 data modify storage _: _.Passengers append from storage asset: mob
 # 最後に、mobデータを戻して避難用storageを削除します
 data modify storage asset: mob set from storage _: _
@@ -147,4 +147,4 @@ data remove storage _: _
 # 全て完了！お疲れ様でした(to me)
 
 
-# data modify storage asset: mob set value {id:"minecraft:skeleton",DeathLootTable:"usb:entities/white/tier_1",Health:40f,Passengers:[{id:"minecraft:potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:16777215,CustomPotionEffects:[{Id:25,Amplifier:9b,Duration:30}]}}}],CustomName:'{"text":"白き者"}',ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:14737632}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:14737632}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:14737632}}},{}],ArmorDropChances:[0.000F,0.000F,0.000F,0.085F],Attributes:[{Name:generic.max_health,Base:40},{Name:generic.follow_range,Base:32},{Name:generic.movement_speed,Base:0.3},{Name:generic.attack_damage,Base:10},{Name:generic.armor,Base:10},{Name:generic.armor_toughness,Base:2}]}
+# data modify storage asset: mob set value {id:"minecraft:skeleton",DeathLootTable:"usb:entities/white/tier_1",Health:40f,Passengers:[{id:"minecraft:potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{CustomPotionColor:16777215,custom_potion_effects:[{id:"minecraft:levitation",amplifier:9b,duration:30}]}}}],CustomName:'{"text":"白き者"}',ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:14737632}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:14737632}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:14737632}}},{}],ArmorDropChances:[0.000F,0.000F,0.000F,0.085F],Attributes:[{Name:generic.max_health,Base:40},{Name:generic.follow_range,Base:32},{Name:generic.movement_speed,Base:0.3},{Name:generic.attack_damage,Base:10},{Name:generic.armor,Base:10},{Name:generic.armor_toughness,Base:2}]}

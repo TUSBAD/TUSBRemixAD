@@ -70,18 +70,18 @@
         data modify storage asset: mob.ArmorItems set value [{},{},{},{}]
     # 武器
         # メインハンド
-            # data modify storage asset: mob.HandItems[0] set value 
+            # data modify storage asset: mob.HandItems[0] set value
         # オフハンド
-            # data modify storage asset: mob.HandItems[1] set value 
+            # data modify storage asset: mob.HandItems[1] set value
     # 防具
         # 頭
             data modify storage asset: mob.ArmorItems[3] set value {id: "minecraft:player_head",Count: 1b,tag: {SkullOwner: {Name: "mocope", Properties: {textures: [{Value: "ewogICJ0aW1lc3RhbXAiIDogMTcyOTIzNjI2OTc1MCwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzYyNGM2Y2Y4ZDM1NWE4Y2MxODNmNjVkZGI5ZTcyM2EwZDBkZjZhZTg2ODRiYzIyN2JkMjg1MGRkNWYyOTYwMzYiCiAgICB9CiAgfQp9"}]}, Name: "エンジェルアイ"}}}
         # 胴
-            # data modify storage asset: mob.ArmorItems[2] set value 
+            # data modify storage asset: mob.ArmorItems[2] set value
         # 脚
-            # data modify storage asset: mob.ArmorItems[1] set value 
+            # data modify storage asset: mob.ArmorItems[1] set value
         # 足
-            # data modify storage asset: mob.ArmorItems[0] set value 
+            # data modify storage asset: mob.ArmorItems[0] set value
     # 武器、防具のドロップ率を設定します。基本0で [足,脚,胴,頭]、[メインハンド,オフハンド]
         data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.01F]
         data modify storage asset: mob.HandDropChances set value [0.0F,0.0F]
@@ -125,7 +125,7 @@
         #{Name:darkness,id:33} 暗闇
         # 詳しくはwiki見てね！
         # 効果時間を-1に設定すると無限になる
-    data modify storage asset: mob.Active_Effects append value {id: "minecraft:invisibility", Amplifier: 127b, Duration: -1, show_particles: 0b}
+    data modify storage asset: mob.Active_Effects append value {id: "minecraft:invisibility", amplifier: 127b, duration: -1, show_particles: 0b}
 
 # 避難
     data modify storage asset: angel_eye set from storage asset: mob
@@ -225,16 +225,16 @@
             #{Name:darkness,id:33} 暗闇
             # 詳しくはwiki見てね！
             # 効果時間を-1に設定すると無限になる
-        data modify storage asset: mob.Active_Effects append value {id: 14, Amplifier: 127b, Duration: -1, show_particles: 0b}
+        data modify storage asset: mob.Active_Effects append value {id: 14, amplifier: 127b, duration: -1, show_particles: 0b}
 
 # えんちーを乗せる
     data modify storage asset: mob.Passengers append from storage asset: angel_eye
     data remove storage asset: angel_eye
 
 # AECを乗せる
-    data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",Radius: 0.2f,ReapplicationDelay:20,Duration: 32767,Tags: ["TypeChecked","RidingOnOwnerInit"],Particle:"end_rod",effects: [{Id: 18,Amplifier: 9b,Duration: 22}]}
-data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",CustomName:'{"text":"エンジェルオーラ"}',Radius: 3f,Duration: 32767,Tags: ["TypeChecked","RidingOnOwnerInit"],Particle:"dust 1 1 1 1",effects: [{Id:25,Amplifier: 3b,Duration: 20}, {Id:10,Amplifier: 2b,Duration: 40}, {id:9,Amplifier: 2b,Duration: 100}]}
+    data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",Radius: 0.2f,ReapplicationDelay:20,duration: 32767,Tags: ["TypeChecked","RidingOnOwnerInit"],Particle:"end_rod",effects: [{Id: 18,amplifier: 9b,duration: 22}]}
+data modify storage asset: mob.Passengers append value {id: "minecraft:area_effect_cloud",CustomName:'{"text":"エンジェルオーラ"}',Radius: 3f,duration: 32767,Tags: ["TypeChecked","RidingOnOwnerInit"],Particle:"dust 1 1 1 1",effects: [{id:"minecraft:levitation",amplifier: 3b,duration: 20}, {id:"minecraft:regeneration",amplifier: 2b,duration: 40}, {id:9,amplifier: 2b,duration: 100}]}
 
 # ポーションを乗せる
-    data modify storage asset: mob.Passengers append value {id: "minecraft:potion",Item: {id: "minecraft:splash_potion",Count: 1b,tag: {CustomPotionColor: 16777215,custom_potion_effects: [{Id:14,Amplifier: 0b,Duration: 200}]}}}
+    data modify storage asset: mob.Passengers append value {id: "minecraft:potion",Item: {id: "minecraft:splash_potion",Count: 1b,tag: {CustomPotionColor: 16777215,custom_potion_effects: [{id:"minecraft:invisibility",amplifier: 0b,duration: 200}]}}}
     data remove entity @s Offers.Recipes[]

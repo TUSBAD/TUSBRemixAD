@@ -9,7 +9,7 @@ execute if score @s ActivatedSkill matches 5221 run data modify storage score_da
 execute if score @s ActivatedSkill matches 5222..5229 run data modify storage score_damage: Argument set value {Damage:400.00,DamageType:"Projectile"}
 
 ### 水の有無によって範囲が変わる
-execute if score @s TUSB = _ TUSB if entity @s[nbt={Fire:0s}] run function job:skill/black_mage/thunder_bolt/schedule/invoke/all
-execute if score @s TUSB = _ TUSB unless entity @s[nbt={Fire:0s}] run function job:skill/black_mage/thunder_bolt/schedule/invoke/single
+execute if score @s TUSB = _ TUSB if entity @s[predicate=!job:is_on_fire] run function job:skill/black_mage/thunder_bolt/schedule/invoke/all
+execute if score @s TUSB = _ TUSB unless entity @s[predicate=!job:is_on_fire] run function job:skill/black_mage/thunder_bolt/schedule/invoke/single
 
 kill @s

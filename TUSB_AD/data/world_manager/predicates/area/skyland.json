@@ -1,7 +1,7 @@
 {
 	"condition": "minecraft:location_check",
 	"predicate": {
-		"dimension": "minecraft:overworld",
+		"dimension": "world_manager:newskyland",
 		"position": {
 			"x": {
 				"min": -192,
@@ -9,7 +9,7 @@
 			},
 			"y": {
 				"min": -300,
-				"max": 900
+				"max": 255
 			},
 			"z": {
 				"min": -288,

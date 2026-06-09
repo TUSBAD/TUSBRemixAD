@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+		"dimension": "world_manager:newskyland",
+		"position": {
+			"x": {
+				"min": -192,
+				"max": 320
+			},
+			"y": {
+				"min": 256,
+				"max": 600
+			},
+			"z": {
+				"min": -288,
+				"max": 224
+			}
+		}
+	}
+}

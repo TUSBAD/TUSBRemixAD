@@ -1,0 +1,9 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{RadiusPerTick:-0.008333334f}"
+    }
+  }
+]

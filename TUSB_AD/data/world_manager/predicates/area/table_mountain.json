@@ -1,7 +1,7 @@
 {
 	"condition": "minecraft:location_check",
 	"predicate": {
-		"dimension": "minecraft:overworld",
+		"dimension": "world_manager:table_mountain",
 		"position": {
 			"x": {
 				"min": -288,

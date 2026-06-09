@@ -1,6 +1,51 @@
-{
-	"condition": "minecraft:location_check",
-	"predicate": {
-		"dimension": "minecraft:overworld"
+[
+	{
+		"condition": "minecraft:any_of",
+		"terms": [
+			{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/skyland"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/skyland_high"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/underworld"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/cloudia"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/gullivers_land"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/table_mountain"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/tocult_colde"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/trade_island"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/library"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/tutorial"
+			},
+						{
+				"condition": "minecraft:reference",
+				"name": "world_manager:area/airport"
+			}
+		]
 	}
-}
+]

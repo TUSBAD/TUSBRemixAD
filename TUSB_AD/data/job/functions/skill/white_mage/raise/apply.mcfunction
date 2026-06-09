@@ -9,7 +9,7 @@ tag @s add Raise
 tag @s remove ReRaise
 
 ### お墓の表示
-summon minecraft:arrow ~ ~ ~ {Silent:true,damage:0d,life:580s,Tags:[TypeChecked],Passengers:[{id:"minecraft:area_effect_cloud",Radius:0.5f,RadiusOnUse:0f,DurationOnUse:0,Duration:620,RadiusPerTick:0f,WaitTime:0,Age:0,Particle:"minecraft:end_rod",CustomName:'"✟"',CustomNameVisible:true,Tags:[RaisePoint,TypeChecked]}]}
+summon minecraft:arrow ~ ~ ~ {Silent:true,damage:0d,life:580s,Tags:[TypeChecked],Passengers:[{id:"minecraft:area_effect_cloud",Radius:0.5f,RadiusOnUse:0f,DurationOnUse:0,duration:620,RadiusPerTick:0f,WaitTime:0,Age:0,Particle:"minecraft:end_rod",CustomName:'"✟"',CustomNameVisible:true,Tags:[RaisePoint,TypeChecked]}]}
 
 ### かかった人の通知
 tellraw @a {"translate":"%1$sにレイズの効果がかかった。","color":"green","with":[{"selector":"@s"}]}

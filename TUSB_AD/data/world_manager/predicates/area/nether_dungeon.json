@@ -1,7 +1,7 @@
 {
 	"condition": "minecraft:location_check",
 	"predicate": {
-		"dimension": "minecraft:the_nether",
+		"dimension": "world_manager:purgatory",
 		"position": {
 			"x": {
 				"min": -2240,

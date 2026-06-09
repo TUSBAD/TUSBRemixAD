@@ -1,0 +1,24 @@
+[
+    {
+        "condition": "minecraft:all_of",
+        "terms": [
+            {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "nbt": "{Tags:[\"FlyingObject\"]}"
+                }
+            },
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{inGround:1b,OnGround:1b}"
+                    }
+                }
+            }
+        ]
+    }
+]
