@@ -107,6 +107,6 @@
         ]
     ],
     "rewards": {
-        "function": "player_manager:button_event/"
+        "function": "player_manager:block_interact/button_event/"
     }
 }

@@ -1,0 +1,142 @@
+{
+    "criteria": {
+        "Doom": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 0
+                    }
+                }
+            }
+        },
+        "Ether_1": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 1
+                    }
+                }
+            }
+        },
+        "Ether_2": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 2
+                    }
+                }
+            }
+        },
+        "Ether_3": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 3
+                    }
+                }
+            }
+        },
+        "Elixir_1": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 4
+                    }
+                }
+            }
+        },
+        "Elixir_2": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 5
+                    }
+                }
+            }
+        },
+        "HolyWater": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "type": "minecraft:player",
+                            "nbt": "{Tags:[\"Doom\"]}"
+                        }
+                    }
+                ],
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 6
+                    }
+                }
+            }
+        },
+        "RecallPotion": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 10
+                    }
+                }
+            }
+        },
+        "DeathDoom": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 50
+                    }
+                }
+            }
+        },
+        "DoomEx": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 100
+                    }
+                }
+            }
+        },
+        "ManaErosion": {
+            "trigger": "minecraft:effects_changed",
+            "conditions": {
+                "effects": {
+                    "minecraft:invisibility": {
+                        "amplifier": 120
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "Doom",
+            "Elixir_1",
+            "Elixir_2",
+            "Ether_1",
+            "Ether_2",
+            "Ether_3",
+            "HolyWater",
+            "RecallPotion",
+            "DeathDoom",
+            "DoomEx",
+            "ManaErosion"
+        ]
+    ],
+    "rewards": {
+        "function": "player_manager:effect/invisible/"
+    }
+}

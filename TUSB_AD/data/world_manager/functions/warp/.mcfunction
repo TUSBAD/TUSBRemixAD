@@ -4,9 +4,9 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### オーバーワールドでのチェック
-execute if entity @s[nbt={Dimension:"minecraft:overworld"}] run function world_manager:warp/overworld/
+execute if entity @s[predicate=world_manager:area/overworld] run function world_manager:warp/overworld/
 ### ネザーでのチェック
-execute if entity @s[nbt={Dimension:"minecraft:the_nether"}] run function world_manager:warp/the_nether/
+execute if entity @s[predicate=world_manager:area/the_nether] run function world_manager:warp/the_nether/
 
 ### 移動していたら実行地点より遠くにいるはず
 title @s[distance=5..] actionbar "わあああああああぷ！！"

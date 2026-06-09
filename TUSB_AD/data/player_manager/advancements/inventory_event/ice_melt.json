@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "ice_melt": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:lava_bucket"
+                        ],
+                        "nbt": "{display:{Name:'{\"text\":\"§4§lコオリトカース\"}'}}"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "ice_melt"
+        ]
+    ],
+    "rewards": {
+        "function": "world_manager:warp/overworld/unlock_tocult/"
+    }
+}
