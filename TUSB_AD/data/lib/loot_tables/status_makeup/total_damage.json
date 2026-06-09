@@ -18,7 +18,12 @@
                                         "objective": "Damage",
                                         "name": "@s"
                                     },
-                                    "color": "red"
+                                    "color": "dark_red"
+                                },
+                                {
+                                    "font": "damage_pop:",
+                                    "text": " !",
+                                    "color": "dark_red"
                                 }
                             ]
                         }

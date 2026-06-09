@@ -5,10 +5,10 @@
 # @within tags function minecraft:tick
 
 # カスタム体力へのダメージ処理
-    execute as @e[type=#lib:mob,tag=CustomHealth] at @s run function mob_manager:custom_health/
+    execute as @e if predicate lib:custom_health at @s run function mob_manager:custom_health/
 
-# armor_standテキストの処理
-    execute as @e[type=armor_stand,tag=LogStand] at @s run function mob_manager:custom_health/log/tick
+# Logテキストの処理
+    execute as @e if predicate lib:log_stand at @s run function mob_manager:custom_health/log/tick
 
 # マジックシールドのチェック
     execute as @a[tag=MagicShield] run effect give @s minecraft:resistance 1 100
