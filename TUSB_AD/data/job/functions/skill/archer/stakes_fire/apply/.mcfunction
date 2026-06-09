@@ -15,9 +15,9 @@ execute if score _ ActivatedSkill matches 3202..3209 if predicate lib:random/sta
 
 # タグ判別追加
 ### 負け
-execute if data storage tusb_remake: {stakes_result:false} anchored eyes positioned ^ ^ ^ anchored feet as @e[distance=..2,type=#lib:arrow,tag=!StatesFire,nbt={life:0s},sort=nearest,limit=1] run function job:skill/archer/stakes_fire/apply/lose
+execute if data storage tusb_remake: {stakes_result:false} anchored eyes positioned ^ ^ ^ anchored feet as @e[distance=..2,type=#lib:arrow,tag=!StatesFire,sort=nearest,limit=1] if predicate job:is_life_0 run function job:skill/archer/stakes_fire/apply/lose
 ### 勝ち
-execute if data storage tusb_remake: {stakes_result:true} anchored eyes positioned ^ ^ ^ anchored feet as @e[distance=..2,type=#lib:arrow,tag=!StatesFire,nbt={life:0s},sort=nearest,limit=1] run function job:skill/archer/stakes_fire/apply/win
+execute if data storage tusb_remake: {stakes_result:true} anchored eyes positioned ^ ^ ^ anchored feet as @e[distance=..2,type=#lib:arrow,tag=!StatesFire,sort=nearest,limit=1] if predicate job:is_life_0 run function job:skill/archer/stakes_fire/apply/win
 
 ### ステークスファイアの演出有効化
 function job:skill/archer/stakes_fire/schedule/

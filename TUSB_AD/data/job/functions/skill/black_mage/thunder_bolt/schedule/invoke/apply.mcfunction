@@ -11,5 +11,5 @@ particle minecraft:item minecraft:sunflower ~ ~2 ~ 0 0.1 0 2 30 force @a[distanc
 particle crit ~ ~4 ~ 0.1 2 0.1 0.0 90 force
 
 ### ダメージを与える
-execute unless entity @s[nbt={ActiveEffects:[{Id:23}]}] run function score_damage:api/attack
-effect give @s saturation 10 0 false 
+execute unless entity @s[predicate=job:is_saturation] run function score_damage:api/attack
+effect give @s saturation 10 0 false

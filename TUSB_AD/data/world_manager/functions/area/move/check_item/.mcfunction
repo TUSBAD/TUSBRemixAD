@@ -3,7 +3,7 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-### エリア処理持ち込み判定 BringItemError 
+### エリア処理持ち込み判定 BringItemError
 scoreboard players set @s[tag=IgnoreEnderChest] EnderChestOpened 0
 tag @s[tag=IgnoreEnderChest] remove IgnoreEnderChest
 
@@ -14,15 +14,15 @@ execute unless score _ TUSB matches 15.. run tag @s[scores={AreaChangeFlag=11},g
 execute unless score _ TUSB matches 15.. run tellraw @s[scores={AreaChangeFlag=11},tag=NotCaptureIsland,gamemode=!creative,gamemode=!spectator] {"text": "１５島の攻略が必要です！"}
 
 # アイテム検知
-tag @s[scores={AreaChangeFlag=11},nbt={Inventory:[{}]},gamemode=!creative,gamemode=!spectator] add BringItemError
-tag @s[scores={AreaChangeFlag=11,EnderChestOpened=1..},nbt={EnderItems:[{}]},gamemode=!creative] add BringItemError
+tag @s[scores={AreaChangeFlag=11},predicate=player_manager:has_inventory,gamemode=!creative,gamemode=!spectator] add BringItemError
+tag @s[scores={AreaChangeFlag=11,EnderChestOpened=1..},predicate=player_manager:has_ender_item,gamemode=!creative] add BringItemError
 
 tellraw @s[scores={AreaChangeFlag=11},tag=BringItemError] [{"text":"エンダーチェスト内を含む","color":"red","bold":true},"\n",{"text":"アイテム持ち込み禁止エリアです！","color":"red","bold":true}]
 tp @s[scores={AreaChangeFlag=11},tag=BringItemError] -139 15 39 270 0
 tp @s[scores={AreaChangeFlag=11},tag=NotCaptureIsland] -139 15 39 270 0
 
 ### ネザーアスレチックに移動した時
-tag @s[scores={AreaChangeFlag=-90},nbt={Inventory:[{}]},gamemode=!creative] add BringItemError
+tag @s[scores={AreaChangeFlag=-90},predicate=player_manager:has_inventory,gamemode=!creative] add BringItemError
 tp @s[scores={AreaChangeFlag=-90},tag=BringItemError] 1.0 22.5 27.5 180 -20
 tellraw @s[scores={AreaChangeFlag=-90},tag=BringItemError] {"text":"アイテム持ち込み禁止エリアです！","color":"red","bold":true}
 

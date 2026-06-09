@@ -18,7 +18,7 @@
     execute as @a[scores={HP=1..,Hunger=0..}] run function player_manager:death/apply_hunger
 
 # 経験値取得処理
-    execute as @a[nbt={Inventory:[{id:"minecraft:nether_star"}]}] at @s run function player_manager:job/pick_exp/
+    execute as @a[predicate=player_manager:has_netherstar] at @s run function player_manager:job/pick_exp/
 
 # レベルアップ処理
     execute as @a[scores={ExpToLevel=..0,Job=1..}] at @s run function player_manager:job/level_up/
@@ -63,7 +63,7 @@
     execute positioned 39 7 67 if entity @a[distance=..10,limit=1] run function world_manager:dimension/skylands/sealed_alter/
 
 # 透明化＆エーテル Invisible
-    execute as @a[nbt={ActiveEffects:[{Id:14}]}] at @s run function player_manager:effect/invisible/
+    execute as @a[predicate=player_manager:effects/is_invisibility] at @s run function player_manager:effect/invisible/
 
 # 奈落防止
     execute as @e[tag=AbyssWarp] at @s positioned ~-0.5 -70 ~-0.5 run tp @s[dy=-29] @p
@@ -75,7 +75,7 @@
     execute as @e[tag=Freeze] run data merge entity @s {Motion:[0d,0d,0d]}
 
 # leap(跳躍妨害)
-    execute at @e[tag=leap] run effect give @a[distance=..7,nbt={ActiveEffects:[{Id:8,Amplifier:0b}]}] levitation 10 236
+    execute at @e[tag=leap] run effect give @a[distance=..7,predicate=player_manager:effects/is_jump_boost] levitation 10 236
     execute at @e[tag=leap] run effect clear @a[distance=..32] jump_boost
 
 # ボスチーム

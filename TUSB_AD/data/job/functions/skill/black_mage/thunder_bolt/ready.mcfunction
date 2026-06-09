@@ -4,8 +4,8 @@
 ### This software is released under the MIT License, see LICENSE.
 
 summon minecraft:arrow ~ ~ ~ {Fire:20s,life:1190s,damage:0d,Tags:[ThunderBolt,SystemEntity,TypeChecked]}
-scoreboard players operation @e[distance=0,type=arrow,tag=ThunderBolt,nbt={Fire:20s},limit=1] ActivatedSkill = @s ActivatedSkill
+scoreboard players operation @e[distance=0,type=arrow,tag=ThunderBolt,predicate=job:is_on_fire,limit=1] ActivatedSkill = @s ActivatedSkill
 execute store result score _ TUSB run time query gametime
-execute store result score @e[distance=0,type=arrow,tag=ThunderBolt,nbt={Fire:20s},limit=1] TUSB run scoreboard players add _ TUSB 2
+execute store result score @e[distance=0,type=arrow,tag=ThunderBolt,predicate=job:is_on_fire,limit=1] TUSB run scoreboard players add _ TUSB 2
 
 execute in minecraft:overworld run schedule function job:skill/black_mage/thunder_bolt/schedule/ 2t

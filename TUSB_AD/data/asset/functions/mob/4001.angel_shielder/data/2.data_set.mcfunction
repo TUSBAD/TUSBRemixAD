@@ -129,7 +129,7 @@
     data modify storage asset: mob.Active_effects append value {id: 28, amplifier: 0b, duration: -1, show_particles: 0b}
 
 # 演出用AEC、
-    data modify storage asset: mob.Passengers set value [{id:"area_effect_cloud",duration:100,Particle:"end_rod",Radius:0.1},{id:"potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{Custom_Potion_Effects:[{Id:7,Amplifier:1b,Duration:1},{Id:17,Amplifier:0b,Duration:100}]}}}]
+    data modify storage asset: mob.Passengers set value [{id:"area_effect_cloud",duration:100,Particle:"end_rod",Radius:0.1},{id:"potion",Item:{id:"minecraft:splash_potion",Count:1b,tag:{Custom_Potion_Effects:[{id:"minecraft:instant_damage",amplifier:1b,duration:1},{id:"minecraft:hunger",amplifier:0b,duration:100}]}}}]
 
 # スポナーから湧かせるための設定をします
     data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}

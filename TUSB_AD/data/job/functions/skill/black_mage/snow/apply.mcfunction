@@ -11,7 +11,7 @@
 # execute rotated ~ 0 positioned ^1.0 ^ ^1.5 run fill ~ ~ ~ ~ ~1 ~ minecraft:snow_block keep
 # execute rotated ~ 0 positioned ^1.5 ^ ^1.5 run fill ~ ~ ~ ~ ~1 ~ minecraft:snow_block keep
 
-summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,RadiusOnUse:0f,DurationOnUse:0,Duration:100,RadiusPerTick:0f,WaitTime:0,Age:0,Particle:"minecraft:end_rod",CustomName:'',CustomNameVisible:true,Tags:[Snow,TypeChecked]}
+summon minecraft:area_effect_cloud ~ ~ ~ {Radius:0.0f,RadiusOnUse:0f,DurationOnUse:0,duration:100,RadiusPerTick:0f,WaitTime:0,Age:0,Particle:"minecraft:end_rod",CustomName:'',CustomNameVisible:true,Tags:[Snow,TypeChecked]}
 execute as @e[distance=..0.01,type=area_effect_cloud,tag=Snow] run tp @s ~ ~ ~ ~ 0
 
 ### スノウの判定を有効化

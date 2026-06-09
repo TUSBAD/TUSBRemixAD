@@ -1,12 +1,12 @@
 #> mob_manager:gimmic/tick/potion_barrier
 # ボスチームに近付いたポーションが発動するfunction
 
-data modify storage _: _ set from entity @s Item.tag.CustomPotionEffects
+data modify storage _: _ set from entity @s Item.tag.custom_potion_effects
 
-execute if data storage _: {_:[{Id:7b,Amplifier:10b}]} run data modify storage _: _ set value true
-execute if data storage _: {_:[{Id:6b,Amplifier:10b}]} run data modify storage _: _ set value true
-execute if data storage _: {_:[{Id:7b,Amplifier:29b}]} run data modify storage _: _ set value true
-execute if data storage _: {_:[{Id:6b,Amplifier:29b}]} run data modify storage _: _ set value true
+execute if data storage _: {_:[{id:"minecraft:instant_damage",amplifier:10b}]} run data modify storage _: _ set value true
+execute if data storage _: {_:[{Id:6b,amplifier:10b}]} run data modify storage _: _ set value true
+execute if data storage _: {_:[{id:"minecraft:instant_damage",amplifier:29b}]} run data modify storage _: _ set value true
+execute if data storage _: {_:[{Id:6b,amplifier:29b}]} run data modify storage _: _ set value true
 
 execute if data storage _: {_:true} as @e[limit=1,sort=nearest,team=Boss] run me はポーションを無効化した！
 execute if data storage _: {_:true} at @s run playsound entity.splash_potion.break player @a[distance=..32] ~ ~ ~

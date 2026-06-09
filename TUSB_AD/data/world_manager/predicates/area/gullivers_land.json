@@ -1,7 +1,7 @@
 {
 	"condition": "minecraft:location_check",
 	"predicate": {
-		"dimension": "minecraft:overworld",
+		"dimension": "world_manager:gullivers_land",
 		"position": {
 			"x": {
 				"min": -240,

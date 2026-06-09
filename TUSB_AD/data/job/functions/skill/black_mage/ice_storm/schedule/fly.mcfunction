@@ -17,6 +17,6 @@ execute if entity @s[tag=IceStorm1] run data modify storage score_damage: Argume
 execute if entity @s[tag=IceStorm2] run data modify storage score_damage: Argument set value {Damage:30.00,DamageType:"Projectile"}
 execute if entity @s[tag=IceStorm3] run data modify storage score_damage: Argument set value {Damage:45.00,DamageType:"Projectile"}
 
-execute as @e[distance=..8,type=#lib:mob,type=!#lib:resist_ice,tag=Enemy,nbt=!{ActiveEffects:[{Id:23}]}] at @s run function job:skill/black_mage/ice_storm/schedule/hit
+execute as @e[distance=..8,type=#lib:mob,type=!#lib:resist_ice,tag=Enemy] unless predicate job:is_saturation at @s run function job:skill/black_mage/ice_storm/schedule/hit
 
 data modify storage tusb_remake: _ set value true

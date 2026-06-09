@@ -10,3 +10,6 @@
 [submodule "CloseDetector"]
 	path = CloseDetector
 	url = https://github.com/Ai-Akaishi/CloseDetector.git
+[submodule "AiUtil"]
+	path = AiUtil
+	url = https://github.com/Ai-Akaishi/AiUtil.git

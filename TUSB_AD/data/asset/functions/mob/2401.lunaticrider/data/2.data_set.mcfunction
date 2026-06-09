@@ -6,7 +6,7 @@
 data remove storage asset: mob
 
 # ここに取ってきたデータを入れる。取得用コマンド：/data get entity @e[type=minecraft:spawner_minecart,limit=1,sort=nearest,distance=..6] SpawnData.entity
-data modify storage asset: mob set value {Passengers: [{Passengers: [{Particle: "portal", Radius: 1.0f, Passengers: [{ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], CustomName: '{"text":"Grumm"}', Health: 800.0f, ArmorItems: [{}, {}, {}, {id: "minecraft:player_head", Count: 1b, tag: {SkullOwner: {Id: [I; 1946982408, 368395934, -1883763283, -439833668], Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRjNTc1YzhiM2ExOTVmM2Q5YmU3YWE0ZTg4NDllNGMyNWZjZGE0YTM0N2I2YmVmZDA2ZGQ4NmY5ODhjYjY5NiJ9fX0="}]}}}}], Attributes: [{Base: 800, Name: "generic.max_health"}], Silent: 1b, id: "minecraft:pillager", ActiveEffects: [{ShowParticles: 0b, Duration: 20000, Id: 14, Amplifier: 0b}], HandItems: [{id: "minecraft:crossbow", Count: 1b, tag: {Enchantments: [{lvl: 30s, id: "minecraft:power"}, {lvl: 30s, id: "minecraft:punch"}, {lvl: 10s, id: "minecraft:multishot"}, {lvl: 10s, id: "minecraft:piercing"}, {lvl: 5s, id: "minecraft:quick_charge"}], Damage: 0}}, {id: "minecraft:tipped_arrow", Count: 64b, tag: {CustomPotionEffects: [{Duration: 180, Id: 17, Amplifier: 10b}, {Duration: 180, Id: 19, Amplifier: 10b}, {Duration: 180, Id: 20, Amplifier: 10b}, {Duration: 180, Id: 33, Amplifier: 10b}], CustomPotionColor: 10093567, Potion: "minecraft:empty"}}]}], Duration: 10000, id: "minecraft:area_effect_cloud"}], CustomName: '{"text":"ルナティックライダー","color":"dark_blue","bold":true}', Health: 300.0f, Attributes: [{Base: 300, Name: "generic.max_health"}, {Base: 40, Name: "generic.attack_damage"}], Silent: 1b, id: "minecraft:vex", ActiveEffects: [{ShowParticles: 0b, Duration: 4000000, Id: 14, Amplifier: 1b}]}], id: "minecraft:villager", Tags: ["Garbage"]}
+data modify storage asset: mob set value {Passengers: [{Passengers: [{Particle: "portal", Radius: 1.0f, Passengers: [{ArmorDropChances: [0.085f, 0.085f, 0.085f, 0.085f], CustomName: '{"text":"Grumm"}', Health: 800.0f, ArmorItems: [{}, {}, {}, {id: "minecraft:player_head", Count: 1b, tag: {SkullOwner: {Id: [I; 1946982408, 368395934, -1883763283, -439833668], Properties: {textures: [{Value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmRjNTc1YzhiM2ExOTVmM2Q5YmU3YWE0ZTg4NDllNGMyNWZjZGE0YTM0N2I2YmVmZDA2ZGQ4NmY5ODhjYjY5NiJ9fX0="}]}}}}], Attributes: [{Base: 800, Name: "generic.max_health"}], Silent: 1b, id: "minecraft:pillager", active_effects: [{show_particles: 0b, duration: 20000, Id: 14, amplifier: 0b}], HandItems: [{id: "minecraft:crossbow", Count: 1b, tag: {Enchantments: [{lvl: 30s, id: "minecraft:power"}, {lvl: 30s, id: "minecraft:punch"}, {lvl: 10s, id: "minecraft:multishot"}, {lvl: 10s, id: "minecraft:piercing"}, {lvl: 5s, id: "minecraft:quick_charge"}], Damage: 0}}, {id: "minecraft:tipped_arrow", Count: 64b, tag: {custom_potion_effects: [{duration: 180, Id: 17, amplifier: 10b}, {duration: 180, Id: 19, amplifier: 10b}, {duration: 180, Id: 20, amplifier: 10b}, {duration: 180, Id: 33, amplifier: 10b}], CustomPotionColor: 10093567, Potion: "minecraft:empty"}}]}], duration: 10000, id: "minecraft:area_effect_cloud"}], CustomName: '{"text":"ルナティックライダー","color":"dark_blue","bold":true}', Health: 300.0f, Attributes: [{Base: 300, Name: "generic.max_health"}, {Base: 40, Name: "generic.attack_damage"}], Silent: 1b, id: "minecraft:vex", active_effects: [{show_particles: 0b, duration: 4000000, Id: 14, amplifier: 1b}]}], id: "minecraft:villager", Tags: ["Garbage"]}
 
 # この下のコメント郡は無視！mobを編集する時には使うよ
 
@@ -87,7 +87,7 @@ data modify storage asset: mob set value {Passengers: [{Passengers: [{Particle: 
 # data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
 
 
-### ActiveEffects
+### active_effects
 # 直接nbtを指定して追加します
 #effect一覧
     #{Name:speed,id:1} 移動速度上昇 +lv*20%
@@ -124,12 +124,12 @@ data modify storage asset: mob set value {Passengers: [{Passengers: [{Particle: 
     #{Name:hero_of_the_village,id:32} 村の英雄
     #{Name:darkness,id:33} 暗闇
     # 詳しくはwiki見てね！
-# data modify storage asset: mob.ActiveEffects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
-# data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:0,amplifier:1,duration:600,show_particles:0b}
+# data modify storage asset: mob.active_effects append value {id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}
 # 或いは...
-# data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+# data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
-# Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
+# Id,amplifier,duration,show_icon,ShowParticle,ambient
 
 
 ### Passengers
@@ -148,8 +148,8 @@ data modify storage asset: mob set value {Passengers: [{Passengers: [{Particle: 
 # 次のmobがasset mobなら先程の手順を繰り返します。そうでなければ、直接nbtを指定します
 # 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
 # data modify storage asset: mob.id set value "area_effect_cloud"
-# data modify storage asset: mob set value {Duration:32767,WatiTime:0,Particle:"end_rod"}
-# data modify storage asset: mob.Effects set value [{Id:1,Amplifier:1,Duration:1}]
+# data modify storage asset: mob set value {duration:32767,WatiTime:0,Particle:"end_rod"}
+# data modify storage asset: mob.effects set value [{id:"minecraft:speed",amplifier:1,duration:1}]
 # data modify storage _: _.Passengers append from storage asset: mob
 # 最後に、mobデータを戻して避難用storageを削除します
 # data modify storage asset: mob set from storage _: _

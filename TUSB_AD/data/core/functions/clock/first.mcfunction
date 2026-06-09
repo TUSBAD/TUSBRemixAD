@@ -7,7 +7,7 @@
     execute as @a[tag=PortalCheck] at @s run function world_manager:warp/
 
 # 強制的に消したいアイテムをドロップしていたら消す(インベントリ内の場合は進捗で消す)
-    execute as @a[scores={Drop=1..}] at @s anchored eyes positioned ^ ^ ^ run kill @e[distance=..2,type=item,nbt={Item:{tag:{ForceVanishing:true}}}]
+    execute as @a[scores={Drop=1..}] at @s anchored eyes positioned ^ ^ ^ run kill @e[distance=..2,type=item,predicate=lib:force_vanishing]
     scoreboard players reset @a Drop
 
 # アスレチックのバードケージでエリトラの飛べるタイミングを昔と同じにする
@@ -19,10 +19,10 @@
 # 不滅
     # TypeCheckedされると不都合なのでここ
     # 使用しても消えないようになるエンチャント
-    tag @a[nbt={SelectedItem:{tag:{Undying:true}}}] add Undying
+    tag @a[predicate=player_manager:has_undying] add Undying
     execute as @a[tag=Undying] at @s unless predicate player_manager:open_container run function player_manager:custom_item/undying/
     tag @a[tag=Undying] remove Undying
-    tag @a[nbt={SelectedItem:{tag:{Undying:true}}}] add Undying
+    tag @a[predicate=player_manager:has_undying] add Undying
 
 # TypeCheck 新しくでてきた敵に色々設定するやつ
     execute as @e[type=!#lib:ignore_type_check,type=!area_effect_cloud,tag=!TypeChecked] at @s run function mob_manager:entity/type_check
@@ -33,6 +33,7 @@
     function mob_manager:delete/
 
 # エリア変更判定
+#todo:カスタムディメを増やしたらいじります。
     scoreboard players set @a[scores={USBDimension=0..},nbt={Dimension:"minecraft:the_nether"}] AreaChangeFlag -100
     scoreboard players set @a[predicate=world_manager:area/move/end] AreaChangeFlag 110
     scoreboard players set @a[scores={USBDimension=..-1},nbt={Dimension:"minecraft:overworld"}] AreaChangeFlag 0

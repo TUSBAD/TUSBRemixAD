@@ -4,6 +4,6 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ## TODO: 発射できないor奈落？
-execute if entity @e[type=phantom,tag=Glider,nbt=!{PortalCooldown:0}] run data modify storage tusb_remake: _ set value true
+execute if entity @e[type=phantom,tag=Glider] if predicate lib:is_cooldown_0 run data modify storage tusb_remake: _ set value true
 
-kill @e[type=phantom,tag=Glider,nbt={PortalCooldown:0}]
+kill @e[type=phantom,tag=Glider,predicate=lib:is_cooldown_0]

@@ -10,4 +10,4 @@ execute positioned 198 138 -25 run fill ~ ~ ~ ~10 ~8 ~10 minecraft:air replace m
 execute positioned 198 138 -25 run fill ~ ~ ~ ~10 ~8 ~10 minecraft:air replace minecraft:barrier
 fill 203 145 -20 203 146 -20 minecraft:air
 ### お知らせ
-tellraw @a {"translate":"氷が解けて\n%1$sへ行けるようになった！","color":"aqua","with":[{"text":"トカルトコルデ","bold":true}]}
+tellraw @a {"translate":"氷が解けて\n%1$sへ行けるようになった...?","color":"aqua","with":[{"text":"トカルトコルデ","bold":true}]}
