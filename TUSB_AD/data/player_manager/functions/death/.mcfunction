@@ -33,6 +33,9 @@ advancement revoke @s[advancements={close_detector:open=true}] only close_detect
 
 ### 死の宣告がかかっていたら消す
 tag @s[tag=Doom] remove Doom
+execute if entity @s[tag=DoomEx] run function #oh_my_dat:please
+execute if entity @s[tag=DoomEx] run data remove storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.DoomEX
+tag @s[tag=DoomEx] remove DoomEx
 ### リレイズの効果がかかっていたらレイズをかける
 tag @s[tag=ReRaise] add CastRaise
 tag @s[tag=ReRaise] remove ReRaise

@@ -60,6 +60,7 @@
 
 # 死の宣告
     execute as @a[tag=Doom] run function player_manager:effect/invisible/doom/default
+    execute as @a[tag=DoomEx] run function player_manager:effect/invisible/doom_ex/count
 
 # サバイバルスポナー処理
     execute as @e[tag=SpawnerCore] at @s if block ~ ~ ~ minecraft:air run kill @e[distance=..0.99,tag=Spawner,limit=2,sort=nearest]

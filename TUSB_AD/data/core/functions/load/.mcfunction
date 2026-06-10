@@ -22,6 +22,7 @@ execute in minecraft:overworld run schedule function core:load/block_settings 3s
 
 ### １秒タイマーをスケジュール
 execute in minecraft:overworld run schedule function core:clock/sec 1s
+execute in minecraft:overworld run schedule function core:clock/half_sec 10t
 
 ### アップデートを確認
 # デバッグモードなら実行しない
