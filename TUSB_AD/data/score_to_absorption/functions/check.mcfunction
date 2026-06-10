@@ -12,10 +12,8 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
+effect clear @s minecraft:absorption
+effect give @s minecraft:absorption infinite 255 true
 execute store result score #_ ScoreToAbsorption run attribute @s minecraft:generic.max_absorption get 100
-execute store result score #__ ScoreToAbsorption run data get entity @s AbsorptionAmount 100
-scoreboard players operation #__ ScoreToAbsorption -= #_ ScoreToAbsorption
 
-execute if score #__ ScoreToAbsorption matches ..0 unless entity @s[tag=ScoreToAbsorption.AntiGlitch.UnsafeTick] run function score_to_absorption:modify
-tag @s remove ScoreToAbsorption.AntiGlitch.UnsafeTick
-execute if score #__ ScoreToAbsorption matches 1.. run function score_to_absorption:anti_glitch/protect
+function score_to_absorption:modify

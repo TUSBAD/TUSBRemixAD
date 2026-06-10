@@ -110,6 +110,5 @@ execute store result score #_ ScoreToAbsorption run attribute @s minecraft:gener
 execute if score @s ScoreToAbsorption <= #_ ScoreToAbsorption run attribute @s minecraft:generic.max_absorption modifier add 00000002-0000-0000-0001-00 "ScoreToAbsorption" -0.0001 add
 execute if score @s ScoreToAbsorption > #_ ScoreToAbsorption run attribute @s minecraft:generic.max_absorption modifier add 00000002-0000-0000-0001-00 "ScoreToAbsorption" 0.0001 add
 
-effect give @s minecraft:instant_health 1 252 true
 tag @s add ScoreToAbsorption.Modified
 scoreboard players reset @s ScoreToAbsorption
