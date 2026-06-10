@@ -1,4 +1,8 @@
-#> asset:mob/1000.ad_example/data/2.data_set
+#> asset:custom_mob/0001.example/data/
+#
+# mobの設定
+#
+# @within function asset:custom_mob/0001.example/trigger/data/
 
 ## reset
 data remove storage asset: mob
@@ -6,7 +10,7 @@ data remove storage asset: mob
 ## data_set
 data modify storage asset: mob.id set value "minecraft:zombie"
 data modify storage asset: mob.Health set value 1
-data modify storage asset: mob.AbsorptionAmount set value 1000
+data modify storage asset: mob.AbsorptionAmount set value 1
 data modify storage asset: mob.NoAI set value true
 # data modify storage asset: mob.Invulnerable set value true
 data modify storage asset: mob.Silent set value true
@@ -15,7 +19,7 @@ data modify storage asset: mob.PersistenceRequired set value true
 data modify storage asset: mob.CustomName set value '{"text":"§5カカシ §d-another-"}'
 data modify storage asset: mob.CustomNameVisible set value true
 data modify storage asset: mob.DeathLootTable set value "empty"
-data modify storage asset: mob.Tags set value ["CustomHealth"]
+data modify storage asset: mob.Tags set value ["CustomHealth","ShieldTried"]
 # data modify storage asset: mob.PortalCooldown set value 0
 
 ## attributes_set
