@@ -23,7 +23,7 @@ execute if entity @s[advancements={player_manager:effects/invisible={ManaErosion
 ### 聖水
 execute if entity @s[advancements={player_manager:effects/invisible={HolyWater=true}}] run function player_manager:effect/invisible/doom/clear
 ### 黄金酒の聖水
-
+execute if entity @s[advancements={player_manager:effects/invisible={GoldWater=true}}] run function player_manager:effect/invisible/dommex/clear
 ### リコール
 execute if entity @s[advancements={player_manager:effects/invisible={RecallPotion=true}}] run function player_manager:effect/invisible/recall_potion/give
 
