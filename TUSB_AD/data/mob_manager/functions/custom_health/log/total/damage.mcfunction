@@ -5,7 +5,7 @@
 # @within function mob_manager:custom_health/reset
 
 # summon
-    summon minecraft:text_display ~ ~2.1 ~ {see_through:true,background:0,alignment:center,billboard:center,brightness:{block:15,sky:15},text:'""',Tags:["LogDisplay", "DamageLog", "LongShow","TypeChecked","SystemEntity"]}
+    summon minecraft:text_display ~ ~2.1 ~ {see_through:true,background:0,alignment:center,billboard:center,brightness:{block:15,sky:15},text:'""',Tags:["LogDisplay", "DamageLog", "LongShow","TypeChecked","SystemEntity"],transformation:{translation:[0.0f,0.0f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.8f,1.8f,1.8f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
 
 # スコアを移動
     scoreboard players operation @s Damage = @s ShowDamage

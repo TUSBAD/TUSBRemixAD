@@ -24,6 +24,7 @@ data modify storage asset: mob.Tags set value ["CustomHealth","ShieldTried"]
 
 ## attributes_set
 data modify storage asset: mob.Attributes append value {Name:generic.max_health, Base:1}
+data modify storage asset: mob.Attributes append value {Name:generic.max_absorption, Base:2048}
 data modify storage asset: mob.Attributes append value {Name:generic.attack_damage, Base:0}
 data modify storage asset: mob.Attributes append value {Name:generic.movement_speed, Base:0}
 data modify storage asset: mob.Attributes append value {Name:generic.armor, Base:0}
