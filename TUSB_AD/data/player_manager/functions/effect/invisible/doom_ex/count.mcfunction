@@ -16,11 +16,11 @@ title @s[scores={DoomEx=0..10}] title [{"text":"☠ ","color":"#7500df","italic"
 title @s[scores={DoomEx=0..10}] subtitle ""
 
 # 効果音
-playsound minecraft:block.comparator.click player @s[scores={DoomEx=31..61}] ~ ~ ~ 0.5 1 0.0
-playsound minecraft:block.anvil.land player @s[scores={DoomEx=11..30}] ~ ~ ~ 0.5 1.414 0.0
-playsound minecraft:block.conduit.deactivate player @s[scores={DoomEx=0..10}] ~ ~ ~ 0.5 0.15 0.0
-playsound minecraft:entity.elder_guardian.curse player @s[scores={DoomEx=0..10}] ~ ~ ~ 0.25 1.5 0.0
-playsound minecraft:item.shield.break player @s[scores={DoomEx=0..10}] ~ ~ ~ 0.25 0 0.0
+playsound minecraft:block.bell.use player @s[scores={DoomEx=31..61}] ~ ~ ~ 0.5 0.5 0.5
+playsound minecraft:entity.warden.heartbeat player @s[scores={DoomEx=11..30}] ~ ~ ~ 0.5 1.25 0.5
+playsound minecraft:block.conduit.deactivate player @s[scores={DoomEx=0..10}] ~ ~ ~ 0.5 0.15 0.5
+playsound minecraft:entity.elder_guardian.curse player @s[scores={DoomEx=0..10}] ~ ~ ~ 0.25 1.5 0.5
+playsound minecraft:item.shield.break player @s[scores={DoomEx=0..10}] ~ ~ ~ 0.25 0 0.5
 
 # 明示的にリセット
 tag @s[scores={DoomEx=..0}] remove DoomEx

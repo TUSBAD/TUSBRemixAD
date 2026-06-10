@@ -11,7 +11,7 @@ title @s[scores={DoomSecond=..0,Doom=10..}] actionbar [{"text":"☠ ","color":"#
 title @s[scores={DoomSecond=..0,Doom=0..9}] actionbar [{"text":"☠ ","color":"#c60000","italic":false},{"text":"< ","color":"green","bold":true},{"text":"00","color":"#fe144f","bold":false,"italic":false},{"text":":","color":"green","bold":true,"italic":false},{"text":"0","color":"#fe144f","bold":false,"italic":false},{"score":{"name":"*","objective":"Doom"},"color":"#fe144f","bold":false,"italic":false},{"text":" >","color":"green","bold":true,"italic":false},{"text":" ☠","color":"#c60000","italic":false}]
 
 # カウント効果音
-playsound block.comparator.click player @s[scores={DoomSecond=..0,Doom=4..10}] ~ ~ ~ 1 1 1
+playsound minecraft:block.bell.use player @s[scores={DoomSecond=..0,Doom=4..10}] ~ ~ ~ 2 0.5 0.5
 playsound minecraft:block.conduit.deactivate player @s[scores={DoomSecond=..0,Doom=0..3}] ~ ~ ~ 1 0.15 0.5
 playsound minecraft:entity.elder_guardian.curse player @s[scores={DoomSecond=..0,Doom=0..3}] ~ ~ ~ 1 1.5 0.5
 playsound minecraft:item.shield.break player @s[scores={DoomSecond=..0,Doom=0..3}] ~ ~ ~ 1 0 0.5
