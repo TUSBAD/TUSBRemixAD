@@ -8,4 +8,5 @@ playsound entity.experience_orb.pickup master @a[distance=..16] ~ ~ ~ 1 1.08 0
 particle firework ~ ~1 ~ 1 1 1 0.1 200 force
 
 title @s times 10 50 20
-title @s title {"text":"= 白魔導士 =","color":"white"}
+title @s title ["",{"text":"= ","color":"white"},{"text":"W","font":"icon","color":"white"},{"text":" 白魔導士 ","color":"white"},{"text":"=","color":"white"}]
+title @s subtitle ["",{"text":"=","color":"white"},{"text":" White Mage ","color":"white"},{"text":"=","color":"white"}]

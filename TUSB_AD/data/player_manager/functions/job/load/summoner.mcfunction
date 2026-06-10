@@ -8,4 +8,5 @@ playsound minecraft:block.portal.ambient master @a[distance=..16] ~ ~ ~ 1 1.7 0
 particle minecraft:enchant ~ ~1.5 ~ 0.1 0.6 0.1 4 300 force
 
 title @s times 10 50 20
-title @s title {"text":"= 召喚士 =","color":"gold"}
+title @s title ["",{"text":"= ","color":"white"},{"text":"S","font":"icon","color":"#ffff09"},{"text":" 召喚士 ","color":"#ffff09"},{"text":"=","color":"white"}]
+title @s subtitle ["",{"text":"=","color":"white"},{"text":" Summoner ","color":"#ffff09"},{"text":"=","color":"white"}]

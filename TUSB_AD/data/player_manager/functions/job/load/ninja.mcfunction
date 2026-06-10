@@ -8,4 +8,5 @@ playsound minecraft:entity.firework_rocket.large_blast_far master @a[distance=..
 particle minecraft:explosion ~ ~1 ~ 1 1 1 0.1 200 force
 
 title @s times 10 50 20
-title @s title {"text":"= 忍者 =","color":"dark_green"}
+title @s title ["",{"text":"= ","color":"white"},{"text":"N","font":"icon","color":"#a433ff"},{"text":" 忍者 ","color":"#a433ff"},{"text":"=","color":"white"}]
+title @s subtitle ["",{"text":"=","color":"white"},{"text":" Ninja ","color":"#a433ff"},{"text":"=","color":"white"}]

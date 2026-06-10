@@ -8,4 +8,5 @@ playsound minecraft:entity.arrow.hit master @a[distance=..16] ~ ~ ~ 1 0.7 0
 particle minecraft:crit ~ ~1 ~ 1 1 1 1 200 force
 
 title @s times 10 50 20
-title @s title {"text":"= 狩人 =","color":"red"}
+title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#ff8f59"},{"text":" 狩人 ","color":"#ff8f59"},{"text":"=","color":"white"}]
+title @s subtitle ["",{"text":"=","color":"white"},{"text":" Archer ","color":"#ff8f59"},{"text":"=","color":"white"}]
