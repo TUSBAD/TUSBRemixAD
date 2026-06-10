@@ -17,6 +17,8 @@
 #       防御力/防具強度を無視するか否か, bool値
 #   Argument.BypassResistance: boolean
 #       耐性エフェクトを無視するか否か, bool値
+#   Argument.BypassAbsorption: boolean
+#       緩衝体力を無視するか否か, bool値
 # @context EPFが-1以下の時 EntityのProtectionを参照します
 # @api
 
@@ -31,5 +33,6 @@
     execute unless data storage score_damage: Argument.DisableParticle run data modify storage score_damage: Argument.DisableParticle set value 0b
     execute unless data storage score_damage: Argument.BypassArmor run data modify storage score_damage: Argument.BypassArmor set value 0b
     execute unless data storage score_damage: Argument.BypassResistance run data modify storage score_damage: Argument.BypassResistance set value 0b
+    execute unless data storage score_damage: Argument.BypassAbsorption run data modify storage score_damage: Argument.BypassAbsorption set value 0b
 # Healthを持つEntityであれば実行
     execute if data storage score_damage: Argument.Damage if entity @s[team=!Null] run function score_damage:core/attack

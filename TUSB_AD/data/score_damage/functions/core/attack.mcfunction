@@ -20,7 +20,8 @@
 # 与えるダメージの計算
     function score_damage:core/calc
 # Mobに適用
-    function score_damage:core/health_subtract
+    execute if score $AbsorptionAmount ScoreDamageCore matches 1.. run function score_damage:core/absorption_subtract
+    execute if score $Damage ScoreDamageCore matches 1.. run function score_damage:core/health_subtract
 # リセット
     scoreboard players reset $Damage ScoreDamageCore
     scoreboard players reset $Health ScoreDamageCore

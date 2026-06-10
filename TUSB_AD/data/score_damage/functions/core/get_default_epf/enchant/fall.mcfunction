@@ -4,6 +4,7 @@
 #
 # @within function score_damage:core/get_default_epf/
 
+data modify storage score_damage: Protection[][{id:"feather_falling"}].id set value "minecraft:feather_falling"
 # 0
     execute store result score $Temp ScoreDamageCore run data get storage score_damage: Protection[0][{id:"minecraft:feather_falling"}].lvl
     scoreboard players operation $Temp ScoreDamageCore *= $3 ScoreDamageCore

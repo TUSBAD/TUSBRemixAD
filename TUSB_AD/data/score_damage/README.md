@@ -1,14 +1,13 @@
+### ※このデータパックは [ChenCMD](https://github.com/ChenCMD) 様のデータパック [MCCMD-ScoreDamage](https://github.com/ChenCMD/MCCMD-ScoreDamage) をAbsorptionAmountに対応したものです。
+
 # MCCMD-ScoreDamage
 防御を貫通しないダメージを与えることのできるライブラリ
 
 対応バージョン: **1.16~**
 
----
-## DL
-[こちら](https://github.com/ChenCMD/MCCMD-ScoreDamage/releases/latest/download/MCCMD-ScoreDamage.zip)をDLしてください
-
 ## 依存ライブラリについて
-このライブラリでプレイヤーにダメージを与える場合、赤石愛氏作成の[ScoreToHealth](https://github.com/Ai-Akaishi/ScoreToHealth)を導入する必要があります。
+- このライブラリでプレイヤーにダメージを与える場合、赤石愛氏作成の[ScoreToHealth](https://github.com/Ai-Akaishi/ScoreToHealth)を導入する必要があります。
+- このライブラリでプレイヤーの緩衝体力にダメージを与える場合、ScoreToAbsorptionを導入する必要があります。
 
 ## 使い方
 
@@ -30,6 +29,7 @@
 |      Argument.BypassArmor |   x   |          boolean          | 防具による軽減を無視するか否か                                                                                                                                                                                                    |  `false`   |
 | Argument.BypassResistance |   x   |          boolean          | 耐性エフェクトによる軽減を無視するか否か                                                                                                                                                                                          |  `false`   |
 |  Argument.DisableParticle |   x   |          boolean          | ダメージを与えた際のパーティクルを無効化するか否か                                                                                                                                                                                |  `false`   |
+| Argument.BypassAbsorption |   x   |          boolean          | 緩衝体力を無視するか否か　　　                                                                                                                                                                                                    |  `false`   |
 
 #### DamageType
 * `"None"`
@@ -56,7 +56,7 @@
     data remove storage score_damage: Argument
 # 一切の軽減が不可能な8ダメージを一番近い村人に与える
   # 引数を設定
-    data modify storage score_damage: Argument set value {Damage:8.00,EPF:0,BypassArmor:true,BypassResistance:true}
+    data modify storage score_damage: Argument set value {Damage:8.00,EPF:0,BypassArmor:true,BypassResistance:true,Argument.BypassAbsorption:true}
   # 対象を実行者にしてfunctionを実行
     execute as @e[type=villager,sort=nearest,limit=1] run function score_damage:api/attack
   # 引数を明示的にリセット

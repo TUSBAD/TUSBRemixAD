@@ -15,6 +15,8 @@
 # 明示的に0に設定
     scoreboard players set $EPF ScoreDamageCore 0
 # ダメージ軽減の加算
+    # "protection"を"minecraft:protectionにする
+        data modify storage score_damage: Protection[][{id:"protection"}].id set value "minecraft:protection"
     # 0
         execute store result score $Temp ScoreDamageCore run data get storage score_damage: Protection[0][{id:"minecraft:protection"}].lvl
         scoreboard players operation $EPF ScoreDamageCore += $Temp ScoreDamageCore
