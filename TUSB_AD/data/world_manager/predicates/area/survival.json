@@ -12,6 +12,10 @@
 		{
 			"condition": "reference",
 			"name": "world_manager:area/nether"
+		},
+		{
+			"condition": "reference",
+			"name": "world_manager:area/skyland_high"
 		}
 	]
 }

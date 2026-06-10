@@ -1,0 +1,9 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{DisabledSlots: 2039326, Health: 1.0f, ArmorItems: [{tag: {AttributeModifiers: [{Name: \"minus\"}]}}]}"
+    }
+  }
+]

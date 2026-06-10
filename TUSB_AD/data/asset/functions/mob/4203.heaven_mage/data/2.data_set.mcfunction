@@ -7,7 +7,7 @@ data remove storage asset: mob
 
 # ここに取ってきたデータを入れる。取得用コマンド：/data get entity @e[type=minecraft:spawner_minecart,limit=1,sort=nearest,distance=..6] SpawnData.entity
 data modify storage asset: mob set value {}
-# 例：data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"デイドラ"}', CanBreakDoors: 1b, Health: 200.0f, ArmorItems: [{Id: "minecraft:leather_boots", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのブーツ"}'}, Damage: 0}}, {Id: "minecraft:leather_leggings", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのグリーヴ"}'}, Damage: 0}}, {Id: "minecraft:leather_chestplate", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのキュイラス"}'}, Damage: 0}}, {Id: "minecraft:damaged_anvil", Count: 65b, tag: {display: {Name: '{"text":"デイドラの兜"}'}}}], Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 10.0d, Name: "generic.attack_damage"}], Id: "minecraft:zombie", active_Effects: [{show_particles: 0b, Duration: 2000000000, Id: 14, Amplifier: 1b}, {show_particles: 0b, Duration: 2000000000, Id: "minecraft:fire_resistance", Amplifier: 1b}, {show_particles: 0b, Duration: 2000000000, Id: "minecraft:speed", Amplifier: 4b}, {show_particles: 0b, Duration: 2000000000, Id: "minecraft:jump_boost", Amplifier: 10b}], HandItems: [{Id: "minecraft:stone_sword", Count: 65b, tag: {display: {Name: '{"text":"アカヴィリ刀"}'}, Enchantments: [{lvl: 20s, Id: "minecraft:fire_aspect"}, {lvl: 20s, Id: "minecraft:knockback"}], Damage: 0}}], CustomNameVisible: 1b}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, Id: "minecraft:villager"}
+# 例：data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"デイドラ"}', CanBreakDoors: 1b, Health: 200.0f, ArmorItems: [{Id: "minecraft:leather_boots", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのブーツ"}'}, Damage: 0}}, {Id: "minecraft:leather_leggings", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのグリーヴ"}'}, Damage: 0}}, {Id: "minecraft:leather_chestplate", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのキュイラス"}'}, Damage: 0}}, {Id: "minecraft:damaged_anvil", Count: 65b, tag: {display: {Name: '{"text":"デイドラの兜"}'}}}], Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 10.0d, Name: "generic.attack_damage"}], Id: "minecraft:zombie", active_Effects: [{show_particles: 0b, duration: 2000000000, Id: 14, amplifier: 1b}, {show_particles: 0b, duration: 2000000000, Id: "minecraft:fire_resistance", amplifier: 1b}, {show_particles: 0b, duration: 2000000000, Id: "minecraft:speed", amplifier: 4b}, {show_particles: 0b, duration: 2000000000, Id: "minecraft:jump_boost", amplifier: 10b}], HandItems: [{Id: "minecraft:stone_sword", Count: 65b, tag: {display: {Name: '{"text":"アカヴィリ刀"}'}, Enchantments: [{lvl: 20s, Id: "minecraft:fire_aspect"}, {lvl: 20s, Id: "minecraft:knockback"}], Damage: 0}}], CustomNameVisible: 1b}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, Id: "minecraft:villager"}
 
 # この下のコメント郡は無視！mobを編集する時には使うよ
 
@@ -80,47 +80,47 @@ data modify storage asset: mob.id set value "witch"
 ### active_Effects
 # 直接nbtを指定して追加します
 #effect一覧
-    #{Name:speed,Id:1} 移動速度上昇 +lv*20%
-    #{Name:slowness,Id:2} 移動速度低下 -lv*15%
-    #{Name:haste,Id:3} 採掘速度上昇 +lv*20%
-    #{Name:mining_fatigue,Id:4} 採掘速度低下 1*0.3^lv
-    #{Name:strength,Id:5} 攻撃力上昇 +lv*3
-    #{Name:instant_health,Id:6} 即時回復 2^lv*2
-    #{Name:instant_damage,Id:7} 即時ダメージ 2^lv*3
-    #{Name:jump_boost,Id:8} 跳躍力上昇 1.25*(lv*0.5)
-    #{Name:nausea,Id:9} 吐き気
-    #{Name:regeneration,Id:10} 再生
-    #{Name:resistance,Id:11} 耐性 100-lv*20%
-    #{Name:fire_resistance,Id:12} 火炎耐性
-    #{Name:water_breathing,Id:13} 水中呼吸
-    #{Name:invisibility,Id:14} 透明化 player_manager:invisible
-    #{Name:blindness,Id:15} 盲目
-    #{Name:night_vision,Id:16} 暗視
-    #{Name:hunger,Id:17} 空腹
-    #{Name:weakness,Id:18} 弱体化 -lv*4
-    #{Name:poison,Id:19} 毒
-    #{Name:wither,Id:20} ウィザー
-    #{Name:health_boots,Id:21} 体力増強 +lv*4
-    #{Name:absorption,Id:22} 緩衝体力増加 +lv*4
-    #{Name:saturation,Id:23} 満腹度回復 +lv*1
-    #{Name:glowing,Id:24} 発光
-    #{Name:levitation,Id:25} 浮遊
-    #{Name:luck,Id:26} 運
-    #{Name:bad_luck,Id:27} 不運
-    #{Name:slow_falling,Id:28} 低速落下
-    #{Name:conduit_power,Id:29} コンジットパワー
-    #{Name:dolphins_grace,Id:30} イルカの好意
-    #{Name:bad_omen,Id:31} 不吉な予感
-    #{Name:hero_of_the_village,Id:32} 村の英雄
-    #{Name:darkness,Id:33} 暗闇
+    #{Name:speed,id:"minecraft:speed"} 移動速度上昇 +lv*20%
+    #{Name:slowness,id:"minecraft:slowness"} 移動速度低下 -lv*15%
+    #{Name:haste,id:"minecraft:haste"} 採掘速度上昇 +lv*20%
+    #{Name:mining_fatigue,id:"minecraft:mining_fatigue"} 採掘速度低下 1*0.3^lv
+    #{Name:strength,id:"minecraft:strength"} 攻撃力上昇 +lv*3
+    #{Name:instant_health,id:"minecraft:instant_health"} 即時回復 2^lv*2
+    #{Name:instant_damage,id:"minecraft:instant_damage"} 即時ダメージ 2^lv*3
+    #{Name:jump_boost,id:"minecraft:jump_boost"} 跳躍力上昇 1.25*(lv*0.5)
+    #{Name:nausea,id:"minecraft:nausea"} 吐き気
+    #{Name:regeneration,id:"minecraft:regeneration"} 再生
+    #{Name:resistance,id:"minecraft:resistance"} 耐性 100-lv*20%
+    #{Name:fire_resistance,id:"minecraft:fire_resistance"} 火炎耐性
+    #{Name:water_breathing,id:"minecraft:water_breathing"} 水中呼吸
+    #{Name:invisibility,id:"minecraft:invisibility"} 透明化 player_manager:invisible
+    #{Name:blindness,id:"minecraft:blindness"} 盲目
+    #{Name:night_vision,id:"minecraft:night_vision"} 暗視
+    #{Name:hunger,id:"minecraft:hunger"} 空腹
+    #{Name:weakness,id:"minecraft:weakness"} 弱体化 -lv*4
+    #{Name:poison,id:"minecraft:poison"} 毒
+    #{Name:wither,id:"minecraft:wither"} ウィザー
+    #{Name:health_boots,id:"minecraft:health_boost"} 体力増強 +lv*4
+    #{Name:absorption,id:"minecraft:absorption"} 緩衝体力増加 +lv*4
+    #{Name:saturation,id:"minecraft:saturation"} 満腹度回復 +lv*1
+    #{Name:glowing,id:"minecraft:glowing"} 発光
+    #{Name:levitation,id:"minecraft:levitation"} 浮遊
+    #{Name:luck,id:"minecraft:luck"} 運
+    #{Name:bad_luck,id:"minecraft:unluck"} 不運
+    #{Name:slow_falling,id:"minecraft:slow_falling"} 低速落下
+    #{Name:conduit_power,id:"minecraft:conduit_power"} コンジットパワー
+    #{Name:dolphins_grace,id:"minecraft:dolphins_grace"} イルカの好意
+    #{Name:bad_omen,id:"minecraft:bad_omen"} 不吉な予感
+    #{Name:hero_of_the_village,id:"minecraft:hero_of_the_village"} 村の英雄
+    #{Name:darkness,id:"minecraft:darkness"} 暗闇
     # 詳しくはwiki見てね！
-# data modify storage asset: mob.active_Effects append value {Id: "minecraft:speed",Amplifier:1,Duration:600,show_particles:0b}
-# data modify storage asset: mob.active_Effects append value {Id:"strength",Amplifier:4,Duration:600,show_particles:0b}
+# data modify storage asset: mob.active_Effects append value {Id: "minecraft:speed",amplifier:1,duration:600,show_particles:0b}
+# data modify storage asset: mob.active_Effects append value {Id:"strength",amplifier:4,duration:600,show_particles:0b}
 # 或いは...
-# data modify storage asset: mob.active_Effects set value [{Id: "minecraft:speed",Amplifier:1,Duration:600,show_particles:0b},{Id:"strength",Amplifier:4,Duration:600,show_particles:0b}]
+# data modify storage asset: mob.active_Effects set value [{Id: "minecraft:speed",amplifier:1,duration:600,show_particles:0b},{Id:"strength",amplifier:4,duration:600,show_particles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
-# Id,Amplifier,Duration,show_icon,ShowParticle,ambient
-data modify storage asset: mob.Passengers set value [{id:"minecraft:spawner_minecart",SpawnCount:1,SpawnRange:4,Delay:-1,MinSpawnDelay:100,MaxSpawnDelay:150,RequiredPlayerRange:16,SpawnPotentials:[{weight:1,data:{entity:{id:"minecraft:villager",DeathTime:19,Tags:["Garbage"],Passengers:[{id:"minecraft:arrow",pickup:0b,Passengers:[{id:"minecraft:area_effect_cloud",Particle:"item_snowball",Radius:3f,Duration:100,Tags:["RidingRequired"],Effects:[{Id:2,Amplifier:5b,Duration:10}]}]}]}}},{weight:1,data:{entity:{id:"minecraft:villager",DeathTime:19,Tags:["Garbage"],Passengers:[{Id:"minecraft:arrow",pickup:0b,Passengers:[{id:"minecraft:area_effect_cloud",Particle:"soul_fire_flame",Radius:3f,Duration:100,Tags:["RidingRequired"],Effects:[{Id:17,Amplifier:0b,Duration:40},{Id:25,Amplifier:3b,Duration:40}]}]}]}}},{weight:1,data:{entity:{id:"minecraft:villager",DeathTime:19,Tags:["Garbage"],Passengers:[{id:"minecraft:endermite",Silent:1b,PortalCooldown:160,Health:100f,Tags:["CooldownRequired"],Passengers:[{id:"minecraft:area_effect_cloud",Particle:"witch",Radius:1f,Duration:32767,Tags:["RidingRequired"],Effects:[{Id:7,Amplifier:2b,Duration:4}]}],Active_Effects:[{Id:14,Amplifier:126b,Duration:-1}],Attributes:[{Name:generic.max_health,Base:100},{Name:generic.attack_damage,Base:0}]}]}}},{weight:1,data:{entity:{id:"minecraft:villager",DeathTime:19,Tags:["Garbage"],Passengers:[{id:"minecraft:endermite",Silent:1b,PortalCooldown:160,Health:100f,Tags:["CooldownRequired"],Passengers:[{id:"minecraft:potion",Tags:["RidingRequired"],Passengers:[{id:"minecraft:area_effect_cloud",Particle:"explosion",Radius:1f,Duration:32767,Tags:["RidingRequired"],Effects:[{Id:25,Amplifier:49b,Duration:2}]}],Item:{id:"minecraft:quartz_block",Count:65b}}],Active_Effects:[{Id:14,Amplifier:126b,Duration:-1}],Attributes:[{Name:generic.max_health,Base:100},{Name:generic.attack_damage,Base:0}]}]}}}]}]
+# Id,amplifier,duration,show_icon,ShowParticle,ambient
+data modify storage asset: mob.Passengers set value [{id:"minecraft:spawner_minecart",SpawnCount:1,SpawnRange:4,Delay:-1,MinSpawnDelay:100,MaxSpawnDelay:150,RequiredPlayerRange:16,SpawnPotentials:[{weight:1,data:{entity:{id:"minecraft:villager",DeathTime:19,Tags:["Garbage"],Passengers:[{id:"minecraft:arrow",pickup:0b,Passengers:[{id:"minecraft:area_effect_cloud",Particle:"item_snowball",Radius:3f,duration:100,Tags:["RidingRequired"],effects:[{id:"minecraft:slowness",amplifier:5b,duration:10}]}]}]}}},{weight:1,data:{entity:{id:"minecraft:villager",DeathTime:19,Tags:["Garbage"],Passengers:[{Id:"minecraft:arrow",pickup:0b,Passengers:[{id:"minecraft:area_effect_cloud",Particle:"soul_fire_flame",Radius:3f,duration:100,Tags:["RidingRequired"],effects:[{id:"minecraft:hunger",amplifier:0b,duration:40},{id:"minecraft:levitation",amplifier:3b,duration:40}]}]}]}}},{weight:1,data:{entity:{id:"minecraft:villager",DeathTime:19,Tags:["Garbage"],Passengers:[{id:"minecraft:endermite",Silent:1b,PortalCooldown:160,Health:100f,Tags:["CooldownRequired"],Passengers:[{id:"minecraft:area_effect_cloud",Particle:"witch",Radius:1f,duration:32767,Tags:["RidingRequired"],effects:[{id:"minecraft:instant_damage",amplifier:2b,duration:4}]}],Active_Effects:[{id:"minecraft:invisibility",amplifier:126b,duration:-1}],Attributes:[{Name:generic.max_health,Base:100},{Name:generic.attack_damage,Base:0}]}]}}},{weight:1,data:{entity:{id:"minecraft:villager",DeathTime:19,Tags:["Garbage"],Passengers:[{id:"minecraft:endermite",Silent:1b,PortalCooldown:160,Health:100f,Tags:["CooldownRequired"],Passengers:[{id:"minecraft:potion",Tags:["RidingRequired"],Passengers:[{id:"minecraft:area_effect_cloud",Particle:"explosion",Radius:1f,duration:32767,Tags:["RidingRequired"],effects:[{id:"minecraft:levitation",amplifier:49b,duration:2}]}],Item:{id:"minecraft:quartz_block",Count:65b}}],Active_Effects:[{id:"minecraft:invisibility",amplifier:126b,duration:-1}],Attributes:[{Name:generic.max_health,Base:100},{Name:generic.attack_damage,Base:0}]}]}}}]}]
 
 # スポナーから湧かせるための設定をします
     data modify storage asset: mob.custom_spawn_rules set value {sky_light_limit:{min_inclusive:0,max_inclusive:15},block_light_limit:{min_inclusive:0,max_inclusive:15}}

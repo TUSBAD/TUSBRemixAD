@@ -7,4 +7,4 @@
 data modify entity @e[distance=..16,type=zombified_piglin,limit=1] AngryAt set from entity @s UUID
 
 ### ついでにネザーの場合なら煉獄入り口のビーコンを更新する
-execute if predicate world_manager:area/nether run data modify block -143 89 -357 Primary set value 8
+execute if predicate world_manager:area/nether run data modify block -143 89 -357 primary_effect set value 8

@@ -1,0 +1,10 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "terms": [],
+    "entity": "this",
+    "predicate": {
+      "nbt": "{PortalCooldown:0}"
+    }
+  }
+]

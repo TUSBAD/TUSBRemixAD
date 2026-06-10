@@ -6,8 +6,8 @@
 data remove storage asset: mob
 
 # ここに取ってきたデータを入れる。取得用コマンド：/data get entity @e[type=minecraft:spawner_minecart,limit=1,sort=nearest,distance=..6] SpawnData.entity
-data modify storage asset: mob set value {Passengers:[{NoGravity:1b,Health:80.0f,Attributes:[{Base:0.25d,Name:"generic.movement_speed"},{Base:80.0d,Name:"generic.max_health"}],Silent:1b,HandItems:[{id:"bow",Count:1b,tag:{Enchantments:[{lvl:-1s,id:unbreaking},{lvl:8s,id:power},{lvl:2s,id:punch}],display:{Lore:['"§5§l巨人を滅ぼす事を目的として作られた弓"'],Name:'"§5§l鬼弓ゲボルングン"'},AttributeModifiers:[{UUID:[I;0,1,0,1],Amount:-0.06d,Slot:"mainhand",AttributeName:"generic.max_health",Operation:2,Name:"wax100"},{UUID:[I;0,1,0,2],Amount:0.4d,Slot:"mainhand",AttributeName:"generic.movement_speed",Operation:2,Name:"wax100"}]}},{id:"tipped_arrow",Count:16b,tag:{CustomPotionEffects:[{Duration:0,Id:8b,Amplifier:-128b},{Duration:0,Id:26b,Amplifier:-128b},{Duration:3,Id:25b,Amplifier:127b}],HideFlags:32,Potion:"minecraft:swiftness",display:{Lore:['"§7上空に吹き飛ばし、叩きつける"'],Name:'"§3§l暴風の矢"'}}}],ArmorDropChances:[0.0f,0.085f,0.085f,0.1f],CustomName:'"§lどら氏"',ArmorItems:[{id:"leather_boots",Count:0b,tag:{Enchantments:[{lvl:5s,id:protection},{lvl:10s,id:depth_strider},{lvl:10,id:projectile_protection	}],display:{color:0}}},{},{},{id:"dragon_head",Count:1b,tag:{display:{Name:'"大当たりw"'}}}],HandDropChances:[0.05f,0.5f],DeathLootTable:"empty",id:"wither_skeleton",CustomNameVisible:1b}],id:"villager",Health:0.0f,DeathTime:19s,ActiveEffects:[{ShowParticles:0b,Duration:20,Id:14b,Amplifier:0b}]}
-# 例：data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"デイドラ"}', CanBreakDoors: 1b, Health: 200.0f, ArmorItems: [{id: "minecraft:leather_boots", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのブーツ"}'}, Damage: 0}}, {id: "minecraft:leather_leggings", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのグリーヴ"}'}, Damage: 0}}, {id: "minecraft:leather_chestplate", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのキュイラス"}'}, Damage: 0}}, {id: "minecraft:damaged_anvil", Count: 65b, tag: {display: {Name: '{"text":"デイドラの兜"}'}}}], Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 10.0d, Name: "generic.attack_damage"}], id: "minecraft:zombie", ActiveEffects: [{ShowParticles: 0b, Duration: 2000000000, Id: 14b, Amplifier: 1b}, {ShowParticles: 0b, Duration: 2000000000, Id: 12b, Amplifier: 1b}, {ShowParticles: 0b, Duration: 2000000000, Id: 1b, Amplifier: 4b}, {ShowParticles: 0b, Duration: 2000000000, Id: 8b, Amplifier: 10b}], HandItems: [{id: "minecraft:stone_sword", Count: 65b, tag: {display: {Name: '{"text":"アカヴィリ刀"}'}, Enchantments: [{lvl: 20s, id: "minecraft:fire_aspect"}, {lvl: 20s, id: "minecraft:knockback"}], Damage: 0}}], CustomNameVisible: 1b}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager"}
+data modify storage asset: mob set value {Passengers:[{NoGravity:1b,Health:80.0f,Attributes:[{Base:0.25d,Name:"generic.movement_speed"},{Base:80.0d,Name:"generic.max_health"}],Silent:1b,HandItems:[{id:"bow",Count:1b,tag:{Enchantments:[{lvl:-1s,id:unbreaking},{lvl:8s,id:power},{lvl:2s,id:punch}],display:{Lore:['"§5§l巨人を滅ぼす事を目的として作られた弓"'],Name:'"§5§l鬼弓ゲボルングン"'},AttributeModifiers:[{UUID:[I;0,1,0,1],Amount:-0.06d,Slot:"mainhand",AttributeName:"generic.max_health",Operation:2,Name:"wax100"},{UUID:[I;0,1,0,2],Amount:0.4d,Slot:"mainhand",AttributeName:"generic.movement_speed",Operation:2,Name:"wax100"}]}},{id:"tipped_arrow",Count:16b,tag:{custom_potion_effects:[{duration:0,id:"minecraft:jump_boost",amplifier:-128b},{duration:0,id:"minecraft:luck",amplifier:-128b},{duration:3,id:"minecraft:levitation",amplifier:127b}],HideFlags:32,Potion:"minecraft:swiftness",display:{Lore:['"§7上空に吹き飛ばし、叩きつける"'],Name:'"§3§l暴風の矢"'}}}],ArmorDropChances:[0.0f,0.085f,0.085f,0.1f],CustomName:'"§lどら氏"',ArmorItems:[{id:"leather_boots",Count:0b,tag:{Enchantments:[{lvl:5s,id:protection},{lvl:10s,id:depth_strider},{lvl:10,id:projectile_protection	}],display:{color:0}}},{},{},{id:"dragon_head",Count:1b,tag:{display:{Name:'"大当たりw"'}}}],HandDropChances:[0.05f,0.5f],DeathLootTable:"empty",id:"wither_skeleton",CustomNameVisible:1b}],id:"villager",Health:0.0f,DeathTime:19s,active_effects:[{show_particles:0b,duration:20,id:"minecraft:invisibility",amplifier:0b}]}
+# 例：data modify storage asset: mob set value {Passengers: [{CustomName: '{"text":"デイドラ"}', CanBreakDoors: 1b, Health: 200.0f, ArmorItems: [{id: "minecraft:leather_boots", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのブーツ"}'}, Damage: 0}}, {id: "minecraft:leather_leggings", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのグリーヴ"}'}, Damage: 0}}, {id: "minecraft:leather_chestplate", Count: 65b, tag: {display: {color: 16711935, Name: '{"text":"デイドラのキュイラス"}'}, Damage: 0}}, {id: "minecraft:damaged_anvil", Count: 65b, tag: {display: {Name: '{"text":"デイドラの兜"}'}}}], Attributes: [{Base: 200.0d, Name: "generic.max_health"}, {Base: 1.0d, Name: "generic.knockback_resistance"}, {Base: 10.0d, Name: "generic.attack_damage"}], id: "minecraft:zombie", active_effects: [{show_particles: 0b, duration: 2000000000, Id: 14b, amplifier: 1b}, {show_particles: 0b, duration: 2000000000, Id: 12b, amplifier: 1b}, {show_particles: 0b, duration: 2000000000, Id: 1b, amplifier: 4b}, {show_particles: 0b, duration: 2000000000, Id: 8b, amplifier: 10b}], HandItems: [{id: "minecraft:stone_sword", Count: 65b, tag: {display: {Name: '{"text":"アカヴィリ刀"}'}, Enchantments: [{lvl: 20s, id: "minecraft:fire_aspect"}, {lvl: 20s, id: "minecraft:knockback"}], Damage: 0}}], CustomNameVisible: 1b}], Health: 0.0f, DeathTime: 19s, Xp: 0, VillagerData: {profession: "minecraft:farmer", level: 1, type: "minecraft:plains"}, id: "minecraft:villager"}
 
 # この下のコメント郡は無視！mobを編集する時には使うよ
 
@@ -87,7 +87,7 @@ data modify storage asset: mob set value {Passengers:[{NoGravity:1b,Health:80.0f
 # data modify storage asset: mob.ArmorDropChances set value [0.0F,0.0F,0.0F,0.0F]
 
 
-### ActiveEffects
+### active_effects
 # 直接nbtを指定して追加します
 #effect一覧
     #{Name:speed,id:1} 移動速度上昇 +lv*20%
@@ -124,12 +124,12 @@ data modify storage asset: mob set value {Passengers:[{NoGravity:1b,Health:80.0f
     #{Name:hero_of_the_village,id:32} 村の英雄
     #{Name:darkness,id:33} 暗闇
     # 詳しくはwiki見てね！
-# data modify storage asset: mob.ActiveEffects append value {Id:0,Amplifier:1,Duration:600,ShowParticles:0b}
-# data modify storage asset: mob.ActiveEffects append value {Id:5,Amplifier:4,Duration:600,ShowParticles:0b}
+# data modify storage asset: mob.active_effects append value {Id:0,amplifier:1,duration:600,show_particles:0b}
+# data modify storage asset: mob.active_effects append value {id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}
 # 或いは...
-# data modify storage asset: mob.ActiveEffects set value [{Id:0,Amplifier:1,Duration:600,ShowParticles:0b},{Id:5,Amplifier:4,Duration:600,ShowParticles:0b}]
+# data modify storage asset: mob.active_effects set value [{Id:0,amplifier:1,duration:600,show_particles:0b},{id:"minecraft:strength",amplifier:4,duration:600,show_particles:0b}]
 # このように一行に纏めることも可能。ただし、可読性は下がるかな
-# Id,Amplifier,Duration,ShowIcon,ShowParticle,Ambient
+# Id,amplifier,duration,show_icon,ShowParticle,ambient
 
 
 ### Passengers
@@ -148,8 +148,8 @@ data modify storage asset: mob set value {Passengers:[{NoGravity:1b,Health:80.0f
 # 次のmobがasset mobなら先程の手順を繰り返します。そうでなければ、直接nbtを指定します
 # 今回はAECを騎乗させることにします(なんということでしょう、これまでやってきたことを繰り返すことになります)
 # data modify storage asset: mob.id set value "area_effect_cloud"
-# data modify storage asset: mob set value {Duration:32767,WatiTime:0,Particle:"end_rod"}
-# data modify storage asset: mob.Effects set value [{Id:1,Amplifier:1,Duration:1}]
+# data modify storage asset: mob set value {duration:32767,WatiTime:0,Particle:"end_rod"}
+# data modify storage asset: mob.effects set value [{id:"minecraft:speed",amplifier:1,duration:1}]
 # data modify storage _: _.Passengers append from storage asset: mob
 # 最後に、mobデータを戻して避難用storageを削除します
 # data modify storage asset: mob set from storage _: _
