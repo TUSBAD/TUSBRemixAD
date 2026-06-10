@@ -308,7 +308,7 @@ data modify storage tusb_remake: settings set value {force_night:true}
 
 ### キープインベントリあり
 gamerule keepInventory true
-data modify storage tusb_remake: settings.is_sightseeing set value false
+data modify storage tusb_remake: settings.is_keepinventory set value true
 
 ### 苗木を既に入手しているかどうか
 data modify storage tusb_remake: settings.saplings set value {oak:false,birch:false,spruce:false,jungle:false,acacia:false,dark_oak:false}

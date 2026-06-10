@@ -8,7 +8,7 @@ scoreboard players operation @s Hunger = @s Food
 
 # RR追加部分
 # アイテムをぶちまける
-execute unless data storage tusb_remake: settings{is_sightseeing:true} run function player_manager:death/item_drop
+execute unless data storage tusb_remake: settings{is_keepinventory:true} run function player_manager:death/item_drop
 
 ### 死をカウントアップ
 scoreboard players add AllDeathCount DeathCount 1
