@@ -2,7 +2,7 @@
 #
 # メインクロック
 #
-# @within tags function minecraft:tick
+# @within tags function #minecraft:tick
 
 # 初回ログイン時
     execute as @a[team=] at @s run function core:login/first

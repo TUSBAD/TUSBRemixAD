@@ -2,7 +2,7 @@
 #
 #
 #
-# @within tags function minecraft:tick
+# @within tags function #minecraft:tick
 
 execute as @a[scores={Choyaku=2..,Jump=1..},nbt={ActiveEffects:[{Id:8}]}] at @s run function job:skill/ninja/choyaku/jump
 execute as @a[scores={seiyou=2..,Jump=1..}] at @s run function job:skill/ninja/seiyou/jump

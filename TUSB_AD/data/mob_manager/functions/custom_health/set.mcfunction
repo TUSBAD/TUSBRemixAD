@@ -8,7 +8,7 @@
 execute store result storage asset:context id int 1 run data get entity @s AbsorptionAmount 1
 
 # idにより体力を設定
-function #asset:mob/custom_health
+function #asset:custom_mob/init
 
 # 耐久を強化
 data modify entity @s AbsorptionAmount set value 2048f

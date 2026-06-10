@@ -31,7 +31,7 @@
 # TNTは即爆
     execute as @s[type=minecraft:tnt] run data merge entity @s {Fuse:0s,Motion:[0d,0d,0d]}
 
-# CustomHealthMobを無敵化
+# CustomMobの処理
     execute as @s[tag=CustomHealth] run function mob_manager:custom_health/set
 
 # 強さ補正

@@ -4,8 +4,8 @@
 #
 # @within function mob_manager:custom_health/log/*/*
 
-# CustomNameにセット
-data modify entity @s CustomName set from block 3500 0 3500 Items[0].tag.display.Name
+# textにセット
+data modify entity @s text set from block 3500 0 3500 Items[0].tag.display.Name
 
 # ランダムに座標をずらす
 data modify storage math: in set value [1,8]

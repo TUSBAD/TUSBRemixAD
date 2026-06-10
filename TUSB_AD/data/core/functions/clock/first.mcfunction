@@ -2,7 +2,7 @@
 #
 # 毎ティック最初に実行したいもの
 #
-# @within tags function minecraft:tick
+# @within tags function #minecraft:tick
 
 # ワープポータル処理待ちの時はチェックする
     execute as @a[tag=PortalCheck] at @s run function world_manager:warp/

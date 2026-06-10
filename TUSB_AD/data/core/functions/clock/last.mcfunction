@@ -2,7 +2,7 @@
 #
 # 毎ティック最後に実行したいもの
 #
-# @within tags function minecraft:tick
+# @within tags function #minecraft:tick
 
 # カスタム体力へのダメージ処理
     execute as @e if predicate lib:custom_health at @s run function mob_manager:custom_health/
