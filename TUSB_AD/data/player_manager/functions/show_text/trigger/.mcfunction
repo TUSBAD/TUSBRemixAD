@@ -27,6 +27,9 @@ execute unless score @s SkillSetting matches 0 run function player_manager:show_
 # 情報トリガー
 execute if score @s ShowMenu matches 1 run function player_manager:show_text/sneak_menu/data/list
 
+# 職業変更トリガー
+execute if score @s ShowMenu matches 2 run function player_manager:show_text/sneak_menu/job_change/
+
 # 統計トリガー
 execute if score @s ShowMenu matches 10 run function player_manager:show_text/sneak_menu/data/statistics
 

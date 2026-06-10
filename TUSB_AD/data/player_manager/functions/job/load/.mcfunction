@@ -13,8 +13,8 @@ execute if score @s Job matches 4 run function player_manager:job/load/white_mag
 execute if score @s Job matches 5 run function player_manager:job/load/black_mage
 execute if score @s Job matches 6 run function player_manager:job/load/summoner
 
-execute if data storage tusb_remake: LoadData store result score @s Level run data get storage tusb_remake: LoadData.Level
-execute if data storage tusb_remake: LoadData store result score @s ExpToLevel run data get storage tusb_remake: LoadData.ExpToLevel
+#execute if data storage tusb_remake: LoadData store result score @s Level run data get storage tusb_remake: LoadData.Level
+#execute if data storage tusb_remake: LoadData store result score @s ExpToLevel run data get storage tusb_remake: LoadData.ExpToLevel
 
 ### NextExp = Level * #ExpMul
 scoreboard players operation @s NextExp = @s Level
