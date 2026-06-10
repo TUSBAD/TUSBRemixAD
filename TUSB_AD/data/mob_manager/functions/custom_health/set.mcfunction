@@ -11,5 +11,5 @@ execute store result storage asset:context id int 1 run data get entity @s Absor
 function #asset:custom_mob/init
 
 # 耐久を強化
-data modify entity @s AbsorptionAmount set value 2048f
+data modify entity @s AbsorptionAmount set value 1024f
 effect give @s resistance infinite 3 true
