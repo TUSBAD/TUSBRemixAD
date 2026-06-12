@@ -1,7 +1,8 @@
-#> core:clock/skill_trigger/setup2
+#> core:clock/trigger/setup2
 #
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#
+#
+# @within function core:clock/skill_trigger/setup
 
 ### 前のHPから今のHPを引く
 scoreboard players operation @s DamageResisted = @s HP

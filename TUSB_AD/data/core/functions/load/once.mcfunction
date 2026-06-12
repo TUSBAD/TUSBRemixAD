@@ -168,9 +168,9 @@ scoreboard objectives add UseBow minecraft.used:minecraft.bow
 scoreboard objectives add UseSnowball minecraft.used:minecraft.snowball
 scoreboard objectives add UseCarrotStick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
-scoreboard objectives add DamageDealt minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add DamageDealtAbsorbed minecraft.custom:minecraft.damage_dealt_absorbed
-scoreboard objectives add DamageDealtResisted minecraft.custom:minecraft.damage_dealt_resisted
+# scoreboard objectives add DamageDealt minecraft.custom:minecraft.damage_dealt
+# scoreboard objectives add DamageDealtAbsorbed minecraft.custom:minecraft.damage_dealt_absorbed
+# scoreboard objectives add DamageDealtResisted minecraft.custom:minecraft.damage_dealt_resisted
 
 ### 実際のダメージ
 scoreboard objectives add DamageTaken minecraft.custom:minecraft.damage_taken
@@ -398,6 +398,15 @@ data modify storage tusb_remake: Prefix.CRIT set value "§4CRITICAL >> §r"
 scoreboard objectives add __ dummy {"text":"一時変数 その2"}
 scoreboard objectives add Calc dummy {"text":"計算変数"}
 scoreboard objectives add Difficulty dummy {"text":"難易度保存スコア"}
+
+#> Entity関連スコア
+scoreboard objectives add Damage dummy {"text":"ダメージ"}
+scoreboard objectives add ShowDamage dummy {"text": "表示ダメージ"}
+scoreboard players set $10240 Damage 10240
+scoreboard objectives add Heal dummy {"text": "回復量"}
+scoreboard objectives add MaxCustomHealth dummy {"text":"最大カスタム体力"}
+scoreboard objectives add CustomHealth dummy {"text":"カスタム体力"}
+scoreboard objectives add LogRemoveTime dummy {"text": "Logのtick"}
 
 #> Function実行
 function core:settings/too_bad_effects

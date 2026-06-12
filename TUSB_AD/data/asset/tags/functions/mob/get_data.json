@@ -28,6 +28,7 @@
         "asset:mob/0123.zombie_priest/data/1.trigger",
         "asset:mob/0124.majasuthisu/data/1.trigger",
         "asset:mob/0125.evil_summoner/data/1.trigger",
+        "asset:mob/0200.runa/data/1.trigger",
         "asset:mob/0204.cotton_spider/data/1.trigger",
         "asset:mob/0206.sat/data/1.trigger",
         "asset:mob/0220.teleport_creeper/data/1.trigger",
@@ -109,7 +110,6 @@
         "asset:mob/4109.angel_soldier/data/1.trigger",
         "asset:mob/4203.heaven_mage/data/1.trigger",
         "asset:mob/4302.angel_eye/data/1.trigger",
-        "asset:mob/4004.rihuzin/data/1.trigger",
-        "asset:mob/0200.runa/data/1.trigger"
+        "asset:mob/4004.rihuzin/data/1.trigger"
     ]
 }
