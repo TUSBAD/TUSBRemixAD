@@ -1,0 +1,34 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:debug_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "font": "damage_pop:",
+                                    "score": {
+                                        "objective": "Damage",
+                                        "name": "@s"
+                                    },
+                                    "color": "dark_red"
+                                },
+                                {
+                                    "font": "damage_pop:",
+                                    "text": " !",
+                                    "color": "dark_red"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

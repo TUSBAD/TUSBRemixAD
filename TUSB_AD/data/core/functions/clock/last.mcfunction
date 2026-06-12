@@ -1,7 +1,14 @@
 #> core:clock/last
+#
 # 毎ティック最後に実行したいもの
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#
+# @within tags function #minecraft:tick
+
+# カスタム体力へのダメージ処理
+    execute as @e if predicate lib:custom_health at @s run function mob_manager:custom_health/
+
+# Logテキストの処理
+    execute as @e if predicate lib:log_stand at @s run function mob_manager:custom_health/log/tick
 
 # マジックシールドのチェック
     execute as @a[tag=MagicShield] run effect give @s minecraft:resistance 1 100

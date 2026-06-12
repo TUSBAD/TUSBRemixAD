@@ -1,7 +1,8 @@
 #> core:clock/first
+#
 # 毎ティック最初に実行したいもの
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#
+# @within tags function #minecraft:tick
 
 # ワープポータル処理待ちの時はチェックする
     execute as @a[tag=PortalCheck] at @s run function world_manager:warp/
