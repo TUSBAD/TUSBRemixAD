@@ -33,7 +33,7 @@
     execute as @s[type=minecraft:tnt] run data merge entity @s {Fuse:20s,Motion:[0d,0d,0d],block_state:{Name:"minecraft:diamond_block"}}
 
 # CustomMobの処理
-    execute as @s[tag=CustomHealth] run function mob_manager:custom_health/set
+    execute as @s[tag=CustomHealth] run function mob_manager:custom_mob/init/
 
 # 強さ補正
     execute if data storage tusb_remake: difficulty_modifier{speed:1} run effect give @s[team=,type=!player] minecraft:speed infinite 0 true
