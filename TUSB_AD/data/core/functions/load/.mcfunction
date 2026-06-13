@@ -13,7 +13,7 @@ data modify storage tusb_remake: Const.ExpMul set value 5
 ### スコアが存在していなかったら初期化する
 scoreboard objectives add Count dummy {"text":"カウント"}
 execute unless score $Ticks Count matches 0.. run function core:load/once
-execute if data storage tusb_remake: {_:false} run function core:load/gamerule
+execute unless score $Ticks Count matches 0.. run function core:load/gamerule
 
 ### ブロックに対する設定を予約
 execute in minecraft:overworld run schedule function core:load/block_settings 3s
