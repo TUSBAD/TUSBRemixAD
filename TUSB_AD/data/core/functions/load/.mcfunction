@@ -6,16 +6,13 @@
 ### システムマーカーが何で動かされたか分からないので、ロード時に初期位置にずらす
 execute in minecraft:overworld run tp 0-0-1-0-1 -1919.5 6.5 -191.5
 
-### 濃い紫でスコアボードの有無を判定する
-# scoreboard objectives setdisplay sidebar.team.dark_purple
 
 ### Const 今回は使いたくない！！
 data modify storage tusb_remake: Const.ExpMul set value 5
 
-### Settingsが存在していなかったら初期化する
-scoreboard objectives setdisplay sidebar.team.dark_purple
-execute store success storage tusb_remake: _ byte 1 run scoreboard objectives setdisplay sidebar.team.dark_purple Settings
-execute if data storage tusb_remake: {_:false} run function core:load/once
+### スコアが存在していなかったら初期化する
+scoreboard objectives add Count dummy {"text":"カウント"}
+execute unless score $Ticks Count matches 0.. run function core:load/once
 execute if data storage tusb_remake: {_:false} run function core:load/gamerule
 
 ### ブロックに対する設定を予約
