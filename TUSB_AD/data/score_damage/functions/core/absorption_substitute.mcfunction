@@ -14,7 +14,6 @@
     # Mob
         execute if entity @s[type=!player] if score $SubtractedAbsorptionAmount ScoreDamageCore matches 1.. store result entity @s AbsorptionAmount float 0.0001 run scoreboard players get $SubtractedAbsorptionAmount ScoreDamageCore
 
-tellraw @a {"score": {"name": "$Damage","objective": "ScoreDamageCore"}}
 # 演出
     summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,effects:[{id:"minecraft:resistance",amplifier:127b,duration:1,show_particles:0b},{id:"minecraft:instant_health",amplifier:0b,duration:1,show_particles:0b}]}
     summon area_effect_cloud ~ ~ ~ {Duration:14,Age:4,effects:[{id:"minecraft:resistance",amplifier:127b,duration:1,show_particles:0b},{id:"minecraft:instant_damage",amplifier:0b,duration:1,show_particles:0b}]}
