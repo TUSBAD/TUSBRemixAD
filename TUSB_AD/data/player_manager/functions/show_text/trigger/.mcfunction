@@ -34,8 +34,7 @@ execute if score @s ShowMenu matches 200..300 run function player_manager:show_t
 # ステータストリガー
 execute if score @s ShowMenu matches 12 run function player_manager:show_text/sneak_menu/data/status
 
-
+execute if score @s ShowMenu matches 1.. run function player_manager:show_text/trigger/sneak_menu
 ##トリガーリセット
 scoreboard players reset @s ShowMenu
 scoreboard players enable @s ShowMenu
-execute if score @s ShowMenu matches 1.. run function player_manager:show_text/trigger/sneak_menu
