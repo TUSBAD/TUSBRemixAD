@@ -19,7 +19,7 @@ execute store result storage score_damage: Argument.Damage double 0.025 run scor
 execute store result storage score_damage: Argument.Damage double 1 run data get storage score_damage: Argument.Damage
 
 ### 演出を出すのは10体まで
-data modify storage tusb_remake: chain_arrow_count set value 10
+data modify storage skill: chain_arrow_count set value 10
 ### チェインアローのレベルに応じて呼び出し
 execute if score Level TUSB matches 0 as @e[distance=..5,type=#lib:mob,tag=Enemy,sort=random] at @s run function job:skill/archer/chain_arrow/hit/damage
 execute if score Level TUSB matches 1 as @e[distance=..15,type=#lib:mob,tag=Enemy,sort=random] at @s run function job:skill/archer/chain_arrow/hit/damage

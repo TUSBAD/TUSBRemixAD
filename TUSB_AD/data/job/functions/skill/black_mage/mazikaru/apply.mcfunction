@@ -7,4 +7,4 @@ particle enchant ~ ~1.5 ~ 0.1 0.1 0.1 1 90 force
 execute if score _ ActivatedSkill matches 5260..5269 run data modify storage score_damage: Argument set value {Damage:50.00,DamageType:"None"}
 function score_damage:api/attack
 
-data modify storage tusb_remake: drain_result set value true
+data modify storage skill: drain_result set value true

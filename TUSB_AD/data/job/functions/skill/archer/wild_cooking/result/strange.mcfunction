@@ -9,3 +9,5 @@ particle minecraft:crit ~ ~1 ~ 0.5 0.5 0.5 0 30 force
 title @s times 0 10 10
 title @s subtitle {"text":"上手に焼けましたー？","color":"light_purple"}
 title @s title {"text":""}
+
+#TODO:バフをつける

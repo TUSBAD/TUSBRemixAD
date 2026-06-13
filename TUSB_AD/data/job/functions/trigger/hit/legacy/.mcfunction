@@ -9,13 +9,13 @@ particle minecraft:end_rod ~ ~1.52 ~ 0.1 0.1 0.1 0.3 90 force
 execute if data entity @s SelectedItem.tag{Legacy:true} run function job:trigger/hit/legacy/init
 
 ## レガシーアイテムのカウントを１減らす
-execute store result storage tusb_remake: legacy int 0.9999999999 run data get entity @s SelectedItem.tag.Legacy
+execute store result storage item: legacy int 0.9999999999 run data get entity @s SelectedItem.tag.Legacy
 ## プレイヤーの持っているアイテムに設定する
-execute unless data storage tusb_remake: {legacy:0} run item modify entity @s weapon.mainhand lib:legacy
+execute unless data storage item: {legacy:0} run item modify entity @s weapon.mainhand lib:legacy
 
 ## もしもカウントが残りわずかなら警告メッセージを出す！
-execute if data storage tusb_remake: {legacy:2} run title @s actionbar {"text":"武器が壊れそうだ！","color":"gold"}
-execute if data storage tusb_remake: {legacy:1} run title @s actionbar {"text":"武器が壊れそうだ！！！","color":"red"}
+execute if data storage item: {legacy:2} run title @s actionbar {"text":"武器が壊れそうだ！","color":"gold"}
+execute if data storage item: {legacy:1} run title @s actionbar {"text":"武器が壊れそうだ！！！","color":"red"}
 
 ## もしもカウントが０ならアイテムの数を１つ減らす
-execute if data storage tusb_remake: {legacy:0} run function job:trigger/hit/legacy/break
+execute if data storage item: {legacy:0} run function job:trigger/hit/legacy/break

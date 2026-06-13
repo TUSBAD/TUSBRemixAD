@@ -24,4 +24,4 @@ execute if score @s PotentialSkill matches 4210..4219 run function job:skill/whi
 #つんつん雪玉HIT処理
 execute if score @s PotentialSkill matches 6240..6249 run function job:skill/summoner/tsuntsun/fungus/attack/snowball/hit
 
-data modify storage tusb_remake: projectile_loop set value true
+data modify storage skill: projectile_loop set value true

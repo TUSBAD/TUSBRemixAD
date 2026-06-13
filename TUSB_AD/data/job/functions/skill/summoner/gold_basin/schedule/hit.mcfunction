@@ -9,4 +9,4 @@ effect give @s minecraft:saturation 10 127 true
 ### ダメージを与える
 function score_damage:api/attack
 
-data modify storage tusb_remake: hit set value true
+data modify storage skill: hit set value true

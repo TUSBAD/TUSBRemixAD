@@ -4,11 +4,11 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 演出する表示するカウントが残っているときだけ表示
-execute unless data storage tusb_remake: {fatal_shot_count:0} run playsound minecraft:block.fire.extinguish master @a[distance=..32] ~ ~ ~ 2 0.6 0.1
-execute unless data storage tusb_remake: {fatal_shot_count:0} run particle minecraft:witch ~ ~1 ~ 5 1 5 0.1 90 force
+execute unless data storage skill: {fatal_shot_count:0} run playsound minecraft:block.fire.extinguish master @a[distance=..32] ~ ~ ~ 2 0.6 0.1
+execute unless data storage skill: {fatal_shot_count:0} run particle minecraft:witch ~ ~1 ~ 5 1 5 0.1 90 force
 
 ### カウントを減らす
-execute store result storage tusb_remake: fatal_shot_count int 0.9999999999 run data get storage tusb_remake: fatal_shot_count
+execute store result storage skill: fatal_shot_count int 1 run data get storage skill: fatal_shot_count 0.9999999999
 
 ### 特殊効果を入れる
 ### 飛べなくなる

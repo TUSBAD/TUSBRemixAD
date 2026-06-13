@@ -1,9 +1,9 @@
 #> job:skill/black_mage/mazikaru/cast
 
-data modify storage tusb_remake: drain_result set value false
+data modify storage skill: drain_result set value false
 execute as @e[distance=..10,type=#lib:mob,tag=Enemy,limit=8,sort=nearest] run function job:skill/black_mage/mazikaru/apply
 
 ### ドレインできなかったらMPを返す
-execute if data storage tusb_remake: {drain_result:false} run scoreboard players operation @s MP += @s MPConsumption
+execute if data storage skill: {drain_result:false} run scoreboard players operation @s MP += @s MPConsumption
 ### ドレインできていたら回復
-execute if data storage tusb_remake: {drain_result:true} run function job:skill/black_mage/mazikaru/player
+execute if data storage skill: {drain_result:true} run function job:skill/black_mage/mazikaru/player

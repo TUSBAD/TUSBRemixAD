@@ -11,4 +11,4 @@ execute if score _ ActivatedSkill matches 5240 run effect give @s minecraft:inst
 ### レベル２
 execute if score _ ActivatedSkill matches 5241..5249 run effect give @s minecraft:instant_damage 1 2 false
 
-data modify storage tusb_remake: drain_result set value true
+data modify storage skill: drain_result set value true

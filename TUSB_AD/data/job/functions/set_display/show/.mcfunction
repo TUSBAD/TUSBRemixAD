@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 前に・をつける
-data modify storage tusb_remake: prefix set value '{"text":"・"}'
+data modify storage skill: prefix set value '{"text":"・"}'
 
 ### 表示
 function job:set_display/show/display

@@ -9,3 +9,4 @@ particle minecraft:happy_villager ~ ~1 ~ 0.5 0.5 0.5 0 30 force
 title @s times 0 10 10
 title @s subtitle {"text":"上手に焼けましたー！","color":"green"}
 title @s title {"text":""}
+#TODO:バフをつける
