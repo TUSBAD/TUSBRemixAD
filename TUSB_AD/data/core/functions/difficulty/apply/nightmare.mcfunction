@@ -6,18 +6,18 @@
 # 難易度：ナイトメア
 
 #> チーム色変更
-execute unless data storage tusb_remake: difficult{world:"nightmare"} run function core:difficulty/color/nightmare
+execute unless data storage core: difficult{world:"nightmare"} run function core:difficulty/color/nightmare
 
-data modify storage tusb_remake: difficult.before set from storage tusb_remake: difficult.world
-data modify storage tusb_remake: difficult.world set value "nightmare"
+data modify storage core: difficult.before set from storage core: difficult.world
+data modify storage core: difficult.world set value "nightmare"
 
-scoreboard players set #Difficulty Difficulty 4
+scoreboard players set $Difficulty Difficulty 4
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
-data modify storage tusb_remake: settings.is_keepinventory set value false
+data modify storage core: settings.is_keepinventory set value false
 
 #> チャット表示
-tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ナイトメア","color":"#2848ff"}]}]
+tellraw @a [{"storage":"core:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ナイトメア","color":"#2848ff"}]}]
 execute as @a at @s run playsound minecraft:item.totem.use master @s ~ ~ ~ 1 1 1
 
 #> 変更点

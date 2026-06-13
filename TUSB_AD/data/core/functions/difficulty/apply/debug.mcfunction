@@ -14,8 +14,8 @@ data modify storage core: difficult.world set value "debug"
 scoreboard players set #Difficulty Difficulty 1
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
-gamerule keepInventory true
+data modify storage core: settings.is_keepinventory set value true
 
 #> チャット表示
-tellraw @a [{"storage":"ad_remake:","nbt":"Prefix.DEBUG"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"デバッグ","color":"#808080"}]}]
+tellraw @a [{"storage":"core:","nbt":"Prefix.DEBUG"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"デバッグ","color":"#808080"}]}]
 execute as @a at @s run playsound minecraft:entity.villager.work_toolsmith master @s ~ ~ ~ 1 1 1
