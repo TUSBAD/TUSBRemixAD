@@ -1,19 +1,19 @@
-#> player_manager:custom_item/undying/use/cheak
+#> player_manager:custom_item/undying/use/check
 
 # 捨てられていないか確かめる。捨てられてなかったら非実行フラグを立てる
-data modify storage item: cheak set value false
-execute as @e[tag=!TypeChecked,type=item] run function player_manager:custom_item/undying/use/cheak_item
+data modify storage item: check set value false
+execute as @e[tag=!TypeChecked,type=item] run function player_manager:custom_item/undying/use/check_item
 # 同じUUIDのアイテムを持っていたら非実行フラグを立てる
 execute store success score _ TUSB unless data storage item: SelectedItem.tag.UUID
 data modify storage item: test_array set from entity @s Inventory
-execute if data storage item: {cheak:false} run function player_manager:custom_item/undying/use/cheak_inventory
-# execute if score _ TUSB matches 2.. run data modify storage item: cheak set value true
+execute if data storage item: {check:false} run function player_manager:custom_item/undying/use/check_inventory
+# execute if score _ TUSB matches 2.. run data modify storage item: check set value true
 
 # そしてー、カーソルにあるかどうかも確かめる
-execute if data storage item: {cheak:false} run function player_manager:custom_item/undying/use/cheak_cursor
+execute if data storage item: {check:false} run function player_manager:custom_item/undying/use/check_cursor
 
 # 非実行フラグが折れていたらgive
-execute if data storage item: {cheak:false} run function player_manager:custom_item/undying/use/give
+execute if data storage item: {check:false} run function player_manager:custom_item/undying/use/give
 
 
 
@@ -29,7 +29,7 @@ execute if data storage item: {cheak:false} run function player_manager:custom_i
 # なにかが投げられているかを確かめる
 # data modify storage _: _.use set value false
 # data modify storage _: _.UUID set from entity @s UUID
-# execute as @e[tag=!TypeChecked,type=#lib:projectile] run function player_manager:custom_item/undying/use/cheak_owner
+# execute as @e[tag=!TypeChecked,type=#lib:projectile] run function player_manager:custom_item/undying/use/check_owner
 # 投げられていたならgive function
 # execute if data storage _: {_:{use:true}} run function player_manager:custom_item/undying/use/give
 
