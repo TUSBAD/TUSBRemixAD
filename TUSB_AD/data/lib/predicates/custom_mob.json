@@ -3,6 +3,6 @@
   "entity": "this",
   "predicate": {
     "type": "#lib:mob",
-    "nbt": "{Tags:[\"CustomHealth\"]}"
+    "nbt": "{Tags:[\"CustomMob\"]}"
   }
 }
