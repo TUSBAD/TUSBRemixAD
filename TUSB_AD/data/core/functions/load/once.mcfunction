@@ -402,7 +402,7 @@ scoreboard objectives add Difficulty dummy {"text":"難易度保存スコア"}
 #> Entity関連スコア
 scoreboard objectives add Damage dummy {"text":"ダメージ"}
 scoreboard objectives add ShowDamage dummy {"text": "表示ダメージ"}
-scoreboard players set $10240 Damage 10240
+scoreboard players set $5120 Damage 5120
 scoreboard objectives add Heal dummy {"text": "回復量"}
 scoreboard objectives add MaxCustomHealth dummy {"text":"最大カスタム体力"}
 scoreboard objectives add CustomHealth dummy {"text":"カスタム体力"}
