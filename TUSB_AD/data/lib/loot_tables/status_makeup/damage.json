@@ -17,7 +17,7 @@
                                         "objective": "Damage",
                                         "name": "@s"
                                     },
-                                    "color": "red"
+                                    "color": "#FF2A2A"
                                 }
                             ]
                         }
