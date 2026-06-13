@@ -19,4 +19,22 @@ execute if score @s ChangeSkillSet matches 1 run function player_manager:show_te
 execute unless score @s SkillSetting matches 0 run function player_manager:show_text/sneak_menu/skill/display
 
 # シフトメニュー
+# 情報トリガー
+execute if score @s ShowMenu matches 1 run function player_manager:show_text/sneak_menu/data/list
+
+# 職業変更トリガー
+execute if score @s ShowMenu matches 2 run function player_manager:show_text/sneak_menu/job_change/
+
+# 統計トリガー
+execute if score @s ShowMenu matches 10 run function player_manager:show_text/sneak_menu/data/statistics
+
+# 攻略率トリガー
+execute if score @s ShowMenu matches 200..300 run function player_manager:show_text/sneak_menu/show_world_info/
+
+# ステータストリガー
+execute if score @s ShowMenu matches 12 run function player_manager:show_text/sneak_menu/data/status
+
 execute if score @s ShowMenu matches 1.. run function player_manager:show_text/trigger/sneak_menu
+##トリガーリセット
+scoreboard players reset @s ShowMenu
+scoreboard players enable @s ShowMenu

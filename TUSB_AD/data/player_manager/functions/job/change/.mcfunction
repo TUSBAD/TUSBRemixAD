@@ -6,6 +6,7 @@
 ### 今のデータをセーブ
 function player_manager:job/save/
 
+scoreboard players operation @s Job = @s ChangeJob
 ### 職業変更
 ## 剣士
 execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:1} 0

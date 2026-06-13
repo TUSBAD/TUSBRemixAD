@@ -14,7 +14,7 @@ data modify storage tusb_remake: difficult.world set value "picnic"
 scoreboard players set #Difficulty Difficulty 1
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
-gamerule keepInventory true
+data modify storage tusb_remake: settings.is_keepinventory set value true
 
 #> チャット表示
 tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ピクニック","color":"#80ff00"}]}]

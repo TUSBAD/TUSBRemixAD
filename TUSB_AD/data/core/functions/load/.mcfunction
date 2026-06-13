@@ -16,12 +16,14 @@ data modify storage tusb_remake: Const.ExpMul set value 5
 scoreboard objectives setdisplay sidebar.team.dark_purple
 execute store success storage tusb_remake: _ byte 1 run scoreboard objectives setdisplay sidebar.team.dark_purple Settings
 execute if data storage tusb_remake: {_:false} run function core:load/once
+execute if data storage tusb_remake: {_:false} run function core:load/gamerule
 
 ### ブロックに対する設定を予約
 execute in minecraft:overworld run schedule function core:load/block_settings 3s
 
 ### １秒タイマーをスケジュール
 execute in minecraft:overworld run schedule function core:clock/sec 1s
+execute in minecraft:overworld run schedule function core:clock/half_sec 10t
 
 ### アップデートを確認
 # デバッグモードなら実行しない

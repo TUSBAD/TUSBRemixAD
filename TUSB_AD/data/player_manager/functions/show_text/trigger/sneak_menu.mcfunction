@@ -14,7 +14,7 @@ execute if score @s ShowMenu matches 2 run function player_manager:show_text/sne
 execute if score @s ShowMenu matches 11 run function player_manager:show_text/sneak_menu/data/statistics
 
 # 攻略率トリガー
-execute if score @s ShowMenu matches 12 run function player_manager:show_text/sneak_menu/show_world_info/
+execute if score @s ShowMenu matches 200..300 run function player_manager:show_text/sneak_menu/show_world_info/
 
 # ステータストリガー
 execute if score @s ShowMenu matches 13 run function player_manager:show_text/sneak_menu/data/status

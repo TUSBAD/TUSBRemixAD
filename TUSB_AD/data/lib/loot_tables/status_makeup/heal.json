@@ -17,7 +17,7 @@
                                         "objective": "Heal",
                                         "name": "@s"
                                     },
-                                    "color": "green"
+                                    "color": "#00ff80"
                                 }
                             ]
                         }

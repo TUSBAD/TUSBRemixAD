@@ -256,36 +256,6 @@ team add Goddes {"text":"戦神/創造神"}
 team modify Goddes color aqua
 team modify Goddes prefix {"text":"🌌","color":"#00e6ff"}
 
-### ゲームルール / ワールド設定
-gamerule logAdminCommands false
-gamerule commandBlockOutput false
-gamerule sendCommandFeedback false
-gamerule reducedDebugInfo true
-gamerule naturalRegeneration true
-gamerule doEntityDrops true
-gamerule doFireTick true
-gamerule doMobLoot true
-gamerule doMobSpawning true
-gamerule doTileDrops true
-gamerule doInsomnia false
-gamerule doWardenSpawning true
-gamerule doTraderSpawning true
-gamerule randomTickSpeed 9
-gamerule showDeathMessages true
-gamerule spawnRadius 0
-gamerule disableElytraMovementCheck true
-gamerule mobGriefing false
-gamerule playersNetherPortalCreativeDelay 32767
-gamerule playersNetherPortalDefaultDelay 32767
-gamerule playersSleepingPercentage 10
-gamerule disableRaids true
-gamerule universalAnger true
-gamerule forgiveDeadPlayers false
-gamerule snowAccumulationHeight 8
-difficulty hard
-defaultgamemode adventure
-worldborder center 0 0
-worldborder set 7000
 
 ### setdisplay
 scoreboard objectives setdisplay list Level
@@ -308,7 +278,7 @@ data modify storage tusb_remake: settings set value {force_night:true}
 
 ### キープインベントリあり
 gamerule keepInventory true
-data modify storage tusb_remake: settings.is_sightseeing set value false
+data modify storage tusb_remake: settings.is_keepinventory set value true
 
 ### 苗木を既に入手しているかどうか
 data modify storage tusb_remake: settings.saplings set value {oak:false,birch:false,spruce:false,jungle:false,acacia:false,dark_oak:false}
@@ -398,6 +368,8 @@ data modify storage tusb_remake: Prefix.CRIT set value "§4CRITICAL >> §r"
 scoreboard objectives add __ dummy {"text":"一時変数 その2"}
 scoreboard objectives add Calc dummy {"text":"計算変数"}
 scoreboard objectives add Difficulty dummy {"text":"難易度保存スコア"}
+scoreboard objectives add DoomEx dummy {"text":"致死の宣告カウント","color":"#cc0000"}
+scoreboard objectives add ChangeJob trigger {"text":"職業変更トリガー"}
 
 #> Entity関連スコア
 scoreboard objectives add Damage dummy {"text":"ダメージ"}

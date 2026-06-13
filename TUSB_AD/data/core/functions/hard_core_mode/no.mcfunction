@@ -1,7 +1,9 @@
 #> core:hard_core_mode/no
 # ハードコア拒否ぃ
 
+
+tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sへの変更をキャンセルしました。","with":[{"translate":"ハードコア","color":"#a600ff"}]}]
 schedule clear core:hard_core_mode/start
-tellraw @a {"text":"ハードコアモードへの移行を止めました","color":"light_purple","bold":true}
-playsound minecraft:entity.sheep.ambient master @a ~ ~ ~ 1.0 2 0.0
+schedule clear core:hard_core_mode/countdown
 scoreboard players set @s hcmode 0
+function core:difficulty/apply/casual

@@ -8,7 +8,7 @@ scoreboard players operation @s Hunger = @s Food
 
 # RR追加部分
 # アイテムをぶちまける
-execute unless data storage tusb_remake: settings{is_sightseeing:true} run function player_manager:death/item_drop
+execute unless data storage tusb_remake: settings{is_keepinventory:true} run function player_manager:death/item_drop
 
 ### 死をカウントアップ
 scoreboard players add AllDeathCount DeathCount 1
@@ -33,6 +33,9 @@ advancement revoke @s[advancements={close_detector:open=true}] only close_detect
 
 ### 死の宣告がかかっていたら消す
 tag @s[tag=Doom] remove Doom
+execute if entity @s[tag=DoomEx] run function #oh_my_dat:please
+execute if entity @s[tag=DoomEx] run data remove storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.DoomEX
+tag @s[tag=DoomEx] remove DoomEx
 ### リレイズの効果がかかっていたらレイズをかける
 tag @s[tag=ReRaise] add CastRaise
 tag @s[tag=ReRaise] remove ReRaise
