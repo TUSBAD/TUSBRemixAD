@@ -3,19 +3,8 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-scoreboard objectives add Settings dummy "設定"
-### 観光モード
-scoreboard players set DeathCount Settings 0
-### デバッグモード
-scoreboard players set Debug Settings 0
-### 祈り有効モード
-scoreboard players set Prayable Settings 0
-### 地形破壊
-scoreboard players set MobGriefing Settings 0
-### 難易度
-scoreboard players set Difficulty Settings 0
 ### 攻略対象最大数
-scoreboard players set MaxPortalCount Settings 128
+#scoreboard players set MaxPortalCount Settings 128
 
 ### ライブラリ用
 scoreboard objectives add Temporary dummy
@@ -85,7 +74,7 @@ scoreboard objectives add NextExp dummy "必要経験値"
 scoreboard objectives add ExpToLevel dummy "次のレベルアップまでの経験値"
 ### RR追加 合計経験値量
 scoreboard objectives add TotalXp dummy "合計経験値量"
-scoreboard players set $Global TotalXp 0
+scoreboard players set #Global TotalXp 0
 
 ### 各ジョブのレベルと残り経験値
 scoreboard objectives add Level dummy "レベル"
@@ -369,18 +358,18 @@ scoreboard objectives add AllExp dummy {"text": "総獲得経験値"}
 #> Entity関連スコア
 scoreboard objectives add Damage dummy {"text":"ダメージ"}
 scoreboard objectives add ShowDamage dummy {"text": "表示ダメージ"}
-scoreboard players set $5120 Damage 5120
+scoreboard players set #5120 Damage 5120
 scoreboard objectives add Heal dummy {"text": "回復量"}
 scoreboard objectives add MaxCustomHealth dummy {"text":"最大カスタム体力"}
 scoreboard objectives add CustomHealth dummy {"text":"カスタム体力"}
 scoreboard objectives add LogRemoveTime dummy {"text": "Logのtick"}
 
 ###総獲得経験値量初期化
-scoreboard players add $World AllExp 0
+scoreboard players add #World AllExp 0
 
 #時間初期化
-execute unless score $Hours Count matches 0.. run scoreboard players set $Hours Count 0
-execute unless score $Minutes Count matches 0.. run scoreboard players set $Minutes Count 0
+execute unless score #Hours Count matches 0.. run scoreboard players set #Hours Count 0
+execute unless score #Minutes Count matches 0.. run scoreboard players set #Minutes Count 0
 
 #> Function実行
 function core:settings/too_bad_effects
