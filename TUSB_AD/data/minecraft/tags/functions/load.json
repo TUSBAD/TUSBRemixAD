@@ -1,5 +1,7 @@
 {
 	"values": [
+		"score_to_health:load",
+		"score_damage:core/init",
 		"core:load/",
 		"debug:load/",
 		"core:load/reload"
