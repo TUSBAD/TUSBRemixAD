@@ -121,7 +121,7 @@ scoreboard objectives add SpawnY dummy
 scoreboard objectives add SpawnZ dummy
 
 # 500スキルフラグ
-data modify storage tusb_remake: skill_liberation set value 0b
+data modify storage skill: skill_liberation set value 0b
 
 ### スキルテーブルを初期化
 function job:init_table/
@@ -168,9 +168,6 @@ scoreboard objectives add UseBow minecraft.used:minecraft.bow
 scoreboard objectives add UseSnowball minecraft.used:minecraft.snowball
 scoreboard objectives add UseCarrotStick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add UseFungusStick minecraft.used:minecraft.warped_fungus_on_a_stick
-# scoreboard objectives add DamageDealt minecraft.custom:minecraft.damage_dealt
-# scoreboard objectives add DamageDealtAbsorbed minecraft.custom:minecraft.damage_dealt_absorbed
-# scoreboard objectives add DamageDealtResisted minecraft.custom:minecraft.damage_dealt_resisted
 
 ### 実際のダメージ
 scoreboard objectives add DamageTaken minecraft.custom:minecraft.damage_taken
@@ -266,31 +263,31 @@ scoreboard players reset * MP
 ### ワールド初期設定
 time set 14000
 weather rain 15
-data modify storage tusb_remake: area_name set value {skyland:"???",underworld:"???",cloudia:"???",table_mountain:"???",gullivers_land:"???",tocult_colde:"???",new_skyland:"???",niflheimr:"???",library:"???",imaginary_space:"???",unusual_space:"???",another_dimension:"???",ancient_field:"???",tradeisland:"???",hellheimr:"???",end:"???",nether:"???"}
-data modify storage tusb_remake: conquer.count set value {skyland:0,nether:0,end:0,underworld:0,cloudia:0,table_mountain:0,gullivers_land:0,tocult_colde:0,niflheimr:0,library:0,imaginary_space:0,unusual_space:0,another_dimension:0,ancient_field:0,new_skyland:0,tradeisland:0,hellheimr:0}
-data modify storage tusb_remake: conquer.max set value {skyland:0,nether:4,end:3,underworld:2,cloudia:4,table_mountain:2,gullivers_land:2,tocult_colde:10,niflheimr:0,library:0,imaginary_space:0,unusual_space:0,another_dimension:0,ancient_field:1,new_skyland:10,tradeisland:1,hellheimr:0}
-data modify storage tusb_remake: nether_boss_count set value 1
-data modify storage tusb_remake: nether_boss_clear set value false
+data modify storage world: area_name set value {skyland:"???",underworld:"???",cloudia:"???",table_mountain:"???",gullivers_land:"???",tocult_colde:"???",new_skyland:"???",niflheimr:"???",library:"???",imaginary_space:"???",unusual_space:"???",another_dimension:"???",ancient_field:"???",tradeisland:"???",hellheimr:"???",end:"???",nether:"???"}
+data modify storage world: conquer.count set value {skyland:0,nether:0,end:0,underworld:0,cloudia:0,table_mountain:0,gullivers_land:0,tocult_colde:0,niflheimr:0,library:0,imaginary_space:0,unusual_space:0,another_dimension:0,ancient_field:0,new_skyland:0,tradeisland:0,hellheimr:0}
+data modify storage world: conquer.max set value {skyland:0,nether:4,end:3,underworld:2,cloudia:4,table_mountain:2,gullivers_land:2,tocult_colde:10,niflheimr:0,library:0,imaginary_space:0,unusual_space:0,another_dimension:0,ancient_field:1,new_skyland:10,tradeisland:1,hellheimr:0}
+data modify storage world: nether_boss_count set value 1
+data modify storage world: nether_boss_clear set value false
 
 ### 最初は夜固定
 gamerule doDaylightCycle false
-data modify storage tusb_remake: settings set value {force_night:true}
+data modify storage world: settings set value {force_night:true}
 
 ### キープインベントリあり
 gamerule keepInventory true
-data modify storage tusb_remake: settings.is_keepinventory set value true
+data modify storage core: settings.is_keepinventory set value true
 
 ### 苗木を既に入手しているかどうか
-data modify storage tusb_remake: settings.saplings set value {oak:false,birch:false,spruce:false,jungle:false,acacia:false,dark_oak:false}
+data modify storage player: settings.saplings set value {oak:false,birch:false,spruce:false,jungle:false,acacia:false,dark_oak:false}
 
 ### ワープポータル初期化しておく
-data remove storage tusb_remake: portal
+data remove storage world: portal
 
 ### ゲームが始まった時刻を記録しておく
-execute store result storage tusb_remake: start_time int 1 run time query gametime
+execute store result storage core: start_time int 1 run time query gametime
 
 ### スキルスロットのタイトルを設定
-data modify storage tusb_remake: skill_slot_titles set value {instant:{a:'[{"text":"サポートアクション","color":"yellow"},{"text":"-ルビー-","color":"red"}]',b:'[{"text":"サポートアクション","color":"yellow"},{"text":"-サファイア-","color":"dark_aqua"}]'},mode:{a:'[{"text":"モードスキル","color":"yellow"},{"text":"-ルビー-","color":"red"}]',b:'[{"text":"モードスキル","color":"yellow"},{"text":"-サファイア-","color":"dark_aqua"}]'}}
+data modify storage skill: skill_slot_titles set value {instant:{a:'[{"text":"サポートアクション","color":"yellow"},{"text":"-ルビー-","color":"red"}]',b:'[{"text":"サポートアクション","color":"yellow"},{"text":"-サファイア-","color":"dark_aqua"}]'},mode:{a:'[{"text":"モードスキル","color":"yellow"},{"text":"-ルビー-","color":"red"}]',b:'[{"text":"モードスキル","color":"yellow"},{"text":"-サファイア-","color":"dark_aqua"}]'}}
 
 
 ### TLEスコア
@@ -316,9 +313,6 @@ scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
 scoreboard objectives add DeathCount deathCount
 
 ### RR追加
-
-# トカルトモード
-scoreboard objectives add isfmode trigger
 
 # ハードコアモード
 scoreboard objectives add hcmode trigger
@@ -351,18 +345,18 @@ function core:load/define_const
 function debug:load/
 
 # ver設定
-data modify storage tusb_remake: settings.version set value "1.0.0"
+data modify storage core: settings.version set value "1.0.0"
 
 ### ADスコア
 
 #> 各種Prefixを設定
-data modify storage tusb_remake: Prefix.DEBUG set value "§3DEBUG >> §r"
-data modify storage tusb_remake: Prefix.TIPS set value "§bTIPS >> §r"
-data modify storage tusb_remake: Prefix.SUCCESS set value "§aSUCCESS >> §r"
-data modify storage tusb_remake: Prefix.INFO set value "§9INFO >> §r"
-data modify storage tusb_remake: Prefix.FAILED set value "§7FAILED >> §r"
-data modify storage tusb_remake: Prefix.ERROR set value "§cERROR >> §r"
-data modify storage tusb_remake: Prefix.CRIT set value "§4CRITICAL >> §r"
+data modify storage core: Prefix.DEBUG set value "§3DEBUG >> §r"
+data modify storage core: Prefix.TIPS set value "§bTIPS >> §r"
+data modify storage core: Prefix.SUCCESS set value "§aSUCCESS >> §r"
+data modify storage core: Prefix.INFO set value "§9INFO >> §r"
+data modify storage core: Prefix.FAILED set value "§7FAILED >> §r"
+data modify storage core: Prefix.ERROR set value "§cERROR >> §r"
+data modify storage core: Prefix.CRIT set value "§4CRITICAL >> §r"
 
 #> 変数スコア
 scoreboard objectives add __ dummy {"text":"一時変数 その2"}
@@ -370,6 +364,7 @@ scoreboard objectives add Calc dummy {"text":"計算変数"}
 scoreboard objectives add Difficulty dummy {"text":"難易度保存スコア"}
 scoreboard objectives add DoomEx dummy {"text":"致死の宣告カウント","color":"#cc0000"}
 scoreboard objectives add ChangeJob trigger {"text":"職業変更トリガー"}
+scoreboard objectives add AllExp dummy {"text": "総獲得経験値"}
 
 #> Entity関連スコア
 scoreboard objectives add Damage dummy {"text":"ダメージ"}
@@ -379,6 +374,13 @@ scoreboard objectives add Heal dummy {"text": "回復量"}
 scoreboard objectives add MaxCustomHealth dummy {"text":"最大カスタム体力"}
 scoreboard objectives add CustomHealth dummy {"text":"カスタム体力"}
 scoreboard objectives add LogRemoveTime dummy {"text": "Logのtick"}
+
+###総獲得経験値量初期化
+scoreboard players add $World AllExp 0
+
+#時間初期化
+execute unless score $Hours Count matches 0.. run scoreboard players set $Hours Count 0
+execute unless score $Minutes Count matches 0.. run scoreboard players set $Minutes Count 0
 
 #> Function実行
 function core:settings/too_bad_effects
