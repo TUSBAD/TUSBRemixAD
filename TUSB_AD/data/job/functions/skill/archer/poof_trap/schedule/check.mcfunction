@@ -22,4 +22,4 @@ execute rotated as 0-0-1-0-1 rotated ~270 ~ positioned ^ ^ ^5 run particle minec
 
 execute as @e[distance=..5,type=#lib:mob,tag=Poofable,sort=random,limit=3] run function job:skill/archer/poof_trap/schedule/apply
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

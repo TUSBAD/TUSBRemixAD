@@ -24,4 +24,4 @@ fill ~-2 ~-2 ~-2 ~2 ~2 ~2 minecraft:water replace minecraft:frosted_ice
 scoreboard players remove @s RemainTimer 1
 execute if score @s RemainTimer matches ..0 run kill @s
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

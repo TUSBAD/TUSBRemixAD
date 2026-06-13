@@ -8,8 +8,8 @@ particle minecraft:enchant ~ ~1.5 ~ 0.1 0.6 0.1 4 300 force
 
 ### 与えたダメージに応じてMP回復
 scoreboard players operation _ TUSB = @s DamageDealt
-execute store result storage tusb_remake: _ int 0.005 run scoreboard players operation _ TUSB *= @s EnAspir
-execute store result score _ TUSB run data get storage tusb_remake: _
+execute store result storage skill: _ int 0.005 run scoreboard players operation _ TUSB *= @s EnAspir
+execute store result score _ TUSB run data get storage skill: _
 scoreboard players add _ TUSB 5
 scoreboard players operation @s MP += _ TUSB
 

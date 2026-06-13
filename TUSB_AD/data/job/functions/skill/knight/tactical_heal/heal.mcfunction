@@ -5,8 +5,8 @@
 
 ### リメイク：回復量を２倍に
 ### 受けたダメージの1/5のスコアを回復カウントに入れる => 受けたダメージの２倍回復
-execute store result storage tusb_remake: _ int 0.2 run scoreboard players get @s DamageTaken
-execute store result score _ TUSB run data get storage tusb_remake: _
+execute store result storage skill: _ int 0.2 run scoreboard players get @s DamageTaken
+execute store result score _ TUSB run data get storage skill: _
 scoreboard players operation @s HealCount += _ TUSB
 
 tellraw @s {"text":"タクティカルヒールの効果が切れた。","color":"gold"}

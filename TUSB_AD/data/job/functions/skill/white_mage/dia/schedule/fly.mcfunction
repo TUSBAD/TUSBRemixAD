@@ -8,4 +8,4 @@ particle minecraft:instant_effect ~ ~ ~ 0.1 0 0.1 0 1 force
 
 execute as @e[distance=..3,type=#lib:mob,tag=Enemy] unless predicate job:is_saturation at @s run function job:skill/white_mage/dia/hit
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

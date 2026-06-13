@@ -9,4 +9,4 @@ execute positioned ^ ^ ^-1 rotated ~ 0 positioned ^ ^ ^-19 facing entity @s feet
 
 execute as @e[distance=..1,type=phantom,tag=Glider,sort=nearest,limit=1] run function job:skill/summoner/summon_glider/schedule/set_motion
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

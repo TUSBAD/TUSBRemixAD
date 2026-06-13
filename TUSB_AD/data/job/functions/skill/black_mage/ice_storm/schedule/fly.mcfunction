@@ -19,4 +19,4 @@ execute if entity @s[tag=IceStorm3] run data modify storage score_damage: Argume
 
 execute as @e[distance=..8,type=#lib:mob,type=!#lib:resist_ice,tag=Enemy] unless predicate job:is_saturation at @s run function job:skill/black_mage/ice_storm/schedule/hit
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true
