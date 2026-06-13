@@ -8,7 +8,7 @@ execute in minecraft:overworld run tp 0-0-1-0-1 -1919.5 6.5 -191.5
 
 
 ### Const 今回は使いたくない！！
-data modify storage tusb_remake: Const.ExpMul set value 5
+data modify storage player: Const.ExpMul set value 5
 
 ### スコアが存在していなかったら初期化する
 scoreboard objectives add Count dummy {"text":"カウント"}
