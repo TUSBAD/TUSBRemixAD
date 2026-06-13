@@ -45,9 +45,9 @@
     execute as @a[predicate=world_manager:area/skyland,tag=CauseEvent] at @s if score #SecCount Global matches 0.. run function world_manager:event/rank/
 
 # トカルトの処理
-    execute unless data storage tusb_remake: settings{toculting:1b} as @a[predicate=world_manager:area/tocult_colde,gamemode=!spectator] at @s run function world_manager:dimension/tocult/process/
-    execute unless data storage tusb_remake: settings{toculting:1b} as @a[predicate=!world_manager:area/tocult_colde,gamemode=!spectator] at @s if entity @e[tag=TocultArea,distance=..32] run function world_manager:dimension/tocult/process/
-    execute if data storage tusb_remake: settings{toculting:1b} as @a[predicate=!world_manager:area/nether_trial,gamemode=!spectator] at @s run function world_manager:dimension/tocult/process/
+    execute unless data storage world: settings{toculting:1b} as @a[predicate=world_manager:area/tocult_colde,gamemode=!spectator] at @s run function world_manager:dimension/tocult/process/
+    execute unless data storage world: settings{toculting:1b} as @a[predicate=!world_manager:area/tocult_colde,gamemode=!spectator] at @s if entity @e[tag=TocultArea,distance=..32] run function world_manager:dimension/tocult/process/
+    execute if data storage world: settings{toculting:1b} as @a[predicate=!world_manager:area/nether_trial,gamemode=!spectator] at @s run function world_manager:dimension/tocult/process/
 
 # ゾンビピッグマンのおこる対象を設定する
     execute as @a[gamemode=!spectator] at @s run function world_manager:dimension/nether/angry
@@ -78,7 +78,7 @@
     execute positioned 177 39 -75 if entity @a[distance=..60,gamemode=!spectator] run function world_manager:dimension/skylands/hopper/
 
 # 祈り(最後の手段/最初に教会に行くまで使えない)を表示
-    execute if data storage tusb_remake: settings{prayable:true} as @a[tag=Pray,scores={Job=1..}] run function player_manager:kill/pray/show
+    execute if data storage player: settings{prayable:true} as @a[tag=Pray,scores={Job=1..}] run function player_manager:kill/pray/show
 
 # 炎出す奴
     execute as @e[tag=CanFire] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~1 minecraft:fire keep
