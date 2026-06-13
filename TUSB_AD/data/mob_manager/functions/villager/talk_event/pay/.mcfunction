@@ -5,6 +5,6 @@
 
 execute store result score @s ItemCount run clear @s minecraft:emerald 0
 ## お金が足りているかどうか
-execute store result storage tusb_remake: paid byte 1 if score _ TUSB <= @s ItemCount
+execute store result storage mob: paid byte 1 if score _ TUSB <= @s ItemCount
 ## お金が足りていたら支払い
-execute if data storage tusb_remake: {paid:true} run function mob_manager:villager/talk_event/pay/success
+execute if data storage mob: {paid:true} run function mob_manager:villager/talk_event/pay/success

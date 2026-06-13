@@ -7,8 +7,8 @@
 data modify block -2735 86 -383 Command set value ""
 
 ## スキルエッグチェストのデータがなければ、データを取得
-execute unless data storage tusb_remake:chest_template skill_setting_area_eggs run data modify storage tusb_remake:chest_template skill_setting_area_eggs set from block -2734 88 -383 Items
+execute unless data storage item:chest_template skill_setting_area_eggs run data modify storage item:chest_template skill_setting_area_eggs set from block -2734 88 -383 Items
 
 ## 試供品のデータを戻す
-data modify block -2734 88 -383 Items set from storage tusb_remake:chest_template skill_setting_area_eggs
-data modify block -2734 88 -382 Items set from storage tusb_remake:chest_template skill_setting_area_eggs
+data modify block -2734 88 -383 Items set from storage item:chest_template skill_setting_area_eggs
+data modify block -2734 88 -382 Items set from storage item:chest_template skill_setting_area_eggs

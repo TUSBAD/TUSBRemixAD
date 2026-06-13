@@ -1,6 +1,6 @@
 #> mob_manager:entity/time_shield/set_attribute
 #
-# 
+#
 #
 # @within function mob_manager:entity/time_shield/replace_shield
 
@@ -8,7 +8,7 @@
 data modify entity @s HandItems[1] set value {id:"minecraft:shield",Count:1b}
 
 # 攻略率を取得
-execute store result score _ TUSB run data get storage tusb_remake: conquer.count.total
+execute store result score _ TUSB run data get storage world: conquer.count.total
 
 # 攻略率を元にattributeをset
 data modify entity @s HandItems[1].tag.AttributeModifiers set from storage remake_remix: time_shield.shield_data.tag.AttributeModifiers

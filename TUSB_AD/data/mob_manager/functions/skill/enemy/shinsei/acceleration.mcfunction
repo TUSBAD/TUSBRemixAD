@@ -8,7 +8,7 @@ execute as @a at @s run playsound block.sculk_shrieker.shriek block @s ~ ~ ~ 1 1
 me は§4§lタイムアクセラレーション§rを唱えた！
 
 # タイマーセット
-data modify storage tusb_remake: clock_ring_time set value 180
+data modify storage world: clock_ring_time set value 180
 execute in minecraft:overworld run schedule function world_manager:dimension/skylands/clock/ring 1t
 # 演出
 worldborder warning distance 20000

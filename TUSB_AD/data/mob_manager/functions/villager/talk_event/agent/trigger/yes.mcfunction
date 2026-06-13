@@ -8,10 +8,10 @@ scoreboard players operation _ TUSB = @s AgentWarpCost
 function mob_manager:villager/talk_event/pay/
 
 ## お金が足りなかったら
-execute unless data storage tusb_remake: {paid:true} run tellraw @s {"text":"[エージェント] エメラルドが足りないナ。"}
+execute unless data storage mob: {paid:true} run tellraw @s {"text":"[エージェント] エメラルドが足りないナ。"}
 ## ワープコスト足りてたらお支払い
-execute if data storage tusb_remake: {paid:true} run tellraw @s {"text":"[エージェント] 代金は頂いタ。もう１度アイテムを持たずに話しかけてくレ。"}
+execute if data storage mob: {paid:true} run tellraw @s {"text":"[エージェント] 代金は頂いタ。もう１度アイテムを持たずに話しかけてくレ。"}
 ### ワープ準備完了
-execute if data storage tusb_remake: {paid:true} run tag @s add AgentOK
+execute if data storage mob: {paid:true} run tag @s add AgentOK
 
 scoreboard players reset @s AgentFlag
