@@ -4,6 +4,6 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ## 繰り返し回数は６０
-data modify storage tusb_remake: lightning_bolt_count set value 60
+data modify storage world: lightning_bolt_count set value 60
 
 execute in minecraft:overworld run schedule function world_manager:dimension/purgatory/boss/lightning_bolt/schedule 1t

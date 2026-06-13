@@ -6,8 +6,8 @@
 # クリスタルのmin.min -1948 123 -55
 # 看板 -1937 120 -34 rot12
 
-data modify storage tusb_remake: portal_name set value "煉獄 迷い断ち切る地"
-data remove storage tusb_remake: portal.table_mountain.waterway_village
+data modify storage world: portal_name set value "煉獄 迷い断ち切る地"
+data remove storage world: portal.table_mountain.waterway_village
 execute positioned -1948 123 -55 run function world_manager:area/portal/close
 
 ### チャンク読み込み

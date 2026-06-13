@@ -10,7 +10,7 @@ execute as @s[gamemode=adventure] run function score_damage:api/attack
 # 引数を明示的にリセット
 data remove storage score_damage: Argument
 
-execute if data storage tusb_remake: difficult{world:"picnic"} run effect give @s[gamemode=survival] minecraft:instant_health 3 9 false
+execute if data storage core: difficult{world:"picnic"} run effect give @s[gamemode=survival] minecraft:instant_health 3 9 false
 tellraw @s[gamemode=survival] {"text":"( ˘ω˘ ) ｽﾔｧ…疲れが取れていく…","color":"aqua"}
 
 scoreboard players set @s SleepInBed 0

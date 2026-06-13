@@ -1,8 +1,8 @@
 #> world_manager:area/portal/tocult_colde/drift_ice/close
 ### 流氷のワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "流氷"
-data remove storage tusb_remake: portal.tocult_colde.drift_ice
+data modify storage world: portal_name set value "流氷"
+data remove storage world: portal.tocult_colde.drift_ice
 execute positioned 1354 96 1582 run function world_manager:area/portal/close
 
 ### チャンク読み込み

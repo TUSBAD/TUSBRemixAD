@@ -18,8 +18,6 @@ execute in minecraft:overworld positioned 37 58 -2214 if block ~ ~ ~ minecraft:c
 execute in minecraft:overworld positioned 26 114 -2213 if block ~ ~ ~ minecraft:command_block{powered:true} run function world_manager:area/portal/table_mountain/happy_city/open
 
 ## クラウディア
-### チュートリアルのワープクリスタルを開くコマブロ
-# execute positioned ~ ~-1 ~ align xyz if predicate tusb_remake:command/cloudia/tutorial run function world_manager:area/portal/cloudia/tutorial/open
 execute in minecraft:overworld positioned -1886 115 -187 if block ~ ~ ~ minecraft:command_block{powered:true} run function world_manager:area/portal/cloudia/tutorial/open
 ### クラウディア城へのワープクリスタルを開くコマブロ
 execute in minecraft:overworld positioned -2380 75 -131 if block ~ ~ ~ minecraft:command_block{powered:true} run function world_manager:area/portal/cloudia/castle/open

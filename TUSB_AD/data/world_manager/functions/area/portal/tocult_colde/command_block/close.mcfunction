@@ -1,8 +1,8 @@
 #> world_manager:area/portal/tocult_colde/command_block/close
 ### 古代遺跡　調査コードCBのワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "古代遺跡　調査コードCB"
-data remove storage tusb_remake: portal.tocult_colde.command_block
+data modify storage world: portal_name set value "古代遺跡　調査コードCB"
+data remove storage world: portal.tocult_colde.command_block
 execute positioned 1294 96 1522 run function world_manager:area/portal/close
 
 ### チャンク読み込み

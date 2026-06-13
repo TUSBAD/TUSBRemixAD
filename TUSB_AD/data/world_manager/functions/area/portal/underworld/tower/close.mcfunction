@@ -1,8 +1,8 @@
 #> world_manager:area/portal/underworld/tower/close
 ### 地下キノコの塔のワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "地下キノコの塔"
-data remove storage tusb_remake: portal.underworld.tower
+data modify storage world: portal_name set value "地下キノコの塔"
+data remove storage world: portal.underworld.tower
 execute positioned 1045 6 52 run function world_manager:area/portal/close
 
 ### チャンク読み込み

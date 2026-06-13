@@ -1,8 +1,8 @@
 #> world_manager:area/portal/tocult_colde/sumful/close
 ### スムフルのワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "スムフル"
-data remove storage tusb_remake: portal.tocult_colde.sumful
+data modify storage world: portal_name set value "スムフル"
+data remove storage world: portal.tocult_colde.sumful
 execute positioned 1338 96 1598 run function world_manager:area/portal/close
 
 ### チャンク読み込み

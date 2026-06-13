@@ -9,6 +9,6 @@ execute as @a at @s run playsound minecraft:block.note_block.bell master @s ~ ~1
 time set 23400
 
 # カウントダウン
-execute store result storage tusb_remake: clock_ring_time int 0.9999999999 run data get storage tusb_remake: clock_ring_time
+execute store result storage world: clock_ring_time int 0.9999999999 run data get storage world: clock_ring_time
 # 止まるまで繰り返し
-execute unless data storage tusb_remake: {clock_ring_time:0} in minecraft:overworld run schedule function world_manager:dimension/skylands/clock/ring 1t
+execute unless data storage world: {clock_ring_time:0} in minecraft:overworld run schedule function world_manager:dimension/skylands/clock/ring 1t

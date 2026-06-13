@@ -1,8 +1,8 @@
 #> world_manager:area/portal/tocult_colde/redstone/close
 ### 古代遺跡　調査コードRSのワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "古代遺跡　調査コードRS"
-data remove storage tusb_remake: portal.tocult_colde.redstone
+data modify storage world: portal_name set value "古代遺跡　調査コードRS"
+data remove storage world: portal.tocult_colde.redstone
 execute positioned 1278 96 1538 run function world_manager:area/portal/close
 
 ### チャンク読み込み

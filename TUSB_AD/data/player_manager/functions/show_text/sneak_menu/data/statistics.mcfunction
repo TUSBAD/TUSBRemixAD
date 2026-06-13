@@ -4,7 +4,7 @@
 
 # mathの準備
 execute store result score 経過時間 Settings run time query gametime
-execute store result score _ Settings run data get storage tusb_remake: start_time
+execute store result score _ Settings run data get storage core: start_time
 execute store result storage math: in int 1 run scoreboard players operation 経過時間 Settings -= _ Settings
 
 ## 経過時間を表示用に分割

@@ -1,8 +1,8 @@
 #> world_manager:area/portal/tocult_colde/frontier/close
 ### 辺境のワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "辺境"
-data remove storage tusb_remake: portal.tocult_colde.frontier
+data modify storage world: portal_name set value "辺境"
+data remove storage world: portal.tocult_colde.frontier
 execute positioned 1341 215 1558 run function world_manager:area/portal/close
 
 ### チャンク読み込み

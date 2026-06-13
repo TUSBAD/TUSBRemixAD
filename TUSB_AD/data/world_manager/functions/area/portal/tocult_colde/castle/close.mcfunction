@@ -1,8 +1,8 @@
 #> world_manager:area/portal/tocult_colde/castle/close
 ### トカルト城のワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "トカルト城"
-data remove storage tusb_remake: portal.tocult_colde.castle
+data modify storage world: portal_name set value "トカルト城"
+data remove storage world: portal.tocult_colde.castle
 execute positioned 1278 96 1582 run function world_manager:area/portal/close
 
 ### チャンク読み込み
