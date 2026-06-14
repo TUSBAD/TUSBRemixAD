@@ -21,18 +21,18 @@ execute as @a at @s run particle minecraft:instant_effect ~ ~1 ~ 1 1 1 0.1 90 no
 summon minecraft:firework_rocket ~ ~1 ~ {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",Count:1b,tag:{}},Tags:[ConquerFirework]}
 
 title @a times 5 150 20
-title @a subtitle {"translate":"攻略率 : %1$s/%2$s (%3$s.%4$s%%)","italic":true,"color":"white","with":[{"nbt":"conquer.count.total","storage":"tusb_remake:","bold":true,"italic":false},{"score":{"name":"MaxPortalCount","objective":"Settings"}},{"nbt":"conquer.rate.int[]","storage":"tusb_remake:","separator":""},{"nbt":"conquer.rate.cent[]","storage":"tusb_remake:","separator":""}]}
+title @a subtitle {"translate":"攻略率 : %1$s/%2$s (%3$s.%4$s%%)","italic":true,"color":"white","with":[{"nbt":"conquer.count.total","storage":"world:","bold":true,"italic":false},{"score":{"name":"MaxPortalCount","objective":"Settings"}},{"nbt":"conquer.rate.int[]","storage":"world:","separator":""},{"nbt":"conquer.rate.cent[]","storage":"world:","separator":""}]}
 title @a title {"text":"島を攻略した！","color":"gold","bold":true}
 effect give @a minecraft:instant_health 1 6 true
 effect give @a minecraft:saturation 1 19 true
 
 execute store result score 経過時間 Settings run time query gametime
-execute store result score _ Settings run data get storage tusb_remake: start_time
+execute store result score _ Settings run data get storage core: start_time
 execute store result storage math: in int 1 run scoreboard players operation 経過時間 Settings -= _ Settings
 ## 経過時間を表示用に分割
 function #math:clock
 
-tellraw @a [{"translate":"攻略タイム : %1$s","italic":true,"bold":true,"color":"white","with":[{"translate":"%1$s時間%2$s分%3$s秒","italic":false,"with":[{"nbt":"out.total_hour","storage":"math:"},{"nbt":"out.minute","storage":"math:"},{"nbt":"out.second","storage":"math:"}]}]},{"nbt":"_","storage":"tusb_remake:","interpret":true}]
+tellraw @a [{"translate":"攻略タイム : %1$s","italic":true,"bold":true,"color":"white","with":[{"translate":"%1$s時間%2$s分%3$s秒","italic":false,"with":[{"nbt":"out.total_hour","storage":"math:"},{"nbt":"out.minute","storage":"math:"},{"nbt":"out.second","storage":"math:"}]}]},{"nbt":"_","storage":"world:","interpret":true}]
 
 scoreboard players reset @s UseEnderEye
 
@@ -42,17 +42,17 @@ execute in minecraft:overworld if block 3 77 87 minecraft:end_portal_frame[eye=t
 execute in minecraft:overworld if block -70 15 32 minecraft:end_portal_frame[eye=true] run function world_manager:area/conquer/traders_island
 
 # 15島攻略した場合の処理
-execute if data storage tusb_remake: conquer.count{total:15} as @a run tellraw @a {"translate": "テーブルマウンテンに行けるようになった！","color": "green"}
+execute if data storage world: conquer.count{total:15} as @a run tellraw @a {"translate": "テーブルマウンテンに行けるようになった！","color": "green"}
 
 # 20島攻略した場合の処理
-execute if data storage tusb_remake: conquer.count{total:20} as @a run tellraw @a {"translate": "EXドメインにて周回ボス戦ができるようになりました！","color": "yellow"}
+execute if data storage world: conquer.count{total:20} as @a run tellraw @a {"translate": "EXドメインにて周回ボス戦ができるようになりました！","color": "yellow"}
 
 # 50島攻略した場合の処理
-execute if data storage tusb_remake: conquer.count{total:50} positioned -2720 9 122 run forceload add ~ ~ ~ ~
-execute if data storage tusb_remake: conquer.count{total:50} run schedule function world_manager:area/conquer/island_complete_50 1t
+execute if data storage world: conquer.count{total:50} positioned -2720 9 122 run forceload add ~ ~ ~ ~
+execute if data storage world: conquer.count{total:50} run schedule function world_manager:area/conquer/island_complete_50 1t
 
 # 80島攻略した場合の処理
-execute if data storage tusb_remake: conquer.count{total:80} as @a run function world_manager:area/conquer/island_complete_80
+execute if data storage world: conquer.count{total:80} as @a run function world_manager:area/conquer/island_complete_80
 
 ### ハードコアモードだった場合全員を復活
-execute if data storage tusb_remake: settings{hardcore:true} as @a[tag=death] run function core:hard_core_mode/respawn
+execute if data storage world: settings{hardcore:true} as @a[tag=death] run function core:hard_core_mode/respawn

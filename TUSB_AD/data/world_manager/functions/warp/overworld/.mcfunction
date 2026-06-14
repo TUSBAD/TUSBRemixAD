@@ -28,9 +28,9 @@ execute positioned -96 14 56 align xyz if entity @s[dx=1,dy=0,dz=0] run tp @s 24
 execute positioned 47 67 -2186 align xyz as @s[dx=0] positioned -1919.5 6.5 -191.5 positioned ~ ~ ~-2 at @e[type=area_effect_cloud,distance=..0.1,sort=nearest,limit=1] facing entity @e[type=area_effect_cloud,distance=..1.1,sort=random,limit=1] feet positioned as @s positioned ~ ~ ~-4 positioned ^ ^ ^2 positioned 47.5 ~ ~ run tp @s ~ ~ ~
 
 ### チュートリアルワープ
-execute if data storage tusb_remake: portal.cloudia.tutorial positioned -1885 114 -194 align xyz if entity @s[dx=0,dy=1,dz=0] run tp @s -1887 115.5 -189
+execute if data storage world: portal.cloudia.tutorial positioned -1885 114 -194 align xyz if entity @s[dx=0,dy=1,dz=0] run tp @s -1887 115.5 -189
 ### クラウディア城までのワープ
-execute if data storage tusb_remake: portal.cloudia.castle positioned -2478 4 -128 align xyz if entity @s[dx=0,dy=1,dz=0] run tp @s -2374.5 80.5 -130.5
+execute if data storage world: portal.cloudia.castle positioned -2478 4 -128 align xyz if entity @s[dx=0,dy=1,dz=0] run tp @s -2374.5 80.5 -130.5
 
 ### ガリバーランドの印板取得
 execute positioned 24 72 803 align xyz if entity @s[dx=0] unless entity @e[dx=0,type=item,tag=SealBreakerItem] positioned ~0.5 ~ ~0.5 run function world_manager:warp/overworld/gullivers_land/yellow
@@ -45,7 +45,7 @@ execute positioned -2733 88 -383 align xyz if entity @s[dz=1] run advancement gr
 execute positioned -65 15 28 align xyz if entity @s[dx=0] if entity @s[advancements={player_manager:block_interact/press={trading_show_status=false}}] run function player_manager:show_text/sneak_menu/data/status
 execute positioned -65 15 28 align xyz if entity @s[dx=0] run advancement grant @s only player_manager:block_interact/press trading_show_status
 ### 交易島の現在の攻略率表示
-execute positioned -63 15 28 align xyz if entity @s[dx=0] if entity @s[advancements={player_manager:block_interact/press={trading_show_conquer=false}}] run function player_manager:show_text/sneak_menu/data/conquer
+execute positioned -63 15 28 align xyz if entity @s[dx=0] if entity @s[advancements={player_manager:block_interact/press={trading_show_conquer=false}}] run function player_manager:show_text/sneak_menu/show_world_info/all
 execute positioned -63 15 28 align xyz if entity @s[dx=0] run advancement grant @s only player_manager:block_interact/press trading_show_conquer
 
 ### コオリトカス

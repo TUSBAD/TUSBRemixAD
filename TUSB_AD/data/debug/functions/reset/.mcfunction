@@ -254,15 +254,15 @@ scoreboard players reset * PotentialSkill
 
 ### ハードコアモード
 scoreboard players reset * hcmode
-data remove storage tusb_remake: settings.hardcore
+data remove storage world: settings.hardcore
 
 ### トカルトモード
 scoreboard players reset * isfmode
-data remove storage tusb_remake: settings.toculting
+data remove storage world: settings.toculting
 
 ### タイムリミットモード
 scoreboard players reset * tlmode
-data remove storage tusb_remake: settings.time_limit
+data remove storage world: settings.time_limit
 
 ### インフィニティボスメイクアップ
 scoreboard players reset * MakeupTickB

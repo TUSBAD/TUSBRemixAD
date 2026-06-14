@@ -4,10 +4,10 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 料理をしたフラグをリセット
-data modify storage tusb_remake: cooked_state set value "none"
+data modify storage skill: cooked_state set value "none"
 function job:skill/archer/wild_cooking/porkchop
 
-execute if data storage tusb_remake: {cooked_state:"none"} run function job:skill/archer/wild_cooking/result/none
-execute if data storage tusb_remake: {cooked_state:"bad"} run function job:skill/archer/wild_cooking/result/bad
-execute if data storage tusb_remake: {cooked_state:"strange"} run function job:skill/archer/wild_cooking/result/strange
-execute if data storage tusb_remake: {cooked_state:"good"} run function job:skill/archer/wild_cooking/result/good
+execute if data storage skill: {cooked_state:"none"} run function job:skill/archer/wild_cooking/result/none
+execute if data storage skill: {cooked_state:"bad"} run function job:skill/archer/wild_cooking/result/bad
+execute if data storage skill: {cooked_state:"strange"} run function job:skill/archer/wild_cooking/result/strange
+execute if data storage skill: {cooked_state:"good"} run function job:skill/archer/wild_cooking/result/good

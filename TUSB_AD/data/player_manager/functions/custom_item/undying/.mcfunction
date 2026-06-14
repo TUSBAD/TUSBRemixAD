@@ -28,10 +28,10 @@
 function #oh_my_dat:please
 
 # 負荷軽減のため先にSelectedItemを取得しておく
-data modify storage tusb_remake: SelectedItem set from entity @s SelectedItem
+data modify storage item: SelectedItem set from entity @s SelectedItem
 
 # 入手時にUUIDを割り当てる
-execute if data storage tusb_remake: {SelectedItem:{tag:{Undying:true}}} unless data storage tusb_remake: SelectedItem.tag.UUID run function player_manager:custom_item/undying/first
+execute if data storage item: {SelectedItem:{tag:{Undying:true}}} unless data storage item: SelectedItem.tag.UUID run function player_manager:custom_item/undying/first
 
 # Undyingを持っていたのならtestを実行
 execute if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying run function player_manager:custom_item/undying/test
@@ -45,7 +45,7 @@ execute unless data entity @s SelectedItem.tag{Undying:true} run data remove sto
 
 # execute unless data storage _: {_:{mainhand:true}} if entity @s[tag=UndyingMainhand] run data modify storage _: _.use set value true
 # execute unless data storage _: {_:{offhand:true}} if entity @s[tag=UndyingOffhand] run data modify storage _: _.use set value true
-# execute if data storage _: {_:{use:true}} unless data entity @s SelectedItem run function player_manager:custom_item/undying/use/cheak
+# execute if data storage _: {_:{use:true}} unless data entity @s SelectedItem run function player_manager:custom_item/undying/use/check
 
 # execute if data storage _: {_:{mainhand:true}} run function player_manager:custom_item/undying/mainhand
 # execute if data storage _: {_:{offhand:true}} run function player_manager:custom_item/undying/offhand

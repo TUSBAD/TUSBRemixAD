@@ -5,4 +5,4 @@
 
 particle explosion ~ ~0.2 ~ 0 0 0 0 0 force
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

@@ -10,4 +10,4 @@ particle minecraft:large_smoke ~ ~0.3 ~ 0 0 0 0 1 force
 
 tag @s[predicate=player_manager:effects/is_strength] remove TsuntsunDash
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

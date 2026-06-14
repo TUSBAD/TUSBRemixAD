@@ -21,4 +21,3 @@ give @s minecraft:white_wool 16
 
 ## 職業島にTP
 execute in minecraft:overworld run tp @s -1786 113 -137 -90 0
-execute if data storage tusb_remake: settings{toculting:1b} run give @s torch 64

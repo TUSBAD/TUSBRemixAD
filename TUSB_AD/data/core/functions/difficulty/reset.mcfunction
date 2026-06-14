@@ -8,5 +8,5 @@
 function core:difficulty/apply/casual
 function core:difficulty/color/casual
 #> 初期化
-data remove storage tusb_remake: difficult
+data remove storage core: difficult
 schedule function core:difficulty/select/end 1t replace

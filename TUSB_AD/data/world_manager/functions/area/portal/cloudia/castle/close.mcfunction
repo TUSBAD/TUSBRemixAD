@@ -4,8 +4,8 @@
 # クリスタルのmin.min -2479 3 -129
 # コマブロ -2380 75 -131
 
-data modify storage tusb_remake: portal_name set value "クラウディア城"
-data remove storage tusb_remake: portal.cloudia.castle
+data modify storage world: portal_name set value "クラウディア城"
+data remove storage world: portal.cloudia.castle
 execute positioned -2479 3 -129 run function world_manager:area/portal/close
 
 ### チャンク読み込み

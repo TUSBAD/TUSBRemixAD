@@ -11,4 +11,4 @@ execute as @e[type=player,distance=..20] at @s run effect give @s invisibility 1
 execute as @e[type=player,distance=..20] at @s run function player_manager:effect/clear_bad_effect
 execute as @e[type=player,distance=..20] at @s run scoreboard players add @s MP 1
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

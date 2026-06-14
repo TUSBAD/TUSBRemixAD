@@ -5,7 +5,7 @@
 
 forceload add ~-1 ~-1 ~3 ~3
 ### メッセージ
-execute if block ~ ~ ~ minecraft:air run tellraw @a [{"translate":"ワープクリスタル【%1$s】が閉じた。","color":"aqua","with":[{"nbt":"portal_name","storage":"tusb_remake:"}]}]
+execute if block ~ ~ ~ minecraft:air run tellraw @a [{"translate":"ワープクリスタル【%1$s】が閉じた。","color":"aqua","with":[{"nbt":"portal_name","storage":"world:"}]}]
 ### 一旦空気を確保
 # fill ~-1 ~1 ~1 ~3 ~2 ~1 minecraft:air
 fill ~-1 ~1 ~-1 ~3 ~2 ~3 minecraft:air replace minecraft:vine

@@ -8,4 +8,4 @@ particle minecraft:sweep_attack ~ ~-0.3 ~ 0 0 0 0 1 force
 
 execute as @e[distance=..6,type=#lib:mob,tag=Enemy,tag=!FallDown] if predicate job:is_no_onground at @s run function job:skill/archer/bird_strike/hit/
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

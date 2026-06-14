@@ -27,4 +27,4 @@ execute if score _ ActivatedSkill matches 6241..6249 run data modify storage sco
 execute if score _ ActivatedSkill matches 6240 run execute positioned ^ ^ ^3 as @e[distance=..3,type=#lib:mob,tag=Enemy] positioned ^ ^ ^-3 run function job:skill/archer/blast_shot/hit/damage1
 execute if score _ ActivatedSkill matches 6241..6249 run execute positioned ^ ^ ^3 as @e[distance=..3,type=#lib:mob,tag=Enemy] positioned ^ ^ ^-3 run function job:skill/archer/blast_shot/hit/damage2
 
-data modify storage tusb_remake: tsuntsun_attack.wolf set value true
+data modify storage skill: tsuntsun_attack.wolf set value true

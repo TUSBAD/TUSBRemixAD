@@ -2,28 +2,14 @@
 #
 # 毎ティック最初に実行したいもの
 #
-# @within tags function #minecraft:tick
+# @within function #minecraft:tick
 
-# ワープポータル処理待ちの時はチェックする
-    execute as @a[tag=PortalCheck] at @s run function world_manager:warp/
 
-# 強制的に消したいアイテムをドロップしていたら消す(インベントリ内の場合は進捗で消す)
-    execute as @a[scores={Drop=1..}] at @s anchored eyes positioned ^ ^ ^ run kill @e[distance=..2,type=item,predicate=lib:force_vanishing]
-    scoreboard players reset @a Drop
 
-# アスレチックのバードケージでエリトラの飛べるタイミングを昔と同じにする
-    execute as @a[predicate=player_manager:bird_in_cage] run function world_manager:dimension/nether/athletic/bird_cage/modify_elytra
+
 
 # 魔法のブロックの共通処理
     execute as @e[type=item_frame,tag=MagicBlock] at @s run function job:skill/summoner/magic_block/check
-
-# 不滅
-    # TypeCheckedされると不都合なのでここ
-    # 使用しても消えないようになるエンチャント
-    tag @a[predicate=player_manager:has_undying] add Undying
-    execute as @a[tag=Undying] at @s unless predicate player_manager:open_container run function player_manager:custom_item/undying/
-    tag @a[tag=Undying] remove Undying
-    tag @a[predicate=player_manager:has_undying] add Undying
 
 # TypeCheck 新しくでてきた敵に色々設定するやつ
     execute as @e[type=!#lib:ignore_type_check,type=!area_effect_cloud,tag=!TypeChecked] at @s run function mob_manager:entity/type_check

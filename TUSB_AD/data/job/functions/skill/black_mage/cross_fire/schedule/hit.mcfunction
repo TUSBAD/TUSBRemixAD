@@ -13,8 +13,8 @@ effect give @s minecraft:saturation 10 127 true
 data modify entity @s Fire set value 40s
 
 ### 燃える敵で、火炎耐性がかかっていない場合、ダメージが3倍
-data modify storage tusb_remake: cross_fire_damage set from storage score_damage: Argument.Damage
+data modify storage skill: cross_fire_damage set from storage score_damage: Argument.Damage
 execute if entity @s[type=#lib:burnable] unless predicate job:is_fire_resistance store result storage score_damage: Argument.Damage double 0.03 run data get storage score_damage: Argument.Damage 100
 ### ダメージを与える
 function score_damage:api/attack
-data modify storage score_damage: Argument.Damage set from storage tusb_remake: cross_fire_damage
+data modify storage score_damage: Argument.Damage set from storage skill: cross_fire_damage

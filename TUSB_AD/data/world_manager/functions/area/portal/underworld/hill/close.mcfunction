@@ -1,8 +1,8 @@
 #> world_manager:area/portal/underworld/hill/close
 ### 地下キノコの山のワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "地下キノコの山"
-data remove storage tusb_remake: portal.underworld.hill
+data modify storage world: portal_name set value "地下キノコの山"
+data remove storage world: portal.underworld.hill
 execute positioned 888 16 -215 run function world_manager:area/portal/close
 
 ### チャンク読み込み

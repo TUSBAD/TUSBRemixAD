@@ -12,11 +12,11 @@ execute if score _ ActivatedSkill matches 5212..5219 run tag @s add CrossFire3
 ### リメイク：まっすぐ飛ぶようにする
 data modify entity @s NoGravity set value true
 ### リメイク：飛ぶ速度を遅くする
-data modify storage tusb_remake: Motion set from entity @s Motion
-execute store result storage tusb_remake: Motion[0] double 0.004 run data get storage tusb_remake: Motion[0] 100
-execute store result storage tusb_remake: Motion[1] double 0.004 run data get storage tusb_remake: Motion[1] 100
-execute store result storage tusb_remake: Motion[2] double 0.004 run data get storage tusb_remake: Motion[2] 100
-data modify entity @s Motion set from storage tusb_remake: Motion
+data modify storage skill: Motion set from entity @s Motion
+execute store result storage skill: Motion[0] double 0.004 run data get storage skill: Motion[0] 100
+execute store result storage skill: Motion[1] double 0.004 run data get storage skill: Motion[1] 100
+execute store result storage skill: Motion[2] double 0.004 run data get storage skill: Motion[2] 100
+data modify entity @s Motion set from storage skill: Motion
 
 ### 持続時間を設定
 scoreboard players set @s RemainTimer 80

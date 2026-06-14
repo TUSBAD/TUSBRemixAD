@@ -5,7 +5,7 @@
 # @within function world_manager:area/conquer/
 
 # 500スキル解放
-data modify storage tusb_remake: skill_liberation set value 1b
+data modify storage skill: skill_liberation set value 1b
 
 ### スキルテーブルを初期化
 function job:init_table/

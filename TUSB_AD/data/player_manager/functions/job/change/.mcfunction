@@ -9,23 +9,23 @@ function player_manager:job/save/
 scoreboard players operation @s Job = @s ChangeJob
 ### 職業変更
 ## 剣士
-execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:1} 0
-execute unless data storage tusb_remake: {_:0} run scoreboard players set @s Job 1
+execute store result storage job: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:1} 0
+execute unless data storage job: {_:0} run scoreboard players set @s Job 1
 ## 忍者
-execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:2} 0
-execute unless data storage tusb_remake: {_:0} run scoreboard players set @s Job 2
+execute store result storage job: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:2} 0
+execute unless data storage job: {_:0} run scoreboard players set @s Job 2
 ## 狩人
-execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:3} 0
-execute unless data storage tusb_remake: {_:0} run scoreboard players set @s Job 3
+execute store result storage job: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:3} 0
+execute unless data storage job: {_:0} run scoreboard players set @s Job 3
 ## 白魔導士
-execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:4} 0
-execute unless data storage tusb_remake: {_:0} run scoreboard players set @s Job 4
+execute store result storage job: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:4} 0
+execute unless data storage job: {_:0} run scoreboard players set @s Job 4
 ## 黒魔導士
-execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:5} 0
-execute unless data storage tusb_remake: {_:0} run scoreboard players set @s Job 5
+execute store result storage job: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:5} 0
+execute unless data storage job: {_:0} run scoreboard players set @s Job 5
 ## 召喚士
-execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:6} 0
-execute unless data storage tusb_remake: {_:0} run scoreboard players set @s Job 6
+execute store result storage job: _ int 1 run clear @s minecraft:paper{JobChange:true,Job:6} 0
+execute unless data storage job: {_:0} run scoreboard players set @s Job 6
 
 clear @s minecraft:paper{JobChange:true}
 

@@ -14,11 +14,11 @@
     function lib:tsb/array/session/open
 
 # 下ごしらえ
-    data modify storage remake_remix: Inventory set from storage api: Inventory
-    data remove storage remake_remix: Inventory[{tag:{Enchantments:[{id:"minecraft:vanishing_curse"}]}}]
-    data remove storage remake_remix: Inventory[{tag:{Enchantments:[{id:"minecraft:binding_curse"}]}}]
-    data remove storage remake_remix: Inventory[{tag:{Kyoumei:1b}}]
-    data modify storage lib: Array set from storage remake_remix: Inventory
+    data modify storage item: Inventory set from storage api: Inventory
+    data remove storage item: Inventory[{tag:{Enchantments:[{id:"minecraft:vanishing_curse"}]}}]
+    data remove storage item: Inventory[{tag:{Enchantments:[{id:"minecraft:binding_curse"}]}}]
+    data remove storage item: Inventory[{tag:{Kyoumei:1b}}]
+    data modify storage lib: Array set from storage item: Inventory
 
 # 一回目
     function lib:tsb/array/packing_chest
@@ -36,7 +36,7 @@
     function lib:tsb/array/session/close
 
 # 削除
-    data remove storage remake_remix: Inventory
+    data remove storage item: Inventory
 
 # 共鳴処理
     execute if data storage api: Inventory[{tag:{Kyoumei:1b}}] run function player_manager:custom_item/kyoumei/

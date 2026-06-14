@@ -8,7 +8,7 @@ scoreboard players operation @s Hunger = @s Food
 
 # RR追加部分
 # アイテムをぶちまける
-execute unless data storage tusb_remake: settings{is_keepinventory:true} run function player_manager:death/item_drop
+execute unless data storage core: settings{is_keepinventory:true} run function player_manager:death/item_drop
 
 ### 死をカウントアップ
 scoreboard players add AllDeathCount DeathCount 1
@@ -41,8 +41,5 @@ tag @s[tag=ReRaise] add CastRaise
 tag @s[tag=ReRaise] remove ReRaise
 
 # ハードコア死亡時
-execute if data storage tusb_remake: settings{hardcore:true} run tag @s add death
-execute if data storage tusb_remake: settings{hardcore:true} run gamemode spectator @s
-
-# トカルトモード時松明付与
-execute if data storage tusb_remake: settings{toculting:true} run give @s torch 32
+execute if data storage core: settings{hardcore:true} run tag @s add death
+execute if data storage core: settings{hardcore:true} run gamemode spectator @s

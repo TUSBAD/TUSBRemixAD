@@ -5,3 +5,5 @@
 
 playsound minecraft:entity.generic.extinguish_fire master @a[distance=..16] ~ ~ ~ 1 2 0
 particle minecraft:large_smoke ~ ~1 ~ 0.5 0.5 0.5 0.1 30 force
+
+#TODO：デバフをつける

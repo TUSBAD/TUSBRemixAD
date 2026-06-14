@@ -6,7 +6,7 @@
 ### RR変更
 
 # 取得量×(全体の経験値量÷自分の総経験値量)
-scoreboard players operation $Global TotalXp += @s ItemCount
+scoreboard players operation #Global TotalXp += @s ItemCount
 scoreboard players operation _ ItemCount = @s ItemCount
 execute as @a[scores={Job=1..}] at @s run function player_manager:job/pick_exp/each_player
 

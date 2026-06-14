@@ -8,7 +8,7 @@ title @s subtitle {"text":"= Gulliver's Land =","italic":true,"color":"gold"}
 title @s title {"text":"ガリバーランド","color":"yellow","bold":true,"underlined":true}
 
 ### エリア侵入記録
-data modify storage tusb_remake: area_name.gullivers_land set value "ガリバーランド"
+data modify storage world: area_name.gullivers_land set value "ガリバーランド"
 
 ### Adv処理
 tag @s add Adv

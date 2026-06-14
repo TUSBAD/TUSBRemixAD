@@ -56,5 +56,5 @@ fill 35 0 6 59 24 30 minecraft:crying_obsidian replace minecraft:command_block[f
 fill 35 0 6 59 24 30 minecraft:command_block[facing=east]{auto:false,Command:"function world_manager:dimension/skylands/clock/stop"} replace minecraft:crying_obsidian
 
 ### 時計島鳴らすよ
-data modify storage tusb_remake: clock_ring_time set value 180
+data modify storage world: clock_ring_time set value 180
 execute in minecraft:overworld run schedule function world_manager:dimension/skylands/clock/ring 1t

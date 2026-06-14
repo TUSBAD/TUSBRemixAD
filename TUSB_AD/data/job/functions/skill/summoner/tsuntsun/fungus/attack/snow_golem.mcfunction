@@ -13,4 +13,4 @@ execute anchored eyes positioned ^ ^ ^1 anchored feet run data modify entity @e[
 
 playsound minecraft:entity.ghast.shoot master @a[distance=..16] ~ ~ ~ 1 2 1
 
-data modify storage tusb_remake: tsuntsun_attack.snow_golem set value true
+data modify storage skill: tsuntsun_attack.snow_golem set value true

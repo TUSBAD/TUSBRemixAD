@@ -4,8 +4,8 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 現在地点がforceloadされているかチェック
-execute store result storage tusb_remake: _ byte 1 run forceload query ~ ~
+execute store result storage core: _ byte 1 run forceload query ~ ~
 ### チャンク読み込み
 forceload add ~ ~
 ### forceloadされていなかったチャンクだったら解除
-execute if data storage tusb_remake: {_:false} run forceload remove ~ ~
+execute if data storage core: {_:false} run forceload remove ~ ~

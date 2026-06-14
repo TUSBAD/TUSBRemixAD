@@ -3,6 +3,6 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-data modify storage tusb_remake: portal_name set value "迷い断ち切る地"
-data modify storage tusb_remake: portal.table_mountain.waterway_village set value true
+data modify storage world: portal_name set value "迷い断ち切る地"
+data modify storage world: portal.table_mountain.waterway_village set value true
 execute positioned -1948 123 -55 run function world_manager:area/portal/open

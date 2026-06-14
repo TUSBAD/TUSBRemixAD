@@ -16,11 +16,11 @@ tellraw @a {"translate":"%1$sにレイズの効果がかかった。","color":"g
 
 ### 死んだ場所を記録
 function #oh_my_dat:please
-data modify storage tusb_remake: _ set value {}
-data modify storage tusb_remake: _.Dimension set from entity @s Dimension
-data modify storage tusb_remake: _.Pos set from entity @s Pos
-data modify storage tusb_remake: _.Rotation set from entity @s Rotation
-data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.RaisePoint set from storage tusb_remake: _
+data modify storage skill: _ set value {}
+data modify storage skill: _.Dimension set from entity @s Dimension
+data modify storage skill: _.Pos set from entity @s Pos
+data modify storage skill: _.Rotation set from entity @s Rotation
+data modify storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.RaisePoint set from storage skill: _
 
 ### 復活時したときにアイテムを拾えないようにする
 gamemode spectator @s
