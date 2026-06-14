@@ -4,6 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 playsound item.trident.thunder player @s ~ ~ ~ 5 1 1
+title @s times 0t 30t 10t
 tellraw @s [{"translate":"%1$sは%2$sを受けた！","color":"red","with":[{"selector":"@s"},{"interpret":true,"storage":"effect:","nbt":"BadEffectsName.Doom"}]}]
 execute if score #Difficulty Difficulty matches 1..3 run scoreboard players set @s Doom 11
 execute if score #Difficulty Difficulty matches 1 run scoreboard players set @s DoomSecond 3
