@@ -24,13 +24,6 @@
 # 個人ロッカー(印板)から音
     execute at @e[tag=PersonalLockerSign] run playsound minecraft:block.beacon.ambient block @a[distance=..16]
 
-# 1分処理
-    scoreboard players add #SecCount Global 1
-# 0になるのは嫌な予感の演出が終わる時だけなので、赤い視界をリセットする
-    execute if score #SecCount Global matches 0..2 run worldborder warning distance 0
-# 1分処理を呼び出す
-    execute if score #SecCount Global matches 61.. run function core:clock/min
-
 # 動き停止飛翔物判定
     execute as @e[tag=FlyingObject] if predicate lib:is_flying_object at @s run function mob_manager:entity/check_projectile
     execute as @e[tag=InKasap] at @s run function mob_manager:entity/check_kasap

@@ -9,7 +9,7 @@
     function core:clock/tick
 
 #> ハード固定化
-    function core:system/force_difficulty
+    function core:login/force_difficulty
 
 #> プレイヤーTick
     execute as @a at @s run function player:tick/

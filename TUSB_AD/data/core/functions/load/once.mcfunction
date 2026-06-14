@@ -352,8 +352,11 @@ scoreboard objectives add __ dummy {"text":"一時変数 その2"}
 scoreboard objectives add Calc dummy {"text":"計算変数"}
 scoreboard objectives add Difficulty dummy {"text":"難易度保存スコア"}
 scoreboard objectives add DoomEx dummy {"text":"致死の宣告カウント","color":"#cc0000"}
-scoreboard objectives add ChangeJob trigger {"text":"職業変更トリガー"}
 scoreboard objectives add AllExp dummy {"text": "総獲得経験値"}
+
+#> トリガー
+scoreboard objectives add ChangeJob trigger {"text":"職業変更トリガー"}
+scoreboard objectives add ChangeDifficulty trigger {"text":"難易度変更"}
 
 #> Entity関連スコア
 scoreboard objectives add Damage dummy {"text":"ダメージ"}
