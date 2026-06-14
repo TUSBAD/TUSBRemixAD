@@ -2,34 +2,10 @@
 #
 # 毎ティック最後に実行したいもの
 #
-# @within tags function #minecraft:tick
+# @within function #minecraft:tick
 
 # カスタム体力へのダメージ処理
     execute as @e if predicate lib:custom_mob at @s run function mob_manager:custom_mob/health/
 
 # Logテキストの処理
     execute as @e if predicate lib:log_stand at @s run function mob_manager:custom_mob/health/log/display_tick
-
-# マジックシールドのチェック
-    execute as @a[tag=MagicShield] run effect give @s minecraft:resistance 1 100
-# ウィンドウォール
-    execute as @a[scores={WindWall=0..}] at @s run function job:skill/black_mage/wind_wall/check
-
-# プレイヤーの回復効果
-    execute as @a[predicate=player_manager:heal_count/healcount_small] run function player_manager:health/heal/small
-    execute as @a[predicate=player_manager:heal_count/healcount_large] run function player_manager:health/heal/large
-
-# HP記録
-    execute as @a[scores={HPChanging=0..}] run scoreboard players operation @s HP = @s HPChanging
-    scoreboard players reset @a[scores={HPChanging=0..}] HPChanging
-# 満腹度記録
-    execute as @a[scores={FoodChanging=0..}] run scoreboard players operation @s Food = @s FoodChanging
-    scoreboard players reset @a[scores={FoodChanging=0..}] FoodChanging
-# 満腹度制限
-    execute as @a[scores={FoodMax=0..}] run function player_manager:food/limit
-
-# 死亡トリガー TODO
-    scoreboard players reset @a[scores={Deaths=1..}] Deaths
-# 被ダメージトリガーリセット TODO
-    scoreboard players reset @a[scores={DamageTaken=0..}] DamageTaken
-    scoreboard players reset @a[scores={DamageResisted=0..}] DamageResisted
