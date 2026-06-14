@@ -2,7 +2,7 @@
 #
 # メインクロック
 #
-# @within tags function #minecraft:tick
+# @within function #minecraft:tick
 
 # 初回ログイン時
     execute as @a[team=] at @s run function core:login/first
@@ -39,9 +39,6 @@
 # お祈り処理(kill)
     execute as @a[scores={kill=1..}] at @s run function player_manager:kill/pray/
 
-# 交易島落下防止＆製作者村人の追加
-    execute positioned -58 23 22 in minecraft:overworld run tp @e[distance=25..,type=villager,tag=NewShopStaff] -54.5 24.5 9.0
-
 # 村人会話
     execute as @a[scores={AgentFlag=1..}] at @s run function mob_manager:villager/talk_event/agent/trigger/
     execute as @a[scores={PastorFlag=1..}] at @s run function mob_manager:villager/talk_event/pastor/trigger/
@@ -52,16 +49,6 @@
 
 # スポナー更新
     execute as @e[tag=Spawner,type=armor_stand,scores={SpawnerId=-2147483648..2147483647}] at @s run function asset_manager:spawner/
-
-# テーブルマウンテンの不思議な力
-    execute positioned -6 65 -2148 as @a[dx=64,dy=135,dz=48,gamemode=adventure] run function world_manager:dimension/table_mountain/fall_force
-    execute as @a[predicate=world_manager:area/table_mountain,gamemode=!spectator] at @s if block ~ ~-0.5 ~ minecraft:redstone_block unless block ~ ~-1.5 ~ minecraft:command_block run function world_manager:dimension/table_mountain/red_zone
-
-# ネザー火山噴火
-    execute as @a[scores={MineNetherrack=1..}] at @s run function world_manager:dimension/nether/volcano/
-
-# サボテン島の罠 もとい サトウキビ島
-    execute positioned 39 7 67 if entity @a[distance=..10,limit=1] run function world_manager:dimension/skylands/sealed_alter/
 
 # 透明化＆エーテル Invisible
     execute as @a[predicate=player_manager:effects/is_invisibility] at @s run function player_manager:effect/invisible/

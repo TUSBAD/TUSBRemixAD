@@ -3,7 +3,7 @@
 # 毎tick処理
 #
 # @within function core:load/once
-#declare score_holder #Tick Count
+    #declare score_holder #Tick Count
 
 #> 現在時刻更新
     function core:clock/tick
@@ -11,8 +11,11 @@
 #> ハード固定化
     function core:login/force_difficulty
 
+#> ワールドTick
+    function world_manager:tick
+
 #> プレイヤーTick
-    execute as @a at @s run function player:tick/
+    execute as @a at @s run function player_manager:tick
 
 #> 1秒処理
     scoreboard players add #Tick Count 1

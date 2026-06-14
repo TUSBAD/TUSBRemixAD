@@ -1,7 +1,7 @@
 #> core:clock/one_minute
 #
 #> 1分処理
-#
+# ここには処理を追加しないこと。必要な場合、それぞれのフォルダにone_minuteを作成して処理を追加すること。
 # @within function core:clock/ten_seconds
 #declare score_holder #TenSeconds Count
 #declare score_holder #Minutes Count

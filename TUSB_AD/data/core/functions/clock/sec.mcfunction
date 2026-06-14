@@ -39,8 +39,6 @@
 
 # トカルトの処理
     execute unless data storage world: settings{toculting:1b} as @a[predicate=world_manager:area/tocult_colde,gamemode=!spectator] at @s run function world_manager:dimension/tocult/process/
-    execute unless data storage world: settings{toculting:1b} as @a[predicate=!world_manager:area/tocult_colde,gamemode=!spectator] at @s if entity @e[tag=TocultArea,distance=..32] run function world_manager:dimension/tocult/process/
-    execute if data storage world: settings{toculting:1b} as @a[predicate=!world_manager:area/nether_trial,gamemode=!spectator] at @s run function world_manager:dimension/tocult/process/
 
 # ゾンビピッグマンのおこる対象を設定する
     execute as @a[gamemode=!spectator] at @s run function world_manager:dimension/nether/angry
@@ -48,8 +46,6 @@
 # オーラ(AEC)纏ってる敵のオーラを維持する？
     execute as @e[tag=MobCloud] at @s as @e[dx=0,tag=Enemy,sort=nearest,limit=1] at @s as @e[dy=10,tag=MobCloud] run data modify entity @s Age set value 5
 
-# 煉獄ボスと戦闘中の処理
-    execute as 0-0-1-0-4 at @s positioned ~ ~-19 ~74 if block -1860 20 -51 minecraft:slime_block if entity @p[distance=..65,gamemode=!spectator] run function world_manager:dimension/purgatory/boss/attack_check
 
 # 死の宣告
     execute as @a[tag=Doom] run function player_manager:effect/invisible/doom/default
@@ -64,12 +60,6 @@
 # カートスポナーポータルin対策
     tag @e[type=spawner_minecart,tag=CooldownRequired,predicate=lib:is_cooldown_300] add Garbage
 
-###### 島ギミック ########
-# エンダーチェスト島のワープ
-    execute positioned 58 94 -103 as @e[dx=17,dy=2,dz=17] if predicate lib:no_passengers at @s if block ~ ~-1 ~ #lib:stained_glass_and_pane run spreadplayers ~ ~ 1 300 under 319 false @s
-# ホッパー島のワープ
-    execute positioned 177 39 -75 if entity @a[distance=..60,gamemode=!spectator] run function world_manager:dimension/skylands/hopper/
-
 # 祈り(最後の手段/最初に教会に行くまで使えない)を表示
     execute if data storage player: settings{prayable:true} as @a[tag=Pray,scores={Job=1..}] run function player_manager:kill/pray/show
 
@@ -81,9 +71,3 @@
 
 # gamemasterの音
     execute at @e[tag=GameMasterSP,limit=1] run playsound minecraft:entity.warden.heartbeat master @a[distance=..60] ~ ~ ~ 0.6 1 0.0
-
-# 煉獄マグマ
-    execute as @a if dimension minecraft:the_nether unless score @s PurgatoryInvalid matches 1.. at @s if block ~ ~0.5 ~ minecraft:lava run function world_manager:dimension/nether/in_lava
-
-# loop
-    execute in minecraft:overworld run schedule function core:clock/sec 1s
