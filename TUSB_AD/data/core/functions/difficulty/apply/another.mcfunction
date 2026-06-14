@@ -11,7 +11,7 @@ execute unless data storage core: difficult{world:"another"} run function core:d
 data modify storage core: difficult.before set from storage core: difficult.world
 data modify storage core: difficult.world set value "another"
 
-scoreboard players set $Difficulty Difficulty 4
+scoreboard players set #Difficulty Difficulty 4
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
 data modify storage core: settings.is_keepinventory set value false
