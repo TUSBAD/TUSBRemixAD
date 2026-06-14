@@ -4,11 +4,11 @@
 # 最初にas_@aしているので、@sで始められます。
 # @within function core:tick
 
+# -> 0.5秒処理
+    execute if score #Ten_Ticks Count matches 0 run function player_manager:half_second
+
 # -> 1秒処理
     execute if score #Ticks Count matches 0 run function player_manager:one_second
-
-# -> 0.5秒処理
-    execute if score #Ticks Count matches 10 run function player_manager:half_second
 
 # ワープポータル処理待ちの時はチェックする
     execute if entity @s[tag=PortalCheck] run function world_manager:warp/
@@ -90,6 +90,9 @@
     scoreboard players reset @s[scores={FoodChanging=0..}] FoodChanging
 # 満腹度制限
     execute if entity @s[scores={FoodMax=0..}] run function player_manager:food/limit
+
+# めり込み死
+    execute if entity @s[scores={LiveTime=1..},predicate=player_manager:player] if block ^ ^ ^ #lib:unbreakable anchored eyes if block ^ ^ ^ #lib:unbreakable run function player_manager:kill/unbreakable_block
 
 # 死亡トリガー TODO
     scoreboard players reset @s[scores={Deaths=1..}] Deaths

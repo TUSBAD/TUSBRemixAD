@@ -3,7 +3,7 @@
 # 毎tick処理
 #
 # @within function core:load/once
-    #declare score_holder #Tick Count
+    #declare score_holder #Ticks Count
 
 #> 現在時刻更新
     function core:clock/tick
@@ -24,5 +24,4 @@
     execute as @a at @s run function player_manager:tick
 
 #> 1秒処理
-    scoreboard players add #Tick Count 1
-    execute if score #Tick Count matches 20.. run function core:one_second
+    execute if score #Ticks Count matches 0 run function core:one_second

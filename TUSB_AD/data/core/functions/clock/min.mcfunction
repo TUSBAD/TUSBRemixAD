@@ -8,12 +8,3 @@
 
 # 動物誘導イベントのタイマーを経過させる
     scoreboard players remove @e[tag=VillagerMeal] Freshness 1
-
-# 難易度調整
-    function core:set_difficulty/
-
-# 秒数をリセット
-    scoreboard players set #SecCount Global 1
-
-# 嫌な予感のタイマー処理
-    function world_manager:event/rank/
