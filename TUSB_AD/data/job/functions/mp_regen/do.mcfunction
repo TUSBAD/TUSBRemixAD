@@ -1,4 +1,4 @@
-#> player_manager:mp/mp_regen_do
+#> job:mp_regen/do
 #
 # #MPの自然回復処理
 #

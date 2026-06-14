@@ -1,4 +1,4 @@
-#> player_manager:mp/mp_regen
+#> job:mp_regen/
 #
 # MP更新
 
@@ -20,5 +20,4 @@ execute if score @s MPAcceleration matches 1.. run scoreboard players operation 
 scoreboard players operation @s MPHealingWait -= _ _
 
 # 0でMP1回復
-execute if score @s MPHealingWait matches ..0 run function player_manager:mp/mp_regen_do
-#tellraw @s [{"translate":"MP回復加速量|回復ウェイト : %1$s|%2$s","italic":false,"color":"white","with":[{"score": {"name": "@s","objective": "MPAcceleration"},"color":"#ff3333"},{"score": {"name": "@s","objective": "MPHealingWait"},"color":"#00ff00"}]}]
+execute if score @s MPHealingWait matches ..0 run function job:mp_regen/do
