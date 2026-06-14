@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 scoreboard players add @s Choyaku 1
-scoreboard players set @s NinjaTime 3
+scoreboard players set @s NinjaTime 5
 
 execute if score _ ActivatedSkill matches 2222..2229 if score @s Choyaku matches 16.. run scoreboard players set @s Choyaku 15
 execute if score _ ActivatedSkill matches 2221 if score @s Choyaku matches 11.. run scoreboard players set @s Choyaku 10

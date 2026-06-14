@@ -9,7 +9,7 @@
 						"entity": "this",
 						"scores": {
 							"SneakTime": {
-								"min": 5
+								"min": 3
 							}
 						}
 					}
