@@ -3,8 +3,10 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-### 満腹度を記録する
-scoreboard players operation @s Hunger = @s Food
+## 死亡トリガーリセット
+execute store result score @s Hunger run data get entity @s foodLevel
+scoreboard players reset @s Deaths
+advancement revoke @s only player_manager:trigger/death
 
 # RR追加部分
 # アイテムをぶちまける
