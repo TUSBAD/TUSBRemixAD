@@ -16,9 +16,6 @@
 ## TODO
     execute as @e[type=area_effect_cloud,tag=!TypeChecked] at @s run function mob_manager:entity/type_check
 
-# 削除対象のエンティティを削除する
-    function mob_manager:delete/
-
 # エリア変更判定
 #todo:カスタムディメを増やしたらいじります。
     scoreboard players set @a[scores={USBDimension=0..},nbt={Dimension:"minecraft:the_nether"}] AreaChangeFlag -100

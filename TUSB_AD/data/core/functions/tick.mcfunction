@@ -20,8 +20,14 @@
 #> ワールドTick
     function world_manager:tick
 
+#> MobTick
+
+
 #> プレイヤーTick
     execute as @a at @s run function player_manager:tick
 
 #> 1秒処理
     execute if score #Ticks Count matches 0 run function core:one_second
+
+# 削除対象のエンティティを削除する
+    function mob_manager:delete/

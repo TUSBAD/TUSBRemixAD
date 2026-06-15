@@ -29,8 +29,8 @@ scoreboard objectives add TUSB dummy
 scoreboard objectives add LeaveGame minecraft.custom:minecraft.leave_game
 scoreboard objectives add HP dummy {"text": "HP","color": "#ff0053","bold": true}
 scoreboard objectives add HPChanging health "HP変化フラグ"
-scoreboard objectives add Food dummy
-scoreboard objectives add FoodChanging food "満腹度変化フラグ"
+scoreboard objectives add FoodLevel food {"text":"満腹度"}
+scoreboard objectives add LastFoodLevel dummy {"text":"直前満腹度"}
 scoreboard objectives add Hunger dummy "空腹減少量"
 scoreboard objectives add Armor armor "アーマーポイント"
 scoreboard objectives add HPMax dummy "最大HP"
@@ -140,7 +140,6 @@ scoreboard objectives add UseFireworkRocket minecraft.used:minecraft.firework_ro
 
 ### 予感
 scoreboard objectives add ChooseEvent dummy "予感分岐"
-scoreboard objectives add Freshness dummy "誘導羊鮮度"
 
 ## モンスターがスキルを使うタイミングとか種類のやつ
 scoreboard objectives add MobCastTime dummy "敵キャストタイム"
@@ -296,6 +295,7 @@ scoreboard objectives add ShowMenu trigger {"text": "メニュー表示"}
 scoreboard objectives add ChangeSkillSet trigger {"text": "スキル変更表示"}
 scoreboard objectives add SkillSetting trigger {"text": "スキル設定表示"}
 scoreboard objectives add SneakingTime minecraft.custom:sneak_time {"text":"スニーク時間"}
+scoreboard objectives add SneakTrigger trigger {"text":"スニークトリガー"}
 scoreboard objectives add SneakFrequency dummy {"text":"スニーク頻度"}
 
 # 死亡検知用スコア

@@ -9,3 +9,4 @@ scoreboard players set #Seconds Count 0
 scoreboard players set #TenSeconds Count 0
 scoreboard players set #Minutes Count 0
 scoreboard players set #Hours Count 0
+scoreboard players set #Ten_Ticks Count 0
