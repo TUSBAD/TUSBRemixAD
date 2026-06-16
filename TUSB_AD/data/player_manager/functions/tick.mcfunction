@@ -78,19 +78,13 @@
     execute if entity @s[scores={ModeChangeB=0..}] run function job:change/mode/b
 
 # スキル
-    function job:player_tick
+    function job:tick
 
 # tick/trigger
     function player_manager:show_text/trigger/
 
 # 装備効果
     function player_manager:custom_item/equipments/
-
-# マジックシールドのチェック
-    execute if entity @s[tag=MagicShield] run effect give @s minecraft:resistance 1 100
-
-# ウィンドウォール
-    execute if entity @s[scores={WindWall=0..}] run function job:skill/black_mage/wind_wall/check
 
 # プレイヤーの回復効果
     execute if entity @s[predicate=player_manager:heal_count/healcount_small] run function player_manager:health/heal/small
@@ -103,15 +97,8 @@
 # めり込み死
     execute if entity @s[scores={LiveTime=1..},predicate=player_manager:player] if block ^ ^ ^ #lib:unbreakable anchored eyes if block ^ ^ ^ #lib:unbreakable run function player_manager:kill/unbreakable_block
 
-# 緩衝体力用被ダメージ補正処理
-    execute if entity @s[scores={HPChanging=0..}] if predicate player_manager:effects/has_absorptionamount run function core:clock/skill_trigger/setup2
-
 # 死亡トリガー TODO
     scoreboard players reset @s[scores={Deaths=1..}] Deaths
-
-# 被ダメージトリガーリセット TODO
-    scoreboard players reset @s[scores={DamageTaken=0..}] DamageTaken
-    scoreboard players reset @s[scores={DamageResisted=0..}] DamageResisted
 
 # 難易度変更
     execute unless score @s ChangeDifficulty matches 0 run function core:difficulty/change/reject

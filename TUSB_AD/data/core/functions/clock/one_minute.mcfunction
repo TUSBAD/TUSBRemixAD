@@ -9,4 +9,6 @@
 #> 10秒カウントリセットし1分カウントを加算、1分カウントが60になったら1時間処理を実行
 scoreboard players set #TenSeconds Count 0
 scoreboard players add #Minutes Count 1
+scoreboard players add #Half_Hour Count 1
+execute if score #Half_Hour Count matches 30.. run function core:clock/half_hour
 execute if score #Minutes Count matches 60.. run function core:clock/one_hour

@@ -10,13 +10,10 @@ scoreboard players add @s MPMax 1
 ### 最大500
 scoreboard players set @s[scores={MPMax=500..}] MPMax 500
 
-### MPを回復
-scoreboard players operation @s MP = @s MPMax
-
 ### 最大体力計算 = min(MPMax / 8, 50)
-execute store result storage player: _ int 0.125 run scoreboard players get @s MPMax
-execute store result score @s HPMax run data get storage player: _
-scoreboard players set @s[scores={HPMax=51..}] HPMax 50
+#execute store result storage player: _ int 0.125 run scoreboard players get @s MPMax
+#execute store result score @s HPMax run data get storage player: _
+#scoreboard players set @s[scores={HPMax=51..}] HPMax 50
 
 ### MP回復間隔 = 100 - Level
 #scoreboard players set @s CoolTickSpan -100
@@ -41,7 +38,7 @@ title @s title {"text":"LEVEL UP ！","color":"green","bold":true}
 execute if entity @s[scores={Level=1..100,NextExp=..499}] run function job:set_display/learn/
 execute if entity @s[scores={Level=100,NextExp=..499}] run scoreboard players add @s ExpReduce 1
 ### 次の経験値の設定
-function player_manager:health/set_max
+function player_manager:effect/status/life_to_max
 effect give @s instant_health 1 6 true
 scoreboard players operation @s NextExp = @s Level
 execute store result score _ TUSB run data get storage player: Const.ExpMul

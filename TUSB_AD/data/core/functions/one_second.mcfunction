@@ -10,4 +10,4 @@
 execute if score #World ChangeDifficulty matches 0.. run function main:difficulty/change/adopt
 
 #> 予感の赤い奴を消します
-execute if score #Seconds Count matches 0..2 run worldborder warning distance 0
+execute if score #Seconds Count matches 8 run worldborder warning distance 0

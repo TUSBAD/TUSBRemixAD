@@ -19,3 +19,6 @@ execute if score #Seconds Count matches 0 run function player_manager:ten_second
 
 # ゾンビピッグマンのおこる対象を設定する
     execute if entity @s[gamemode=!spectator] run function world_manager:dimension/nether/angry
+
+# 祈り(最後の手段/最初に教会に行くまで使えない)を表示
+    execute if data storage player: settings{prayable:true} as @s[tag=Pray,scores={Job=1..}] run function player_manager:kill/pray/show
