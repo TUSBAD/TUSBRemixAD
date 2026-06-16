@@ -1,0 +1,11 @@
+{
+  "type": "world_manager:the_nether",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "world_manager:the_nether",
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}
