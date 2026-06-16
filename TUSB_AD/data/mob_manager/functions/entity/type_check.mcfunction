@@ -11,7 +11,6 @@
     tag @s[tag=Enemy] add Poofable
 # オーラを纏ってる場合は、オーラを初期する
     execute as @s[tag=Enemy] if predicate mob_manager:typecheck_aec at @s run data merge entity @s {Tags:[MobCloud,TypeChecked],Duration:28,Age:5,WaitTime:5,DurationOnUse:0,RadiusOnUse:0f,RadiusPerTick:0f,ReapplicationDelay:0}
-    #execute if entity @s[tag=Enemy,nbt={Passengers:[{id:"minecraft:area_effect_cloud"}]}] at @s as @e[dy=10,type=minecraft:area_effect_cloud,tag=!TypeChecked] run data merge entity @s {Tags:[MobCloud,TypeChecked],Duration:28,Age:5,WaitTime:5,DurationOnUse:0,RadiusOnUse:0f,RadiusPerTick:0f,ReapplicationDelay:0}
 
 # FlyingObject
 # ウィンドウォール？
