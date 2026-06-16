@@ -8,7 +8,7 @@ title @s[x=-2725,y=88,z=-382,distance=3..] subtitle {"text":"= Cloudia =","itali
 title @s[x=-2725,y=88,z=-382,distance=3..] title {"text":"クラウディア","color":"white","bold":true,"underlined":true}
 
 ### エリア侵入記録
-data modify storage tusb_remake: area_name.cloudia set value "クラウディア"
+data modify storage world: area_name.cloudia set value "クラウディア"
 
 ### Adv処理
 tag @s add Adv

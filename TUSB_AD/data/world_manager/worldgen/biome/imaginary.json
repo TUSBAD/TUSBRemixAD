@@ -1,0 +1,41 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "temperature_modifier": "none",
+  "has_precipitation": false,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 7111577,
+    "fog_color": 8690350,
+    "water_color": 6323866,
+    "water_fog_color": 5076121,
+    "grass_color": 7701650,
+    "foliage_color": 7701650,
+    "mood_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley.mood",
+      "tick_delay": 4000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley.additions",
+      "tick_chance": 0.005
+    },
+    "music": {
+      "sound": "minecraft:music.nether.nether_wastes",
+      "min_delay": 0,
+      "max_delay": 1200,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:nautilus"
+      },
+      "probability": 0.001
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

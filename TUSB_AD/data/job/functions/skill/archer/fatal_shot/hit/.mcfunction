@@ -2,7 +2,7 @@
 # フェイタルショットが直接当たった時
 
 ### 演出を出すのは10体まで
-data modify storage tusb_remake: fatal_shot_count set value 10
+data modify storage skill: fatal_shot_count set value 10
 ### チェインアローのレベルに応じて呼び出し
 execute as @e[distance=..10,type=#lib:mob,tag=Enemy,sort=random] at @s run function job:skill/archer/fatal_shot/hit/damage
 

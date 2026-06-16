@@ -9,7 +9,6 @@ scoreboard players set @s[scores={MP=..0,MPMaxFlag=1..}] MPMaxFlag 0
 tag @s add ShowVote
 ### ログイン時のメッセージ表示を待機
 tag @s add LoginMessage
-# function core:login/schedule
 schedule function core:login/schedule 5s append
 forceload add -2740 -361 -2740 -361
 

@@ -9,15 +9,15 @@ scoreboard players reset @s ChangeJob
 scoreboard players enable @s ChangeJob
 
 #攻略数を取得し、10島以下なら実行しない
-execute store result score _ TUSB run data get storage tusb_remake: conquer.count.total
-execute if score _ TUSB matches ..10 run tellraw @s ["\n",{"storage":"tusb_remake:","nbt":"Prefix.FAILED"},{"translate":"攻略数%1$sが必要です。","bold": true,"with":[{"translate":"10島","color":"#ff2a2a","bold": true}]},"\n"]
+execute store result score _ TUSB run data get storage core: conquer.count.total
+execute if score _ TUSB matches ..10 run tellraw @s ["\n",{"storage":"core:","nbt":"Prefix.FAILED"},{"translate":"攻略数%1$sが必要です。","bold": true,"with":[{"translate":"10島","color":"#ff2a2a","bold": true}]},"\n"]
 execute if score _ TUSB matches ..10 run return fail
 
 execute at @s store result score _ TUSB if entity @e[distance=..10,predicate=mob_manager:near_enemy]
 tellraw @s "====================================================="
-execute if score _ TUSB matches ..0 run tellraw @s ["\n",{"storage":"tusb_remake:","nbt":"Prefix.TIPS"},{"translate":"各職業のボタンを押すと、転職が可能です。","color":"#59ffff"},"\n"]
+execute if score _ TUSB matches ..0 run tellraw @s ["\n",{"storage":"core:","nbt":"Prefix.TIPS"},{"translate":"各職業のボタンを押すと、転職が可能です。","color":"#59ffff"},"\n"]
 #警告メッセージ
-execute if score _ TUSB matches 1.. run tellraw @s ["\n",{"storage":"tusb_remake:","nbt":"Prefix.FAILED"},{"translate":"周囲10mに敵が要る為、転職できません。:残り %1$s体","color":"#ff2a2a","with":[{"score":{"name":"_","objective":"TUSB"}}]},"\n"]
+execute if score _ TUSB matches 1.. run tellraw @s ["\n",{"storage":"core:","nbt":"Prefix.FAILED"},{"translate":"周囲10mに敵が要る為、転職できません。:残り %1$s体","color":"#ff2a2a","with":[{"score":{"name":"_","objective":"TUSB"}}]},"\n"]
 #制限中なら明示的に失敗させる
 execute if score _ TUSB matches 1.. run return fail
 tellraw @s ""

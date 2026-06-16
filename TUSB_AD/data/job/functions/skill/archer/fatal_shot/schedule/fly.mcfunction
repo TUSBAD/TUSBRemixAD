@@ -6,4 +6,4 @@
 playsound minecraft:block.glass.break master @a[distance=..32] ~ ~ ~ 0.6 1.8 0.1
 particle minecraft:witch ~ ~0.2 ~ 0 0 0 0.1 2 force
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

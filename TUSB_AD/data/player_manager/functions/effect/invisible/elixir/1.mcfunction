@@ -7,6 +7,6 @@
 scoreboard players operation @s HealCount += @s HPMax
 ### MP回復
 scoreboard players operation @s MP += @s MP
-execute store result storage tusb_remake: _ int 0.5 run scoreboard players operation @s MP += @s MPMax
-execute store result score @s MP run data get storage tusb_remake: _
+execute store result storage player: _ int 0.5 run scoreboard players operation @s MP += @s MPMax
+execute store result score @s MP run data get storage player: _
 scoreboard players operation @s MP < @s MPMax

@@ -6,7 +6,7 @@
 fill -460 64 1206 -459 64 1207 minecraft:lime_stained_glass_pane replace #lib:stained_glass_pane
 
 ## 最初のスケジュール
-execute unless data storage tusb_remake: pattern6.time in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/1 2s replace
-execute if data storage tusb_remake: pattern6{time:1} in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/2 2s replace
-execute if data storage tusb_remake: pattern6{time:2} in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/3 2s replace
-execute if data storage tusb_remake: pattern6{time:3} in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/reset 2s replace
+execute unless data storage world: pattern6.time in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/1 1s replace
+execute if data storage world: pattern6{time:1} in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/2 1s replace
+execute if data storage world: pattern6{time:2} in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/3 1s replace
+execute if data storage world: pattern6{time:3} in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/reset 1s replace

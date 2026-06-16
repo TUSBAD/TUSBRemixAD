@@ -10,4 +10,4 @@ execute unless data entity @s active_effects[{id:"minecraft:bad_omen"}] run tag 
 
 data merge entity @s[tag=FallDown] {Motion:[0d,-1d,0d]}
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

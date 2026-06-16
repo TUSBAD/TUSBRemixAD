@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:changed_dimension",
+        "conditions": {
+          "to": "world_manager:library"
+        }
+      }
+    },
+    "rewards": {
+      "function": "world_manager:area/entered/library"
+    }
+  }

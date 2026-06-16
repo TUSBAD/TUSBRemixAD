@@ -7,18 +7,18 @@
 # デフォルト
 
 #> チーム色変更
-execute unless data storage tusb_remake: difficult{world:"casual"} run function core:difficulty/color/casual
+execute unless data storage core: difficult{world:"casual"} run function core:difficulty/color/casual
 
-data modify storage tusb_remake: difficult.before set from storage tusb_remake: difficult.world
-data modify storage tusb_remake: difficult.world set value "casual"
+data modify storage core: difficult.before set from storage core: difficult.world
+data modify storage core: difficult.world set value "casual"
 
 scoreboard players set #Difficulty Difficulty 3
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
-data modify storage tusb_remake: settings.is_keepinventory set value true
+data modify storage core: settings.is_keepinventory set value true
 
 #> チャット表示
-tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"カジュアル","color":"#ff2A2A"}]}]
+tellraw @a [{"storage":"core:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"カジュアル","color":"#ff2A2A"}]}]
 execute as @a at @s run playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 1 1 1
 
 #> 変更点

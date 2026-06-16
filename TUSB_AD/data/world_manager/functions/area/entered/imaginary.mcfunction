@@ -1,9 +1,10 @@
-#> world_manager:area/entered/imaginary
-#
-#> 虚数空間演出
-#
-#@within function area:/entered/**
+#> world_manager:area/entered/tradeisland
+### 虚数空間諸設定
 
+# トリガー解除
+advancement revoke @s only world_manager:entered/imaginary
+# 設定反映
+function world_manager:area/settings/imaginary
 function world_manager:area/entered/
-title @s subtitle [{"text":"= ","color":"#ffffff"},{"text":"封印されし","bold":true,"color":"#a297ac"},{"text":"虚数次元","bold":true,"color":"#434343"},{"text":" =","color":"#ffffff"}]
-title @s title {"text":"虚 数 空 間","color":"#758492","bold":true,"underlined":true}
+# 演出表示
+function world_manager:area/makeup/imaginary

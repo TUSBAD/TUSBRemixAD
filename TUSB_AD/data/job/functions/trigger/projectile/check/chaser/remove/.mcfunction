@@ -3,7 +3,7 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-data modify storage tusb_remake: chaser_owner set from entity @s Owner
+data modify storage skill: chaser_owner set from entity @s Owner
 execute as @a run function job:trigger/projectile/check/chaser/remove/notify
 
 ### 発動したなら消す

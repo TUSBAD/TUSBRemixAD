@@ -4,8 +4,8 @@
 # クリスタルのmin.min -2383 77 -157
 # コマブロ -1744 126 -137
 
-data modify storage tusb_remake: portal_name set value "職業島"
-data remove storage tusb_remake: portal.cloudia.hello_work
+data modify storage world: portal_name set value "職業島"
+data remove storage world: portal.cloudia.hello_work
 execute positioned -2383 77 -157 run function world_manager:area/portal/close
 
 ### チャンク読み込み

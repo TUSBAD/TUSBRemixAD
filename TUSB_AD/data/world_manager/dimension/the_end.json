@@ -1,0 +1,11 @@
+{
+    "type": "world_manager:the_end",
+    "generator": {
+      "type": "minecraft:flat",
+      "settings": {
+        "biome": "world_manager:the_end",
+        "layers": [],
+        "structure_overrides": []
+      }
+    }
+  }

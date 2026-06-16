@@ -1,0 +1,31 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "temperature_modifier": "none",
+  "creature_spawn_probability": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 12451831,
+    "fog_color": 15793919,
+    "water_color": 14023672,
+    "water_fog_color": 16777215,
+    "grass_color": 15466493,
+    "foliage_color": 13759743,
+    "music": {
+      "sound": "minecraft:music.overworld.grove",
+      "min_delay": 0,
+      "max_delay": 2000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:end_rod"
+      },
+      "probability": 0.001
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

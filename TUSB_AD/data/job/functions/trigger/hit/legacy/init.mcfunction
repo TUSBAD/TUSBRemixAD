@@ -6,6 +6,6 @@ data modify storage math: in set value [1,7]
 function #math:dice
 execute store result score _ TUSB run data get storage math: out.sum
 ## +3して4~10にする
-execute store result storage tusb_remake: legacy int 1 run scoreboard players add _ TUSB 3
+execute store result storage item: legacy int 1 run scoreboard players add _ TUSB 3
 ## プレイヤーの持っているアイテムに設定する
 item modify entity @s weapon.mainhand lib:legacy

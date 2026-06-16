@@ -4,25 +4,25 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 最初のスキル(並べ替えているので最後にある)
-execute store result score _ TUSB run data get storage tusb_remake: list[-1].level[-1]
+execute store result score _ TUSB run data get storage skill: list[-1].level[-1]
 ### 習得レベルを満たしていたら、そのスキルの名前を記録する
-execute if score @s Level >= _ TUSB run data modify storage tusb_remake: skill_choice.name set from storage tusb_remake: list[-1].name[-1]
-execute if score @s Level >= _ TUSB run data modify storage tusb_remake: skill_choice.description set from storage tusb_remake: list[-1].description[-1]
-execute if score @s Level >= _ TUSB run data modify storage tusb_remake: skill_choice.sneak.description set from storage tusb_remake: list[-1].sneak.description[-1]
+execute if score @s Level >= _ TUSB run data modify storage skill: skill_choice.name set from storage skill: list[-1].name[-1]
+execute if score @s Level >= _ TUSB run data modify storage skill: skill_choice.description set from storage skill: list[-1].description[-1]
+execute if score @s Level >= _ TUSB run data modify storage skill: skill_choice.sneak.description set from storage skill: list[-1].sneak.description[-1]
 ### ***************
-execute if score @s Level >= _ TUSB run data modify storage tusb_remake: skill_choice.duration set from storage tusb_remake: list[-1].duration[-1]
-execute if score @s Level >= _ TUSB run data modify storage tusb_remake: skill_choice.range set from storage tusb_remake: list[-1].range[-1]
-execute if score @s Level >= _ TUSB run data modify storage tusb_remake: skill_choice.sneak.range set from storage tusb_remake: list[-1].sneak.range[-1]
+execute if score @s Level >= _ TUSB run data modify storage skill: skill_choice.duration set from storage skill: list[-1].duration[-1]
+execute if score @s Level >= _ TUSB run data modify storage skill: skill_choice.range set from storage skill: list[-1].range[-1]
+execute if score @s Level >= _ TUSB run data modify storage skill: skill_choice.sneak.range set from storage skill: list[-1].sneak.range[-1]
 
 ### 確認したものを削除
-data remove storage tusb_remake: list[-1].level[-1]
-data remove storage tusb_remake: list[-1].name[-1]
-execute if data storage tusb_remake: list[-1].description[-2] run data remove storage tusb_remake: list[-1].description[-1]
-execute if data storage tusb_remake: list[-1].sneak.description[-2] run data remove storage tusb_remake: list[-1].sneak.description[-1]
+data remove storage skill: list[-1].level[-1]
+data remove storage skill: list[-1].name[-1]
+execute if data storage skill: list[-1].description[-2] run data remove storage skill: list[-1].description[-1]
+execute if data storage skill: list[-1].sneak.description[-2] run data remove storage skill: list[-1].sneak.description[-1]
 ### ***************
-execute if data storage tusb_remake: list[-1].duration[-2] run data remove storage tusb_remake: list[-1].duration[-1]
-execute if data storage tusb_remake: list[-1].range[-2] run data remove storage tusb_remake: list[-1].range[-1]
-execute if data storage tusb_remake: list[-1].sneak.range[-2] run data remove storage tusb_remake: list[-1].sneak.range[-1]
+execute if data storage skill: list[-1].duration[-2] run data remove storage skill: list[-1].duration[-1]
+execute if data storage skill: list[-1].range[-2] run data remove storage skill: list[-1].range[-1]
+execute if data storage skill: list[-1].sneak.range[-2] run data remove storage skill: list[-1].sneak.range[-1]
 
 ### まだ名前が記録されていない(かつ習得レベルがまだ残っていたら(安全のため))なら繰り返し
-execute if data storage tusb_remake: skill_choice.name[0] if data storage tusb_remake: list[-1].level[-1] run function job:display/translate/get_name
+execute if data storage skill: skill_choice.name[0] if data storage skill: list[-1].level[-1] run function job:display/translate/get_name

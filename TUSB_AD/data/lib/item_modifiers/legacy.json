@@ -2,7 +2,7 @@
     "function": "copy_nbt",
     "source": {
         "type": "storage",
-        "source": "tusb_remake:"
+        "source": "item:"
     },
     "ops": [
         {

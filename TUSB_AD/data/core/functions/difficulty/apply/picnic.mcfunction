@@ -8,16 +8,16 @@
 #> チーム色変更
 execute unless data storage tusb: difficult{world:"picnic"} run function core:difficulty/color/picnic
 
-data modify storage tusb_remake: difficult.before set from storage tusb_remake: difficult.world
-data modify storage tusb_remake: difficult.world set value "picnic"
+data modify storage core: difficult.before set from storage core: difficult.world
+data modify storage core: difficult.world set value "picnic"
 
 scoreboard players set #Difficulty Difficulty 1
 #> 難易度による補正欄
 # アナザー/ハードコアのみKeepInventoryはfalseとなる
-data modify storage tusb_remake: settings.is_keepinventory set value true
+data modify storage core: settings.is_keepinventory set value true
 
 #> チャット表示
-tellraw @a [{"storage":"tusb_remake:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ピクニック","color":"#80ff00"}]}]
+tellraw @a [{"storage":"core:","nbt":"Prefix.SUCCESS"},{"translate":"難易度を%1$sに変更しました。","with":[{"translate":"ピクニック","color":"#80ff00"}]}]
 execute as @a at @s run playsound minecraft:xp_chime master @s ~ ~ ~ 1 0.5 1
 
 #> 変更点

@@ -9,4 +9,4 @@ execute positioned ^-1 ^ ^ as @e[dy=1,type=#lib:mob,tag=Enemy] positioned as @s 
 execute positioned ^0 ^ ^ as @e[dy=1,type=#lib:mob,tag=Enemy] positioned as @s positioned ^ ^ ^1 rotated as @s run tp @s ~ ~ ~ ~ ~
 execute positioned ^1 ^ ^ as @e[dy=1,type=#lib:mob,tag=Enemy] positioned as @s positioned ^ ^ ^1 rotated as @s run tp @s ~ ~ ~ ~ ~
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

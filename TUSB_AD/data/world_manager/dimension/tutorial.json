@@ -1,0 +1,11 @@
+{
+  "type": "world_manager:tutorial",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "world_manager:tutorial",
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}

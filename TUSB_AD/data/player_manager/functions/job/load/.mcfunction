@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### ロードするデータをリセット
-data remove storage tusb_remake: LoadData
+data remove storage job: LoadData
 
 execute if score @s Job matches 1 run function player_manager:job/load/knight
 execute if score @s Job matches 2 run function player_manager:job/load/ninja
@@ -15,12 +15,12 @@ execute if score @s Job matches 6 run function player_manager:job/load/summoner
 execute if score @s Job matches 7 run function player_manager:job/load/lancer
 execute if score @s Job matches 8 run function player_manager:job/load/creator
 
-#execute if data storage tusb_remake: LoadData store result score @s Level run data get storage tusb_remake: LoadData.Level
-#execute if data storage tusb_remake: LoadData store result score @s ExpToLevel run data get storage tusb_remake: LoadData.ExpToLevel
+#execute if data storage job: LoadData store result score @s Level run data get storage job: LoadData.Level
+#execute if data storage job: LoadData store result score @s ExpToLevel run data get storage job: LoadData.ExpToLevel
 
 ### NextExp = Level * #ExpMul
 scoreboard players operation @s NextExp = @s Level
-execute store result score _ NextExp run data get storage tusb_remake: Const.ExpMul
+execute store result score _ NextExp run data get storage job: Const.ExpMul
 scoreboard players operation @s NextExp *= _ NextExp
 
 ### MP回復速度 100 - Level tick

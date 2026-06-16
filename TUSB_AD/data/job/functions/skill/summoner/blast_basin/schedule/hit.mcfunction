@@ -13,4 +13,4 @@ effect give @s minecraft:saturation 10 127 true
 ### ダメージと吹き飛ばしを与える
 execute as @e[distance=..8,type=#lib:mob,tag=Enemy] run function job:skill/archer/blast_shot/hit/damage1
 
-data modify storage tusb_remake: hit set value true
+data modify storage skill: hit set value true

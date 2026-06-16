@@ -4,10 +4,10 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 最後のスキルの最初に覚えるレベルを取得
-execute store result score _ TUSB run data get storage tusb_remake: skill_choices[-1].level[0]
+execute store result score _ TUSB run data get storage skill: skill_choices[-1].level[0]
 ### 最後のスキルが覚えられるなら設定できるように表示
-execute if score @s Level >= _ TUSB run data modify storage tusb_remake: list append from storage tusb_remake: skill_choices[-1]
+execute if score @s Level >= _ TUSB run data modify storage skill: list append from storage skill: skill_choices[-1]
 
 ### 最後のスキルがなくなるまで繰り返し
-data remove storage tusb_remake: skill_choices[-1]
-execute if data storage tusb_remake: skill_choices[-1] run function job:display/check
+data remove storage skill: skill_choices[-1]
+execute if data storage skill: skill_choices[-1] run function job:display/check

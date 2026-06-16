@@ -1,12 +1,10 @@
 #> world_manager:area/entered/underworld
-#
-#> 地下世界演出
-#
-#@within function area:/entered/**
+### 地下世界諸設定
 
+# トリガー解除
+advancement revoke @s only world_manager:entered/underworld
+# 設定反映
+function world_manager:area/settings/underworld
 function world_manager:area/entered/
-playsound minecraft:ambient.cave_12 master @s ~ ~ ~ 1.0 0.5
-playsound minecraft:ambient.cave_12 master @s ~ ~ ~ 1.0 1.0
-playsound minecraft:ambient.cave_12 master @s ~ ~ ~ 1.0 0.501
-title @s subtitle [{"text":"= ","color":"#ffffff"},{"text":"菌糸蔓延る","bold":true,"color":"#586bfe"},{"text":"常闇","bold":true,"color":"#787878"},{"text":"の地","bold":true,"color":"#586bfe"},{"text":" =","color":"#ffffff"}]
-title @s title {"text":"地下世界","color":"#787878","bold":true,"underlined":true}
+# 演出表示
+function world_manager:area/makeup/underworld

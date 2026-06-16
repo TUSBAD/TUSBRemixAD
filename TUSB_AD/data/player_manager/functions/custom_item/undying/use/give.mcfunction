@@ -1,16 +1,16 @@
 #> player_manager:custom_item/undying/use/give
 
 # UUIDを付与し、削除、登録
-# data modify storage tusb_remake: test_array set from storage tusb_remake: undying_uuid
-# data modify storage tusb_remake: undying_uuid set value []
+# data modify storage item: test_array set from storage item: undying_uuid
+# data modify storage item: undying_uuid set value []
 # function player_manager:custom_item/undying/use/remove_uuid
 # function player_manager:custom_item/undying/use/set_uuid
-# data modify storage tusb_remake: undying_uuid append from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying.tag.UUID
+# data modify storage item: undying_uuid append from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].undying.tag.UUID
 
 
 # 手に持っているアイテムを他のスロットの移す(埋まってたらドロップして保護)
 data remove block 3500 0 3500 Items
-execute unless data storage tusb_remake: {SelectedItem:{tag:{Undying:true}}} run data modify block 3500 0 3500 Items append from entity @s SelectedItem
+execute unless data storage item: {SelectedItem:{tag:{Undying:true}}} run data modify block 3500 0 3500 Items append from entity @s SelectedItem
 item replace entity @s weapon.mainhand with debug_stick{Clear:true}
 function player_manager:custom_item/undying/use/get_slot
 execute if score $Slot TUSB matches 1..35 run loot give @s mine 3500 0 3500 debug_stick

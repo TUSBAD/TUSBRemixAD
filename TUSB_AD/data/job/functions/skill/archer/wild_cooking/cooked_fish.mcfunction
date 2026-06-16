@@ -5,6 +5,6 @@
 
 execute store result score _ TUSB run clear @s #lib:cooked_fish 1
 execute if score _ TUSB matches 1.. run give @s minecraft:bone_meal{display:{Name:'"§r灰"'}} 1
-execute if score _ TUSB matches 1.. run data modify storage tusb_remake: cooked_state set value "bad"
+execute if score _ TUSB matches 1.. run data modify storage skill: cooked_state set value "bad"
 
 execute if score _ TUSB matches ..0 run function job:skill/archer/wild_cooking/cooked_meat

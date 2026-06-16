@@ -7,12 +7,12 @@
     clear @s[scores={Job=1..}] minecraft:paper{display:{Name:'"§r§lジョブ変更申請書"'},"初回":true}
 
 # 職業変更
-    execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{JobChange:true} 0
-    execute unless data storage tusb_remake: {_:0} at @s run function player_manager:job/change/
+    execute store result storage player: _ int 1 run clear @s minecraft:paper{JobChange:true} 0
+    execute unless data storage player: {_:0} at @s run function player_manager:job/change/
 
 # 釣りチケットを入手した時
-    execute store result storage tusb_remake: _ int 1 run clear @s minecraft:paper{FishingGame:true} 0
-    execute unless data storage tusb_remake: {_:0} at @s run function player_manager:inventory_event/trade_event/fishing
+    execute store result storage player: _ int 1 run clear @s minecraft:paper{FishingGame:true} 0
+    execute unless data storage player: {_:0} at @s run function player_manager:inventory_event/trade_event/fishing
 
 # reset
     scoreboard players reset @s TradedVillager

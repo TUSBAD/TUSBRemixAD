@@ -6,8 +6,8 @@
 # クリスタルのmin.min 12 15 -76
 # 看板 -101 116 -343 rot14
 
-data modify storage tusb_remake: portal_name set value "煉獄 入り口"
-data remove storage tusb_remake: portal.nether.dungeon_entrance
+data modify storage world: portal_name set value "煉獄 入り口"
+data remove storage world: portal.nether.dungeon_entrance
 execute positioned 12 15 -76 run function world_manager:area/portal/close
 
 ### チャンク読み込み

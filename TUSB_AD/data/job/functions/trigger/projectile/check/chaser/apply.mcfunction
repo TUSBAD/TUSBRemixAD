@@ -10,4 +10,4 @@ function score_damage:api/attack
 scoreboard players operation @s PotentialSkill = _ PotentialSkill
 execute if score _ PotentialSkill matches 1.. run function job:trigger/projectile/hit
 
-data modify storage tusb_remake: chaser_invoked set value true
+data modify storage skill: chaser_invoked set value true

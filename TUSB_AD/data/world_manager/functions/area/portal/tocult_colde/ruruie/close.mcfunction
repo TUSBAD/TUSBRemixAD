@@ -1,8 +1,8 @@
 #> world_manager:area/portal/tocult_colde/ruruie/close
 ### ルルイエのワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "ルルイエ"
-data remove storage tusb_remake: portal.tocult_colde.ruruie
+data modify storage world: portal_name set value "ルルイエ"
+data remove storage world: portal.tocult_colde.ruruie
 execute positioned 1294 96 1598 run function world_manager:area/portal/close
 
 ### チャンク読み込み

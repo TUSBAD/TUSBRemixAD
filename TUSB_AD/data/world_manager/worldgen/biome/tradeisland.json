@@ -1,0 +1,31 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "temperature_modifier": "none",
+  "creature_spawn_probability": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 8060912,
+    "fog_color": 12122879,
+    "water_color": 65535,
+    "water_fog_color": 1376185,
+    "grass_color": 15662848,
+    "foliage_color": 16776960,
+    "music": {
+      "sound": "minecraft:music.credits",
+      "min_delay": 0,
+      "max_delay": 2000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:happy_villager"
+      },
+      "probability": 0.001
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

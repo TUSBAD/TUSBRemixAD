@@ -6,8 +6,8 @@
 # クリスタルのmin.min -1948 118 -55
 # 看板 -1858 78 -58
 
-data modify storage tusb_remake: portal_name set value "煉獄 恐れ断ち切る地"
-data remove storage tusb_remake: portal.nether.dungeon_down
+data modify storage world: portal_name set value "煉獄 恐れ断ち切る地"
+data remove storage world: portal.nether.dungeon_down
 execute positioned -1948 118 -55 run function world_manager:area/portal/close
 
 ### チャンク読み込み

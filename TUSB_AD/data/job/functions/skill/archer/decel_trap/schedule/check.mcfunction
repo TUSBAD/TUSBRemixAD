@@ -22,4 +22,4 @@ execute rotated as 0-0-1-0-1 rotated ~270 ~ positioned ^ ^ ^5 run particle minec
 execute if entity @s[tag=Decel1] run effect give @e[distance=..5,type=#lib:mob,tag=Enemy] minecraft:slowness 1 2 false
 execute if entity @s[tag=Decel2] run effect give @e[distance=..5,type=#lib:mob,tag=Enemy] minecraft:slowness 1 5 false
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

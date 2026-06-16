@@ -1,0 +1,31 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "temperature_modifier": "none",
+  "creature_spawn_probability": 0,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 3014748,
+    "fog_color": 4653199,
+    "water_color": 8455209,
+    "water_fog_color": 7083045,
+    "grass_color": 8725912,
+    "foliage_color": 7340109,
+    "music": {
+      "sound": "minecraft:music.nether.crimson_forest",
+      "min_delay": 0,
+      "max_delay": 2000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:portal"
+      },
+      "probability": 0.001
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

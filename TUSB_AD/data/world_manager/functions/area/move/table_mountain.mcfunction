@@ -8,7 +8,7 @@ title @s subtitle {"text":"= Table Mountain =","italic":true,"color":"dark_green
 title @s title {"text":"テーブルマウンテン","color":"green","bold":true,"underlined":true}
 
 ### エリア侵入記録
-data modify storage tusb_remake: area_name.table_mountain set value "テーブルマウンテン"
+data modify storage world: area_name.table_mountain set value "テーブルマウンテン"
 
 ### Adv処理
 tag @s add Adv

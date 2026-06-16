@@ -9,4 +9,4 @@ execute as @s[predicate=job:is_inground] run function job:trigger/projectile/che
 execute unless entity @s[tag=Chaser] run function job:trigger/projectile/check/normal
 execute if entity @s[tag=Chaser] run function job:trigger/projectile/check/chaser/
 
-data modify storage tusb_remake: projectile_loop set value true
+data modify storage skill: projectile_loop set value true

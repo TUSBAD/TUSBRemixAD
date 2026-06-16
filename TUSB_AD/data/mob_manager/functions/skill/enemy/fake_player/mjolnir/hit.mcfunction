@@ -7,4 +7,4 @@
 # ダメージを与える
 function score_damage:api/attack
 
-data modify storage tusb_remake: hit set value true
+data modify storage mob: hit set value true

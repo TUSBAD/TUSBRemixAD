@@ -7,4 +7,4 @@ execute as @e[tag=crazy] as @e[type=player,distance=..10] run function player_ma
 execute at @e[tag=crazy] as @e[type=player,distance=..10] run effect give @s minecraft:haste 5 2
 execute at @e[tag=crazy] as @e[type=player,distance=..10] run effect give @s regeneration 5 3
 execute at @e[tag=crazy] as @e[type=player,distance=..10] run effect give @s resistance 5 2
-execute if data storage tusb_remake: {_:true} in minecraft:overworld run schedule function job:skill/archer/crazy/hit 20t
+execute if data storage skill: {_:true} in minecraft:overworld run schedule function job:skill/archer/crazy/hit 20t

@@ -14,7 +14,7 @@ execute unless data storage asset: set_spawner.CustomDisplayTile run data modify
 data modify storage _: _ set from storage asset: set_spawner.SpawnMob
 data remove storage asset: set_spawner.SpawnMob
 
-summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Passengers:[{id:"spawner_minecart",SpawnCount:0,Tags:["SetSpawner","TypeCheaked","SystemEntity","SpawnerCore","Spawner"],Invulnerable:true}]}
+summon armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,Small:1b,Marker:1b,Invisible:1b,NoBasePlate:1b,Passengers:[{id:"spawner_minecart",SpawnCount:0,Tags:["SetSpawner","TypeChecked","SystemEntity","SpawnerCore","Spawner"],Invulnerable:true}]}
 
 execute as @e[tag=SetSpawner,limit=1] at @s run function asset_manager:spawner/set/set_data
 

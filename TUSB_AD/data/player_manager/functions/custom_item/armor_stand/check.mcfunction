@@ -4,9 +4,9 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 設置されたばかりかどうかをチェック(trueなら古い)
-data modify storage tusb_remake: motion_y set value 0d
-execute store result storage tusb_remake: motion_y byte 1 run data modify storage tusb_remake: motion_y set from entity @s Motion[1]
-execute if data storage tusb_remake: {motion_y:true} run function player_manager:custom_item/armor_stand/error/old
+data modify storage item: motion_y set value 0d
+execute store result storage item: motion_y byte 1 run data modify storage item: motion_y set from entity @s Motion[1]
+execute if data storage item: {motion_y:true} run function player_manager:custom_item/armor_stand/error/old
 
 ### オーバーワールド限定かどうかをチェック
 execute if entity @s[tag=SignStand,tag=OverOnly,predicate=!world_manager:area/overworld] run function player_manager:custom_item/armor_stand/error/warped

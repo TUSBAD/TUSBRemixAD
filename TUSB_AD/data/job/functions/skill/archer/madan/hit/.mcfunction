@@ -15,6 +15,6 @@ scoreboard players set _ TUSB 10
 scoreboard players operation _ PotentialSkill %= _ TUSB
 
 ### 演出を出すのは10体まで
-data modify storage tusb_remake: chain_arrow_count set value 10
+data modify storage skill: chain_arrow_count set value 10
 ### チェインアローのレベルに応じて呼び出し
 execute if score _ PotentialSkill matches 0..9 as @e[distance=..45,type=#lib:mob,tag=Enemy,sort=random] at @s run function job:skill/archer/madan/hit/damage

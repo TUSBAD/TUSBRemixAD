@@ -6,6 +6,6 @@
 execute in minecraft:the_nether positioned -469 58 1198 run clone ~ ~ ~ ~19 ~ ~ ~ 70 1202 filtered minecraft:jack_o_lantern
 execute in minecraft:the_nether run playsound minecraft:block.note_block.harp master @a[x=-470,y=59,z=1188,dx=21,dy=32,dz=31] -459.0 200 1207.0 0.0 1.0595 0.5
 
-data modify storage tusb_remake: pattern6.time set value 3
+data modify storage world: pattern6.time set value 3
 
-execute in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/reset 2s
+execute in minecraft:overworld run schedule function world_manager:dimension/nether/athletic/pattern6/count_up/reset 1s

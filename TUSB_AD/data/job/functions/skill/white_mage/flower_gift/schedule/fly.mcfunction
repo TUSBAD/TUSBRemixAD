@@ -12,4 +12,4 @@ execute if entity @s[tag=FlowerGift1] as @e[distance=..5,type=#lib:mob,tag=Enemy
 execute if entity @s[tag=FlowerGift2] as @e[distance=..5,type=#lib:mob,tag=Enemy] at @s run function job:skill/white_mage/flower_gift/schedule/hit/2
 execute if entity @s[tag=FlowerGift3] as @e[distance=..5,type=#lib:mob,tag=Enemy] at @s run function job:skill/white_mage/flower_gift/schedule/hit/3
 
-data modify storage tusb_remake: _ set value true
+data modify storage skill: _ set value true

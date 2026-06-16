@@ -1,9 +1,6 @@
 {
 	"values": [
-		"core:clock/first",
-		"core:clock/main",
-		"core:clock/skill_trigger/setup",
-		"core:clock/last",
+		"core:tick",
 		"debug:tick/"
 	]
 }

@@ -1,10 +1,10 @@
 #> world_manager:area/entered/skyland_high
-#
-#> 通常世界上層演出
-#
-#@within function area:/entered/**
+### 通常世界諸設定
 
+# トリガー解除
+advancement revoke @s only world_manager:entered/skyland_high
+# 設定反映
+function world_manager:area/settings/skyland_high
 function world_manager:area/entered/
-playsound minecraft:entity.allay.death master @s ~ ~ ~ 4 0.75 0
-title @s subtitle [{"text":"= ","color":"#ffffff"},{"text":"上 層","bold":true,"color":"#ff3948"},{"text":" =","color":"#ffffff"}]
-title @s title [{"text":"新 ","color":"#ff3c3c","bold":true,"underlined":true},{"text":"通","color":"#cf53ff","bold":true,"underlined":true},{"text":"常","bold":true,"underlined":true,"color":"#ff3948"},{"text":"世界","bold":true,"underlined":true,"color":"#cf53ff"}]
+# 演出表示
+function world_manager:area/makeup/skyland_high

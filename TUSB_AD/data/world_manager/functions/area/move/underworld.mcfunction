@@ -8,7 +8,7 @@ title @s subtitle {"text":"= The Underworld =","italic":true,"color":"dark_gray"
 title @s title {"text":"地下世界","color":"dark_blue","bold":true,"underlined":true}
 
 ### エリア侵入記録
-data modify storage tusb_remake: area_name.underworld set value "地下世界"
+data modify storage world: area_name.underworld set value "地下世界"
 
 ### Adv処理
 tag @s remove Adv

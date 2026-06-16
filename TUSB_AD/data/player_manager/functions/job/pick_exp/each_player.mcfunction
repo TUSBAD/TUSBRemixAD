@@ -12,14 +12,14 @@ scoreboard players operation @s ExpToLevel -= _ ItemCount
 # BonusXp = min((ItemCount × min((Global × 2 ÷ @sTotal - 1), 10) + @sTotal), Global) - @sTotal
 # ExpToLevel -= BonusXp
 # @sTotal += BonusXp
-scoreboard players operation _ TUSB = $Global TotalXp
+scoreboard players operation _ TUSB = #Global TotalXp
 scoreboard players operation _ TUSB += _ TUSB
 scoreboard players operation _ TUSB /= @s TotalXp
 scoreboard players remove _ TUSB 1
 execute if score _ TUSB matches 11.. run scoreboard players set _ TUSB 10
 scoreboard players operation _ TUSB *= _ ItemCount
 scoreboard players operation _ TUSB += @s TotalXp
-scoreboard players operation _ TUSB < $Global TotalXp
+scoreboard players operation _ TUSB < #Global TotalXp
 scoreboard players operation _ TUSB -= @s TotalXp
 scoreboard players operation @s ExpToLevel -= _ TUSB
 scoreboard players operation @s TotalXp += _ TUSB

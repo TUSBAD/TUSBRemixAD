@@ -1,0 +1,11 @@
+{
+  "type": "world_manager:exdomain",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "world_manager:exdomain",
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}

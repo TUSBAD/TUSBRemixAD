@@ -1,0 +1,33 @@
+{
+  "temperature": 0.6,
+  "downfall": 0.9,
+  "creature_spawn_probability": 0,
+  "has_precipitation": true,
+  "effects": {
+    "sky_color": 6095016,
+    "fog_color": 9586041,
+    "water_color": 65280,
+    "water_fog_color": 2402304,
+    "grass_color": 7667712,
+    "foliage_color": 11409783,
+    "music": {
+      "sound": "minecraft:music.overworld.deep_dark",
+      "min_delay": 0,
+      "max_delay": 2000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:falling_dust",
+        "block_state": {
+          "Name": "minecraft:red_concrete_powder",
+          "Properties": {}
+        }},
+      "probability": 0.001
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

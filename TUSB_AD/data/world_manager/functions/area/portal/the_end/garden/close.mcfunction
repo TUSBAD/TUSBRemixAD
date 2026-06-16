@@ -1,8 +1,8 @@
 #> world_manager:area/portal/the_end/garden/close
 ### エンド 植物庭園のワープ閉じる
 
-data modify storage tusb_remake: portal_name set value "エンド 植物庭園"
-data remove storage tusb_remake: portal.the_end.garden
+data modify storage world: portal_name set value "エンド 植物庭園"
+data remove storage world: portal.the_end.garden
 execute positioned 107 49 -1 run function world_manager:area/portal/close
 
 ### チャンク読み込み

@@ -1,0 +1,11 @@
+{
+  "type": "world_manager:tradeisland",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "world_manager:tradeisland",
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}
