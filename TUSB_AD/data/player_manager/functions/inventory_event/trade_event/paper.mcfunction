@@ -5,7 +5,7 @@
 
 ### 職業変更
 execute store result storage player: _ int 1 run clear @s minecraft:paper{JobChange:true} 0
-execute unless data storage player: {_:0} at @s run function player_manager:job/change/
+execute unless data storage player: {_:0} at @s run function job:change/
 execute unless data storage player: {_:0} at @s run clear @s white_wool 16
 
 ### 釣りチケットを入手した時

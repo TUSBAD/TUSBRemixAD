@@ -4,7 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### まずは今の職業データをセーブ
-function player_manager:job/save/
+
 ### 表示するデータを読み込む
 data modify storage job: JobData set from storage oh_my_dat: _[-4][-4][-4][-4].[-4][-4][-4][-4].TUSB.JobData
 
