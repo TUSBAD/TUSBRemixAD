@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "world_manager:entered/imaginary"
+    "function": "world_manager:area/entered/imaginary"
   }
 }

@@ -8,6 +8,6 @@
     }
   },
   "rewards": {
-    "function": "world_manager:entered/tradeisland"
+    "function": "world_manager:area/entered/tradeisland"
   }
 }

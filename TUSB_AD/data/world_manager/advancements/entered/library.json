@@ -8,6 +8,6 @@
       }
     },
     "rewards": {
-      "function": "world_manager:entered/library"
+      "function": "world_manager:area/entered/library"
     }
   }

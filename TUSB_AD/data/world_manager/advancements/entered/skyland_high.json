@@ -9,8 +9,8 @@
             "predicate": {
               "position": {
                 "y": {
-                  "min": 257,
-                  "max": 512
+                  "min": 304,
+                  "max": 608
                 }
               }
             }
@@ -21,6 +21,6 @@
     }
   },
   "rewards": {
-    "function": "world_manager:entered/skyland_high"
+    "function": "world_manager:area/entered/skyland_high"
   }
 }

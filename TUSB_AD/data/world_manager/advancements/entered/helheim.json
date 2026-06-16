@@ -8,6 +8,6 @@
       }
     },
     "rewards": {
-      "function": "world_manager:entered/helheim"
+      "function": "world_manager:area/entered/helheim"
     }
   }

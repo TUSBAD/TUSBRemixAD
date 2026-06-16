@@ -10,7 +10,7 @@
               "position": {
                 "y": {
                   "min": 0,
-                  "max": 256
+                  "max": 303
                 }
               }
             }
@@ -21,6 +21,6 @@
     }
   },
   "rewards": {
-    "function": "world_manager:entered/skyland_low"
+    "function": "world_manager:area/entered/skyland_low"
   }
 }
