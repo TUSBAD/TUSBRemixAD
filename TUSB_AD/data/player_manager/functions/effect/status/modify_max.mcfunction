@@ -11,7 +11,7 @@ scoreboard players set _ _ 50
 scoreboard players set @s MPMax 100
 scoreboard players operation _ Level < _ _
 scoreboard players operation @s MPMax += _ Level
-execute store result score @s Luck run attribute @s generic.minecraft:luck get 10
+execute store result score @s Luck run attribute @s generic.luck get 10
 scoreboard players operation @s MPMax += @s Luck
 
 #体力リセット
