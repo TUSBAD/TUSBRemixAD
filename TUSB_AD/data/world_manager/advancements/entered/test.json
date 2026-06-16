@@ -3,11 +3,11 @@
       "requirement": {
         "trigger": "minecraft:changed_dimension",
         "conditions": {
-          "to": "area:test"
+          "to": "world_manager:test"
         }
       }
     },
     "rewards": {
-      "function": "area:entered/test"
+      "function": "world_manager:area/entered/test"
     }
 }

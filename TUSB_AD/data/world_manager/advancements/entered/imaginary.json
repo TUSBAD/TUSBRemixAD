@@ -3,11 +3,11 @@
     "requirement": {
       "trigger": "minecraft:changed_dimension",
       "conditions": {
-        "to": "area:imaginary"
+        "to": "world_manager:imaginary"
       }
     }
   },
   "rewards": {
-    "function": "area:entered/imaginary"
+    "function": "world_manager:entered/imaginary"
   }
 }

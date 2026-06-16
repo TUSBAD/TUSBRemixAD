@@ -3,11 +3,11 @@
       "requirement": {
         "trigger": "minecraft:changed_dimension",
         "conditions": {
-          "to": "area:library"
+          "to": "world_manager:library"
         }
       }
     },
     "rewards": {
-      "function": "area:entered/library"
+      "function": "world_manager:entered/library"
     }
   }

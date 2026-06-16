@@ -3,11 +3,11 @@
     "requirement": {
       "trigger": "minecraft:changed_dimension",
       "conditions": {
-        "to": "area:trade"
+        "to": "world_manager:trade"
       }
     }
   },
   "rewards": {
-    "function": "area:entered/tradeisland"
+    "function": "world_manager:entered/tradeisland"
   }
 }

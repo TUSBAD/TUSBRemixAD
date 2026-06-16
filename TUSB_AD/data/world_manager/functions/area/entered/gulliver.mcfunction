@@ -1,11 +1,10 @@
-#> world_manager:area/entered/gulliver
-#
-#> ガリバー演出
-#
-#@within function world_manager:/entered/**
+#> world_manager:entered/gulliver
+### ガリバー諸設定
 
-function world_manager:area/entered/
-playsound minecraft:ambient.cave_2 master @s ~ ~ ~ 4 1.4 0
-playsound minecraft:ambient.cave_2 master @s ~ ~ ~ 4 1.7 0
-title @s subtitle [{"text":"= ","color":"white"},{"text":"小さき隠者達の逆転世界","bold":true,"color":"#ffd700"},{"text":" =","color":"white"}]
-title @s title {"text":"ガリバーランド","color":"#ffd700","bold":true,"underlined":true}
+# トリガー解除
+advancement revoke @s only world_manager:entered/gulliver
+# 設定反映
+function settings:area/gulliver
+function world_manager:entered/
+# 演出表示
+function makeup:area/entered/gulliver

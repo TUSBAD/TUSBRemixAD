@@ -16,11 +16,11 @@
             }
           }
         ],
-        "to": "area:newskyland"
+        "to": "world_manager:newskyland"
       }
     }
   },
   "rewards": {
-    "function": "area:entered/skyland_low"
+    "function": "world_manager:entered/skyland_low"
   }
 }
