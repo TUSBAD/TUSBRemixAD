@@ -23,7 +23,7 @@
           "Name": "minecraft:red_concrete_powder",
           "Properties": {}
         }},
-      "probability": 0.0005
+      "probability": 0.0001
     }
   },
   "spawners": {},

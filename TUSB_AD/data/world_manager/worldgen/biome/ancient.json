@@ -15,7 +15,7 @@
       "options": {
         "type": "minecraft:dripping_obsidian_tear"
       },
-      "probability": 0.0005
+      "probability": 0.0001
     }
   },
   "spawners": {},
