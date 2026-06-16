@@ -28,6 +28,9 @@
     tag @s[tag=Undying] remove Undying
     tag @s[predicate=player_manager:has_undying] add Undying
 
+# エリトラ花火の対策処理
+    execute if score @s UseFireworkRocket matches 1.. run function player_manager:item_use/firework/
+
 # 紙を拾ったプレイヤーがいたらトレードイベント(職業変更/釣りチケット)判定を呼び出す
     execute if entity @s[scores={PickupPaper=1..}] run scoreboard players operation @s TradedVillager >< @s PickupPaper
     execute if entity @s[scores={TradedVillager=1..}] run function player_manager:inventory_event/trade_event/
@@ -49,6 +52,9 @@
 
 # ベッドで寝たときの効果
     execute if entity @s[scores={SleepInBed=1..}] run function player_manager:sleep/
+
+# 特殊な床や液体のギミック(毎tick)
+    #function player_manager:custom_floor/tick
 
 # 村人会話
     execute if entity @s[scores={AgentFlag=1..}] run function mob_manager:villager/talk_event/agent/trigger/

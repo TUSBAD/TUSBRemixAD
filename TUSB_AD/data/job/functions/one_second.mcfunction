@@ -23,7 +23,3 @@
 
 # レーダーヴィジョン
     execute if entity @s[tag=RadarVision,scores={HP=1..}] run function job:skill/archer/radar_vision/check
-
-# Freeze/Melt 居縮 (後でenemyに移動)
-data modify entity @s NoAI set value false
-tag @s remove Freeze

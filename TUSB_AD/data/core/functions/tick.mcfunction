@@ -22,6 +22,7 @@
 
 #> MobTick
 
+    function mob_manager:tick
 
 #> プレイヤーTick
     execute as @a at @s run function player_manager:tick

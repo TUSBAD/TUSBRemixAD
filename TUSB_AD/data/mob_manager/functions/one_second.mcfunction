@@ -1,18 +1,19 @@
-#> core:clock/sec
-# １秒毎に実行したいもの
-### Copyright © 2022 赤石愛
-### This software is released under the MIT License, see LICENSE.
+#> mob_manager:one_second
+#
+# モブ1秒処理
+#
+# @within function mob_manager:tick
 
-
-# 個人ロッカー(印板)から音
-    execute at @e[tag=PersonalLockerSign] run playsound minecraft:block.beacon.ambient block @a[distance=..16]
+# -> 10秒処理
+## 使用するときにコメントアウトを外してください。
+execute if score #Seconds Count matches 0 run function mob_manager:ten_seconds
 
 # 動き停止飛翔物判定
     execute as @e[tag=FlyingObject] if predicate lib:is_flying_object at @s run function mob_manager:entity/check_projectile
     execute as @e[tag=InKasap] at @s run function mob_manager:entity/check_kasap
 
 # Freeze/Melt 居縮とかの
-    execute as @e[tag=Freeze] if predicate lib:is_cooldown_0 run function core:clock/sec3
+    execute as @e[tag=Freeze] if predicate lib:is_cooldown_0 run function mob_manager:entity/freeze_clear
 
 # 敵スキル発動チェック
     execute as @e[tag=SkillMob] at @s run function mob_manager:skill/
@@ -29,9 +30,17 @@
 # カートスポナーポータルin対策
     tag @e[type=spawner_minecart,tag=CooldownRequired,predicate=lib:is_cooldown_300] add Garbage
 
+# くもの巣を設置してくる害悪
+    execute as @e[tag=CanSpin] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~1 minecraft:cobweb keep
 
 # 炎出す奴
     execute as @e[tag=CanFire] at @s positioned ~-0.5 ~ ~-0.5 run fill ~ ~ ~ ~1 ~1 ~1 minecraft:fire keep
 
 # gamemasterの音
     execute at @e[tag=GameMasterSP,limit=1] run playsound minecraft:entity.warden.heartbeat master @a[distance=..60] ~ ~ ~ 0.6 1 0.0
+
+# 奈落防止
+    execute as @e[tag=AbyssWarp] at @s positioned ~-0.5 -70 ~-0.5 run tp @s[dy=-29] @p
+
+# エンティティ数カウント
+function mob_manager:count/

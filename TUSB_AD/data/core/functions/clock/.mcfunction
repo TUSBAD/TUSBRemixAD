@@ -8,13 +8,9 @@
 
 
 
-# 魔法のブロックの共通処理
-    execute as @e[type=item_frame,tag=MagicBlock] at @s run function job:skill/summoner/magic_block/check
 
-# TypeCheck 新しくでてきた敵に色々設定するやつ
-    execute as @e[type=!#lib:ignore_type_check,type=!area_effect_cloud,tag=!TypeChecked] at @s run function mob_manager:entity/type_check
-## TODO
-    execute as @e[type=area_effect_cloud,tag=!TypeChecked] at @s run function mob_manager:entity/type_check
+
+
 
 # エリア変更判定
 #todo:カスタムディメを増やしたらいじります。
