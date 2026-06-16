@@ -2,7 +2,7 @@
 #
 #> 大図書館演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/makeup/
 playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 4 0.5 0

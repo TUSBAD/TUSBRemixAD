@@ -2,7 +2,7 @@
 #
 #> 虚数空間演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/makeup/
 title @s subtitle [{"text":"= ","color":"#ffffff"},{"text":"実質無き","bold":true,"color":"#a297ac"},{"text":"虚構の狭間","bold":true,"color":"#434343"},{"text":" =","color":"#ffffff"}]

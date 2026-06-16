@@ -2,7 +2,7 @@
 #
 #> テーブル演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/makeup/
 playsound minecraft:entity.elder_guardian.ambient master @s ~ ~ ~ 4 0.5 0

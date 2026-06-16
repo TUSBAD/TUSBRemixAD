@@ -2,7 +2,7 @@
 #
 #> 通常世界下層演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/makeup/
 execute at @s run playsound entity.illusioner.prepare_blindness master @s ~ ~ ~ 4 0.5 0

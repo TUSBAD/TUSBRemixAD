@@ -2,7 +2,7 @@
 #
 #> エンド演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/makeup/
 playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 0.5 0.75 0

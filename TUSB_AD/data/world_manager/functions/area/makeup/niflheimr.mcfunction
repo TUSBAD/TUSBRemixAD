@@ -2,7 +2,7 @@
 #
 #> ニヴルヘイム演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/makeup/
 playsound minecraft:ambient.underwater.loop.additions.ultra_rare_4 master @s ~ ~ ~ 4 1.1 0

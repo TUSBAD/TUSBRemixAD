@@ -1,3 +1,3 @@
-#> area:settings/tradeisland
+#> world_manager:settings/tradeisland
 ### Sur/Adv判定
-data modify storage area: "アドベンチャーエリア" set value true
+data modify storage world: "アドベンチャーエリア" set value true

@@ -2,7 +2,7 @@
 #
 #> ガリバー演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/makeup/
 playsound minecraft:ambient.cave_2 master @s ~ ~ ~ 4 1.4 0
