@@ -2,7 +2,7 @@
 #
 #> 煉獄演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/entered/
 playsound minecraft:ambient.crimson_forest.mood_4 master @s ~ ~ ~ 4.0 1.5

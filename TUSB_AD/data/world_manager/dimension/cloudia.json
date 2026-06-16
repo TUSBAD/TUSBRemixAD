@@ -1,0 +1,11 @@
+{
+  "type": "world_manager:cloudia",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "world_manager:cloudia",
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}

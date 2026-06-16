@@ -2,7 +2,7 @@
 #
 #> 交易島演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/entered/
 playsound minecraft:block.beacon.activate master @s ~ ~ ~ 4 1.15 0

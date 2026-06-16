@@ -2,7 +2,7 @@
 #
 #> ネザーアスレ演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/entered/
 playsound minecraft:block.portal.trigger master @s ~ ~ ~ 4 0.5 0

@@ -2,7 +2,7 @@
 #
 #> 朽ち果てた戦場演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/entered/
 playsound minecraft:ambient.basalt_deltas.basaltground_4 master @s ~ ~ ~ 4 0.6 0

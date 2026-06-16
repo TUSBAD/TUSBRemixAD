@@ -2,7 +2,7 @@
 #
 #> 裏通常世界演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/entered/
 title @s subtitle [{"text":"= ","color":"#ffffff"},{"text":"崩壊した世界","bold":true,"color":"#756c80"},{"text":" =","color":"#ffffff"}]

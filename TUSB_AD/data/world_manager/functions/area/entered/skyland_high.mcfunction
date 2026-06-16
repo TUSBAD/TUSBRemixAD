@@ -2,7 +2,7 @@
 #
 #> 通常世界上層演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/entered/
 playsound minecraft:entity.allay.death master @s ~ ~ ~ 4 0.75 0

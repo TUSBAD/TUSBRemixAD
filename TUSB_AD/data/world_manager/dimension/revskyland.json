@@ -1,0 +1,11 @@
+{
+  "type": "world_manager:revskyland",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "world_manager:revskyland",
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}

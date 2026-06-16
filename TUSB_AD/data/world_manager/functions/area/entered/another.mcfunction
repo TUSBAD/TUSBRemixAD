@@ -2,7 +2,7 @@
 #
 #> 異次元演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/entered/
 playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 4 0.575 0

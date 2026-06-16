@@ -2,7 +2,7 @@
 #
 #> 地下世界演出
 #
-#@within function area:/entered/**
+#@within function world_manager:/entered/**
 
 function world_manager:area/entered/
 playsound minecraft:ambient.cave_12 master @s ~ ~ ~ 1.0 0.5

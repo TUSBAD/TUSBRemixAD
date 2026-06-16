@@ -1,0 +1,11 @@
+{
+  "type": "world_manager:another",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "world_manager:another",
+      "layers": [],
+      "structure_overrides": []
+    }
+  }
+}
