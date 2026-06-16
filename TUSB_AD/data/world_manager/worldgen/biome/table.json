@@ -21,7 +21,7 @@
       "options": {
         "type": "minecraft:cloud"
       },
-      "probability": 0.001
+      "probability": 0.0005
     }
   },
   "spawners": {},

@@ -11,7 +11,6 @@
     "water_fog_color": 10627626,
     "grass_color": 9043968,
     "foliage_color": 13369344,
-    "ambient_sound": "minecraft:block.lava.pop",
     "mood_sound": {
       "sound": "minecraft:ambient.nether_wastes.mood",
       "tick_delay": 6000,
@@ -32,7 +31,7 @@
       "options": {
         "type": "minecraft:flame"
       },
-      "probability": 0.001
+      "probability": 0.0005
     }
   },
   "spawners": {},
