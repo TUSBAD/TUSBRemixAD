@@ -1,0 +1,29 @@
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biomes": "world_manager:cursed_island"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biomes": "world_manager:apocalypse_island"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biomes": "world_manager:collapse_island"
+        }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "biomes": "world_manager:demise_island"
+        }
+      }
+    ]
+  }

@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:changed_dimension",
+        "conditions": {
+          "to": "area:library"
+        }
+      }
+    },
+    "rewards": {
+      "function": "area:entered/library"
+    }
+  }

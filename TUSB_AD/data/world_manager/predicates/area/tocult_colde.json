@@ -1,7 +1,7 @@
 {
 	"condition": "minecraft:location_check",
 	"predicate": {
-		"dimension": "world_manager:tocult_colde",
+		"dimension": "world_manager:tocult",
 		"position": {
 			"x": {
 				"min": 752,

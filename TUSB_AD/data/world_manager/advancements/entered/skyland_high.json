@@ -1,0 +1,26 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "position": {
+                "y": {
+                  "min": 257,
+                  "max": 512
+                }
+              }
+            }
+          }
+        ],
+        "to": "area:newskyland"
+      }
+    }
+  },
+  "rewards": {
+    "function": "area:entered/skyland_high"
+  }
+}

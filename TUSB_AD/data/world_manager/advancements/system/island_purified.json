@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "skylands.001":{"trigger":"minecraft:item_used_on_block","conditions":{"location":[{"condition":"match_tool","predicate":{"item":{"items":["minecraft:ender_eye"]}}},{"condition":"location_check","predicate":{"position":{"x":-21.5,"y":1.5,"z":-592.5},"dimension":"world_manager:newskyland"}}]}},
+      "tradeisland.001":{"trigger":"minecraft:item_used_on_block","conditions":{"location":[{"condition":"match_tool","predicate":{"item":{"items":["minecraft:ender_eye"]}}},{"condition":"location_check","predicate":{"position":{"x":-801.5,"y":131.5,"z":-676.5},"dimension":"world_manager:trade"}}]}}
+    },
+    "requirements": [
+      [
+        "skylands.001",
+        "flying_island.001"
+      ]
+    ],
+    "rewards": {
+      "function": "world_manager:system/island_purified"
+    }
+  }

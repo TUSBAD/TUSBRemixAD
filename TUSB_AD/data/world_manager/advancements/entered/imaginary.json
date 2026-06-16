@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "area:imaginary"
+      }
+    }
+  },
+  "rewards": {
+    "function": "area:entered/imaginary"
+  }
+}
