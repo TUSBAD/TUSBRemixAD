@@ -32,7 +32,7 @@ data modify storage skill: _.24 set value {name:["ドレイン","ドレインⅡ
 data modify storage skill: _.25 set value {name:["パルプンテ"],level:[50],cost:100,description:[["何が起こるか分からない。"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
 data modify storage skill: _.26 set value {name:["§bマジカルドレイン"],level:[75],cost:80,description:[["付近の敵から体力と魔力を吸い取る。"]],condition:"ニンジン付きの棒を持って右クリック"}
 data modify storage skill: _.27 set value {name:["§dライトニングシャワー"],level:[100],cost:300,description:[["周囲の敵に一定時間雷を落とす。雷の近くにいる味方のデバフを解除し体力と魔力を回復する。"]],duration:[20],condition:"ニンジン付きの棒を持って右クリック",range:[10]}
-execute if data storage skill: {skill_liberation:1b} run data modify storage skill: _.28 set value {name:["§6シャドウボルト"],level:[100],cost:500,description:[["周囲の敵を一点に集め、超特大ダメージを与える雷を落とす"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
+data modify storage skill: _.28 set value {name:["§6シャドウボルト"],level:[100],cost:500,description:[["周囲の敵を一点に集め、超特大ダメージを与える雷を落とす"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
 
 data modify storage skill: skill_table.black_mage set from storage skill: _
 data remove storage skill: _

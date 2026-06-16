@@ -7,7 +7,7 @@
 scoreboard players operation @s ActivatedSkill = @s CurrentMode
 scoreboard players operation @s MPConsumption = @s CurrentModeCost
 ### MPチェック
-function job:check_mp/
+function job:mp/check/
 
 scoreboard players operation _ ActivatedSkill = @s ActivatedSkill
 execute if score _ ActivatedSkill matches 4210..4219 anchored eyes positioned ^ ^ ^ anchored feet as @e[distance=..1,type=snowball,sort=nearest,limit=1] run function job:skill/white_mage/dia/apply

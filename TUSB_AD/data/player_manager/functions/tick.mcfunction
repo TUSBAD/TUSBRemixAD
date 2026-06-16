@@ -39,10 +39,10 @@
     execute if entity @s[scores={HP=1..,Hunger=0..}] run function player_manager:death/rise
 
 # 経験値取得処理
-    execute if entity @s[predicate=player_manager:has_netherstar] run function player_manager:job/pick_exp/
+    execute if entity @s[predicate=player_manager:has_netherstar] run function job:pick_exp/
 
 # レベルアップ処理
-    execute if entity @s[scores={ExpToLevel=..0,Job=1..}] run function player_manager:job/level_up/
+    execute if entity @s[scores={ExpToLevel=..0,Job=1..}] run function job:level_up/
 
 # 島攻略
     execute if entity @s[scores={UseEnderEye=1..}] run function world_manager:area/conquer/
