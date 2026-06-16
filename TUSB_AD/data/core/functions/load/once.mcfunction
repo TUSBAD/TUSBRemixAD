@@ -251,6 +251,7 @@ scoreboard players reset * MP
 ### ワールド初期設定
 time set 14000
 weather rain 15
+data remove storage world: capture
 data modify storage world: area_name set value {skyland:"???",underworld:"???",cloudia:"???",table_mountain:"???",gullivers_land:"???",tocult_colde:"???",new_skyland:"???",niflheimr:"???",library:"???",imaginary_space:"???",unusual_space:"???",another_dimension:"???",ancient_field:"???",tradeisland:"???",hellheimr:"???",end:"???",nether:"???"}
 data modify storage world: conquer.count set value {skyland:0,nether:0,end:0,underworld:0,cloudia:0,table_mountain:0,gullivers_land:0,tocult_colde:0,niflheimr:0,library:0,imaginary_space:0,unusual_space:0,another_dimension:0,ancient_field:0,new_skyland:0,tradeisland:0,hellheimr:0}
 data modify storage world: conquer.max set value {skyland:0,nether:4,end:3,underworld:2,cloudia:4,table_mountain:2,gullivers_land:2,tocult_colde:10,niflheimr:0,library:0,imaginary_space:0,unusual_space:0,another_dimension:0,ancient_field:1,new_skyland:10,tradeisland:1,hellheimr:0}
@@ -377,3 +378,4 @@ execute unless score #Minutes Count matches 0.. run scoreboard players set #Minu
 
 #> Function実行
 function core:settings/too_bad_effects
+function core:settings/capture_reset

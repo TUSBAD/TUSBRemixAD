@@ -1,4 +1,4 @@
-#> core:clock/first
+#> core:clock/
 #
 # 毎ティック最初に実行したいもの
 #
@@ -29,14 +29,3 @@
     scoreboard players set @a[predicate=world_manager:area/move/nether_dungeon] AreaChangeFlag -89
 # エリア変更処理
     execute as @a[scores={AreaChangeFlag=-100..}] run function world_manager:area/move/
-
-# ゲームモード変更
-    # adv→suv
-        tellraw @a[gamemode=adventure,tag=!Adv,team=!] {"text":"ブロックの設置・破壊制限が解除された。","color":"dark_aqua"}
-        gamemode survival @a[gamemode=adventure,tag=!Adv,team=!]
-    # suv→adv
-        tellraw @a[gamemode=survival,tag=Adv] {"text":"ブロックの設置・破壊が制限された。","color":"red"}
-        gamemode adventure @a[gamemode=survival,tag=Adv]
-
-# ハード固定
-#    difficulty hard
