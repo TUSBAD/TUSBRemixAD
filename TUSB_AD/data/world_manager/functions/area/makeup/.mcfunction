@@ -1,4 +1,4 @@
-#> makeup:area/entered/
+#> world_manager:area/makeup/
 #
 #> 共通演出
 #

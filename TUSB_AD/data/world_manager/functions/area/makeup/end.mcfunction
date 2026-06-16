@@ -1,10 +1,10 @@
-#> makeup:area/entered/end
+#> world_manager:area/makeup/end
 #
 #> エンド演出
 #
 #@within function area:/entered/**
 
-function makeup:area/entered/
+function world_manager:area/makeup/
 playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 0.5 0.75 0
 playsound minecraft:block.end_portal.spawn master @s ~ ~ ~ 0.5 0.751 0
 title @s subtitle [{"text":"= ","color":"white"},{"text":"永劫不転の","bold":true,"color":"#686868"},{"text":"終","bold":true,"color":"#9900d1"},{"text":"着点","bold":true,"color":"#686868"},{"text":" =","color":"white"}]

@@ -7,4 +7,4 @@ advancement revoke @s only world_manager:entered/test
 function settings:area/test
 function world_manager:area/entered/
 # 演出表示
-function makeup:area/entered/test
+function world_manager:area/makeup/test

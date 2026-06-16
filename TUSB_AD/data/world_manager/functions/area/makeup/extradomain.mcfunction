@@ -1,10 +1,10 @@
-#> makeup:area/entered/extradomain
+#> world_manager:area/makeup/extradomain
 #
 #> EXドメイン演出
 #
 #@within function area:/entered/**
 
-function makeup:area/entered/
+function world_manager:area/makeup/
 playsound minecraft:ambient.crimson_forest.shine_1 master @s ~ ~ ~ 4 1.8 0
 playsound minecraft:ambient.crimson_forest.shine_1 master @s ~ ~ ~ 4 1.4 0
 playsound minecraft:ambient.crimson_forest.shine_2 master @s ~ ~ ~ 4 1.7 0

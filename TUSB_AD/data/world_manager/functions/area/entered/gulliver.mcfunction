@@ -7,4 +7,4 @@ advancement revoke @s only world_manager:entered/gulliver
 function settings:area/gulliver
 function world_manager:area/entered/
 # 演出表示
-function makeup:area/entered/gulliver
+function world_manager:area/makeup/gulliver

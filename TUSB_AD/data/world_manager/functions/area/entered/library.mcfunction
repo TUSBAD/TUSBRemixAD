@@ -7,4 +7,4 @@ advancement revoke @s only world_manager:entered/library
 function settings:area/library
 function world_manager:area/entered/
 # 演出表示
-function makeup:area/entered/library
+function world_manager:area/makeup/library

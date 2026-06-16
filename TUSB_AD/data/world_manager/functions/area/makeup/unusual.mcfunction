@@ -1,10 +1,10 @@
-#> makeup:area/entered/unusual
+#> world_manager:area/makeup/unusual
 #
 #> 異空間演出
 #
 #@within function area:/entered/**
 
-function makeup:area/entered/
+function world_manager:area/makeup/
 playsound minecraft:ambient.basalt_deltas.active_3 master @s ~ ~ ~ 4 1.2 0
 playsound minecraft:ambient.basalt_deltas.active_4 master @s ~ ~ ~ 4 1.3 0
 title @s subtitle [{"text":"= ","color":"white"},{"text":"終末誘う","bold":true,"color":"#6c00f0"},{"text":"混沌","bold":true,"color":"#ec022c"},{"text":"との遭逢","bold":true,"color":"#6c00f0"},{"text":" =","color":"white"}]

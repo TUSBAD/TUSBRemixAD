@@ -7,4 +7,4 @@ advancement revoke @s only world_manager:entered/tradeisland
 function settings:area/tradeisland
 function world_manager:area/entered/
 # 演出表示
-function makeup:area/entered/tradeisland
+function world_manager:area/makeup/tradeisland

@@ -7,4 +7,4 @@ advancement revoke @s only world_manager:entered/helheim
 function settings:area/helheim
 function world_manager:area/entered/
 # 演出表示
-function makeup:area/entered/helheim
+function world_manager:area/makeup/helheim

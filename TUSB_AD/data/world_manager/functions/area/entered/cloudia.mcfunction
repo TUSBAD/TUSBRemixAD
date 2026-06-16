@@ -7,4 +7,4 @@ advancement revoke @s only world_manager:entered/cloudia
 function settings:area/cloudia
 function world_manager:area/entered/
 # 演出表示
-function makeup:area/entered/cloudia
+function world_manager:area/makeup/cloudia

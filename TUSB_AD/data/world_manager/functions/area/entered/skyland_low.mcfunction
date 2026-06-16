@@ -7,4 +7,4 @@ advancement revoke @s only world_manager:entered/skyland_low
 function settings:area/skyland_low
 function world_manager:area/entered/
 # 演出表示
-function makeup:area/entered/skyland_low
+function world_manager:area/makeup/skyland_low

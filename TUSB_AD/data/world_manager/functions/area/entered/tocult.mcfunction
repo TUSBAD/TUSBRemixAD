@@ -7,4 +7,4 @@ advancement revoke @s only world_manager:entered/tocult
 function settings:area/tocult
 function world_manager:area/entered/
 # 演出表示
-function makeup:area/entered/tocult
+function world_manager:area/makeup/tocult

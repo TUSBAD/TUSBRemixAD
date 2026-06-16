@@ -7,4 +7,4 @@ advancement revoke @s only world_manager:entered/imaginary
 function settings:area/imaginary
 function world_manager:area/entered/
 # 演出表示
-function makeup:area/entered/imaginary
+function world_manager:area/makeup/imaginary
