@@ -1,0 +1,41 @@
+{
+  "temperature": 0,
+  "downfall": 0,
+  "temperature_modifier": "none",
+  "has_precipitation": false,
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 2818135,
+    "fog_color": 1245255,
+    "water_color": 16777215,
+    "water_fog_color": 16777215,
+    "grass_color": 3670093,
+    "foliage_color": 2097198,
+    "music": {
+      "sound": "minecraft:music.end",
+      "min_delay": 0,
+      "max_delay": 2000,
+      "replace_current_music": true
+    },
+    "additions_sound": {
+      "sound": "minecraft:basalt_deltas_active",
+      "tick_chance": 0.005
+    },
+    "mood_sound": {
+      "sound": "minecraft:ambient.warped_forest.additions",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:dripping_obsidian_tear"
+      },
+      "probability": 0.001
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}

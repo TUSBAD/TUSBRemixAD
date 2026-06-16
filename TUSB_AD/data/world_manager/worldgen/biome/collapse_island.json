@@ -1,0 +1,42 @@
+{
+  "temperature": 0.3,
+  "downfall": 0.3,
+  "has_precipitation": true,
+  "temperature_modifier": "frozen",
+  "creature_spawn_probability": 0,
+  "effects": {
+    "sky_color": 7667712,
+    "fog_color": 3997696,
+    "water_color": 15400960,
+    "water_fog_color": 16711680,
+    "grass_color": 8388608,
+    "foliage_color": 16711680,
+    "ambient_sound": "minecraft:ambient.warped_forest_here",
+    "mood_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley_wind",
+      "tick_delay": 2000,
+      "block_search_extent": 8,
+      "offset": 2
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.soul_sand_valley_voice",
+      "tick_chance": 0.01
+    },
+    "music": {
+      "sound": "music:eld_unknown_pitch0.75",
+      "min_delay": 0,
+      "max_delay": 2000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "minecraft:sculk_soul"
+      },
+      "probability": 0.001
+    }
+  },
+  "spawners": {},
+  "spawn_costs": {},
+  "carvers": {},
+  "features": []
+}
