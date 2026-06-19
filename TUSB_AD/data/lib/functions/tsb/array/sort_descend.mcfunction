@@ -9,7 +9,7 @@
 
 
 # セッションチェック
-    execute if data storage lib: {ArrayLibSessionOpened:false} run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"lib:tsb/array/のセッションが開かれずに利用されています。","color":"white"}]
+    execute if data storage lib: {ArrayLibSessionOpened:false} run tellraw @a [{"storage":"core:","nbt":"Prefix.ERROR"},{"text":"lib:tsb/array/のセッションが開かれずに利用されています。","color":"white"}]
 
 # 実際ただのエイリアスである。
     function natural_merge_sort:descend

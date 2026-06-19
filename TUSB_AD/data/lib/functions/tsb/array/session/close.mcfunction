@@ -5,7 +5,7 @@
 # @api
 
 # セッションチェック
-    execute if data storage lib: {ArrayLibSessionOpened:false} run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"lib:tsb/array/のセッションは既に閉じられています。","color":"white"}]
+    execute if data storage lib: {ArrayLibSessionOpened:false} run tellraw @a [{"storage":"core:","nbt":"Prefix.ERROR"},{"text":"lib:tsb/array/のセッションは既に閉じられています。","color":"white"}]
 # リセット
     data remove storage lib: Cache
     data remove storage lib: Array
