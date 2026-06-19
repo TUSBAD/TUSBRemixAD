@@ -5,7 +5,7 @@
 			"conditions": {
 				"player": {
 					"location": {
-						"dimension": "minecraft:overworld",
+						"dimension": "world_manager:cloudia",
 						"position": {
 							"x": {
 								"min": -1755,
@@ -14,11 +14,11 @@
 							"y": {
 								"min": 98,
 								"max": 108
-							}, 
+							},
 							"z": {
 								"min": -153,
 								"max": -120
-							} 
+							}
 						}
 					}
 				}
