@@ -29,7 +29,7 @@ gamerule playersSleepingPercentage 10
 gamerule disableRaids true
 gamerule universalAnger true
 gamerule forgiveDeadPlayers false
-gamerule snowAccumulationHeight 8
+gamerule snowAccumulationHeight 7
 difficulty hard
 defaultgamemode adventure
 worldborder center 0 0

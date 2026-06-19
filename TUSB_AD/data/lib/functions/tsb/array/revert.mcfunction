@@ -14,7 +14,7 @@
 
 
 # セッションチェック
-    execute if data storage lib: {ArrayLibSessionOpened:false} run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"lib:tsb/array/のセッションが開かれずに利用されています。","color":"white"}]
+    execute if data storage lib: {ArrayLibSessionOpened:false} run tellraw @a [{"storage":"core:","nbt":"Prefix.ERROR"},{"text":"lib:tsb/array/のセッションが開かれずに利用されています。","color":"white"}]
 
 # Cacheを復元
     execute if data storage lib: Cache[0] run function lib:tsb/array/core/revert
