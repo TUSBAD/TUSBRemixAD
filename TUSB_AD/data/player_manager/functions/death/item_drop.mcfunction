@@ -22,15 +22,15 @@
 
 # 一回目
     function lib:tsb/array/packing_chest
-    data modify block 3500 0 3500 Items set from storage lib: Package
-    loot spawn ~ ~1 ~ mine 3500 0 3500 debug_stick
+    execute in world_manager:control run data modify block 3 1 3 Items set from storage lib: Package
+    execute in world_manager:control run loot spawn ~ ~1 ~ mine 3 1 3 debug_stick
 # リセット
     data remove storage lib: Package
 
 # 二回目
     function lib:tsb/array/packing_chest
-    data modify block 3500 0 3500 Items set from storage lib: Package
-    loot spawn ~ ~1 ~ mine 3500 0 3500 debug_stick
+    execute in world_manager:control run data modify block 3 1 3 Items set from storage lib: Package
+    execute in world_manager:control run loot spawn ~ ~1 ~ mine 3 1 3 debug_stick
 
 # リセット
     function lib:tsb/array/session/close
