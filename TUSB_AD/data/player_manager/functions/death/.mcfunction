@@ -3,11 +3,6 @@
 ### Copyright © 2022 赤石愛
 ### This software is released under the MIT License, see LICENSE.
 
-## 死亡トリガーリセット
-execute store result score @s Hunger run data get entity @s foodLevel
-scoreboard players reset @s Deaths
-advancement revoke @s only player_manager:trigger/death
-
 # RR追加部分
 # アイテムをぶちまける
 execute unless data storage core: settings{is_keepinventory:true} run function player_manager:death/item_drop
@@ -45,3 +40,8 @@ tag @s[tag=ReRaise] remove ReRaise
 # ハードコア死亡時
 execute if data storage core: settings{hardcore:true} run tag @s add death
 execute if data storage core: settings{hardcore:true} run gamemode spectator @s
+
+## 死亡トリガーリセット
+execute store result score @s Hunger run data get entity @s foodLevel
+scoreboard players reset @s Deaths
+advancement revoke @s only player_manager:trigger/death

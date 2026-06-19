@@ -72,6 +72,6 @@
     ]
   ],
   "rewards": {
-    "function": "player_manager:death/"
+    "function": "player_manager:death"
   }
 }

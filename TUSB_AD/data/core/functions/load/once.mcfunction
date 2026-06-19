@@ -31,10 +31,9 @@ scoreboard objectives add HP dummy {"text": "HP","color": "#ff0053","bold": true
 scoreboard objectives add HPChanging health "HP変化フラグ"
 scoreboard objectives add FoodLevel food {"text":"満腹度"}
 scoreboard objectives add LastFoodLevel dummy {"text":"直前満腹度"}
-scoreboard objectives add Hunger dummy "空腹減少量"
+scoreboard objectives add Hunger dummy "死亡時調整満腹度"
 scoreboard objectives add Armor armor "アーマーポイント"
 scoreboard objectives add HPMax dummy "最大HP"
-scoreboard objectives add FoodMax dummy "最大満腹量"
 
 scoreboard objectives add HealCount dummy "HP回復量"
 ## なくせるかも？

@@ -23,10 +23,6 @@
 # 満腹度調整
     function player_manager:effect/status/hunger
 
-# 満腹度を調整
-    scoreboard players operation @s FoodMax = @s Hunger
-    scoreboard players set @s[scores={FoodMax=0..3}] FoodMax 4
-
 # 祈りを有効にする
     scoreboard players enable @s kill
 
@@ -34,4 +30,4 @@
     execute as @s[tag=Raise] at @s run function job:skill/white_mage/raise/return
 
 # フラグリセット
-    scoreboard players reset @s Hunger
+    scoreboard players set @s Hunger -1

@@ -35,8 +35,10 @@
     execute if entity @s[scores={PickupPaper=1..}] run scoreboard players operation @s TradedVillager >< @s PickupPaper
     execute if entity @s[scores={TradedVillager=1..}] run function player_manager:inventory_event/trade_event/
 
+execute if entity @s[scores={HP=..0,Hunger=..-1}] run function player_manager:death/
+
 # 生き返ったときは満腹度調整処理
-    execute if entity @s[scores={HP=1..,Hunger=0..}] run function player_manager:death/rise
+    execute if entity @s[scores={LiveTime=1..,Hunger=0..}] run function player_manager:death/rise
 
 # 経験値取得処理
     execute if entity @s[predicate=player_manager:has_netherstar] run function player_manager:job/pick_exp/

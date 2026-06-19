@@ -18,7 +18,7 @@ playsound minecraft:item.shield.break player @s[scores={DoomSecond=..0,Doom=0..3
 
 # カウント間隔設定
 execute if score #Difficulty Difficulty matches 1 run scoreboard players set @s[scores={DoomSecond=..0}] DoomSecond 3
-execute if score #Difficulty Difficulty matches 2..4 run scoreboard players set @s[scores={DoomSecond=..0}] DoomSecond 1
+execute if score #Difficulty Difficulty matches 2..5 run scoreboard players set @s[scores={DoomSecond=..0}] DoomSecond 1
 execute if score @s Doom matches ..0 run function player_manager:effect/invisible/doom/death
 
 # 明示的にリセット
