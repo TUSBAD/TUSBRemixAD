@@ -6,7 +6,6 @@
 # 難易度：ナイトメア
 
 #> チーム色変更
-execute unless data storage core: difficult{world:"nightmare"} run function core:difficulty/color/nightmare
 
 data modify storage core: difficult.before set from storage core: difficult.world
 data modify storage core: difficult.world set value "nightmare"

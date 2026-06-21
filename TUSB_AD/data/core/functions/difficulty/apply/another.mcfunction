@@ -6,7 +6,6 @@
 # 難易度：アナザー
 
 #> チーム色変更
-execute unless data storage core: difficult{world:"another"} run function core:difficulty/color/another
 
 data modify storage core: difficult.before set from storage core: difficult.world
 data modify storage core: difficult.world set value "another"

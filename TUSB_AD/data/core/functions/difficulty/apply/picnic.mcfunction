@@ -6,7 +6,6 @@
 # 難易度：ピクニック
 
 #> チーム色変更
-execute unless data storage tusb: difficult{world:"picnic"} run function core:difficulty/color/picnic
 
 data modify storage core: difficult.before set from storage core: difficult.world
 data modify storage core: difficult.world set value "picnic"
