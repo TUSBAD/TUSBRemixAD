@@ -363,18 +363,13 @@ scoreboard objectives add ChangeDifficulty trigger {"text":"難易度変更"}
 #> Entity関連スコア
 scoreboard objectives add Damage dummy {"text":"ダメージ"}
 scoreboard objectives add ShowDamage dummy {"text": "表示ダメージ"}
-scoreboard players set #5120 Damage 5120
 scoreboard objectives add Heal dummy {"text": "回復量"}
 scoreboard objectives add MaxCustomHealth dummy {"text":"最大カスタム体力"}
 scoreboard objectives add CustomHealth dummy {"text":"カスタム体力"}
 scoreboard objectives add LogRemoveTime dummy {"text": "Logのtick"}
 
-###総獲得経験値量初期化
-scoreboard players add #World AllExp 0
-
-#時間初期化
-execute unless score #Hours Count matches 0.. run scoreboard players set #Hours Count 0
-execute unless score #Minutes Count matches 0.. run scoreboard players set #Minutes Count 0
+# 各スコアの初期設定
+function core:load/init_score
 
 #> Function実行
 function core:settings/too_bad_effects
