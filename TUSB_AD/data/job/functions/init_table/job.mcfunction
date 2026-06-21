@@ -9,41 +9,41 @@ data remove storage job: Data
 
 # 職ごとにセット
 # 剣士
-data modify storage job: Data.Knight append value "剣士"
-data modify storage job: Data.Knight append value "§4栄誉騎士"
-data modify storage job: Data.Knight append value "§l§4栄誉騎士 §6マスターランク"
+data modify storage job: Data.Knight append value "ウォーリアー"
+data modify storage job: Data.Knight append value "§4ナイトエンペラー"
+data modify storage job: Data.Knight append value "§l§4エンパイアソード"
 
 # 忍者
-data modify storage job: Data.Ninja append value "忍者"
-data modify storage job: Data.Ninja append value "§2隠密"
-data modify storage job: Data.Ninja append value "§l§2隠密 §6マスターランク"
-
-# 狩人
-data modify storage job: Data.Archer append value "狩人"
-data modify storage job: Data.Archer append value "§d狙撃手"
-data modify storage job: Data.Archer append value "§l§d狙撃手 §6マスターランク"
-
-# 白魔
-data modify storage job: Data.WhiteMage append value "白魔導士"
-data modify storage job: Data.WhiteMage append value "§7大賢者"
-data modify storage job: Data.WhiteMage append value "§l§7大賢者 §6マスターランク"
-
-# 黒魔
-data modify storage job: Data.BlackMage append value "黒魔導士"
-data modify storage job: Data.BlackMage append value "§5大魔導士"
-data modify storage job: Data.BlackMage append value "§l§5大魔導士 §6マスターランク"
-
-# 召喚士
-data modify storage job: Data.Summoner append value "召喚士"
-data modify storage job: Data.Summoner append value "§e錬金術師"
-data modify storage job: Data.Summoner append value "§l§e錬金術師 §6マスターランク"
+data modify storage job: Data.Ninja append value "アサシン"
+data modify storage job: Data.Ninja append value "§2シュラ"
+data modify storage job: Data.Ninja append value "§l§2アプサラス"
 
 # 槍術師
-data modify storage job: Data.Lancer append value "槍術師"
-data modify storage job: Data.Lancer append value "§b槍術師+"
-data modify storage job: Data.Lancer append value "§l§b槍術師+ §6マスターランク"
+data modify storage job: Data.Lancer append value "ランサー"
+data modify storage job: Data.Lancer append value "§bリヒター"
+data modify storage job: Data.Lancer append value "§l§bイノセント"
+
+# 狩人
+data modify storage job: Data.Archer append value "スナイパー"
+data modify storage job: Data.Archer append value "§dデッドリーチェイサー"
+data modify storage job: Data.Archer append value "§l§dデイブレイカー"
+
+# 白魔
+data modify storage job: Data.WhiteMage append value "プリースト"
+data modify storage job: Data.WhiteMage append value "§7エレメンタリスト"
+data modify storage job: Data.WhiteMage append value "§l§7エーテルセージ"
+
+# 黒魔
+data modify storage job: Data.BlackMage append value "ソーサラー"
+data modify storage job: Data.BlackMage append value "§5ウィザード"
+data modify storage job: Data.BlackMage append value "§l§5オズソーサラー"
+
+# 召喚士
+data modify storage job: Data.Summoner append value "サモナー"
+data modify storage job: Data.Summoner append value "§eドレッドロード"
+data modify storage job: Data.Summoner append value "§l§eカタストロフィー"
 
 # 創成術師
-data modify storage job: Data.Lancer append value "創成術師"
-data modify storage job: Data.Lancer append value "§a創成術師+"
-data modify storage job: Data.Lancer append value "§l§a創成術師+ §6マスターランク"
+data modify storage job: Data.Lancer append value "アルケミスト"
+data modify storage job: Data.Lancer append value "§aセレスティア"
+data modify storage job: Data.Lancer append value "§l§aロードアゾット"
