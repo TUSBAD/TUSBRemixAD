@@ -5,16 +5,6 @@
 
 ### レベルが2147483646以下の場合だけレベルアップ
 scoreboard players add @s[scores={Level=..2147483646}] Level 1
-### 最大MPはレベルに関わらずあがる
-scoreboard players add @s MPMax 1
-### 最大2147483646
-scoreboard players set @s[scores={MPMax=2147483646..}] MPMax 2147483646
-
-### 最大体力計算 = 20 + Level (HPMax < 1021)
-execute store result storage player: _ int 2 run scoreboard players get @s Level
-execute store result score @s HPMax run data get storage player: _
-scoreboard players add @s HPMax 20
-scoreboard players set @s[scores={HPMax=1021..}] HPMax 1020
 
 ### レベルアップの演出
 stopsound @a[distance=..16] master minecraft:ui.toast.challenge_complete
@@ -30,9 +20,8 @@ title @s title {"text":"LEVEL UP ！","color":"green","bold":true}
 ### レベル500まで、新しいスキル取得メッセージを表示
 execute if entity @s[scores={Level=..500}] run function job:set_display/learn/
 
-# 回復
+# ステータス設定
 function player_manager:effect/status/life_to_max
-effect give @s instant_health 1 20 true
 
 ### 次の経験値の設定
 scoreboard players operation @s NextExp = @s Level
