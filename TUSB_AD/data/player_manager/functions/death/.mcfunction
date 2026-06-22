@@ -5,7 +5,7 @@
 
 # RR追加部分
 # アイテムをぶちまける
-execute unless data storage core: settings{is_keepinventory:true} run function player_manager:death/item_drop
+execute unless data storage core: settings{is_keepinventory:true} run function player_manager:death_item_drop/
 
 ### 死をカウントアップ
 scoreboard players add AllDeathCount DeathCount 1

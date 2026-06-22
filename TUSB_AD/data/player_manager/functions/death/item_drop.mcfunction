@@ -4,6 +4,7 @@
 #
 # @within function player_manager:death/
 
+
 # インベ保存
     function api:data_get/inventory
 
@@ -39,4 +40,4 @@
     data remove storage item: Inventory
 
 # 共鳴処理
-    execute if data storage api: Inventory[{tag:{Kyoumei:1b}}] run function player_manager:custom_item/kyoumei/
+    execute if data storage api: Inventory[{tag:{Kyoumei:1b}}] in world_manager:control run function player_manager:custom_item/kyoumei/

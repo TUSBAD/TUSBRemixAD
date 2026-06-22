@@ -30,4 +30,4 @@
     execute as @s[tag=Raise] at @s run function job:skill/white_mage/raise/return
 
 # フラグリセット
-    scoreboard players set @s Hunger -1
+    scoreboard players reset @s Hunger

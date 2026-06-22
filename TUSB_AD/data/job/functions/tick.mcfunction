@@ -21,6 +21,8 @@ execute unless score _ Luck = @s Luck run function job:luck_update
 # MP回復
 function job:mp_regen/
 
+
+
 # マジックシールドのチェック
     execute if entity @s[tag=MagicShield] run effect give @s minecraft:resistance 1 100
 
