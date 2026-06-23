@@ -32,4 +32,6 @@ execute as @s[scores={CurrentMode=6310..6319}] run function job:skill/summoner/f
 execute as @s[scores={CurrentMode=6320..6329}] run function job:skill/summoner/abisu/spell
 execute as @s[scores={CurrentMode=6330..6339}] run function job:skill/summoner/katatoro/spell
 
+execute as @s[tag=tomb_owner] run function job:skill/common/dig_tomb/act0
+
 scoreboard players reset @s UseCarrotStick

@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "stone_sword",
+                    "name": "carrot_on_a_stick",
                     "functions": [
                         {
                             "function": "set_name",

@@ -10,6 +10,7 @@
     data modify storage item: DeathInventory.Inventory set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].DeathInventory[0]
     data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].DeathInventory
     data modify storage item: DeathInventory.Set set value []
+    tellraw @a {"nbt":"DeathInventory.Inventory","storage": "item:","color": "green"}
 
 # アイテム置換
     data modify storage item: DeathInventory.Set append from storage item: DeathInventory.Inventory[{Slot:0b}]
