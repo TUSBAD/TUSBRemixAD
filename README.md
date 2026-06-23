@@ -31,3 +31,12 @@ RemakeRemixを元に作成されたADです。
 
 # 謝辞
 このリポジトリでは以下のリポジトリ/ライブラリを使用させていただいています。<br>
+
+***
+The Unusual SkyBlock AnotherRemixEdition<br>
+Copyright &copy; 2026 [TUSB&TSB-FanCommunity](https://discord.gg/rTVWQm4ykR)<br>
+All Rights Reserved.
+
+> [!NOTE]
+> Minecraft 公式製品ではありません。Mojang から承認されておらず、Mojang とは関係ありません。  
+> Not an official Minecraft product, not endorsed by or affiliated with Mojang.
