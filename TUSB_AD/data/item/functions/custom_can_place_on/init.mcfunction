@@ -6,6 +6,8 @@
 #CanPlaceOnを付けるアイテムを取得
 data modify storage item: CanPlaceOn set value []
 data modify storage item: CanPlaceOn append from entity @s Inventory[{id:"minecraft:torch"}]
+data modify storage item: CanPlaceOn append from entity @s Inventory[{id:"minecraft:soul_torch"}]
+data modify storage item: CanPlaceOn append from entity @s Inventory[{id:"minecraft:redstone_torch"}]
 data modify storage item: CanPlaceOn append from entity @s Inventory[{id:"minecraft:vine"}]
 data modify storage item: CanPlaceOn append from entity @s Inventory[{id:"minecraft:cobweb"}]
 data modify storage item: CanPlaceOn append from entity @s Inventory[{id:"minecraft:ender_eye"}]
