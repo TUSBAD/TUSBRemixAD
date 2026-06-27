@@ -4,7 +4,7 @@
     "minecraft:anvil",
     "minecraft:chipped_anvil",
     "minecraft:damaged_anvil",
-    "minecraft:reinforced_deepslate",
-    "minecraft:beacon"
+    "minecraft:beacon",
+    "#item:can_break"
   ]
 }

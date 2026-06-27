@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lodestone",
+    "minecraft:sponge",
+    "minecraft:wet_sponge",
+    "#minecraft:wool_carpets",
+    "#item:can_break"
+  ]
+}
