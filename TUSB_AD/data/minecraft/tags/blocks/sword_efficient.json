@@ -1,10 +1,14 @@
 {
+  "replace": false,
   "values": [
- "#minecraft:wool",
- "minecraft:sponge",
- "minecraft:wet_sponge",
- "#minecraft:wool_carpets",
- "minecraft:moss_block",
- "minecraft:moss_carpet"
+    "#minecraft:wool",
+    "minecraft:sponge",
+    "minecraft:wet_sponge",
+    "#minecraft:wool_carpets",
+    "minecraft:moss_block",
+    "minecraft:moss_carpet",
+    "minecraft:lodestone",
+    "minecraft:spawner",
+    "#minecraft:shulker_boxes"
   ]
 }
