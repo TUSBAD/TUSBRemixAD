@@ -1,0 +1,52 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:white_wool",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": [
+      {
+        "translate": "アドベンチャーエリアで使えるアイテム                                ",
+        "color": "#75ff7c",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "アドベンチャーエリアでは、自由な破壊・設置が出来なくなります。ですが、一部アイテムはAdvエリアでも設置や破壊が可能です。\nAdvエリアでも使用可能なアイテムを手に入れると、進捗が増えていきます。",
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "player_manager:infomation/item/root",
+  "criteria": {
+    "can_destroy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{CustomCanDestroy:1b}"
+          }
+        ]
+      }
+    },
+    "can_place": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{CustomCanPlaceOn:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "can_destroy",
+      "can_place"
+    ]
+  ]
+}

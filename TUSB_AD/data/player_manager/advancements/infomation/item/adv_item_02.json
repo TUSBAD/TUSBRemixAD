@@ -1,0 +1,53 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:wooden_pickaxe",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": [
+      {
+        "translate": "アドベンチャーエリアで使えるアイテム -%1$s-                                  ",
+        "color": "#75ff7c",
+        "bold": true,
+        "with": [
+          {
+            "translate": "ツール編",
+            "color": "#ff8080"
+          }
+        ]
+      }
+    ],
+    "description": {
+      "translate": "特殊アイテムではないツールを手に入れると、\n自動でAdvエリアで破壊可能なブロックがツールに登録されます。\n(対象のツール：%1$s)\nなお、特殊アイテムの場合は、ツールチップに破壊可能ブロックが記載されます。",
+      "with": [
+        {
+          "translate": "ツルハシ・シャベル・斧・桑・剣・鋏",
+          "color": "#62fe89"
+        }
+      ],
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "player_manager:infomation/item/adv_item_01",
+  "criteria": {
+    "can_destroy": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{CustomCanDestroy:1b}"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "can_destroy"
+    ]
+  ]
+}
