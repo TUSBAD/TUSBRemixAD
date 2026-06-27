@@ -8,7 +8,6 @@
     "minecraft:moss_block",
     "minecraft:moss_carpet",
     "minecraft:lodestone",
-    "minecraft:spawner",
-    "#minecraft:shulker_boxes"
+    "#item:can_break"
   ]
 }
