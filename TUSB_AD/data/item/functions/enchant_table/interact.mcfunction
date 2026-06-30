@@ -5,7 +5,7 @@
 #1tick遅らせる
 playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 .5 1
 playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 .61 1
-schedule function item:grindstone/schedule 1t
-tag @s add InteractGrindstone
+schedule function item:enchant_table/schedule 1t
+#tag @s add InteractEnchantTable
 #トリガー解除
-advancement revoke @s only item:interact/grindstone
+advancement revoke @s only item:interact/enchanting_table

@@ -4,8 +4,8 @@
       "predicate": {
         "position": {
           "y": {
-            "min": -400,
-            "max": 400
+            "min": -700,
+            "max": 700
           }
         }
       }
