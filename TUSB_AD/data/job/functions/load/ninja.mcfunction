@@ -9,11 +9,8 @@ particle minecraft:explosion ~ ~1 ~ 1 1 1 0.1 200 force
 
 title @s times 10 50 20
 
-execute if score @s Job matches 2 run title @s title ["",{"text":"= ","color":"white"},{"text":"N","font":"icon","color":"#a433ff"},{"text":" 忍者 ","color":"#a433ff"},{"text":"=","color":"white"}]
-execute if score @s Job matches 2 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Ninja ","color":"#a433ff"},{"text":"=","color":"white"}]
+execute if score @s Job matches 2 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#a433ff"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.Ninja[0]"}]},{"text":"=","color":"white"}]
 
-execute if score @s Job matches 102 run title @s title ["",{"text":"= ","color":"white"},{"text":"N","font":"icon","color":"#a433ff"},{"text":" 忍者 ","color":"#a433ff"},{"text":"=","color":"white"}]
-execute if score @s Job matches 102 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Ninja+ ","color":"#a433ff"},{"text":"=","color":"white"}]
+execute if score @s Job matches 102 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#a433ff"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.Ninja[1]"}]},{"text":"=","color":"white"}]
 
-execute if score @s Job matches 1002 run title @s title ["",{"text":"= ","color":"white"},{"text":"N","font":"icon","color":"#a433ff"},{"text":" 忍者 ","color":"#a433ff"},{"text":"=","color":"white"}]
-execute if score @s Job matches 1002 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Ninja++ ","color":"#a433ff"},{"text":"=","color":"white"}]
+execute if score @s Job matches 1002 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#a433ff"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.Ninja[2]"}]},{"text":"=","color":"white"}]

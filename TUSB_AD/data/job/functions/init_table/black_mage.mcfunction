@@ -17,12 +17,6 @@ data modify storage skill: _.8 set value {name:["ウィンドウォール"],leve
 data modify storage skill: _.9 set value {name:["ラナルータ"],level:[40],cost:80,description:[["昼夜を逆転する。"]]}
 data modify storage skill: _.10 set value {name:["§aマジカルエンゲージ"],level:[75],cost:90,description:[["自身にマジックシールド、マナリフ、エナジーセーブの効果を付与する"]]}
 
-# data modify storage skill: _.20 set value {name:["アイスストーム","アイスストームⅡ","アイスストームⅢ"],level:[1,20,45],cost:5,description:[["てすと"]]}
-# data modify storage skill: _.21 set value {name:["クロスファイアー","クロスファイアーⅡ","クロスファイアーⅢ"],level:[5,25,46],cost:10,description:[["てすと"]]}
-# data modify storage skill: _.22 set value {name:["サンダーボルト","サンダーボルトⅡ","サンダーボルトⅢ"],level:[10,30,48],cost:5,description:[["てすと"]]}
-# data modify storage skill: _.23 set value {name:["ジオクラッシュ","ジオクラッシュⅡ","ジオクラッシュⅢ"],level:[15,35,49],cost:10,description:[["てすと"]]}
-# data modify storage skill: _.24 set value {name:["ドレイン","ドレインⅡ"],level:[17,37],cost:20,description:[["てすと"]]}
-# data modify storage skill: _.25 set value {name:["パルプンテ"],level:[50],cost:100,description:[["てすと"]]}
 #黒魔導士モード
 data modify storage skill: _.20 set value {name:["アイスストーム","アイスストームⅡ","アイスストームⅢ"],level:[1,20,45],cost:5,description:[["凍てつく球状の冷気を放つ。"]],condition:"雪玉を投げる",range:[5]}
 data modify storage skill: _.21 set value {name:["クロスファイアー","クロスファイアーⅡ","クロスファイアーⅢ"],level:[5,25,46],cost:10,description:[["燃え盛る十字状の火炎を放つ。"]],condition:"雪玉を投げる",range:[7]}
