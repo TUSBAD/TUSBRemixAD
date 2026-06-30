@@ -8,7 +8,7 @@
 # 難易度　　　　　　　　　　　　：picnic     ：casual     ：another    ：nightmare  ：level            ：string
 # テキスト表示名　　　　　　　　：           ：           ：           ：           ：text             ：json_text
 # ネームプレート　　　　　　　　：           ：           ：           ：           ：name_plate       ：json_text
-# レベルアップに必要な経験値　　：50         ：100        ：150        ：200        ：next_exp         ：int（百分率）
+# レベルアップに必要な経験値　　：50         ：100        ：150        ：200        ：next_exp         ：int（百分率/10）
 # 嫌な予感の強さの最大段階　　　：0          ：1          ：3          ：4          ：event_rank_max   ：int
 # 嫌な予感までの時間範囲　　　　：36000-72000：18000-54000：18000-36000：6000-36000 ：event_time_range ：int（tick）
 # キープインベントリ　　　　　　：true       ：true       ：false      ：false      ：is_keepinventory ：byte
@@ -24,7 +24,7 @@
     data modify storage core: difficult.picnic.text set value "ピクニック"
     data modify storage core: difficult.picnic.color set value "#80ff00"
     data modify storage core: difficult.picnic.name_plate set value "✨"
-    data modify storage core: difficult.picnic.next_exp set value 50
+    data modify storage core: difficult.picnic.next_exp set value 5
     data modify storage core: difficult.picnic.event_rank_max set value 0
     data modify storage core: difficult.picnic.event_time_range set value [36000,72000]
     data modify storage core: difficult.picnic.is_keepinventory set value true
@@ -40,7 +40,7 @@
     data modify storage core: difficult.casual.text set value "カジュアル"
     data modify storage core: difficult.casual.color set value "#FF2A2A"
     data modify storage core: difficult.casual.name_plate set value "✨"
-    data modify storage core: difficult.casual.next_exp set value 100
+    data modify storage core: difficult.casual.next_exp set value 10
     data modify storage core: difficult.casual.event_rank_max set value 1
     data modify storage core: difficult.casual.event_time_range set value [18000,54000]
     data modify storage core: difficult.casual.is_keepinventory set value true
@@ -56,7 +56,7 @@
     data modify storage core: difficult.another.text set value "アナザー"
     data modify storage core: difficult.another.color set value "#ff00ff"
     data modify storage core: difficult.another.name_plate set value "✨"
-    data modify storage core: difficult.another.next_exp set value 150
+    data modify storage core: difficult.another.next_exp set value 15
     data modify storage core: difficult.another.event_rank_max set value 3
     data modify storage core: difficult.another.event_time_range set value [18000,36000]
     data modify storage core: difficult.another.is_keepinventory set value false
@@ -72,7 +72,7 @@
     data modify storage core: difficult.nightmare.text set value "ナイトメア"
     data modify storage core: difficult.nightmare.color set value "#2848ff"
     data modify storage core: difficult.nightmare.name_plate set value "✨"
-    data modify storage core: difficult.nightmare.next_exp set value 200
+    data modify storage core: difficult.nightmare.next_exp set value 20
     data modify storage core: difficult.nightmare.event_rank_max set value 4
     data modify storage core: difficult.nightmare.event_time_range set value [6000,36000]
     data modify storage core: difficult.nightmare.is_keepinventory set value false

@@ -27,8 +27,8 @@ function player_manager:effect/status/life_to_max
 scoreboard players operation @s NextExp = @s Level
 execute store result score _ TUSB run data get storage player: Const.ExpMul
 scoreboard players operation @s NextExp *= _ TUSB
+execute as @a if score @s NextExp matches 100000000.. run scoreboard players set @s ExpToLevel 2147483646
 execute store result score _ TUSB run data get storage core: difficult.world.next_exp
 scoreboard players operation @s NextExp *= _ TUSB
-scoreboard players operation @s NextExp /= $100 Const
+scoreboard players operation @s NextExp /= $10 Const
 scoreboard players operation @s ExpToLevel += @s NextExp
-execute as @a if score @s ExpToLevel matches 2147483646.. run scoreboard players set @s ExpToLevel 2147483646
