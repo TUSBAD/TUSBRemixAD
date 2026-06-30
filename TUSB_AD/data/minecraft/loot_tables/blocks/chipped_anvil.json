@@ -18,6 +18,7 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
+                    "tag": "item:pickaxes/level-3-mineable",
                     "enchantments": [
                       {
                         "enchantment": "minecraft:fortune",

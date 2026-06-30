@@ -14,11 +14,12 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
+                    "tag": "item:pickaxes/level-4-mineable",
                     "enchantments": [
                       {
                         "enchantment": "minecraft:silk_touch",
                         "levels": {
-                          "min": 100
+                          "min": 5
                         }
                       }
                     ]
