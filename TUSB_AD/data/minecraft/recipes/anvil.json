@@ -10,10 +10,10 @@
       "item": "minecraft:iron_block"
     },
     "G": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:reinforced_deepslate"
     }
   },
   "result": {
-    "item": "minecraft:chipped_anvil"
+    "item": "minecraft:anvil"
   }
 }
