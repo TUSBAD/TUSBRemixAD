@@ -1,0 +1,11 @@
+{
+  "values": [
+    "minecraft:spawner",
+    "minecraft:torch",
+    "minecraft:soul_torch",
+    "minecraft:redstone_torch",
+    "minecraft:cobweb",
+    "minecraft:vine",
+    "#item:shulker_box"
+  ]
+}

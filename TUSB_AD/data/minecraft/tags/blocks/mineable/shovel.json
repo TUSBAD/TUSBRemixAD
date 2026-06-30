@@ -1,13 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:wool",
+    "minecraft:lodestone",
     "minecraft:sponge",
     "minecraft:wet_sponge",
     "#minecraft:wool_carpets",
-    "minecraft:moss_block",
-    "minecraft:moss_carpet",
-    "minecraft:lodestone",
     "#item:can_break"
   ]
 }

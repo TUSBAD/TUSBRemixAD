@@ -1,0 +1,66 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:spawner",
+      "nbt": "{Enchantments:[{}]}"
+    },
+    "title": [
+      {
+        "translate": "アドベンチャーエリアで破壊できるブロック                                  ",
+        "color": "#75ff7c",
+        "bold": true
+      }
+    ],
+    "description": {
+      "translate": "Advツールで破壊できるブロックは以下の通りです。\n\n・%1$s\n・%2$s\n・%3$s\n・%4$s\n\n各種ツールで破壊出来ますが、適正ツールではない場合もあるので気をつけましょう。",
+      "with": [
+        {
+          "translate": "スポナーブロック",
+          "color": "#ff8080"
+        },
+        {
+          "translate": "蜘蛛の巣",
+          "color": "#ff8080"
+        },
+        {
+          "translate": "松明/魂の松明/レッドストーントーチ",
+          "color": "#ff9866"
+        },
+        {
+          "translate": "ツタ",
+          "color": "#ff9866"
+        }
+      ],
+      "color": "white"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "player_manager:infomation/item/adv_item_02",
+  "criteria": {
+    "has_item": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "nbt": "{CustomCanDestroy:1b}"
+            }
+          }
+        },
+        "items": [
+          {
+            "tag": "item:adv_break_item"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_item"
+    ]
+  ]
+}
