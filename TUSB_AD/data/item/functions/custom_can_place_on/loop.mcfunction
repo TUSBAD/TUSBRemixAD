@@ -18,6 +18,8 @@ function item:system/shulker_box/save
 #プレイヤーにルート
 data modify storage item: Slot set from storage item: CanPlaceOn[-1].Slot
 function item:system/shulker_box/loot_to_player
+# SE
+playsound minecraft:block.anvil.land player @s ~ ~ ~ 0.4 2
 #再帰
 data remove storage item: CanPlaceOn[-1]
 execute if data storage item: CanPlaceOn[-1] run function item:custom_can_place_on/loop

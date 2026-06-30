@@ -14,3 +14,5 @@ data modify storage item: Item.tag.display.Lore append value '{"translate":"ア�
 item modify entity @s weapon.mainhand item:storage/item
 # トリガー解除
 advancement revoke @s only item:can_break
+# SE
+playsound minecraft:block.anvil.land player @s ~ ~ ~ 0.4 2
