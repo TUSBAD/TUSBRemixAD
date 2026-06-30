@@ -44,6 +44,6 @@ data modify storage job: Data.Summoner append value "§eドレッドロード"
 data modify storage job: Data.Summoner append value "§l§eカタストロフィー"
 
 # 創成術師
-data modify storage job: Data.Lancer append value "アルケミスト"
-data modify storage job: Data.Lancer append value "§aセレスティア"
-data modify storage job: Data.Lancer append value "§l§aロードアゾット"
+data modify storage job: Data.Creator append value "アルケミスト"
+data modify storage job: Data.Creator append value "§aセレスティア"
+data modify storage job: Data.Creator append value "§l§aロードアゾット"

@@ -9,11 +9,8 @@ particle witch ~ ~1 ~ 0.5 1 0.5 0.1 200 force
 
 title @s times 10 50 20
 
-execute if score @s Job matches 5 run title @s title ["",{"text":"= ","color":"white"},{"text":"B","font":"icon","color":"#1c8dff"},{"text":" 黒魔導士 ","color":"#1c8dff"},{"text":"=","color":"white"}]
-execute if score @s Job matches 5 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Black Mage ","color":"#1c8dff"},{"text":"=","color":"white"}]
+execute if score @s Job matches 5 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#1c8dff"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.BlackMage[0]"}]},{"text":"=","color":"white"}]
 
-execute if score @s Job matches 105 run title @s title ["",{"text":"= ","color":"white"},{"text":"B","font":"icon","color":"#1c8dff"},{"text":" 黒魔導士+ ","color":"#1c8dff"},{"text":"=","color":"white"}]
-execute if score @s Job matches 105 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Black Mage+ ","color":"#1c8dff"},{"text":"=","color":"white"}]
+execute if score @s Job matches 105 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#1c8dff"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.BlackMage[1]"}]},{"text":"=","color":"white"}]
 
-execute if score @s Job matches 1005 run title @s title ["",{"text":"= ","color":"white"},{"text":"B","font":"icon","color":"#1c8dff"},{"text":" 黒魔導士++ ","color":"#1c8dff"},{"text":"=","color":"white"}]
-execute if score @s Job matches 1005 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Black Mage++ ","color":"#1c8dff"},{"text":"=","color":"white"}]
+execute if score @s Job matches 1005 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#1c8dff"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.BlackMage[2]"}]},{"text":"=","color":"white"}]

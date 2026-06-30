@@ -4,16 +4,7 @@
 ### This software is released under the MIT License, see LICENSE.
 
 ### 召喚士
-# data modify storage skill: _.0 set value {name:["サモンP：スノー"],level:[5],cost:25,description:[["スノーゴーレム(ペット)を召喚する。","HP：✮✮✮✩✩","攻：✩✩✩✩✩","防：✮✮✩✩✩","特性：爆発耐性","支援：採掘速度上昇"]]}
-# data modify storage skill: _.2 set value {name:["ヘイカモンα","ヘイカモンβ"],level:[13,33],cost:10,description:[["周囲のペットを５体まで引き寄せる。"],["周囲のペットを10体まで引き寄せる。"]],range:[15],sneak:{description:[["周囲のプレイヤーも１人まで引き寄せる。"],["周囲のプレイヤーも２人まで引き寄せる。"]],range:[15]}}
-# data modify storage skill: _.1 set value {name:["サモンＥ：マーチャント"],level:[10],cost:1,description:[["てすと","てすと"]]}
-# data modify storage skill: _.3 set value {name:["サモンＥ：スーパードラゴン"],level:[17],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.4 set value {name:["サモンＰ：ウルフ"],level:[25],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.5 set value {name:["サモンＥ：ヒーリングキャット"],level:[30],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.6 set value {name:["サモンＰ：ゴーレム"],level:[45],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.7 set value {name:["サモンＥ：バルーン"],level:[46],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.8 set value {name:["サモンＥ：グライダー"],level:[49],cost:1,description:[["てすと"]]}
-
+#召喚士サポート
 data modify storage skill: _.0 set value {name:["サモンP：スノー"],level:[5],cost:25,description:[["スノーゴーレム(ペット)を召喚する。","HP：✮✮✮✩✩","攻：✩✩✩✩✩","防：✮✮✩✩✩","特性：爆発耐性","支援：採掘速度上昇"]]}
 data modify storage skill: _.1 set value {name:["サモンE：マーチャント"],level:[10],cost:30,description:[["商人を召喚する。"]]}
 data modify storage skill: _.2 set value {name:["ヘイカモンα","ヘイカモンβ"],level:[13,33],cost:10,description:[["周囲のペットを５体まで引き寄せる。"],["周囲のペットを10体まで引き寄せる。"]],range:[15],sneak:{description:[["周囲のプレイヤーも１人まで引き寄せる。"],["周囲のプレイヤーも２人まで引き寄せる。"]],range:[15]}}
@@ -25,19 +16,7 @@ data modify storage skill: _.7 set value {name:["サモンE:バルーン"],level
 data modify storage skill: _.8 set value {name:["サモンE:グライダー"],level:[49],cost:60,description:[["グライダーを召喚する。"]]}
 data modify storage skill: _.9 set value {name:["§bツァウバークライス"],level:[51],cost:75,description:[["周辺の召喚したペットの数だけ魔力を回復する。"]]}
 
-
-# data modify storage skill: _.20 set value {name:["フィールα","フィールβ","フィールγ"],level:[1,20,40],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.21 set value {name:["金タライ"],level:[3],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.22 set value {name:["ディールα","ディールβ","ディールγ"],level:[8,28,48],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.23 set value {name:["ぽんぽんα","ぽんぽんβ"],level:[15,35],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.24 set value {name:["つんつんα","つんつんβ"],level:[18,38],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.25 set value {name:["あつあつタライ"],level:[23],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.26 set value {name:["サモンB：オブシディアン"],level:[26],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.27 set value {name:["ぽむぽむハナビ"],level:[37],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.28 set value {name:["サモンB：エンダーチェスト"],level:[39],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.29 set value {name:["きらきらタライ"],level:[43],cost:1,description:[["てすと"]]}
-# data modify storage skill: _.30 set value {name:["サモン：ぷちブラック"],level:[50],cost:100,description:[["てすと"]]}
-
+#召喚士モード
 data modify storage skill: _.20 set value {name:["フィールα","フィールβ","フィールγ"],level:[1,20,40],cost:30,description:[["自身の足元に5x5の羊毛の足場を召喚する。","アドベンチャーダンジョンでは使用できない。"],["自身の足元に7x7の羊毛の足場を召喚する。","アドベンチャーダンジョンでは使用できない。"],["自身の足元に9x9の羊毛の足場を召喚する。","アドベンチャーダンジョンでは使用できない。"]],condition:"ニンジン付きの棒を持って右クリック",sneak:{description:[["周囲のプレイヤーの足元に5x5の羊毛の足場を召喚する。"],["周囲のプレイヤーの足元に7x7の羊毛の足場を召喚する。"],["周囲のプレイヤーの足元に9x9の羊毛の足場を召喚する。"]],range:[15]}}
 data modify storage skill: _.21 set value {name:["金タライ"],level:[3],cost:5,description:[["周囲の敵の頭上に金タライを召喚する。"]],condition:"ニンジン付きの棒を持って右クリック",range:[15]}
 data modify storage skill: _.22 set value {name:["ディールα","ディールβ","ディールγ"],level:[8,28,48],cost:20,description:[["羊毛に乗っている敵にダメージを与える。"]],condition:"ニンジン付きの棒を持って右クリック",range:[30]}

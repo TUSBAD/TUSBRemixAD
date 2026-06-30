@@ -9,11 +9,8 @@ particle minecraft:totem_of_undying ~ ~1 ~ 1 1 1 0 200 force
 
 title @s times 10 50 20
 
-execute if score @s Job matches 8 run title @s title ["",{"text":"= ","color":"white"},{"text":"F","font":"icon","color":"#00ff40"},{"text":" 創成術士 ","color":"#00ff40"},{"text":"=","color":"white"}]
-execute if score @s Job matches 8 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Creator ","color":"#00ff40"},{"text":"=","color":"white"}]
+execute if score @s Job matches 8 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#00ff40"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.Creator[0]"}]},{"text":"=","color":"white"}]
 
-execute if score @s Job matches 108 run title @s title ["",{"text":"= ","color":"white"},{"text":"F","font":"icon","color":"#00ff40"},{"text":" 創成術士+ ","color":"#00ff40"},{"text":"=","color":"white"}]
-execute if score @s Job matches 108 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Creator+ ","color":"#00ff40"},{"text":"=","color":"white"}]
+execute if score @s Job matches 108 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#00ff40"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.Creator[1]"}]},{"text":"=","color":"white"}]
 
-execute if score @s Job matches 1008 run title @s title ["",{"text":"= ","color":"white"},{"text":"F","font":"icon","color":"#00ff40"},{"text":" 創成術士++ ","color":"#00ff40"},{"text":"=","color":"white"}]
-execute if score @s Job matches 1008 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Creator++ ","color":"#00ff40"},{"text":"=","color":"white"}]
+execute if score @s Job matches 1008 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#00ff40"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.Creator[2]"}]},{"text":"=","color":"white"}]

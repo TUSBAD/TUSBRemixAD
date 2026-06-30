@@ -9,11 +9,8 @@ particle minecraft:enchant ~ ~1.5 ~ 0.1 0.6 0.1 4 300 force
 
 title @s times 10 50 20
 
-execute if score @s Job matches 6 run title @s title ["",{"text":"= ","color":"white"},{"text":"S","font":"icon","color":"#ffff09"},{"text":" 召喚士 ","color":"#ffff09"},{"text":"=","color":"white"}]
-execute if score @s Job matches 6 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Summoner ","color":"#ffff09"},{"text":"=","color":"white"}]
+execute if score @s Job matches 6 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#ffff09"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.Summoner[0]"}]},{"text":"=","color":"white"}]
 
-execute if score @s Job matches 106 run title @s title ["",{"text":"= ","color":"white"},{"text":"S","font":"icon","color":"#ffff09"},{"text":" 召喚士+ ","color":"#ffff09"},{"text":"=","color":"white"}]
-execute if score @s Job matches 106 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Summoner+ ","color":"#ffff09"},{"text":"=","color":"white"}]
+execute if score @s Job matches 106 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#ffff09"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.Summoner[1]"}]},{"text":"=","color":"white"}]
 
-execute if score @s Job matches 1006 run title @s title ["",{"text":"= ","color":"white"},{"text":"S","font":"icon","color":"#ffff09"},{"text":" 召喚士++ ","color":"#ffff09"},{"text":"=","color":"white"}]
-execute if score @s Job matches 1006 run title @s subtitle ["",{"text":"=","color":"white"},{"text":" Summoner++ ","color":"#ffff09"},{"text":"=","color":"white"}]
+execute if score @s Job matches 1006 run title @s title ["",{"text":"= ","color":"white"},{"text":"H","font":"icon","color":"#ffff09"},{"translate":" %1$s ","with": [{"storage": "job:","nbt": "Data.Summoner[2]"}]},{"text":"=","color":"white"}]
