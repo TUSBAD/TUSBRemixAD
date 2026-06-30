@@ -1,20 +1,19 @@
 {
-    "type": "minecraft:block",
-    "pools": [
-      {
-        "rolls": 1,
-        "bonus_rolls": 0,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:redstone_block"
-          }
-        ],
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_block"
+        }
+      ],
       "conditions": [
         {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": [],
             "tag": "item:pickaxes/level-3-mineable",
             "enchantments": [
               {
@@ -41,6 +40,6 @@
           }
         }
       ]
-      }
-    ]
-  }
+    }
+  ]
+}

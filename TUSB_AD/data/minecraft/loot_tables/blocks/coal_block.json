@@ -14,7 +14,6 @@
         {
           "condition": "minecraft:match_tool",
           "predicate": {
-            "items": [],
             "tag": "item:pickaxes/level-1-mineable",
             "enchantments": [
               {
