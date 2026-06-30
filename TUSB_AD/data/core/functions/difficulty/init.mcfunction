@@ -25,7 +25,7 @@
     data modify storage core: difficult.picnic.name_plate set value {"text":"✨","color":"#ff00ff"}
     data modify storage core: difficult.picnic.next_exp set value 50
     data modify storage core: difficult.picnic.event_rank_max set value 0
-    data modify storage core: difficult.casual.event_time_range set value [36000,72000]
+    data modify storage core: difficult.picnic.event_time_range set value [36000,72000]
     data modify storage core: difficult.picnic.is_keepinventory set value true
     data modify storage core: difficult.picnic.health_add set value 100
     data modify storage core: difficult.picnic.multi_health set value 100
